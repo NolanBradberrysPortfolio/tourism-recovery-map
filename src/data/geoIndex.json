@@ -1,0 +1,1745 @@
+{
+  "100": {
+    "iso3": "BGR",
+    "name": "Bulgaria",
+    "officialName": "Republic of Bulgaria",
+    "region": "Europe",
+    "subregion": "Southeast Europe"
+  },
+  "104": {
+    "iso3": "MMR",
+    "name": "Myanmar",
+    "officialName": "Republic of the Union of Myanmar",
+    "region": "Asia",
+    "subregion": "South-Eastern Asia"
+  },
+  "108": {
+    "iso3": "BDI",
+    "name": "Burundi",
+    "officialName": "Republic of Burundi",
+    "region": "Africa",
+    "subregion": "Eastern Africa"
+  },
+  "112": {
+    "iso3": "BLR",
+    "name": "Belarus",
+    "officialName": "Republic of Belarus",
+    "region": "Europe",
+    "subregion": "Eastern Europe"
+  },
+  "116": {
+    "iso3": "KHM",
+    "name": "Cambodia",
+    "officialName": "Kingdom of Cambodia",
+    "region": "Asia",
+    "subregion": "South-Eastern Asia"
+  },
+  "120": {
+    "iso3": "CMR",
+    "name": "Cameroon",
+    "officialName": "Republic of Cameroon",
+    "region": "Africa",
+    "subregion": "Middle Africa"
+  },
+  "124": {
+    "iso3": "CAN",
+    "name": "Canada",
+    "officialName": "Canada",
+    "region": "Americas",
+    "subregion": "North America"
+  },
+  "132": {
+    "iso3": "CPV",
+    "name": "Cape Verde",
+    "officialName": "Republic of Cabo Verde",
+    "region": "Africa",
+    "subregion": "Western Africa"
+  },
+  "136": {
+    "iso3": "CYM",
+    "name": "Cayman Islands",
+    "officialName": "Cayman Islands",
+    "region": "Americas",
+    "subregion": "Caribbean"
+  },
+  "140": {
+    "iso3": "CAF",
+    "name": "Central African Republic",
+    "officialName": "Central African Republic",
+    "region": "Africa",
+    "subregion": "Middle Africa"
+  },
+  "144": {
+    "iso3": "LKA",
+    "name": "Sri Lanka",
+    "officialName": "Democratic Socialist Republic of Sri Lanka",
+    "region": "Asia",
+    "subregion": "Southern Asia"
+  },
+  "148": {
+    "iso3": "TCD",
+    "name": "Chad",
+    "officialName": "Republic of Chad",
+    "region": "Africa",
+    "subregion": "Middle Africa"
+  },
+  "152": {
+    "iso3": "CHL",
+    "name": "Chile",
+    "officialName": "Republic of Chile",
+    "region": "Americas",
+    "subregion": "South America"
+  },
+  "156": {
+    "iso3": "CHN",
+    "name": "China",
+    "officialName": "People's Republic of China",
+    "region": "Asia",
+    "subregion": "Eastern Asia"
+  },
+  "158": {
+    "iso3": "TWN",
+    "name": "Taiwan",
+    "officialName": "Republic of China (Taiwan)",
+    "region": "Asia",
+    "subregion": "Eastern Asia"
+  },
+  "162": {
+    "iso3": "CXR",
+    "name": "Christmas Island",
+    "officialName": "Territory of Christmas Island",
+    "region": "Oceania",
+    "subregion": "Australia and New Zealand"
+  },
+  "166": {
+    "iso3": "CCK",
+    "name": "Cocos (Keeling) Islands",
+    "officialName": "Territory of the Cocos (Keeling) Islands",
+    "region": "Oceania",
+    "subregion": "Australia and New Zealand"
+  },
+  "170": {
+    "iso3": "COL",
+    "name": "Colombia",
+    "officialName": "Republic of Colombia",
+    "region": "Americas",
+    "subregion": "South America"
+  },
+  "174": {
+    "iso3": "COM",
+    "name": "Comoros",
+    "officialName": "Union of the Comoros",
+    "region": "Africa",
+    "subregion": "Eastern Africa"
+  },
+  "175": {
+    "iso3": "MYT",
+    "name": "Mayotte",
+    "officialName": "Department of Mayotte",
+    "region": "Africa",
+    "subregion": "Eastern Africa"
+  },
+  "178": {
+    "iso3": "COG",
+    "name": "Republic of the Congo",
+    "officialName": "Republic of the Congo",
+    "region": "Africa",
+    "subregion": "Middle Africa"
+  },
+  "180": {
+    "iso3": "COD",
+    "name": "DR Congo",
+    "officialName": "Democratic Republic of the Congo",
+    "region": "Africa",
+    "subregion": "Middle Africa"
+  },
+  "184": {
+    "iso3": "COK",
+    "name": "Cook Islands",
+    "officialName": "Cook Islands",
+    "region": "Oceania",
+    "subregion": "Polynesia"
+  },
+  "188": {
+    "iso3": "CRI",
+    "name": "Costa Rica",
+    "officialName": "Republic of Costa Rica",
+    "region": "Americas",
+    "subregion": "Central America"
+  },
+  "191": {
+    "iso3": "HRV",
+    "name": "Croatia",
+    "officialName": "Republic of Croatia",
+    "region": "Europe",
+    "subregion": "Southeast Europe"
+  },
+  "192": {
+    "iso3": "CUB",
+    "name": "Cuba",
+    "officialName": "Republic of Cuba",
+    "region": "Americas",
+    "subregion": "Caribbean"
+  },
+  "196": {
+    "iso3": "CYP",
+    "name": "Cyprus",
+    "officialName": "Republic of Cyprus",
+    "region": "Europe",
+    "subregion": "Southern Europe"
+  },
+  "203": {
+    "iso3": "CZE",
+    "name": "Czechia",
+    "officialName": "Czech Republic",
+    "region": "Europe",
+    "subregion": "Central Europe"
+  },
+  "204": {
+    "iso3": "BEN",
+    "name": "Benin",
+    "officialName": "Republic of Benin",
+    "region": "Africa",
+    "subregion": "Western Africa"
+  },
+  "208": {
+    "iso3": "DNK",
+    "name": "Denmark",
+    "officialName": "Kingdom of Denmark",
+    "region": "Europe",
+    "subregion": "Northern Europe"
+  },
+  "212": {
+    "iso3": "DMA",
+    "name": "Dominica",
+    "officialName": "Commonwealth of Dominica",
+    "region": "Americas",
+    "subregion": "Caribbean"
+  },
+  "214": {
+    "iso3": "DOM",
+    "name": "Dominican Republic",
+    "officialName": "Dominican Republic",
+    "region": "Americas",
+    "subregion": "Caribbean"
+  },
+  "218": {
+    "iso3": "ECU",
+    "name": "Ecuador",
+    "officialName": "Republic of Ecuador",
+    "region": "Americas",
+    "subregion": "South America"
+  },
+  "222": {
+    "iso3": "SLV",
+    "name": "El Salvador",
+    "officialName": "Republic of El Salvador",
+    "region": "Americas",
+    "subregion": "Central America"
+  },
+  "226": {
+    "iso3": "GNQ",
+    "name": "Equatorial Guinea",
+    "officialName": "Republic of Equatorial Guinea",
+    "region": "Africa",
+    "subregion": "Middle Africa"
+  },
+  "231": {
+    "iso3": "ETH",
+    "name": "Ethiopia",
+    "officialName": "Federal Democratic Republic of Ethiopia",
+    "region": "Africa",
+    "subregion": "Eastern Africa"
+  },
+  "232": {
+    "iso3": "ERI",
+    "name": "Eritrea",
+    "officialName": "State of Eritrea",
+    "region": "Africa",
+    "subregion": "Eastern Africa"
+  },
+  "233": {
+    "iso3": "EST",
+    "name": "Estonia",
+    "officialName": "Republic of Estonia",
+    "region": "Europe",
+    "subregion": "Northern Europe"
+  },
+  "234": {
+    "iso3": "FRO",
+    "name": "Faroe Islands",
+    "officialName": "Faroe Islands",
+    "region": "Europe",
+    "subregion": "Northern Europe"
+  },
+  "238": {
+    "iso3": "FLK",
+    "name": "Falkland Islands",
+    "officialName": "Falkland Islands",
+    "region": "Americas",
+    "subregion": "South America"
+  },
+  "239": {
+    "iso3": "SGS",
+    "name": "South Georgia",
+    "officialName": "South Georgia and the South Sandwich Islands",
+    "region": "Antarctic",
+    "subregion": ""
+  },
+  "242": {
+    "iso3": "FJI",
+    "name": "Fiji",
+    "officialName": "Republic of Fiji",
+    "region": "Oceania",
+    "subregion": "Melanesia"
+  },
+  "246": {
+    "iso3": "FIN",
+    "name": "Finland",
+    "officialName": "Republic of Finland",
+    "region": "Europe",
+    "subregion": "Northern Europe"
+  },
+  "248": {
+    "iso3": "ALA",
+    "name": "Åland Islands",
+    "officialName": "Åland Islands",
+    "region": "Europe",
+    "subregion": "Northern Europe"
+  },
+  "250": {
+    "iso3": "FRA",
+    "name": "France",
+    "officialName": "French Republic",
+    "region": "Europe",
+    "subregion": "Western Europe"
+  },
+  "254": {
+    "iso3": "GUF",
+    "name": "French Guiana",
+    "officialName": "Guiana",
+    "region": "Americas",
+    "subregion": "South America"
+  },
+  "258": {
+    "iso3": "PYF",
+    "name": "French Polynesia",
+    "officialName": "French Polynesia",
+    "region": "Oceania",
+    "subregion": "Polynesia"
+  },
+  "260": {
+    "iso3": "ATF",
+    "name": "French Southern and Antarctic Lands",
+    "officialName": "Territory of the French Southern and Antarctic Lands",
+    "region": "Antarctic",
+    "subregion": ""
+  },
+  "262": {
+    "iso3": "DJI",
+    "name": "Djibouti",
+    "officialName": "Republic of Djibouti",
+    "region": "Africa",
+    "subregion": "Eastern Africa"
+  },
+  "266": {
+    "iso3": "GAB",
+    "name": "Gabon",
+    "officialName": "Gabonese Republic",
+    "region": "Africa",
+    "subregion": "Middle Africa"
+  },
+  "268": {
+    "iso3": "GEO",
+    "name": "Georgia",
+    "officialName": "Georgia",
+    "region": "Asia",
+    "subregion": "Western Asia"
+  },
+  "270": {
+    "iso3": "GMB",
+    "name": "Gambia",
+    "officialName": "Republic of the Gambia",
+    "region": "Africa",
+    "subregion": "Western Africa"
+  },
+  "275": {
+    "iso3": "PSE",
+    "name": "Palestine",
+    "officialName": "State of Palestine",
+    "region": "Asia",
+    "subregion": "Western Asia"
+  },
+  "276": {
+    "iso3": "DEU",
+    "name": "Germany",
+    "officialName": "Federal Republic of Germany",
+    "region": "Europe",
+    "subregion": "Western Europe"
+  },
+  "288": {
+    "iso3": "GHA",
+    "name": "Ghana",
+    "officialName": "Republic of Ghana",
+    "region": "Africa",
+    "subregion": "Western Africa"
+  },
+  "292": {
+    "iso3": "GIB",
+    "name": "Gibraltar",
+    "officialName": "Gibraltar",
+    "region": "Europe",
+    "subregion": "Southern Europe"
+  },
+  "296": {
+    "iso3": "KIR",
+    "name": "Kiribati",
+    "officialName": "Independent and Sovereign Republic of Kiribati",
+    "region": "Oceania",
+    "subregion": "Micronesia"
+  },
+  "300": {
+    "iso3": "GRC",
+    "name": "Greece",
+    "officialName": "Hellenic Republic",
+    "region": "Europe",
+    "subregion": "Southern Europe"
+  },
+  "304": {
+    "iso3": "GRL",
+    "name": "Greenland",
+    "officialName": "Greenland",
+    "region": "Americas",
+    "subregion": "North America"
+  },
+  "308": {
+    "iso3": "GRD",
+    "name": "Grenada",
+    "officialName": "Grenada",
+    "region": "Americas",
+    "subregion": "Caribbean"
+  },
+  "312": {
+    "iso3": "GLP",
+    "name": "Guadeloupe",
+    "officialName": "Guadeloupe",
+    "region": "Americas",
+    "subregion": "Caribbean"
+  },
+  "316": {
+    "iso3": "GUM",
+    "name": "Guam",
+    "officialName": "Guam",
+    "region": "Oceania",
+    "subregion": "Micronesia"
+  },
+  "320": {
+    "iso3": "GTM",
+    "name": "Guatemala",
+    "officialName": "Republic of Guatemala",
+    "region": "Americas",
+    "subregion": "Central America"
+  },
+  "324": {
+    "iso3": "GIN",
+    "name": "Guinea",
+    "officialName": "Republic of Guinea",
+    "region": "Africa",
+    "subregion": "Western Africa"
+  },
+  "328": {
+    "iso3": "GUY",
+    "name": "Guyana",
+    "officialName": "Co-operative Republic of Guyana",
+    "region": "Americas",
+    "subregion": "South America"
+  },
+  "332": {
+    "iso3": "HTI",
+    "name": "Haiti",
+    "officialName": "Republic of Haiti",
+    "region": "Americas",
+    "subregion": "Caribbean"
+  },
+  "334": {
+    "iso3": "HMD",
+    "name": "Heard Island and McDonald Islands",
+    "officialName": "Heard Island and McDonald Islands",
+    "region": "Antarctic",
+    "subregion": ""
+  },
+  "336": {
+    "iso3": "VAT",
+    "name": "Vatican City",
+    "officialName": "Vatican City State",
+    "region": "Europe",
+    "subregion": "Southern Europe"
+  },
+  "340": {
+    "iso3": "HND",
+    "name": "Honduras",
+    "officialName": "Republic of Honduras",
+    "region": "Americas",
+    "subregion": "Central America"
+  },
+  "344": {
+    "iso3": "HKG",
+    "name": "Hong Kong",
+    "officialName": "Hong Kong Special Administrative Region of the People's Republic of China",
+    "region": "Asia",
+    "subregion": "Eastern Asia"
+  },
+  "348": {
+    "iso3": "HUN",
+    "name": "Hungary",
+    "officialName": "Hungary",
+    "region": "Europe",
+    "subregion": "Central Europe"
+  },
+  "352": {
+    "iso3": "ISL",
+    "name": "Iceland",
+    "officialName": "Iceland",
+    "region": "Europe",
+    "subregion": "Northern Europe"
+  },
+  "356": {
+    "iso3": "IND",
+    "name": "India",
+    "officialName": "Republic of India",
+    "region": "Asia",
+    "subregion": "Southern Asia"
+  },
+  "360": {
+    "iso3": "IDN",
+    "name": "Indonesia",
+    "officialName": "Republic of Indonesia",
+    "region": "Asia",
+    "subregion": "South-Eastern Asia"
+  },
+  "364": {
+    "iso3": "IRN",
+    "name": "Iran",
+    "officialName": "Islamic Republic of Iran",
+    "region": "Asia",
+    "subregion": "Southern Asia"
+  },
+  "368": {
+    "iso3": "IRQ",
+    "name": "Iraq",
+    "officialName": "Republic of Iraq",
+    "region": "Asia",
+    "subregion": "Western Asia"
+  },
+  "372": {
+    "iso3": "IRL",
+    "name": "Ireland",
+    "officialName": "Republic of Ireland",
+    "region": "Europe",
+    "subregion": "Northern Europe"
+  },
+  "376": {
+    "iso3": "ISR",
+    "name": "Israel",
+    "officialName": "State of Israel",
+    "region": "Asia",
+    "subregion": "Western Asia"
+  },
+  "380": {
+    "iso3": "ITA",
+    "name": "Italy",
+    "officialName": "Italian Republic",
+    "region": "Europe",
+    "subregion": "Southern Europe"
+  },
+  "384": {
+    "iso3": "CIV",
+    "name": "Ivory Coast",
+    "officialName": "Republic of Côte d'Ivoire",
+    "region": "Africa",
+    "subregion": "Western Africa"
+  },
+  "388": {
+    "iso3": "JAM",
+    "name": "Jamaica",
+    "officialName": "Jamaica",
+    "region": "Americas",
+    "subregion": "Caribbean"
+  },
+  "392": {
+    "iso3": "JPN",
+    "name": "Japan",
+    "officialName": "Japan",
+    "region": "Asia",
+    "subregion": "Eastern Asia"
+  },
+  "398": {
+    "iso3": "KAZ",
+    "name": "Kazakhstan",
+    "officialName": "Republic of Kazakhstan",
+    "region": "Asia",
+    "subregion": "Central Asia"
+  },
+  "400": {
+    "iso3": "JOR",
+    "name": "Jordan",
+    "officialName": "Hashemite Kingdom of Jordan",
+    "region": "Asia",
+    "subregion": "Western Asia"
+  },
+  "404": {
+    "iso3": "KEN",
+    "name": "Kenya",
+    "officialName": "Republic of Kenya",
+    "region": "Africa",
+    "subregion": "Eastern Africa"
+  },
+  "408": {
+    "iso3": "PRK",
+    "name": "North Korea",
+    "officialName": "Democratic People's Republic of Korea",
+    "region": "Asia",
+    "subregion": "Eastern Asia"
+  },
+  "410": {
+    "iso3": "KOR",
+    "name": "South Korea",
+    "officialName": "Republic of Korea",
+    "region": "Asia",
+    "subregion": "Eastern Asia"
+  },
+  "414": {
+    "iso3": "KWT",
+    "name": "Kuwait",
+    "officialName": "State of Kuwait",
+    "region": "Asia",
+    "subregion": "Western Asia"
+  },
+  "417": {
+    "iso3": "KGZ",
+    "name": "Kyrgyzstan",
+    "officialName": "Kyrgyz Republic",
+    "region": "Asia",
+    "subregion": "Central Asia"
+  },
+  "418": {
+    "iso3": "LAO",
+    "name": "Laos",
+    "officialName": "Lao People's Democratic Republic",
+    "region": "Asia",
+    "subregion": "South-Eastern Asia"
+  },
+  "422": {
+    "iso3": "LBN",
+    "name": "Lebanon",
+    "officialName": "Lebanese Republic",
+    "region": "Asia",
+    "subregion": "Western Asia"
+  },
+  "426": {
+    "iso3": "LSO",
+    "name": "Lesotho",
+    "officialName": "Kingdom of Lesotho",
+    "region": "Africa",
+    "subregion": "Southern Africa"
+  },
+  "428": {
+    "iso3": "LVA",
+    "name": "Latvia",
+    "officialName": "Republic of Latvia",
+    "region": "Europe",
+    "subregion": "Northern Europe"
+  },
+  "430": {
+    "iso3": "LBR",
+    "name": "Liberia",
+    "officialName": "Republic of Liberia",
+    "region": "Africa",
+    "subregion": "Western Africa"
+  },
+  "434": {
+    "iso3": "LBY",
+    "name": "Libya",
+    "officialName": "State of Libya",
+    "region": "Africa",
+    "subregion": "Northern Africa"
+  },
+  "438": {
+    "iso3": "LIE",
+    "name": "Liechtenstein",
+    "officialName": "Principality of Liechtenstein",
+    "region": "Europe",
+    "subregion": "Western Europe"
+  },
+  "440": {
+    "iso3": "LTU",
+    "name": "Lithuania",
+    "officialName": "Republic of Lithuania",
+    "region": "Europe",
+    "subregion": "Northern Europe"
+  },
+  "442": {
+    "iso3": "LUX",
+    "name": "Luxembourg",
+    "officialName": "Grand Duchy of Luxembourg",
+    "region": "Europe",
+    "subregion": "Western Europe"
+  },
+  "446": {
+    "iso3": "MAC",
+    "name": "Macau",
+    "officialName": "Macao Special Administrative Region of the People's Republic of China",
+    "region": "Asia",
+    "subregion": "Eastern Asia"
+  },
+  "450": {
+    "iso3": "MDG",
+    "name": "Madagascar",
+    "officialName": "Republic of Madagascar",
+    "region": "Africa",
+    "subregion": "Eastern Africa"
+  },
+  "454": {
+    "iso3": "MWI",
+    "name": "Malawi",
+    "officialName": "Republic of Malawi",
+    "region": "Africa",
+    "subregion": "Eastern Africa"
+  },
+  "458": {
+    "iso3": "MYS",
+    "name": "Malaysia",
+    "officialName": "Malaysia",
+    "region": "Asia",
+    "subregion": "South-Eastern Asia"
+  },
+  "462": {
+    "iso3": "MDV",
+    "name": "Maldives",
+    "officialName": "Republic of the Maldives",
+    "region": "Asia",
+    "subregion": "Southern Asia"
+  },
+  "466": {
+    "iso3": "MLI",
+    "name": "Mali",
+    "officialName": "Republic of Mali",
+    "region": "Africa",
+    "subregion": "Western Africa"
+  },
+  "470": {
+    "iso3": "MLT",
+    "name": "Malta",
+    "officialName": "Republic of Malta",
+    "region": "Europe",
+    "subregion": "Southern Europe"
+  },
+  "474": {
+    "iso3": "MTQ",
+    "name": "Martinique",
+    "officialName": "Martinique",
+    "region": "Americas",
+    "subregion": "Caribbean"
+  },
+  "478": {
+    "iso3": "MRT",
+    "name": "Mauritania",
+    "officialName": "Islamic Republic of Mauritania",
+    "region": "Africa",
+    "subregion": "Western Africa"
+  },
+  "480": {
+    "iso3": "MUS",
+    "name": "Mauritius",
+    "officialName": "Republic of Mauritius",
+    "region": "Africa",
+    "subregion": "Eastern Africa"
+  },
+  "484": {
+    "iso3": "MEX",
+    "name": "Mexico",
+    "officialName": "United Mexican States",
+    "region": "Americas",
+    "subregion": "North America"
+  },
+  "492": {
+    "iso3": "MCO",
+    "name": "Monaco",
+    "officialName": "Principality of Monaco",
+    "region": "Europe",
+    "subregion": "Western Europe"
+  },
+  "496": {
+    "iso3": "MNG",
+    "name": "Mongolia",
+    "officialName": "Mongolia",
+    "region": "Asia",
+    "subregion": "Eastern Asia"
+  },
+  "498": {
+    "iso3": "MDA",
+    "name": "Moldova",
+    "officialName": "Republic of Moldova",
+    "region": "Europe",
+    "subregion": "Eastern Europe"
+  },
+  "499": {
+    "iso3": "MNE",
+    "name": "Montenegro",
+    "officialName": "Montenegro",
+    "region": "Europe",
+    "subregion": "Southeast Europe"
+  },
+  "500": {
+    "iso3": "MSR",
+    "name": "Montserrat",
+    "officialName": "Montserrat",
+    "region": "Americas",
+    "subregion": "Caribbean"
+  },
+  "504": {
+    "iso3": "MAR",
+    "name": "Morocco",
+    "officialName": "Kingdom of Morocco",
+    "region": "Africa",
+    "subregion": "Northern Africa"
+  },
+  "508": {
+    "iso3": "MOZ",
+    "name": "Mozambique",
+    "officialName": "Republic of Mozambique",
+    "region": "Africa",
+    "subregion": "Eastern Africa"
+  },
+  "512": {
+    "iso3": "OMN",
+    "name": "Oman",
+    "officialName": "Sultanate of Oman",
+    "region": "Asia",
+    "subregion": "Western Asia"
+  },
+  "516": {
+    "iso3": "NAM",
+    "name": "Namibia",
+    "officialName": "Republic of Namibia",
+    "region": "Africa",
+    "subregion": "Southern Africa"
+  },
+  "520": {
+    "iso3": "NRU",
+    "name": "Nauru",
+    "officialName": "Republic of Nauru",
+    "region": "Oceania",
+    "subregion": "Micronesia"
+  },
+  "524": {
+    "iso3": "NPL",
+    "name": "Nepal",
+    "officialName": "Federal Democratic Republic of Nepal",
+    "region": "Asia",
+    "subregion": "Southern Asia"
+  },
+  "528": {
+    "iso3": "NLD",
+    "name": "Netherlands",
+    "officialName": "Kingdom of the Netherlands",
+    "region": "Europe",
+    "subregion": "Western Europe"
+  },
+  "531": {
+    "iso3": "CUW",
+    "name": "Curaçao",
+    "officialName": "Country of Curaçao",
+    "region": "Americas",
+    "subregion": "Caribbean"
+  },
+  "533": {
+    "iso3": "ABW",
+    "name": "Aruba",
+    "officialName": "Aruba",
+    "region": "Americas",
+    "subregion": "Caribbean"
+  },
+  "534": {
+    "iso3": "SXM",
+    "name": "Sint Maarten",
+    "officialName": "Sint Maarten",
+    "region": "Americas",
+    "subregion": "Caribbean"
+  },
+  "535": {
+    "iso3": "BES",
+    "name": "Caribbean Netherlands",
+    "officialName": "Bonaire, Sint Eustatius and Saba",
+    "region": "Americas",
+    "subregion": "Caribbean"
+  },
+  "540": {
+    "iso3": "NCL",
+    "name": "New Caledonia",
+    "officialName": "New Caledonia",
+    "region": "Oceania",
+    "subregion": "Melanesia"
+  },
+  "548": {
+    "iso3": "VUT",
+    "name": "Vanuatu",
+    "officialName": "Republic of Vanuatu",
+    "region": "Oceania",
+    "subregion": "Melanesia"
+  },
+  "554": {
+    "iso3": "NZL",
+    "name": "New Zealand",
+    "officialName": "New Zealand",
+    "region": "Oceania",
+    "subregion": "Australia and New Zealand"
+  },
+  "558": {
+    "iso3": "NIC",
+    "name": "Nicaragua",
+    "officialName": "Republic of Nicaragua",
+    "region": "Americas",
+    "subregion": "Central America"
+  },
+  "562": {
+    "iso3": "NER",
+    "name": "Niger",
+    "officialName": "Republic of Niger",
+    "region": "Africa",
+    "subregion": "Western Africa"
+  },
+  "566": {
+    "iso3": "NGA",
+    "name": "Nigeria",
+    "officialName": "Federal Republic of Nigeria",
+    "region": "Africa",
+    "subregion": "Western Africa"
+  },
+  "570": {
+    "iso3": "NIU",
+    "name": "Niue",
+    "officialName": "Niue",
+    "region": "Oceania",
+    "subregion": "Polynesia"
+  },
+  "574": {
+    "iso3": "NFK",
+    "name": "Norfolk Island",
+    "officialName": "Territory of Norfolk Island",
+    "region": "Oceania",
+    "subregion": "Australia and New Zealand"
+  },
+  "578": {
+    "iso3": "NOR",
+    "name": "Norway",
+    "officialName": "Kingdom of Norway",
+    "region": "Europe",
+    "subregion": "Northern Europe"
+  },
+  "580": {
+    "iso3": "MNP",
+    "name": "Northern Mariana Islands",
+    "officialName": "Commonwealth of the Northern Mariana Islands",
+    "region": "Oceania",
+    "subregion": "Micronesia"
+  },
+  "581": {
+    "iso3": "UMI",
+    "name": "United States Minor Outlying Islands",
+    "officialName": "United States Minor Outlying Islands",
+    "region": "Americas",
+    "subregion": "North America"
+  },
+  "583": {
+    "iso3": "FSM",
+    "name": "Micronesia",
+    "officialName": "Federated States of Micronesia",
+    "region": "Oceania",
+    "subregion": "Micronesia"
+  },
+  "584": {
+    "iso3": "MHL",
+    "name": "Marshall Islands",
+    "officialName": "Republic of the Marshall Islands",
+    "region": "Oceania",
+    "subregion": "Micronesia"
+  },
+  "585": {
+    "iso3": "PLW",
+    "name": "Palau",
+    "officialName": "Republic of Palau",
+    "region": "Oceania",
+    "subregion": "Micronesia"
+  },
+  "586": {
+    "iso3": "PAK",
+    "name": "Pakistan",
+    "officialName": "Islamic Republic of Pakistan",
+    "region": "Asia",
+    "subregion": "Southern Asia"
+  },
+  "591": {
+    "iso3": "PAN",
+    "name": "Panama",
+    "officialName": "Republic of Panama",
+    "region": "Americas",
+    "subregion": "Central America"
+  },
+  "598": {
+    "iso3": "PNG",
+    "name": "Papua New Guinea",
+    "officialName": "Independent State of Papua New Guinea",
+    "region": "Oceania",
+    "subregion": "Melanesia"
+  },
+  "600": {
+    "iso3": "PRY",
+    "name": "Paraguay",
+    "officialName": "Republic of Paraguay",
+    "region": "Americas",
+    "subregion": "South America"
+  },
+  "604": {
+    "iso3": "PER",
+    "name": "Peru",
+    "officialName": "Republic of Peru",
+    "region": "Americas",
+    "subregion": "South America"
+  },
+  "608": {
+    "iso3": "PHL",
+    "name": "Philippines",
+    "officialName": "Republic of the Philippines",
+    "region": "Asia",
+    "subregion": "South-Eastern Asia"
+  },
+  "612": {
+    "iso3": "PCN",
+    "name": "Pitcairn Islands",
+    "officialName": "Pitcairn Group of Islands",
+    "region": "Oceania",
+    "subregion": "Polynesia"
+  },
+  "616": {
+    "iso3": "POL",
+    "name": "Poland",
+    "officialName": "Republic of Poland",
+    "region": "Europe",
+    "subregion": "Central Europe"
+  },
+  "620": {
+    "iso3": "PRT",
+    "name": "Portugal",
+    "officialName": "Portuguese Republic",
+    "region": "Europe",
+    "subregion": "Southern Europe"
+  },
+  "624": {
+    "iso3": "GNB",
+    "name": "Guinea-Bissau",
+    "officialName": "Republic of Guinea-Bissau",
+    "region": "Africa",
+    "subregion": "Western Africa"
+  },
+  "626": {
+    "iso3": "TLS",
+    "name": "Timor-Leste",
+    "officialName": "Democratic Republic of Timor-Leste",
+    "region": "Asia",
+    "subregion": "South-Eastern Asia"
+  },
+  "630": {
+    "iso3": "PRI",
+    "name": "Puerto Rico",
+    "officialName": "Commonwealth of Puerto Rico",
+    "region": "Americas",
+    "subregion": "Caribbean"
+  },
+  "634": {
+    "iso3": "QAT",
+    "name": "Qatar",
+    "officialName": "State of Qatar",
+    "region": "Asia",
+    "subregion": "Western Asia"
+  },
+  "638": {
+    "iso3": "REU",
+    "name": "Réunion",
+    "officialName": "Réunion Island",
+    "region": "Africa",
+    "subregion": "Eastern Africa"
+  },
+  "642": {
+    "iso3": "ROU",
+    "name": "Romania",
+    "officialName": "Romania",
+    "region": "Europe",
+    "subregion": "Southeast Europe"
+  },
+  "643": {
+    "iso3": "RUS",
+    "name": "Russia",
+    "officialName": "Russian Federation",
+    "region": "Europe",
+    "subregion": "Eastern Europe"
+  },
+  "646": {
+    "iso3": "RWA",
+    "name": "Rwanda",
+    "officialName": "Republic of Rwanda",
+    "region": "Africa",
+    "subregion": "Eastern Africa"
+  },
+  "652": {
+    "iso3": "BLM",
+    "name": "Saint Barthélemy",
+    "officialName": "Collectivity of Saint Barthélemy",
+    "region": "Americas",
+    "subregion": "Caribbean"
+  },
+  "654": {
+    "iso3": "SHN",
+    "name": "Saint Helena, Ascension and Tristan da Cunha",
+    "officialName": "Saint Helena, Ascension and Tristan da Cunha",
+    "region": "Africa",
+    "subregion": "Western Africa"
+  },
+  "659": {
+    "iso3": "KNA",
+    "name": "Saint Kitts and Nevis",
+    "officialName": "Federation of Saint Christopher and Nevis",
+    "region": "Americas",
+    "subregion": "Caribbean"
+  },
+  "660": {
+    "iso3": "AIA",
+    "name": "Anguilla",
+    "officialName": "Anguilla",
+    "region": "Americas",
+    "subregion": "Caribbean"
+  },
+  "662": {
+    "iso3": "LCA",
+    "name": "Saint Lucia",
+    "officialName": "Saint Lucia",
+    "region": "Americas",
+    "subregion": "Caribbean"
+  },
+  "663": {
+    "iso3": "MAF",
+    "name": "Saint Martin",
+    "officialName": "Saint Martin",
+    "region": "Americas",
+    "subregion": "Caribbean"
+  },
+  "666": {
+    "iso3": "SPM",
+    "name": "Saint Pierre and Miquelon",
+    "officialName": "Saint Pierre and Miquelon",
+    "region": "Americas",
+    "subregion": "North America"
+  },
+  "670": {
+    "iso3": "VCT",
+    "name": "Saint Vincent and the Grenadines",
+    "officialName": "Saint Vincent and the Grenadines",
+    "region": "Americas",
+    "subregion": "Caribbean"
+  },
+  "674": {
+    "iso3": "SMR",
+    "name": "San Marino",
+    "officialName": "Most Serene Republic of San Marino",
+    "region": "Europe",
+    "subregion": "Southern Europe"
+  },
+  "678": {
+    "iso3": "STP",
+    "name": "São Tomé and Príncipe",
+    "officialName": "Democratic Republic of São Tomé and Príncipe",
+    "region": "Africa",
+    "subregion": "Middle Africa"
+  },
+  "682": {
+    "iso3": "SAU",
+    "name": "Saudi Arabia",
+    "officialName": "Kingdom of Saudi Arabia",
+    "region": "Asia",
+    "subregion": "Western Asia"
+  },
+  "686": {
+    "iso3": "SEN",
+    "name": "Senegal",
+    "officialName": "Republic of Senegal",
+    "region": "Africa",
+    "subregion": "Western Africa"
+  },
+  "688": {
+    "iso3": "SRB",
+    "name": "Serbia",
+    "officialName": "Republic of Serbia",
+    "region": "Europe",
+    "subregion": "Southeast Europe"
+  },
+  "690": {
+    "iso3": "SYC",
+    "name": "Seychelles",
+    "officialName": "Republic of Seychelles",
+    "region": "Africa",
+    "subregion": "Eastern Africa"
+  },
+  "694": {
+    "iso3": "SLE",
+    "name": "Sierra Leone",
+    "officialName": "Republic of Sierra Leone",
+    "region": "Africa",
+    "subregion": "Western Africa"
+  },
+  "702": {
+    "iso3": "SGP",
+    "name": "Singapore",
+    "officialName": "Republic of Singapore",
+    "region": "Asia",
+    "subregion": "South-Eastern Asia"
+  },
+  "703": {
+    "iso3": "SVK",
+    "name": "Slovakia",
+    "officialName": "Slovak Republic",
+    "region": "Europe",
+    "subregion": "Central Europe"
+  },
+  "704": {
+    "iso3": "VNM",
+    "name": "Vietnam",
+    "officialName": "Socialist Republic of Vietnam",
+    "region": "Asia",
+    "subregion": "South-Eastern Asia"
+  },
+  "705": {
+    "iso3": "SVN",
+    "name": "Slovenia",
+    "officialName": "Republic of Slovenia",
+    "region": "Europe",
+    "subregion": "Central Europe"
+  },
+  "706": {
+    "iso3": "SOM",
+    "name": "Somalia",
+    "officialName": "Federal Republic of Somalia",
+    "region": "Africa",
+    "subregion": "Eastern Africa"
+  },
+  "710": {
+    "iso3": "ZAF",
+    "name": "South Africa",
+    "officialName": "Republic of South Africa",
+    "region": "Africa",
+    "subregion": "Southern Africa"
+  },
+  "716": {
+    "iso3": "ZWE",
+    "name": "Zimbabwe",
+    "officialName": "Republic of Zimbabwe",
+    "region": "Africa",
+    "subregion": "Eastern Africa"
+  },
+  "724": {
+    "iso3": "ESP",
+    "name": "Spain",
+    "officialName": "Kingdom of Spain",
+    "region": "Europe",
+    "subregion": "Southern Europe"
+  },
+  "728": {
+    "iso3": "SSD",
+    "name": "South Sudan",
+    "officialName": "Republic of South Sudan",
+    "region": "Africa",
+    "subregion": "Middle Africa"
+  },
+  "729": {
+    "iso3": "SDN",
+    "name": "Sudan",
+    "officialName": "Republic of the Sudan",
+    "region": "Africa",
+    "subregion": "Northern Africa"
+  },
+  "732": {
+    "iso3": "ESH",
+    "name": "Western Sahara",
+    "officialName": "Sahrawi Arab Democratic Republic",
+    "region": "Africa",
+    "subregion": "Northern Africa"
+  },
+  "740": {
+    "iso3": "SUR",
+    "name": "Suriname",
+    "officialName": "Republic of Suriname",
+    "region": "Americas",
+    "subregion": "South America"
+  },
+  "744": {
+    "iso3": "SJM",
+    "name": "Svalbard and Jan Mayen",
+    "officialName": "Svalbard og Jan Mayen",
+    "region": "Europe",
+    "subregion": "Northern Europe"
+  },
+  "748": {
+    "iso3": "SWZ",
+    "name": "Eswatini",
+    "officialName": "Kingdom of Eswatini",
+    "region": "Africa",
+    "subregion": "Southern Africa"
+  },
+  "752": {
+    "iso3": "SWE",
+    "name": "Sweden",
+    "officialName": "Kingdom of Sweden",
+    "region": "Europe",
+    "subregion": "Northern Europe"
+  },
+  "756": {
+    "iso3": "CHE",
+    "name": "Switzerland",
+    "officialName": "Swiss Confederation",
+    "region": "Europe",
+    "subregion": "Western Europe"
+  },
+  "760": {
+    "iso3": "SYR",
+    "name": "Syria",
+    "officialName": "Syrian Arab Republic",
+    "region": "Asia",
+    "subregion": "Western Asia"
+  },
+  "762": {
+    "iso3": "TJK",
+    "name": "Tajikistan",
+    "officialName": "Republic of Tajikistan",
+    "region": "Asia",
+    "subregion": "Central Asia"
+  },
+  "764": {
+    "iso3": "THA",
+    "name": "Thailand",
+    "officialName": "Kingdom of Thailand",
+    "region": "Asia",
+    "subregion": "South-Eastern Asia"
+  },
+  "768": {
+    "iso3": "TGO",
+    "name": "Togo",
+    "officialName": "Togolese Republic",
+    "region": "Africa",
+    "subregion": "Western Africa"
+  },
+  "772": {
+    "iso3": "TKL",
+    "name": "Tokelau",
+    "officialName": "Tokelau",
+    "region": "Oceania",
+    "subregion": "Polynesia"
+  },
+  "776": {
+    "iso3": "TON",
+    "name": "Tonga",
+    "officialName": "Kingdom of Tonga",
+    "region": "Oceania",
+    "subregion": "Polynesia"
+  },
+  "780": {
+    "iso3": "TTO",
+    "name": "Trinidad and Tobago",
+    "officialName": "Republic of Trinidad and Tobago",
+    "region": "Americas",
+    "subregion": "Caribbean"
+  },
+  "784": {
+    "iso3": "ARE",
+    "name": "United Arab Emirates",
+    "officialName": "United Arab Emirates",
+    "region": "Asia",
+    "subregion": "Western Asia"
+  },
+  "788": {
+    "iso3": "TUN",
+    "name": "Tunisia",
+    "officialName": "Tunisian Republic",
+    "region": "Africa",
+    "subregion": "Northern Africa"
+  },
+  "792": {
+    "iso3": "TUR",
+    "name": "Türkiye",
+    "officialName": "Republic of Türkiye",
+    "region": "Asia",
+    "subregion": "Western Asia"
+  },
+  "795": {
+    "iso3": "TKM",
+    "name": "Turkmenistan",
+    "officialName": "Turkmenistan",
+    "region": "Asia",
+    "subregion": "Central Asia"
+  },
+  "796": {
+    "iso3": "TCA",
+    "name": "Turks and Caicos Islands",
+    "officialName": "Turks and Caicos Islands",
+    "region": "Americas",
+    "subregion": "Caribbean"
+  },
+  "798": {
+    "iso3": "TUV",
+    "name": "Tuvalu",
+    "officialName": "Tuvalu",
+    "region": "Oceania",
+    "subregion": "Polynesia"
+  },
+  "800": {
+    "iso3": "UGA",
+    "name": "Uganda",
+    "officialName": "Republic of Uganda",
+    "region": "Africa",
+    "subregion": "Eastern Africa"
+  },
+  "804": {
+    "iso3": "UKR",
+    "name": "Ukraine",
+    "officialName": "Ukraine",
+    "region": "Europe",
+    "subregion": "Eastern Europe"
+  },
+  "807": {
+    "iso3": "MKD",
+    "name": "North Macedonia",
+    "officialName": "Republic of North Macedonia",
+    "region": "Europe",
+    "subregion": "Southeast Europe"
+  },
+  "818": {
+    "iso3": "EGY",
+    "name": "Egypt",
+    "officialName": "Arab Republic of Egypt",
+    "region": "Africa",
+    "subregion": "Northern Africa"
+  },
+  "826": {
+    "iso3": "GBR",
+    "name": "United Kingdom",
+    "officialName": "United Kingdom of Great Britain and Northern Ireland",
+    "region": "Europe",
+    "subregion": "Northern Europe"
+  },
+  "831": {
+    "iso3": "GGY",
+    "name": "Guernsey",
+    "officialName": "Bailiwick of Guernsey",
+    "region": "Europe",
+    "subregion": "Northern Europe"
+  },
+  "832": {
+    "iso3": "JEY",
+    "name": "Jersey",
+    "officialName": "Bailiwick of Jersey",
+    "region": "Europe",
+    "subregion": "Northern Europe"
+  },
+  "833": {
+    "iso3": "IMN",
+    "name": "Isle of Man",
+    "officialName": "Isle of Man",
+    "region": "Europe",
+    "subregion": "Northern Europe"
+  },
+  "834": {
+    "iso3": "TZA",
+    "name": "Tanzania",
+    "officialName": "United Republic of Tanzania",
+    "region": "Africa",
+    "subregion": "Eastern Africa"
+  },
+  "840": {
+    "iso3": "USA",
+    "name": "United States",
+    "officialName": "United States of America",
+    "region": "Americas",
+    "subregion": "North America"
+  },
+  "850": {
+    "iso3": "VIR",
+    "name": "United States Virgin Islands",
+    "officialName": "Virgin Islands of the United States",
+    "region": "Americas",
+    "subregion": "Caribbean"
+  },
+  "854": {
+    "iso3": "BFA",
+    "name": "Burkina Faso",
+    "officialName": "Burkina Faso",
+    "region": "Africa",
+    "subregion": "Western Africa"
+  },
+  "858": {
+    "iso3": "URY",
+    "name": "Uruguay",
+    "officialName": "Oriental Republic of Uruguay",
+    "region": "Americas",
+    "subregion": "South America"
+  },
+  "860": {
+    "iso3": "UZB",
+    "name": "Uzbekistan",
+    "officialName": "Republic of Uzbekistan",
+    "region": "Asia",
+    "subregion": "Central Asia"
+  },
+  "862": {
+    "iso3": "VEN",
+    "name": "Venezuela",
+    "officialName": "Bolivarian Republic of Venezuela",
+    "region": "Americas",
+    "subregion": "South America"
+  },
+  "876": {
+    "iso3": "WLF",
+    "name": "Wallis and Futuna",
+    "officialName": "Territory of the Wallis and Futuna Islands",
+    "region": "Oceania",
+    "subregion": "Polynesia"
+  },
+  "882": {
+    "iso3": "WSM",
+    "name": "Samoa",
+    "officialName": "Independent State of Samoa",
+    "region": "Oceania",
+    "subregion": "Polynesia"
+  },
+  "887": {
+    "iso3": "YEM",
+    "name": "Yemen",
+    "officialName": "Republic of Yemen",
+    "region": "Asia",
+    "subregion": "Western Asia"
+  },
+  "894": {
+    "iso3": "ZMB",
+    "name": "Zambia",
+    "officialName": "Republic of Zambia",
+    "region": "Africa",
+    "subregion": "Eastern Africa"
+  },
+  "004": {
+    "iso3": "AFG",
+    "name": "Afghanistan",
+    "officialName": "Islamic Republic of Afghanistan",
+    "region": "Asia",
+    "subregion": "Southern Asia"
+  },
+  "024": {
+    "iso3": "AGO",
+    "name": "Angola",
+    "officialName": "Republic of Angola",
+    "region": "Africa",
+    "subregion": "Middle Africa"
+  },
+  "008": {
+    "iso3": "ALB",
+    "name": "Albania",
+    "officialName": "Republic of Albania",
+    "region": "Europe",
+    "subregion": "Southeast Europe"
+  },
+  "020": {
+    "iso3": "AND",
+    "name": "Andorra",
+    "officialName": "Principality of Andorra",
+    "region": "Europe",
+    "subregion": "Southern Europe"
+  },
+  "032": {
+    "iso3": "ARG",
+    "name": "Argentina",
+    "officialName": "Argentine Republic",
+    "region": "Americas",
+    "subregion": "South America"
+  },
+  "051": {
+    "iso3": "ARM",
+    "name": "Armenia",
+    "officialName": "Republic of Armenia",
+    "region": "Asia",
+    "subregion": "Western Asia"
+  },
+  "016": {
+    "iso3": "ASM",
+    "name": "American Samoa",
+    "officialName": "American Samoa",
+    "region": "Oceania",
+    "subregion": "Polynesia"
+  },
+  "010": {
+    "iso3": "ATA",
+    "name": "Antarctica",
+    "officialName": "Antarctica",
+    "region": "Antarctic",
+    "subregion": ""
+  },
+  "028": {
+    "iso3": "ATG",
+    "name": "Antigua and Barbuda",
+    "officialName": "Antigua and Barbuda",
+    "region": "Americas",
+    "subregion": "Caribbean"
+  },
+  "036": {
+    "iso3": "AUS",
+    "name": "Australia",
+    "officialName": "Commonwealth of Australia",
+    "region": "Oceania",
+    "subregion": "Australia and New Zealand"
+  },
+  "040": {
+    "iso3": "AUT",
+    "name": "Austria",
+    "officialName": "Republic of Austria",
+    "region": "Europe",
+    "subregion": "Central Europe"
+  },
+  "031": {
+    "iso3": "AZE",
+    "name": "Azerbaijan",
+    "officialName": "Republic of Azerbaijan",
+    "region": "Asia",
+    "subregion": "Western Asia"
+  },
+  "056": {
+    "iso3": "BEL",
+    "name": "Belgium",
+    "officialName": "Kingdom of Belgium",
+    "region": "Europe",
+    "subregion": "Western Europe"
+  },
+  "050": {
+    "iso3": "BGD",
+    "name": "Bangladesh",
+    "officialName": "People's Republic of Bangladesh",
+    "region": "Asia",
+    "subregion": "Southern Asia"
+  },
+  "048": {
+    "iso3": "BHR",
+    "name": "Bahrain",
+    "officialName": "Kingdom of Bahrain",
+    "region": "Asia",
+    "subregion": "Western Asia"
+  },
+  "044": {
+    "iso3": "BHS",
+    "name": "Bahamas",
+    "officialName": "Commonwealth of the Bahamas",
+    "region": "Americas",
+    "subregion": "Caribbean"
+  },
+  "070": {
+    "iso3": "BIH",
+    "name": "Bosnia and Herzegovina",
+    "officialName": "Bosnia and Herzegovina",
+    "region": "Europe",
+    "subregion": "Southeast Europe"
+  },
+  "084": {
+    "iso3": "BLZ",
+    "name": "Belize",
+    "officialName": "Belize",
+    "region": "Americas",
+    "subregion": "Central America"
+  },
+  "060": {
+    "iso3": "BMU",
+    "name": "Bermuda",
+    "officialName": "Bermuda",
+    "region": "Americas",
+    "subregion": "North America"
+  },
+  "068": {
+    "iso3": "BOL",
+    "name": "Bolivia",
+    "officialName": "Plurinational State of Bolivia",
+    "region": "Americas",
+    "subregion": "South America"
+  },
+  "076": {
+    "iso3": "BRA",
+    "name": "Brazil",
+    "officialName": "Federative Republic of Brazil",
+    "region": "Americas",
+    "subregion": "South America"
+  },
+  "052": {
+    "iso3": "BRB",
+    "name": "Barbados",
+    "officialName": "Barbados",
+    "region": "Americas",
+    "subregion": "Caribbean"
+  },
+  "096": {
+    "iso3": "BRN",
+    "name": "Brunei",
+    "officialName": "Nation of Brunei, Abode of Peace",
+    "region": "Asia",
+    "subregion": "South-Eastern Asia"
+  },
+  "064": {
+    "iso3": "BTN",
+    "name": "Bhutan",
+    "officialName": "Kingdom of Bhutan",
+    "region": "Asia",
+    "subregion": "Southern Asia"
+  },
+  "074": {
+    "iso3": "BVT",
+    "name": "Bouvet Island",
+    "officialName": "Bouvet Island",
+    "region": "Antarctic",
+    "subregion": ""
+  },
+  "072": {
+    "iso3": "BWA",
+    "name": "Botswana",
+    "officialName": "Republic of Botswana",
+    "region": "Africa",
+    "subregion": "Southern Africa"
+  },
+  "012": {
+    "iso3": "DZA",
+    "name": "Algeria",
+    "officialName": "People's Democratic Republic of Algeria",
+    "region": "Africa",
+    "subregion": "Northern Africa"
+  },
+  "086": {
+    "iso3": "IOT",
+    "name": "British Indian Ocean Territory",
+    "officialName": "British Indian Ocean Territory",
+    "region": "Africa",
+    "subregion": "Eastern Africa"
+  },
+  "090": {
+    "iso3": "SLB",
+    "name": "Solomon Islands",
+    "officialName": "Solomon Islands",
+    "region": "Oceania",
+    "subregion": "Melanesia"
+  },
+  "092": {
+    "iso3": "VGB",
+    "name": "British Virgin Islands",
+    "officialName": "Virgin Islands",
+    "region": "Americas",
+    "subregion": "Caribbean"
+  }
+}

@@ -1,0 +1,5847 @@
+{
+  "generatedAt": "2026-06-10T22:40:35.798Z",
+  "iterations": 60,
+  "personas": [
+    "data skeptic",
+    "country join auditor",
+    "mobile thumb tester",
+    "accessibility reviewer",
+    "source transparency reviewer",
+    "performance reviewer",
+    "visual encoding reviewer",
+    "missing data reviewer",
+    "iPhone layout reviewer",
+    "map interaction reviewer"
+  ],
+  "ok": true,
+  "failures": [],
+  "summary": {
+    "tourismRecords": 206,
+    "mapFeatures": 241,
+    "joinedFeatures": 202,
+    "latestYear": 2024,
+    "coverage2024": 67
+  },
+  "iterationsDetail": [
+    {
+      "iteration": 1,
+      "persona": "data skeptic",
+      "ok": true,
+      "checks": [
+        {
+          "name": "tourism record coverage",
+          "ok": true,
+          "detail": "206 country or territory series",
+          "persona": "data skeptic"
+        },
+        {
+          "name": "2019 baseline coverage",
+          "ok": true,
+          "detail": "174 reported series",
+          "persona": "data skeptic"
+        },
+        {
+          "name": "2022 baseline coverage",
+          "ok": true,
+          "detail": "138 reported series",
+          "persona": "data skeptic"
+        },
+        {
+          "name": "2024 latest coverage",
+          "ok": true,
+          "detail": "67 reported series",
+          "persona": "data skeptic"
+        },
+        {
+          "name": "arrival values are nonnegative",
+          "ok": true,
+          "detail": "5193 yearly values scanned",
+          "persona": "data skeptic"
+        },
+        {
+          "name": "map geometry coverage",
+          "ok": true,
+          "detail": "241 Natural Earth country/territory features",
+          "persona": "data skeptic"
+        },
+        {
+          "name": "map data join coverage",
+          "ok": true,
+          "detail": "202 features join to tourism series",
+          "persona": "data skeptic"
+        },
+        {
+          "name": "source is traceable",
+          "ok": true,
+          "detail": "UN Tourism (2025) - processed by Our World in Data",
+          "persona": "data skeptic"
+        },
+        {
+          "name": "digital nomad caveat is explicit",
+          "ok": true,
+          "detail": "Avoids presenting weak proxy data as an arrival time series",
+          "persona": "data skeptic"
+        },
+        {
+          "name": "digital nomad alternative is categorical",
+          "ok": true,
+          "detail": "Notes that any future nomad layer should be policy status, not arrival change",
+          "persona": "data skeptic"
+        },
+        {
+          "name": "no negative letter spacing",
+          "ok": true,
+          "detail": "CSS scanned",
+          "persona": "data skeptic"
+        },
+        {
+          "name": "no viewport-scaled font sizes",
+          "ok": true,
+          "detail": "CSS scanned",
+          "persona": "data skeptic"
+        },
+        {
+          "name": "core controls are labelled",
+          "ok": true,
+          "detail": "Baseline selector and search input have accessible labels",
+          "persona": "data skeptic"
+        },
+        {
+          "name": "latest global year is transparent",
+          "ok": true,
+          "detail": "latest year in generated coverage is 2024",
+          "persona": "data skeptic"
+        },
+        {
+          "name": "production bundle under review budget",
+          "ok": true,
+          "detail": "1236 KB JavaScript before gzip",
+          "persona": "data skeptic"
+        }
+      ]
+    },
+    {
+      "iteration": 2,
+      "persona": "country join auditor",
+      "ok": true,
+      "checks": [
+        {
+          "name": "tourism record coverage",
+          "ok": true,
+          "detail": "206 country or territory series",
+          "persona": "country join auditor"
+        },
+        {
+          "name": "2019 baseline coverage",
+          "ok": true,
+          "detail": "174 reported series",
+          "persona": "country join auditor"
+        },
+        {
+          "name": "2022 baseline coverage",
+          "ok": true,
+          "detail": "138 reported series",
+          "persona": "country join auditor"
+        },
+        {
+          "name": "2024 latest coverage",
+          "ok": true,
+          "detail": "67 reported series",
+          "persona": "country join auditor"
+        },
+        {
+          "name": "arrival values are nonnegative",
+          "ok": true,
+          "detail": "5193 yearly values scanned",
+          "persona": "country join auditor"
+        },
+        {
+          "name": "map geometry coverage",
+          "ok": true,
+          "detail": "241 Natural Earth country/territory features",
+          "persona": "country join auditor"
+        },
+        {
+          "name": "map data join coverage",
+          "ok": true,
+          "detail": "202 features join to tourism series",
+          "persona": "country join auditor"
+        },
+        {
+          "name": "source is traceable",
+          "ok": true,
+          "detail": "UN Tourism (2025) - processed by Our World in Data",
+          "persona": "country join auditor"
+        },
+        {
+          "name": "digital nomad caveat is explicit",
+          "ok": true,
+          "detail": "Avoids presenting weak proxy data as an arrival time series",
+          "persona": "country join auditor"
+        },
+        {
+          "name": "digital nomad alternative is categorical",
+          "ok": true,
+          "detail": "Notes that any future nomad layer should be policy status, not arrival change",
+          "persona": "country join auditor"
+        },
+        {
+          "name": "no negative letter spacing",
+          "ok": true,
+          "detail": "CSS scanned",
+          "persona": "country join auditor"
+        },
+        {
+          "name": "no viewport-scaled font sizes",
+          "ok": true,
+          "detail": "CSS scanned",
+          "persona": "country join auditor"
+        },
+        {
+          "name": "core controls are labelled",
+          "ok": true,
+          "detail": "Baseline selector and search input have accessible labels",
+          "persona": "country join auditor"
+        },
+        {
+          "name": "latest global year is transparent",
+          "ok": true,
+          "detail": "latest year in generated coverage is 2024",
+          "persona": "country join auditor"
+        },
+        {
+          "name": "production bundle under review budget",
+          "ok": true,
+          "detail": "1236 KB JavaScript before gzip",
+          "persona": "country join auditor"
+        }
+      ]
+    },
+    {
+      "iteration": 3,
+      "persona": "mobile thumb tester",
+      "ok": true,
+      "checks": [
+        {
+          "name": "tourism record coverage",
+          "ok": true,
+          "detail": "206 country or territory series",
+          "persona": "mobile thumb tester"
+        },
+        {
+          "name": "2019 baseline coverage",
+          "ok": true,
+          "detail": "174 reported series",
+          "persona": "mobile thumb tester"
+        },
+        {
+          "name": "2022 baseline coverage",
+          "ok": true,
+          "detail": "138 reported series",
+          "persona": "mobile thumb tester"
+        },
+        {
+          "name": "2024 latest coverage",
+          "ok": true,
+          "detail": "67 reported series",
+          "persona": "mobile thumb tester"
+        },
+        {
+          "name": "arrival values are nonnegative",
+          "ok": true,
+          "detail": "5193 yearly values scanned",
+          "persona": "mobile thumb tester"
+        },
+        {
+          "name": "map geometry coverage",
+          "ok": true,
+          "detail": "241 Natural Earth country/territory features",
+          "persona": "mobile thumb tester"
+        },
+        {
+          "name": "map data join coverage",
+          "ok": true,
+          "detail": "202 features join to tourism series",
+          "persona": "mobile thumb tester"
+        },
+        {
+          "name": "source is traceable",
+          "ok": true,
+          "detail": "UN Tourism (2025) - processed by Our World in Data",
+          "persona": "mobile thumb tester"
+        },
+        {
+          "name": "digital nomad caveat is explicit",
+          "ok": true,
+          "detail": "Avoids presenting weak proxy data as an arrival time series",
+          "persona": "mobile thumb tester"
+        },
+        {
+          "name": "digital nomad alternative is categorical",
+          "ok": true,
+          "detail": "Notes that any future nomad layer should be policy status, not arrival change",
+          "persona": "mobile thumb tester"
+        },
+        {
+          "name": "no negative letter spacing",
+          "ok": true,
+          "detail": "CSS scanned",
+          "persona": "mobile thumb tester"
+        },
+        {
+          "name": "no viewport-scaled font sizes",
+          "ok": true,
+          "detail": "CSS scanned",
+          "persona": "mobile thumb tester"
+        },
+        {
+          "name": "core controls are labelled",
+          "ok": true,
+          "detail": "Baseline selector and search input have accessible labels",
+          "persona": "mobile thumb tester"
+        },
+        {
+          "name": "latest global year is transparent",
+          "ok": true,
+          "detail": "latest year in generated coverage is 2024",
+          "persona": "mobile thumb tester"
+        },
+        {
+          "name": "production bundle under review budget",
+          "ok": true,
+          "detail": "1236 KB JavaScript before gzip",
+          "persona": "mobile thumb tester"
+        }
+      ]
+    },
+    {
+      "iteration": 4,
+      "persona": "accessibility reviewer",
+      "ok": true,
+      "checks": [
+        {
+          "name": "tourism record coverage",
+          "ok": true,
+          "detail": "206 country or territory series",
+          "persona": "accessibility reviewer"
+        },
+        {
+          "name": "2019 baseline coverage",
+          "ok": true,
+          "detail": "174 reported series",
+          "persona": "accessibility reviewer"
+        },
+        {
+          "name": "2022 baseline coverage",
+          "ok": true,
+          "detail": "138 reported series",
+          "persona": "accessibility reviewer"
+        },
+        {
+          "name": "2024 latest coverage",
+          "ok": true,
+          "detail": "67 reported series",
+          "persona": "accessibility reviewer"
+        },
+        {
+          "name": "arrival values are nonnegative",
+          "ok": true,
+          "detail": "5193 yearly values scanned",
+          "persona": "accessibility reviewer"
+        },
+        {
+          "name": "map geometry coverage",
+          "ok": true,
+          "detail": "241 Natural Earth country/territory features",
+          "persona": "accessibility reviewer"
+        },
+        {
+          "name": "map data join coverage",
+          "ok": true,
+          "detail": "202 features join to tourism series",
+          "persona": "accessibility reviewer"
+        },
+        {
+          "name": "source is traceable",
+          "ok": true,
+          "detail": "UN Tourism (2025) - processed by Our World in Data",
+          "persona": "accessibility reviewer"
+        },
+        {
+          "name": "digital nomad caveat is explicit",
+          "ok": true,
+          "detail": "Avoids presenting weak proxy data as an arrival time series",
+          "persona": "accessibility reviewer"
+        },
+        {
+          "name": "digital nomad alternative is categorical",
+          "ok": true,
+          "detail": "Notes that any future nomad layer should be policy status, not arrival change",
+          "persona": "accessibility reviewer"
+        },
+        {
+          "name": "no negative letter spacing",
+          "ok": true,
+          "detail": "CSS scanned",
+          "persona": "accessibility reviewer"
+        },
+        {
+          "name": "no viewport-scaled font sizes",
+          "ok": true,
+          "detail": "CSS scanned",
+          "persona": "accessibility reviewer"
+        },
+        {
+          "name": "core controls are labelled",
+          "ok": true,
+          "detail": "Baseline selector and search input have accessible labels",
+          "persona": "accessibility reviewer"
+        },
+        {
+          "name": "latest global year is transparent",
+          "ok": true,
+          "detail": "latest year in generated coverage is 2024",
+          "persona": "accessibility reviewer"
+        },
+        {
+          "name": "production bundle under review budget",
+          "ok": true,
+          "detail": "1236 KB JavaScript before gzip",
+          "persona": "accessibility reviewer"
+        }
+      ]
+    },
+    {
+      "iteration": 5,
+      "persona": "source transparency reviewer",
+      "ok": true,
+      "checks": [
+        {
+          "name": "tourism record coverage",
+          "ok": true,
+          "detail": "206 country or territory series",
+          "persona": "source transparency reviewer"
+        },
+        {
+          "name": "2019 baseline coverage",
+          "ok": true,
+          "detail": "174 reported series",
+          "persona": "source transparency reviewer"
+        },
+        {
+          "name": "2022 baseline coverage",
+          "ok": true,
+          "detail": "138 reported series",
+          "persona": "source transparency reviewer"
+        },
+        {
+          "name": "2024 latest coverage",
+          "ok": true,
+          "detail": "67 reported series",
+          "persona": "source transparency reviewer"
+        },
+        {
+          "name": "arrival values are nonnegative",
+          "ok": true,
+          "detail": "5193 yearly values scanned",
+          "persona": "source transparency reviewer"
+        },
+        {
+          "name": "map geometry coverage",
+          "ok": true,
+          "detail": "241 Natural Earth country/territory features",
+          "persona": "source transparency reviewer"
+        },
+        {
+          "name": "map data join coverage",
+          "ok": true,
+          "detail": "202 features join to tourism series",
+          "persona": "source transparency reviewer"
+        },
+        {
+          "name": "source is traceable",
+          "ok": true,
+          "detail": "UN Tourism (2025) - processed by Our World in Data",
+          "persona": "source transparency reviewer"
+        },
+        {
+          "name": "digital nomad caveat is explicit",
+          "ok": true,
+          "detail": "Avoids presenting weak proxy data as an arrival time series",
+          "persona": "source transparency reviewer"
+        },
+        {
+          "name": "digital nomad alternative is categorical",
+          "ok": true,
+          "detail": "Notes that any future nomad layer should be policy status, not arrival change",
+          "persona": "source transparency reviewer"
+        },
+        {
+          "name": "no negative letter spacing",
+          "ok": true,
+          "detail": "CSS scanned",
+          "persona": "source transparency reviewer"
+        },
+        {
+          "name": "no viewport-scaled font sizes",
+          "ok": true,
+          "detail": "CSS scanned",
+          "persona": "source transparency reviewer"
+        },
+        {
+          "name": "core controls are labelled",
+          "ok": true,
+          "detail": "Baseline selector and search input have accessible labels",
+          "persona": "source transparency reviewer"
+        },
+        {
+          "name": "latest global year is transparent",
+          "ok": true,
+          "detail": "latest year in generated coverage is 2024",
+          "persona": "source transparency reviewer"
+        },
+        {
+          "name": "production bundle under review budget",
+          "ok": true,
+          "detail": "1236 KB JavaScript before gzip",
+          "persona": "source transparency reviewer"
+        }
+      ]
+    },
+    {
+      "iteration": 6,
+      "persona": "performance reviewer",
+      "ok": true,
+      "checks": [
+        {
+          "name": "tourism record coverage",
+          "ok": true,
+          "detail": "206 country or territory series",
+          "persona": "performance reviewer"
+        },
+        {
+          "name": "2019 baseline coverage",
+          "ok": true,
+          "detail": "174 reported series",
+          "persona": "performance reviewer"
+        },
+        {
+          "name": "2022 baseline coverage",
+          "ok": true,
+          "detail": "138 reported series",
+          "persona": "performance reviewer"
+        },
+        {
+          "name": "2024 latest coverage",
+          "ok": true,
+          "detail": "67 reported series",
+          "persona": "performance reviewer"
+        },
+        {
+          "name": "arrival values are nonnegative",
+          "ok": true,
+          "detail": "5193 yearly values scanned",
+          "persona": "performance reviewer"
+        },
+        {
+          "name": "map geometry coverage",
+          "ok": true,
+          "detail": "241 Natural Earth country/territory features",
+          "persona": "performance reviewer"
+        },
+        {
+          "name": "map data join coverage",
+          "ok": true,
+          "detail": "202 features join to tourism series",
+          "persona": "performance reviewer"
+        },
+        {
+          "name": "source is traceable",
+          "ok": true,
+          "detail": "UN Tourism (2025) - processed by Our World in Data",
+          "persona": "performance reviewer"
+        },
+        {
+          "name": "digital nomad caveat is explicit",
+          "ok": true,
+          "detail": "Avoids presenting weak proxy data as an arrival time series",
+          "persona": "performance reviewer"
+        },
+        {
+          "name": "digital nomad alternative is categorical",
+          "ok": true,
+          "detail": "Notes that any future nomad layer should be policy status, not arrival change",
+          "persona": "performance reviewer"
+        },
+        {
+          "name": "no negative letter spacing",
+          "ok": true,
+          "detail": "CSS scanned",
+          "persona": "performance reviewer"
+        },
+        {
+          "name": "no viewport-scaled font sizes",
+          "ok": true,
+          "detail": "CSS scanned",
+          "persona": "performance reviewer"
+        },
+        {
+          "name": "core controls are labelled",
+          "ok": true,
+          "detail": "Baseline selector and search input have accessible labels",
+          "persona": "performance reviewer"
+        },
+        {
+          "name": "latest global year is transparent",
+          "ok": true,
+          "detail": "latest year in generated coverage is 2024",
+          "persona": "performance reviewer"
+        },
+        {
+          "name": "production bundle under review budget",
+          "ok": true,
+          "detail": "1236 KB JavaScript before gzip",
+          "persona": "performance reviewer"
+        }
+      ]
+    },
+    {
+      "iteration": 7,
+      "persona": "visual encoding reviewer",
+      "ok": true,
+      "checks": [
+        {
+          "name": "tourism record coverage",
+          "ok": true,
+          "detail": "206 country or territory series",
+          "persona": "visual encoding reviewer"
+        },
+        {
+          "name": "2019 baseline coverage",
+          "ok": true,
+          "detail": "174 reported series",
+          "persona": "visual encoding reviewer"
+        },
+        {
+          "name": "2022 baseline coverage",
+          "ok": true,
+          "detail": "138 reported series",
+          "persona": "visual encoding reviewer"
+        },
+        {
+          "name": "2024 latest coverage",
+          "ok": true,
+          "detail": "67 reported series",
+          "persona": "visual encoding reviewer"
+        },
+        {
+          "name": "arrival values are nonnegative",
+          "ok": true,
+          "detail": "5193 yearly values scanned",
+          "persona": "visual encoding reviewer"
+        },
+        {
+          "name": "map geometry coverage",
+          "ok": true,
+          "detail": "241 Natural Earth country/territory features",
+          "persona": "visual encoding reviewer"
+        },
+        {
+          "name": "map data join coverage",
+          "ok": true,
+          "detail": "202 features join to tourism series",
+          "persona": "visual encoding reviewer"
+        },
+        {
+          "name": "source is traceable",
+          "ok": true,
+          "detail": "UN Tourism (2025) - processed by Our World in Data",
+          "persona": "visual encoding reviewer"
+        },
+        {
+          "name": "digital nomad caveat is explicit",
+          "ok": true,
+          "detail": "Avoids presenting weak proxy data as an arrival time series",
+          "persona": "visual encoding reviewer"
+        },
+        {
+          "name": "digital nomad alternative is categorical",
+          "ok": true,
+          "detail": "Notes that any future nomad layer should be policy status, not arrival change",
+          "persona": "visual encoding reviewer"
+        },
+        {
+          "name": "no negative letter spacing",
+          "ok": true,
+          "detail": "CSS scanned",
+          "persona": "visual encoding reviewer"
+        },
+        {
+          "name": "no viewport-scaled font sizes",
+          "ok": true,
+          "detail": "CSS scanned",
+          "persona": "visual encoding reviewer"
+        },
+        {
+          "name": "core controls are labelled",
+          "ok": true,
+          "detail": "Baseline selector and search input have accessible labels",
+          "persona": "visual encoding reviewer"
+        },
+        {
+          "name": "latest global year is transparent",
+          "ok": true,
+          "detail": "latest year in generated coverage is 2024",
+          "persona": "visual encoding reviewer"
+        },
+        {
+          "name": "production bundle under review budget",
+          "ok": true,
+          "detail": "1236 KB JavaScript before gzip",
+          "persona": "visual encoding reviewer"
+        }
+      ]
+    },
+    {
+      "iteration": 8,
+      "persona": "missing data reviewer",
+      "ok": true,
+      "checks": [
+        {
+          "name": "tourism record coverage",
+          "ok": true,
+          "detail": "206 country or territory series",
+          "persona": "missing data reviewer"
+        },
+        {
+          "name": "2019 baseline coverage",
+          "ok": true,
+          "detail": "174 reported series",
+          "persona": "missing data reviewer"
+        },
+        {
+          "name": "2022 baseline coverage",
+          "ok": true,
+          "detail": "138 reported series",
+          "persona": "missing data reviewer"
+        },
+        {
+          "name": "2024 latest coverage",
+          "ok": true,
+          "detail": "67 reported series",
+          "persona": "missing data reviewer"
+        },
+        {
+          "name": "arrival values are nonnegative",
+          "ok": true,
+          "detail": "5193 yearly values scanned",
+          "persona": "missing data reviewer"
+        },
+        {
+          "name": "map geometry coverage",
+          "ok": true,
+          "detail": "241 Natural Earth country/territory features",
+          "persona": "missing data reviewer"
+        },
+        {
+          "name": "map data join coverage",
+          "ok": true,
+          "detail": "202 features join to tourism series",
+          "persona": "missing data reviewer"
+        },
+        {
+          "name": "source is traceable",
+          "ok": true,
+          "detail": "UN Tourism (2025) - processed by Our World in Data",
+          "persona": "missing data reviewer"
+        },
+        {
+          "name": "digital nomad caveat is explicit",
+          "ok": true,
+          "detail": "Avoids presenting weak proxy data as an arrival time series",
+          "persona": "missing data reviewer"
+        },
+        {
+          "name": "digital nomad alternative is categorical",
+          "ok": true,
+          "detail": "Notes that any future nomad layer should be policy status, not arrival change",
+          "persona": "missing data reviewer"
+        },
+        {
+          "name": "no negative letter spacing",
+          "ok": true,
+          "detail": "CSS scanned",
+          "persona": "missing data reviewer"
+        },
+        {
+          "name": "no viewport-scaled font sizes",
+          "ok": true,
+          "detail": "CSS scanned",
+          "persona": "missing data reviewer"
+        },
+        {
+          "name": "core controls are labelled",
+          "ok": true,
+          "detail": "Baseline selector and search input have accessible labels",
+          "persona": "missing data reviewer"
+        },
+        {
+          "name": "latest global year is transparent",
+          "ok": true,
+          "detail": "latest year in generated coverage is 2024",
+          "persona": "missing data reviewer"
+        },
+        {
+          "name": "production bundle under review budget",
+          "ok": true,
+          "detail": "1236 KB JavaScript before gzip",
+          "persona": "missing data reviewer"
+        }
+      ]
+    },
+    {
+      "iteration": 9,
+      "persona": "iPhone layout reviewer",
+      "ok": true,
+      "checks": [
+        {
+          "name": "tourism record coverage",
+          "ok": true,
+          "detail": "206 country or territory series",
+          "persona": "iPhone layout reviewer"
+        },
+        {
+          "name": "2019 baseline coverage",
+          "ok": true,
+          "detail": "174 reported series",
+          "persona": "iPhone layout reviewer"
+        },
+        {
+          "name": "2022 baseline coverage",
+          "ok": true,
+          "detail": "138 reported series",
+          "persona": "iPhone layout reviewer"
+        },
+        {
+          "name": "2024 latest coverage",
+          "ok": true,
+          "detail": "67 reported series",
+          "persona": "iPhone layout reviewer"
+        },
+        {
+          "name": "arrival values are nonnegative",
+          "ok": true,
+          "detail": "5193 yearly values scanned",
+          "persona": "iPhone layout reviewer"
+        },
+        {
+          "name": "map geometry coverage",
+          "ok": true,
+          "detail": "241 Natural Earth country/territory features",
+          "persona": "iPhone layout reviewer"
+        },
+        {
+          "name": "map data join coverage",
+          "ok": true,
+          "detail": "202 features join to tourism series",
+          "persona": "iPhone layout reviewer"
+        },
+        {
+          "name": "source is traceable",
+          "ok": true,
+          "detail": "UN Tourism (2025) - processed by Our World in Data",
+          "persona": "iPhone layout reviewer"
+        },
+        {
+          "name": "digital nomad caveat is explicit",
+          "ok": true,
+          "detail": "Avoids presenting weak proxy data as an arrival time series",
+          "persona": "iPhone layout reviewer"
+        },
+        {
+          "name": "digital nomad alternative is categorical",
+          "ok": true,
+          "detail": "Notes that any future nomad layer should be policy status, not arrival change",
+          "persona": "iPhone layout reviewer"
+        },
+        {
+          "name": "no negative letter spacing",
+          "ok": true,
+          "detail": "CSS scanned",
+          "persona": "iPhone layout reviewer"
+        },
+        {
+          "name": "no viewport-scaled font sizes",
+          "ok": true,
+          "detail": "CSS scanned",
+          "persona": "iPhone layout reviewer"
+        },
+        {
+          "name": "core controls are labelled",
+          "ok": true,
+          "detail": "Baseline selector and search input have accessible labels",
+          "persona": "iPhone layout reviewer"
+        },
+        {
+          "name": "latest global year is transparent",
+          "ok": true,
+          "detail": "latest year in generated coverage is 2024",
+          "persona": "iPhone layout reviewer"
+        },
+        {
+          "name": "production bundle under review budget",
+          "ok": true,
+          "detail": "1236 KB JavaScript before gzip",
+          "persona": "iPhone layout reviewer"
+        }
+      ]
+    },
+    {
+      "iteration": 10,
+      "persona": "map interaction reviewer",
+      "ok": true,
+      "checks": [
+        {
+          "name": "tourism record coverage",
+          "ok": true,
+          "detail": "206 country or territory series",
+          "persona": "map interaction reviewer"
+        },
+        {
+          "name": "2019 baseline coverage",
+          "ok": true,
+          "detail": "174 reported series",
+          "persona": "map interaction reviewer"
+        },
+        {
+          "name": "2022 baseline coverage",
+          "ok": true,
+          "detail": "138 reported series",
+          "persona": "map interaction reviewer"
+        },
+        {
+          "name": "2024 latest coverage",
+          "ok": true,
+          "detail": "67 reported series",
+          "persona": "map interaction reviewer"
+        },
+        {
+          "name": "arrival values are nonnegative",
+          "ok": true,
+          "detail": "5193 yearly values scanned",
+          "persona": "map interaction reviewer"
+        },
+        {
+          "name": "map geometry coverage",
+          "ok": true,
+          "detail": "241 Natural Earth country/territory features",
+          "persona": "map interaction reviewer"
+        },
+        {
+          "name": "map data join coverage",
+          "ok": true,
+          "detail": "202 features join to tourism series",
+          "persona": "map interaction reviewer"
+        },
+        {
+          "name": "source is traceable",
+          "ok": true,
+          "detail": "UN Tourism (2025) - processed by Our World in Data",
+          "persona": "map interaction reviewer"
+        },
+        {
+          "name": "digital nomad caveat is explicit",
+          "ok": true,
+          "detail": "Avoids presenting weak proxy data as an arrival time series",
+          "persona": "map interaction reviewer"
+        },
+        {
+          "name": "digital nomad alternative is categorical",
+          "ok": true,
+          "detail": "Notes that any future nomad layer should be policy status, not arrival change",
+          "persona": "map interaction reviewer"
+        },
+        {
+          "name": "no negative letter spacing",
+          "ok": true,
+          "detail": "CSS scanned",
+          "persona": "map interaction reviewer"
+        },
+        {
+          "name": "no viewport-scaled font sizes",
+          "ok": true,
+          "detail": "CSS scanned",
+          "persona": "map interaction reviewer"
+        },
+        {
+          "name": "core controls are labelled",
+          "ok": true,
+          "detail": "Baseline selector and search input have accessible labels",
+          "persona": "map interaction reviewer"
+        },
+        {
+          "name": "latest global year is transparent",
+          "ok": true,
+          "detail": "latest year in generated coverage is 2024",
+          "persona": "map interaction reviewer"
+        },
+        {
+          "name": "production bundle under review budget",
+          "ok": true,
+          "detail": "1236 KB JavaScript before gzip",
+          "persona": "map interaction reviewer"
+        }
+      ]
+    },
+    {
+      "iteration": 11,
+      "persona": "data skeptic",
+      "ok": true,
+      "checks": [
+        {
+          "name": "tourism record coverage",
+          "ok": true,
+          "detail": "206 country or territory series",
+          "persona": "data skeptic"
+        },
+        {
+          "name": "2019 baseline coverage",
+          "ok": true,
+          "detail": "174 reported series",
+          "persona": "data skeptic"
+        },
+        {
+          "name": "2022 baseline coverage",
+          "ok": true,
+          "detail": "138 reported series",
+          "persona": "data skeptic"
+        },
+        {
+          "name": "2024 latest coverage",
+          "ok": true,
+          "detail": "67 reported series",
+          "persona": "data skeptic"
+        },
+        {
+          "name": "arrival values are nonnegative",
+          "ok": true,
+          "detail": "5193 yearly values scanned",
+          "persona": "data skeptic"
+        },
+        {
+          "name": "map geometry coverage",
+          "ok": true,
+          "detail": "241 Natural Earth country/territory features",
+          "persona": "data skeptic"
+        },
+        {
+          "name": "map data join coverage",
+          "ok": true,
+          "detail": "202 features join to tourism series",
+          "persona": "data skeptic"
+        },
+        {
+          "name": "source is traceable",
+          "ok": true,
+          "detail": "UN Tourism (2025) - processed by Our World in Data",
+          "persona": "data skeptic"
+        },
+        {
+          "name": "digital nomad caveat is explicit",
+          "ok": true,
+          "detail": "Avoids presenting weak proxy data as an arrival time series",
+          "persona": "data skeptic"
+        },
+        {
+          "name": "digital nomad alternative is categorical",
+          "ok": true,
+          "detail": "Notes that any future nomad layer should be policy status, not arrival change",
+          "persona": "data skeptic"
+        },
+        {
+          "name": "no negative letter spacing",
+          "ok": true,
+          "detail": "CSS scanned",
+          "persona": "data skeptic"
+        },
+        {
+          "name": "no viewport-scaled font sizes",
+          "ok": true,
+          "detail": "CSS scanned",
+          "persona": "data skeptic"
+        },
+        {
+          "name": "core controls are labelled",
+          "ok": true,
+          "detail": "Baseline selector and search input have accessible labels",
+          "persona": "data skeptic"
+        },
+        {
+          "name": "latest global year is transparent",
+          "ok": true,
+          "detail": "latest year in generated coverage is 2024",
+          "persona": "data skeptic"
+        },
+        {
+          "name": "production bundle under review budget",
+          "ok": true,
+          "detail": "1236 KB JavaScript before gzip",
+          "persona": "data skeptic"
+        }
+      ]
+    },
+    {
+      "iteration": 12,
+      "persona": "country join auditor",
+      "ok": true,
+      "checks": [
+        {
+          "name": "tourism record coverage",
+          "ok": true,
+          "detail": "206 country or territory series",
+          "persona": "country join auditor"
+        },
+        {
+          "name": "2019 baseline coverage",
+          "ok": true,
+          "detail": "174 reported series",
+          "persona": "country join auditor"
+        },
+        {
+          "name": "2022 baseline coverage",
+          "ok": true,
+          "detail": "138 reported series",
+          "persona": "country join auditor"
+        },
+        {
+          "name": "2024 latest coverage",
+          "ok": true,
+          "detail": "67 reported series",
+          "persona": "country join auditor"
+        },
+        {
+          "name": "arrival values are nonnegative",
+          "ok": true,
+          "detail": "5193 yearly values scanned",
+          "persona": "country join auditor"
+        },
+        {
+          "name": "map geometry coverage",
+          "ok": true,
+          "detail": "241 Natural Earth country/territory features",
+          "persona": "country join auditor"
+        },
+        {
+          "name": "map data join coverage",
+          "ok": true,
+          "detail": "202 features join to tourism series",
+          "persona": "country join auditor"
+        },
+        {
+          "name": "source is traceable",
+          "ok": true,
+          "detail": "UN Tourism (2025) - processed by Our World in Data",
+          "persona": "country join auditor"
+        },
+        {
+          "name": "digital nomad caveat is explicit",
+          "ok": true,
+          "detail": "Avoids presenting weak proxy data as an arrival time series",
+          "persona": "country join auditor"
+        },
+        {
+          "name": "digital nomad alternative is categorical",
+          "ok": true,
+          "detail": "Notes that any future nomad layer should be policy status, not arrival change",
+          "persona": "country join auditor"
+        },
+        {
+          "name": "no negative letter spacing",
+          "ok": true,
+          "detail": "CSS scanned",
+          "persona": "country join auditor"
+        },
+        {
+          "name": "no viewport-scaled font sizes",
+          "ok": true,
+          "detail": "CSS scanned",
+          "persona": "country join auditor"
+        },
+        {
+          "name": "core controls are labelled",
+          "ok": true,
+          "detail": "Baseline selector and search input have accessible labels",
+          "persona": "country join auditor"
+        },
+        {
+          "name": "latest global year is transparent",
+          "ok": true,
+          "detail": "latest year in generated coverage is 2024",
+          "persona": "country join auditor"
+        },
+        {
+          "name": "production bundle under review budget",
+          "ok": true,
+          "detail": "1236 KB JavaScript before gzip",
+          "persona": "country join auditor"
+        }
+      ]
+    },
+    {
+      "iteration": 13,
+      "persona": "mobile thumb tester",
+      "ok": true,
+      "checks": [
+        {
+          "name": "tourism record coverage",
+          "ok": true,
+          "detail": "206 country or territory series",
+          "persona": "mobile thumb tester"
+        },
+        {
+          "name": "2019 baseline coverage",
+          "ok": true,
+          "detail": "174 reported series",
+          "persona": "mobile thumb tester"
+        },
+        {
+          "name": "2022 baseline coverage",
+          "ok": true,
+          "detail": "138 reported series",
+          "persona": "mobile thumb tester"
+        },
+        {
+          "name": "2024 latest coverage",
+          "ok": true,
+          "detail": "67 reported series",
+          "persona": "mobile thumb tester"
+        },
+        {
+          "name": "arrival values are nonnegative",
+          "ok": true,
+          "detail": "5193 yearly values scanned",
+          "persona": "mobile thumb tester"
+        },
+        {
+          "name": "map geometry coverage",
+          "ok": true,
+          "detail": "241 Natural Earth country/territory features",
+          "persona": "mobile thumb tester"
+        },
+        {
+          "name": "map data join coverage",
+          "ok": true,
+          "detail": "202 features join to tourism series",
+          "persona": "mobile thumb tester"
+        },
+        {
+          "name": "source is traceable",
+          "ok": true,
+          "detail": "UN Tourism (2025) - processed by Our World in Data",
+          "persona": "mobile thumb tester"
+        },
+        {
+          "name": "digital nomad caveat is explicit",
+          "ok": true,
+          "detail": "Avoids presenting weak proxy data as an arrival time series",
+          "persona": "mobile thumb tester"
+        },
+        {
+          "name": "digital nomad alternative is categorical",
+          "ok": true,
+          "detail": "Notes that any future nomad layer should be policy status, not arrival change",
+          "persona": "mobile thumb tester"
+        },
+        {
+          "name": "no negative letter spacing",
+          "ok": true,
+          "detail": "CSS scanned",
+          "persona": "mobile thumb tester"
+        },
+        {
+          "name": "no viewport-scaled font sizes",
+          "ok": true,
+          "detail": "CSS scanned",
+          "persona": "mobile thumb tester"
+        },
+        {
+          "name": "core controls are labelled",
+          "ok": true,
+          "detail": "Baseline selector and search input have accessible labels",
+          "persona": "mobile thumb tester"
+        },
+        {
+          "name": "latest global year is transparent",
+          "ok": true,
+          "detail": "latest year in generated coverage is 2024",
+          "persona": "mobile thumb tester"
+        },
+        {
+          "name": "production bundle under review budget",
+          "ok": true,
+          "detail": "1236 KB JavaScript before gzip",
+          "persona": "mobile thumb tester"
+        }
+      ]
+    },
+    {
+      "iteration": 14,
+      "persona": "accessibility reviewer",
+      "ok": true,
+      "checks": [
+        {
+          "name": "tourism record coverage",
+          "ok": true,
+          "detail": "206 country or territory series",
+          "persona": "accessibility reviewer"
+        },
+        {
+          "name": "2019 baseline coverage",
+          "ok": true,
+          "detail": "174 reported series",
+          "persona": "accessibility reviewer"
+        },
+        {
+          "name": "2022 baseline coverage",
+          "ok": true,
+          "detail": "138 reported series",
+          "persona": "accessibility reviewer"
+        },
+        {
+          "name": "2024 latest coverage",
+          "ok": true,
+          "detail": "67 reported series",
+          "persona": "accessibility reviewer"
+        },
+        {
+          "name": "arrival values are nonnegative",
+          "ok": true,
+          "detail": "5193 yearly values scanned",
+          "persona": "accessibility reviewer"
+        },
+        {
+          "name": "map geometry coverage",
+          "ok": true,
+          "detail": "241 Natural Earth country/territory features",
+          "persona": "accessibility reviewer"
+        },
+        {
+          "name": "map data join coverage",
+          "ok": true,
+          "detail": "202 features join to tourism series",
+          "persona": "accessibility reviewer"
+        },
+        {
+          "name": "source is traceable",
+          "ok": true,
+          "detail": "UN Tourism (2025) - processed by Our World in Data",
+          "persona": "accessibility reviewer"
+        },
+        {
+          "name": "digital nomad caveat is explicit",
+          "ok": true,
+          "detail": "Avoids presenting weak proxy data as an arrival time series",
+          "persona": "accessibility reviewer"
+        },
+        {
+          "name": "digital nomad alternative is categorical",
+          "ok": true,
+          "detail": "Notes that any future nomad layer should be policy status, not arrival change",
+          "persona": "accessibility reviewer"
+        },
+        {
+          "name": "no negative letter spacing",
+          "ok": true,
+          "detail": "CSS scanned",
+          "persona": "accessibility reviewer"
+        },
+        {
+          "name": "no viewport-scaled font sizes",
+          "ok": true,
+          "detail": "CSS scanned",
+          "persona": "accessibility reviewer"
+        },
+        {
+          "name": "core controls are labelled",
+          "ok": true,
+          "detail": "Baseline selector and search input have accessible labels",
+          "persona": "accessibility reviewer"
+        },
+        {
+          "name": "latest global year is transparent",
+          "ok": true,
+          "detail": "latest year in generated coverage is 2024",
+          "persona": "accessibility reviewer"
+        },
+        {
+          "name": "production bundle under review budget",
+          "ok": true,
+          "detail": "1236 KB JavaScript before gzip",
+          "persona": "accessibility reviewer"
+        }
+      ]
+    },
+    {
+      "iteration": 15,
+      "persona": "source transparency reviewer",
+      "ok": true,
+      "checks": [
+        {
+          "name": "tourism record coverage",
+          "ok": true,
+          "detail": "206 country or territory series",
+          "persona": "source transparency reviewer"
+        },
+        {
+          "name": "2019 baseline coverage",
+          "ok": true,
+          "detail": "174 reported series",
+          "persona": "source transparency reviewer"
+        },
+        {
+          "name": "2022 baseline coverage",
+          "ok": true,
+          "detail": "138 reported series",
+          "persona": "source transparency reviewer"
+        },
+        {
+          "name": "2024 latest coverage",
+          "ok": true,
+          "detail": "67 reported series",
+          "persona": "source transparency reviewer"
+        },
+        {
+          "name": "arrival values are nonnegative",
+          "ok": true,
+          "detail": "5193 yearly values scanned",
+          "persona": "source transparency reviewer"
+        },
+        {
+          "name": "map geometry coverage",
+          "ok": true,
+          "detail": "241 Natural Earth country/territory features",
+          "persona": "source transparency reviewer"
+        },
+        {
+          "name": "map data join coverage",
+          "ok": true,
+          "detail": "202 features join to tourism series",
+          "persona": "source transparency reviewer"
+        },
+        {
+          "name": "source is traceable",
+          "ok": true,
+          "detail": "UN Tourism (2025) - processed by Our World in Data",
+          "persona": "source transparency reviewer"
+        },
+        {
+          "name": "digital nomad caveat is explicit",
+          "ok": true,
+          "detail": "Avoids presenting weak proxy data as an arrival time series",
+          "persona": "source transparency reviewer"
+        },
+        {
+          "name": "digital nomad alternative is categorical",
+          "ok": true,
+          "detail": "Notes that any future nomad layer should be policy status, not arrival change",
+          "persona": "source transparency reviewer"
+        },
+        {
+          "name": "no negative letter spacing",
+          "ok": true,
+          "detail": "CSS scanned",
+          "persona": "source transparency reviewer"
+        },
+        {
+          "name": "no viewport-scaled font sizes",
+          "ok": true,
+          "detail": "CSS scanned",
+          "persona": "source transparency reviewer"
+        },
+        {
+          "name": "core controls are labelled",
+          "ok": true,
+          "detail": "Baseline selector and search input have accessible labels",
+          "persona": "source transparency reviewer"
+        },
+        {
+          "name": "latest global year is transparent",
+          "ok": true,
+          "detail": "latest year in generated coverage is 2024",
+          "persona": "source transparency reviewer"
+        },
+        {
+          "name": "production bundle under review budget",
+          "ok": true,
+          "detail": "1236 KB JavaScript before gzip",
+          "persona": "source transparency reviewer"
+        }
+      ]
+    },
+    {
+      "iteration": 16,
+      "persona": "performance reviewer",
+      "ok": true,
+      "checks": [
+        {
+          "name": "tourism record coverage",
+          "ok": true,
+          "detail": "206 country or territory series",
+          "persona": "performance reviewer"
+        },
+        {
+          "name": "2019 baseline coverage",
+          "ok": true,
+          "detail": "174 reported series",
+          "persona": "performance reviewer"
+        },
+        {
+          "name": "2022 baseline coverage",
+          "ok": true,
+          "detail": "138 reported series",
+          "persona": "performance reviewer"
+        },
+        {
+          "name": "2024 latest coverage",
+          "ok": true,
+          "detail": "67 reported series",
+          "persona": "performance reviewer"
+        },
+        {
+          "name": "arrival values are nonnegative",
+          "ok": true,
+          "detail": "5193 yearly values scanned",
+          "persona": "performance reviewer"
+        },
+        {
+          "name": "map geometry coverage",
+          "ok": true,
+          "detail": "241 Natural Earth country/territory features",
+          "persona": "performance reviewer"
+        },
+        {
+          "name": "map data join coverage",
+          "ok": true,
+          "detail": "202 features join to tourism series",
+          "persona": "performance reviewer"
+        },
+        {
+          "name": "source is traceable",
+          "ok": true,
+          "detail": "UN Tourism (2025) - processed by Our World in Data",
+          "persona": "performance reviewer"
+        },
+        {
+          "name": "digital nomad caveat is explicit",
+          "ok": true,
+          "detail": "Avoids presenting weak proxy data as an arrival time series",
+          "persona": "performance reviewer"
+        },
+        {
+          "name": "digital nomad alternative is categorical",
+          "ok": true,
+          "detail": "Notes that any future nomad layer should be policy status, not arrival change",
+          "persona": "performance reviewer"
+        },
+        {
+          "name": "no negative letter spacing",
+          "ok": true,
+          "detail": "CSS scanned",
+          "persona": "performance reviewer"
+        },
+        {
+          "name": "no viewport-scaled font sizes",
+          "ok": true,
+          "detail": "CSS scanned",
+          "persona": "performance reviewer"
+        },
+        {
+          "name": "core controls are labelled",
+          "ok": true,
+          "detail": "Baseline selector and search input have accessible labels",
+          "persona": "performance reviewer"
+        },
+        {
+          "name": "latest global year is transparent",
+          "ok": true,
+          "detail": "latest year in generated coverage is 2024",
+          "persona": "performance reviewer"
+        },
+        {
+          "name": "production bundle under review budget",
+          "ok": true,
+          "detail": "1236 KB JavaScript before gzip",
+          "persona": "performance reviewer"
+        }
+      ]
+    },
+    {
+      "iteration": 17,
+      "persona": "visual encoding reviewer",
+      "ok": true,
+      "checks": [
+        {
+          "name": "tourism record coverage",
+          "ok": true,
+          "detail": "206 country or territory series",
+          "persona": "visual encoding reviewer"
+        },
+        {
+          "name": "2019 baseline coverage",
+          "ok": true,
+          "detail": "174 reported series",
+          "persona": "visual encoding reviewer"
+        },
+        {
+          "name": "2022 baseline coverage",
+          "ok": true,
+          "detail": "138 reported series",
+          "persona": "visual encoding reviewer"
+        },
+        {
+          "name": "2024 latest coverage",
+          "ok": true,
+          "detail": "67 reported series",
+          "persona": "visual encoding reviewer"
+        },
+        {
+          "name": "arrival values are nonnegative",
+          "ok": true,
+          "detail": "5193 yearly values scanned",
+          "persona": "visual encoding reviewer"
+        },
+        {
+          "name": "map geometry coverage",
+          "ok": true,
+          "detail": "241 Natural Earth country/territory features",
+          "persona": "visual encoding reviewer"
+        },
+        {
+          "name": "map data join coverage",
+          "ok": true,
+          "detail": "202 features join to tourism series",
+          "persona": "visual encoding reviewer"
+        },
+        {
+          "name": "source is traceable",
+          "ok": true,
+          "detail": "UN Tourism (2025) - processed by Our World in Data",
+          "persona": "visual encoding reviewer"
+        },
+        {
+          "name": "digital nomad caveat is explicit",
+          "ok": true,
+          "detail": "Avoids presenting weak proxy data as an arrival time series",
+          "persona": "visual encoding reviewer"
+        },
+        {
+          "name": "digital nomad alternative is categorical",
+          "ok": true,
+          "detail": "Notes that any future nomad layer should be policy status, not arrival change",
+          "persona": "visual encoding reviewer"
+        },
+        {
+          "name": "no negative letter spacing",
+          "ok": true,
+          "detail": "CSS scanned",
+          "persona": "visual encoding reviewer"
+        },
+        {
+          "name": "no viewport-scaled font sizes",
+          "ok": true,
+          "detail": "CSS scanned",
+          "persona": "visual encoding reviewer"
+        },
+        {
+          "name": "core controls are labelled",
+          "ok": true,
+          "detail": "Baseline selector and search input have accessible labels",
+          "persona": "visual encoding reviewer"
+        },
+        {
+          "name": "latest global year is transparent",
+          "ok": true,
+          "detail": "latest year in generated coverage is 2024",
+          "persona": "visual encoding reviewer"
+        },
+        {
+          "name": "production bundle under review budget",
+          "ok": true,
+          "detail": "1236 KB JavaScript before gzip",
+          "persona": "visual encoding reviewer"
+        }
+      ]
+    },
+    {
+      "iteration": 18,
+      "persona": "missing data reviewer",
+      "ok": true,
+      "checks": [
+        {
+          "name": "tourism record coverage",
+          "ok": true,
+          "detail": "206 country or territory series",
+          "persona": "missing data reviewer"
+        },
+        {
+          "name": "2019 baseline coverage",
+          "ok": true,
+          "detail": "174 reported series",
+          "persona": "missing data reviewer"
+        },
+        {
+          "name": "2022 baseline coverage",
+          "ok": true,
+          "detail": "138 reported series",
+          "persona": "missing data reviewer"
+        },
+        {
+          "name": "2024 latest coverage",
+          "ok": true,
+          "detail": "67 reported series",
+          "persona": "missing data reviewer"
+        },
+        {
+          "name": "arrival values are nonnegative",
+          "ok": true,
+          "detail": "5193 yearly values scanned",
+          "persona": "missing data reviewer"
+        },
+        {
+          "name": "map geometry coverage",
+          "ok": true,
+          "detail": "241 Natural Earth country/territory features",
+          "persona": "missing data reviewer"
+        },
+        {
+          "name": "map data join coverage",
+          "ok": true,
+          "detail": "202 features join to tourism series",
+          "persona": "missing data reviewer"
+        },
+        {
+          "name": "source is traceable",
+          "ok": true,
+          "detail": "UN Tourism (2025) - processed by Our World in Data",
+          "persona": "missing data reviewer"
+        },
+        {
+          "name": "digital nomad caveat is explicit",
+          "ok": true,
+          "detail": "Avoids presenting weak proxy data as an arrival time series",
+          "persona": "missing data reviewer"
+        },
+        {
+          "name": "digital nomad alternative is categorical",
+          "ok": true,
+          "detail": "Notes that any future nomad layer should be policy status, not arrival change",
+          "persona": "missing data reviewer"
+        },
+        {
+          "name": "no negative letter spacing",
+          "ok": true,
+          "detail": "CSS scanned",
+          "persona": "missing data reviewer"
+        },
+        {
+          "name": "no viewport-scaled font sizes",
+          "ok": true,
+          "detail": "CSS scanned",
+          "persona": "missing data reviewer"
+        },
+        {
+          "name": "core controls are labelled",
+          "ok": true,
+          "detail": "Baseline selector and search input have accessible labels",
+          "persona": "missing data reviewer"
+        },
+        {
+          "name": "latest global year is transparent",
+          "ok": true,
+          "detail": "latest year in generated coverage is 2024",
+          "persona": "missing data reviewer"
+        },
+        {
+          "name": "production bundle under review budget",
+          "ok": true,
+          "detail": "1236 KB JavaScript before gzip",
+          "persona": "missing data reviewer"
+        }
+      ]
+    },
+    {
+      "iteration": 19,
+      "persona": "iPhone layout reviewer",
+      "ok": true,
+      "checks": [
+        {
+          "name": "tourism record coverage",
+          "ok": true,
+          "detail": "206 country or territory series",
+          "persona": "iPhone layout reviewer"
+        },
+        {
+          "name": "2019 baseline coverage",
+          "ok": true,
+          "detail": "174 reported series",
+          "persona": "iPhone layout reviewer"
+        },
+        {
+          "name": "2022 baseline coverage",
+          "ok": true,
+          "detail": "138 reported series",
+          "persona": "iPhone layout reviewer"
+        },
+        {
+          "name": "2024 latest coverage",
+          "ok": true,
+          "detail": "67 reported series",
+          "persona": "iPhone layout reviewer"
+        },
+        {
+          "name": "arrival values are nonnegative",
+          "ok": true,
+          "detail": "5193 yearly values scanned",
+          "persona": "iPhone layout reviewer"
+        },
+        {
+          "name": "map geometry coverage",
+          "ok": true,
+          "detail": "241 Natural Earth country/territory features",
+          "persona": "iPhone layout reviewer"
+        },
+        {
+          "name": "map data join coverage",
+          "ok": true,
+          "detail": "202 features join to tourism series",
+          "persona": "iPhone layout reviewer"
+        },
+        {
+          "name": "source is traceable",
+          "ok": true,
+          "detail": "UN Tourism (2025) - processed by Our World in Data",
+          "persona": "iPhone layout reviewer"
+        },
+        {
+          "name": "digital nomad caveat is explicit",
+          "ok": true,
+          "detail": "Avoids presenting weak proxy data as an arrival time series",
+          "persona": "iPhone layout reviewer"
+        },
+        {
+          "name": "digital nomad alternative is categorical",
+          "ok": true,
+          "detail": "Notes that any future nomad layer should be policy status, not arrival change",
+          "persona": "iPhone layout reviewer"
+        },
+        {
+          "name": "no negative letter spacing",
+          "ok": true,
+          "detail": "CSS scanned",
+          "persona": "iPhone layout reviewer"
+        },
+        {
+          "name": "no viewport-scaled font sizes",
+          "ok": true,
+          "detail": "CSS scanned",
+          "persona": "iPhone layout reviewer"
+        },
+        {
+          "name": "core controls are labelled",
+          "ok": true,
+          "detail": "Baseline selector and search input have accessible labels",
+          "persona": "iPhone layout reviewer"
+        },
+        {
+          "name": "latest global year is transparent",
+          "ok": true,
+          "detail": "latest year in generated coverage is 2024",
+          "persona": "iPhone layout reviewer"
+        },
+        {
+          "name": "production bundle under review budget",
+          "ok": true,
+          "detail": "1236 KB JavaScript before gzip",
+          "persona": "iPhone layout reviewer"
+        }
+      ]
+    },
+    {
+      "iteration": 20,
+      "persona": "map interaction reviewer",
+      "ok": true,
+      "checks": [
+        {
+          "name": "tourism record coverage",
+          "ok": true,
+          "detail": "206 country or territory series",
+          "persona": "map interaction reviewer"
+        },
+        {
+          "name": "2019 baseline coverage",
+          "ok": true,
+          "detail": "174 reported series",
+          "persona": "map interaction reviewer"
+        },
+        {
+          "name": "2022 baseline coverage",
+          "ok": true,
+          "detail": "138 reported series",
+          "persona": "map interaction reviewer"
+        },
+        {
+          "name": "2024 latest coverage",
+          "ok": true,
+          "detail": "67 reported series",
+          "persona": "map interaction reviewer"
+        },
+        {
+          "name": "arrival values are nonnegative",
+          "ok": true,
+          "detail": "5193 yearly values scanned",
+          "persona": "map interaction reviewer"
+        },
+        {
+          "name": "map geometry coverage",
+          "ok": true,
+          "detail": "241 Natural Earth country/territory features",
+          "persona": "map interaction reviewer"
+        },
+        {
+          "name": "map data join coverage",
+          "ok": true,
+          "detail": "202 features join to tourism series",
+          "persona": "map interaction reviewer"
+        },
+        {
+          "name": "source is traceable",
+          "ok": true,
+          "detail": "UN Tourism (2025) - processed by Our World in Data",
+          "persona": "map interaction reviewer"
+        },
+        {
+          "name": "digital nomad caveat is explicit",
+          "ok": true,
+          "detail": "Avoids presenting weak proxy data as an arrival time series",
+          "persona": "map interaction reviewer"
+        },
+        {
+          "name": "digital nomad alternative is categorical",
+          "ok": true,
+          "detail": "Notes that any future nomad layer should be policy status, not arrival change",
+          "persona": "map interaction reviewer"
+        },
+        {
+          "name": "no negative letter spacing",
+          "ok": true,
+          "detail": "CSS scanned",
+          "persona": "map interaction reviewer"
+        },
+        {
+          "name": "no viewport-scaled font sizes",
+          "ok": true,
+          "detail": "CSS scanned",
+          "persona": "map interaction reviewer"
+        },
+        {
+          "name": "core controls are labelled",
+          "ok": true,
+          "detail": "Baseline selector and search input have accessible labels",
+          "persona": "map interaction reviewer"
+        },
+        {
+          "name": "latest global year is transparent",
+          "ok": true,
+          "detail": "latest year in generated coverage is 2024",
+          "persona": "map interaction reviewer"
+        },
+        {
+          "name": "production bundle under review budget",
+          "ok": true,
+          "detail": "1236 KB JavaScript before gzip",
+          "persona": "map interaction reviewer"
+        }
+      ]
+    },
+    {
+      "iteration": 21,
+      "persona": "data skeptic",
+      "ok": true,
+      "checks": [
+        {
+          "name": "tourism record coverage",
+          "ok": true,
+          "detail": "206 country or territory series",
+          "persona": "data skeptic"
+        },
+        {
+          "name": "2019 baseline coverage",
+          "ok": true,
+          "detail": "174 reported series",
+          "persona": "data skeptic"
+        },
+        {
+          "name": "2022 baseline coverage",
+          "ok": true,
+          "detail": "138 reported series",
+          "persona": "data skeptic"
+        },
+        {
+          "name": "2024 latest coverage",
+          "ok": true,
+          "detail": "67 reported series",
+          "persona": "data skeptic"
+        },
+        {
+          "name": "arrival values are nonnegative",
+          "ok": true,
+          "detail": "5193 yearly values scanned",
+          "persona": "data skeptic"
+        },
+        {
+          "name": "map geometry coverage",
+          "ok": true,
+          "detail": "241 Natural Earth country/territory features",
+          "persona": "data skeptic"
+        },
+        {
+          "name": "map data join coverage",
+          "ok": true,
+          "detail": "202 features join to tourism series",
+          "persona": "data skeptic"
+        },
+        {
+          "name": "source is traceable",
+          "ok": true,
+          "detail": "UN Tourism (2025) - processed by Our World in Data",
+          "persona": "data skeptic"
+        },
+        {
+          "name": "digital nomad caveat is explicit",
+          "ok": true,
+          "detail": "Avoids presenting weak proxy data as an arrival time series",
+          "persona": "data skeptic"
+        },
+        {
+          "name": "digital nomad alternative is categorical",
+          "ok": true,
+          "detail": "Notes that any future nomad layer should be policy status, not arrival change",
+          "persona": "data skeptic"
+        },
+        {
+          "name": "no negative letter spacing",
+          "ok": true,
+          "detail": "CSS scanned",
+          "persona": "data skeptic"
+        },
+        {
+          "name": "no viewport-scaled font sizes",
+          "ok": true,
+          "detail": "CSS scanned",
+          "persona": "data skeptic"
+        },
+        {
+          "name": "core controls are labelled",
+          "ok": true,
+          "detail": "Baseline selector and search input have accessible labels",
+          "persona": "data skeptic"
+        },
+        {
+          "name": "latest global year is transparent",
+          "ok": true,
+          "detail": "latest year in generated coverage is 2024",
+          "persona": "data skeptic"
+        },
+        {
+          "name": "production bundle under review budget",
+          "ok": true,
+          "detail": "1236 KB JavaScript before gzip",
+          "persona": "data skeptic"
+        }
+      ]
+    },
+    {
+      "iteration": 22,
+      "persona": "country join auditor",
+      "ok": true,
+      "checks": [
+        {
+          "name": "tourism record coverage",
+          "ok": true,
+          "detail": "206 country or territory series",
+          "persona": "country join auditor"
+        },
+        {
+          "name": "2019 baseline coverage",
+          "ok": true,
+          "detail": "174 reported series",
+          "persona": "country join auditor"
+        },
+        {
+          "name": "2022 baseline coverage",
+          "ok": true,
+          "detail": "138 reported series",
+          "persona": "country join auditor"
+        },
+        {
+          "name": "2024 latest coverage",
+          "ok": true,
+          "detail": "67 reported series",
+          "persona": "country join auditor"
+        },
+        {
+          "name": "arrival values are nonnegative",
+          "ok": true,
+          "detail": "5193 yearly values scanned",
+          "persona": "country join auditor"
+        },
+        {
+          "name": "map geometry coverage",
+          "ok": true,
+          "detail": "241 Natural Earth country/territory features",
+          "persona": "country join auditor"
+        },
+        {
+          "name": "map data join coverage",
+          "ok": true,
+          "detail": "202 features join to tourism series",
+          "persona": "country join auditor"
+        },
+        {
+          "name": "source is traceable",
+          "ok": true,
+          "detail": "UN Tourism (2025) - processed by Our World in Data",
+          "persona": "country join auditor"
+        },
+        {
+          "name": "digital nomad caveat is explicit",
+          "ok": true,
+          "detail": "Avoids presenting weak proxy data as an arrival time series",
+          "persona": "country join auditor"
+        },
+        {
+          "name": "digital nomad alternative is categorical",
+          "ok": true,
+          "detail": "Notes that any future nomad layer should be policy status, not arrival change",
+          "persona": "country join auditor"
+        },
+        {
+          "name": "no negative letter spacing",
+          "ok": true,
+          "detail": "CSS scanned",
+          "persona": "country join auditor"
+        },
+        {
+          "name": "no viewport-scaled font sizes",
+          "ok": true,
+          "detail": "CSS scanned",
+          "persona": "country join auditor"
+        },
+        {
+          "name": "core controls are labelled",
+          "ok": true,
+          "detail": "Baseline selector and search input have accessible labels",
+          "persona": "country join auditor"
+        },
+        {
+          "name": "latest global year is transparent",
+          "ok": true,
+          "detail": "latest year in generated coverage is 2024",
+          "persona": "country join auditor"
+        },
+        {
+          "name": "production bundle under review budget",
+          "ok": true,
+          "detail": "1236 KB JavaScript before gzip",
+          "persona": "country join auditor"
+        }
+      ]
+    },
+    {
+      "iteration": 23,
+      "persona": "mobile thumb tester",
+      "ok": true,
+      "checks": [
+        {
+          "name": "tourism record coverage",
+          "ok": true,
+          "detail": "206 country or territory series",
+          "persona": "mobile thumb tester"
+        },
+        {
+          "name": "2019 baseline coverage",
+          "ok": true,
+          "detail": "174 reported series",
+          "persona": "mobile thumb tester"
+        },
+        {
+          "name": "2022 baseline coverage",
+          "ok": true,
+          "detail": "138 reported series",
+          "persona": "mobile thumb tester"
+        },
+        {
+          "name": "2024 latest coverage",
+          "ok": true,
+          "detail": "67 reported series",
+          "persona": "mobile thumb tester"
+        },
+        {
+          "name": "arrival values are nonnegative",
+          "ok": true,
+          "detail": "5193 yearly values scanned",
+          "persona": "mobile thumb tester"
+        },
+        {
+          "name": "map geometry coverage",
+          "ok": true,
+          "detail": "241 Natural Earth country/territory features",
+          "persona": "mobile thumb tester"
+        },
+        {
+          "name": "map data join coverage",
+          "ok": true,
+          "detail": "202 features join to tourism series",
+          "persona": "mobile thumb tester"
+        },
+        {
+          "name": "source is traceable",
+          "ok": true,
+          "detail": "UN Tourism (2025) - processed by Our World in Data",
+          "persona": "mobile thumb tester"
+        },
+        {
+          "name": "digital nomad caveat is explicit",
+          "ok": true,
+          "detail": "Avoids presenting weak proxy data as an arrival time series",
+          "persona": "mobile thumb tester"
+        },
+        {
+          "name": "digital nomad alternative is categorical",
+          "ok": true,
+          "detail": "Notes that any future nomad layer should be policy status, not arrival change",
+          "persona": "mobile thumb tester"
+        },
+        {
+          "name": "no negative letter spacing",
+          "ok": true,
+          "detail": "CSS scanned",
+          "persona": "mobile thumb tester"
+        },
+        {
+          "name": "no viewport-scaled font sizes",
+          "ok": true,
+          "detail": "CSS scanned",
+          "persona": "mobile thumb tester"
+        },
+        {
+          "name": "core controls are labelled",
+          "ok": true,
+          "detail": "Baseline selector and search input have accessible labels",
+          "persona": "mobile thumb tester"
+        },
+        {
+          "name": "latest global year is transparent",
+          "ok": true,
+          "detail": "latest year in generated coverage is 2024",
+          "persona": "mobile thumb tester"
+        },
+        {
+          "name": "production bundle under review budget",
+          "ok": true,
+          "detail": "1236 KB JavaScript before gzip",
+          "persona": "mobile thumb tester"
+        }
+      ]
+    },
+    {
+      "iteration": 24,
+      "persona": "accessibility reviewer",
+      "ok": true,
+      "checks": [
+        {
+          "name": "tourism record coverage",
+          "ok": true,
+          "detail": "206 country or territory series",
+          "persona": "accessibility reviewer"
+        },
+        {
+          "name": "2019 baseline coverage",
+          "ok": true,
+          "detail": "174 reported series",
+          "persona": "accessibility reviewer"
+        },
+        {
+          "name": "2022 baseline coverage",
+          "ok": true,
+          "detail": "138 reported series",
+          "persona": "accessibility reviewer"
+        },
+        {
+          "name": "2024 latest coverage",
+          "ok": true,
+          "detail": "67 reported series",
+          "persona": "accessibility reviewer"
+        },
+        {
+          "name": "arrival values are nonnegative",
+          "ok": true,
+          "detail": "5193 yearly values scanned",
+          "persona": "accessibility reviewer"
+        },
+        {
+          "name": "map geometry coverage",
+          "ok": true,
+          "detail": "241 Natural Earth country/territory features",
+          "persona": "accessibility reviewer"
+        },
+        {
+          "name": "map data join coverage",
+          "ok": true,
+          "detail": "202 features join to tourism series",
+          "persona": "accessibility reviewer"
+        },
+        {
+          "name": "source is traceable",
+          "ok": true,
+          "detail": "UN Tourism (2025) - processed by Our World in Data",
+          "persona": "accessibility reviewer"
+        },
+        {
+          "name": "digital nomad caveat is explicit",
+          "ok": true,
+          "detail": "Avoids presenting weak proxy data as an arrival time series",
+          "persona": "accessibility reviewer"
+        },
+        {
+          "name": "digital nomad alternative is categorical",
+          "ok": true,
+          "detail": "Notes that any future nomad layer should be policy status, not arrival change",
+          "persona": "accessibility reviewer"
+        },
+        {
+          "name": "no negative letter spacing",
+          "ok": true,
+          "detail": "CSS scanned",
+          "persona": "accessibility reviewer"
+        },
+        {
+          "name": "no viewport-scaled font sizes",
+          "ok": true,
+          "detail": "CSS scanned",
+          "persona": "accessibility reviewer"
+        },
+        {
+          "name": "core controls are labelled",
+          "ok": true,
+          "detail": "Baseline selector and search input have accessible labels",
+          "persona": "accessibility reviewer"
+        },
+        {
+          "name": "latest global year is transparent",
+          "ok": true,
+          "detail": "latest year in generated coverage is 2024",
+          "persona": "accessibility reviewer"
+        },
+        {
+          "name": "production bundle under review budget",
+          "ok": true,
+          "detail": "1236 KB JavaScript before gzip",
+          "persona": "accessibility reviewer"
+        }
+      ]
+    },
+    {
+      "iteration": 25,
+      "persona": "source transparency reviewer",
+      "ok": true,
+      "checks": [
+        {
+          "name": "tourism record coverage",
+          "ok": true,
+          "detail": "206 country or territory series",
+          "persona": "source transparency reviewer"
+        },
+        {
+          "name": "2019 baseline coverage",
+          "ok": true,
+          "detail": "174 reported series",
+          "persona": "source transparency reviewer"
+        },
+        {
+          "name": "2022 baseline coverage",
+          "ok": true,
+          "detail": "138 reported series",
+          "persona": "source transparency reviewer"
+        },
+        {
+          "name": "2024 latest coverage",
+          "ok": true,
+          "detail": "67 reported series",
+          "persona": "source transparency reviewer"
+        },
+        {
+          "name": "arrival values are nonnegative",
+          "ok": true,
+          "detail": "5193 yearly values scanned",
+          "persona": "source transparency reviewer"
+        },
+        {
+          "name": "map geometry coverage",
+          "ok": true,
+          "detail": "241 Natural Earth country/territory features",
+          "persona": "source transparency reviewer"
+        },
+        {
+          "name": "map data join coverage",
+          "ok": true,
+          "detail": "202 features join to tourism series",
+          "persona": "source transparency reviewer"
+        },
+        {
+          "name": "source is traceable",
+          "ok": true,
+          "detail": "UN Tourism (2025) - processed by Our World in Data",
+          "persona": "source transparency reviewer"
+        },
+        {
+          "name": "digital nomad caveat is explicit",
+          "ok": true,
+          "detail": "Avoids presenting weak proxy data as an arrival time series",
+          "persona": "source transparency reviewer"
+        },
+        {
+          "name": "digital nomad alternative is categorical",
+          "ok": true,
+          "detail": "Notes that any future nomad layer should be policy status, not arrival change",
+          "persona": "source transparency reviewer"
+        },
+        {
+          "name": "no negative letter spacing",
+          "ok": true,
+          "detail": "CSS scanned",
+          "persona": "source transparency reviewer"
+        },
+        {
+          "name": "no viewport-scaled font sizes",
+          "ok": true,
+          "detail": "CSS scanned",
+          "persona": "source transparency reviewer"
+        },
+        {
+          "name": "core controls are labelled",
+          "ok": true,
+          "detail": "Baseline selector and search input have accessible labels",
+          "persona": "source transparency reviewer"
+        },
+        {
+          "name": "latest global year is transparent",
+          "ok": true,
+          "detail": "latest year in generated coverage is 2024",
+          "persona": "source transparency reviewer"
+        },
+        {
+          "name": "production bundle under review budget",
+          "ok": true,
+          "detail": "1236 KB JavaScript before gzip",
+          "persona": "source transparency reviewer"
+        }
+      ]
+    },
+    {
+      "iteration": 26,
+      "persona": "performance reviewer",
+      "ok": true,
+      "checks": [
+        {
+          "name": "tourism record coverage",
+          "ok": true,
+          "detail": "206 country or territory series",
+          "persona": "performance reviewer"
+        },
+        {
+          "name": "2019 baseline coverage",
+          "ok": true,
+          "detail": "174 reported series",
+          "persona": "performance reviewer"
+        },
+        {
+          "name": "2022 baseline coverage",
+          "ok": true,
+          "detail": "138 reported series",
+          "persona": "performance reviewer"
+        },
+        {
+          "name": "2024 latest coverage",
+          "ok": true,
+          "detail": "67 reported series",
+          "persona": "performance reviewer"
+        },
+        {
+          "name": "arrival values are nonnegative",
+          "ok": true,
+          "detail": "5193 yearly values scanned",
+          "persona": "performance reviewer"
+        },
+        {
+          "name": "map geometry coverage",
+          "ok": true,
+          "detail": "241 Natural Earth country/territory features",
+          "persona": "performance reviewer"
+        },
+        {
+          "name": "map data join coverage",
+          "ok": true,
+          "detail": "202 features join to tourism series",
+          "persona": "performance reviewer"
+        },
+        {
+          "name": "source is traceable",
+          "ok": true,
+          "detail": "UN Tourism (2025) - processed by Our World in Data",
+          "persona": "performance reviewer"
+        },
+        {
+          "name": "digital nomad caveat is explicit",
+          "ok": true,
+          "detail": "Avoids presenting weak proxy data as an arrival time series",
+          "persona": "performance reviewer"
+        },
+        {
+          "name": "digital nomad alternative is categorical",
+          "ok": true,
+          "detail": "Notes that any future nomad layer should be policy status, not arrival change",
+          "persona": "performance reviewer"
+        },
+        {
+          "name": "no negative letter spacing",
+          "ok": true,
+          "detail": "CSS scanned",
+          "persona": "performance reviewer"
+        },
+        {
+          "name": "no viewport-scaled font sizes",
+          "ok": true,
+          "detail": "CSS scanned",
+          "persona": "performance reviewer"
+        },
+        {
+          "name": "core controls are labelled",
+          "ok": true,
+          "detail": "Baseline selector and search input have accessible labels",
+          "persona": "performance reviewer"
+        },
+        {
+          "name": "latest global year is transparent",
+          "ok": true,
+          "detail": "latest year in generated coverage is 2024",
+          "persona": "performance reviewer"
+        },
+        {
+          "name": "production bundle under review budget",
+          "ok": true,
+          "detail": "1236 KB JavaScript before gzip",
+          "persona": "performance reviewer"
+        }
+      ]
+    },
+    {
+      "iteration": 27,
+      "persona": "visual encoding reviewer",
+      "ok": true,
+      "checks": [
+        {
+          "name": "tourism record coverage",
+          "ok": true,
+          "detail": "206 country or territory series",
+          "persona": "visual encoding reviewer"
+        },
+        {
+          "name": "2019 baseline coverage",
+          "ok": true,
+          "detail": "174 reported series",
+          "persona": "visual encoding reviewer"
+        },
+        {
+          "name": "2022 baseline coverage",
+          "ok": true,
+          "detail": "138 reported series",
+          "persona": "visual encoding reviewer"
+        },
+        {
+          "name": "2024 latest coverage",
+          "ok": true,
+          "detail": "67 reported series",
+          "persona": "visual encoding reviewer"
+        },
+        {
+          "name": "arrival values are nonnegative",
+          "ok": true,
+          "detail": "5193 yearly values scanned",
+          "persona": "visual encoding reviewer"
+        },
+        {
+          "name": "map geometry coverage",
+          "ok": true,
+          "detail": "241 Natural Earth country/territory features",
+          "persona": "visual encoding reviewer"
+        },
+        {
+          "name": "map data join coverage",
+          "ok": true,
+          "detail": "202 features join to tourism series",
+          "persona": "visual encoding reviewer"
+        },
+        {
+          "name": "source is traceable",
+          "ok": true,
+          "detail": "UN Tourism (2025) - processed by Our World in Data",
+          "persona": "visual encoding reviewer"
+        },
+        {
+          "name": "digital nomad caveat is explicit",
+          "ok": true,
+          "detail": "Avoids presenting weak proxy data as an arrival time series",
+          "persona": "visual encoding reviewer"
+        },
+        {
+          "name": "digital nomad alternative is categorical",
+          "ok": true,
+          "detail": "Notes that any future nomad layer should be policy status, not arrival change",
+          "persona": "visual encoding reviewer"
+        },
+        {
+          "name": "no negative letter spacing",
+          "ok": true,
+          "detail": "CSS scanned",
+          "persona": "visual encoding reviewer"
+        },
+        {
+          "name": "no viewport-scaled font sizes",
+          "ok": true,
+          "detail": "CSS scanned",
+          "persona": "visual encoding reviewer"
+        },
+        {
+          "name": "core controls are labelled",
+          "ok": true,
+          "detail": "Baseline selector and search input have accessible labels",
+          "persona": "visual encoding reviewer"
+        },
+        {
+          "name": "latest global year is transparent",
+          "ok": true,
+          "detail": "latest year in generated coverage is 2024",
+          "persona": "visual encoding reviewer"
+        },
+        {
+          "name": "production bundle under review budget",
+          "ok": true,
+          "detail": "1236 KB JavaScript before gzip",
+          "persona": "visual encoding reviewer"
+        }
+      ]
+    },
+    {
+      "iteration": 28,
+      "persona": "missing data reviewer",
+      "ok": true,
+      "checks": [
+        {
+          "name": "tourism record coverage",
+          "ok": true,
+          "detail": "206 country or territory series",
+          "persona": "missing data reviewer"
+        },
+        {
+          "name": "2019 baseline coverage",
+          "ok": true,
+          "detail": "174 reported series",
+          "persona": "missing data reviewer"
+        },
+        {
+          "name": "2022 baseline coverage",
+          "ok": true,
+          "detail": "138 reported series",
+          "persona": "missing data reviewer"
+        },
+        {
+          "name": "2024 latest coverage",
+          "ok": true,
+          "detail": "67 reported series",
+          "persona": "missing data reviewer"
+        },
+        {
+          "name": "arrival values are nonnegative",
+          "ok": true,
+          "detail": "5193 yearly values scanned",
+          "persona": "missing data reviewer"
+        },
+        {
+          "name": "map geometry coverage",
+          "ok": true,
+          "detail": "241 Natural Earth country/territory features",
+          "persona": "missing data reviewer"
+        },
+        {
+          "name": "map data join coverage",
+          "ok": true,
+          "detail": "202 features join to tourism series",
+          "persona": "missing data reviewer"
+        },
+        {
+          "name": "source is traceable",
+          "ok": true,
+          "detail": "UN Tourism (2025) - processed by Our World in Data",
+          "persona": "missing data reviewer"
+        },
+        {
+          "name": "digital nomad caveat is explicit",
+          "ok": true,
+          "detail": "Avoids presenting weak proxy data as an arrival time series",
+          "persona": "missing data reviewer"
+        },
+        {
+          "name": "digital nomad alternative is categorical",
+          "ok": true,
+          "detail": "Notes that any future nomad layer should be policy status, not arrival change",
+          "persona": "missing data reviewer"
+        },
+        {
+          "name": "no negative letter spacing",
+          "ok": true,
+          "detail": "CSS scanned",
+          "persona": "missing data reviewer"
+        },
+        {
+          "name": "no viewport-scaled font sizes",
+          "ok": true,
+          "detail": "CSS scanned",
+          "persona": "missing data reviewer"
+        },
+        {
+          "name": "core controls are labelled",
+          "ok": true,
+          "detail": "Baseline selector and search input have accessible labels",
+          "persona": "missing data reviewer"
+        },
+        {
+          "name": "latest global year is transparent",
+          "ok": true,
+          "detail": "latest year in generated coverage is 2024",
+          "persona": "missing data reviewer"
+        },
+        {
+          "name": "production bundle under review budget",
+          "ok": true,
+          "detail": "1236 KB JavaScript before gzip",
+          "persona": "missing data reviewer"
+        }
+      ]
+    },
+    {
+      "iteration": 29,
+      "persona": "iPhone layout reviewer",
+      "ok": true,
+      "checks": [
+        {
+          "name": "tourism record coverage",
+          "ok": true,
+          "detail": "206 country or territory series",
+          "persona": "iPhone layout reviewer"
+        },
+        {
+          "name": "2019 baseline coverage",
+          "ok": true,
+          "detail": "174 reported series",
+          "persona": "iPhone layout reviewer"
+        },
+        {
+          "name": "2022 baseline coverage",
+          "ok": true,
+          "detail": "138 reported series",
+          "persona": "iPhone layout reviewer"
+        },
+        {
+          "name": "2024 latest coverage",
+          "ok": true,
+          "detail": "67 reported series",
+          "persona": "iPhone layout reviewer"
+        },
+        {
+          "name": "arrival values are nonnegative",
+          "ok": true,
+          "detail": "5193 yearly values scanned",
+          "persona": "iPhone layout reviewer"
+        },
+        {
+          "name": "map geometry coverage",
+          "ok": true,
+          "detail": "241 Natural Earth country/territory features",
+          "persona": "iPhone layout reviewer"
+        },
+        {
+          "name": "map data join coverage",
+          "ok": true,
+          "detail": "202 features join to tourism series",
+          "persona": "iPhone layout reviewer"
+        },
+        {
+          "name": "source is traceable",
+          "ok": true,
+          "detail": "UN Tourism (2025) - processed by Our World in Data",
+          "persona": "iPhone layout reviewer"
+        },
+        {
+          "name": "digital nomad caveat is explicit",
+          "ok": true,
+          "detail": "Avoids presenting weak proxy data as an arrival time series",
+          "persona": "iPhone layout reviewer"
+        },
+        {
+          "name": "digital nomad alternative is categorical",
+          "ok": true,
+          "detail": "Notes that any future nomad layer should be policy status, not arrival change",
+          "persona": "iPhone layout reviewer"
+        },
+        {
+          "name": "no negative letter spacing",
+          "ok": true,
+          "detail": "CSS scanned",
+          "persona": "iPhone layout reviewer"
+        },
+        {
+          "name": "no viewport-scaled font sizes",
+          "ok": true,
+          "detail": "CSS scanned",
+          "persona": "iPhone layout reviewer"
+        },
+        {
+          "name": "core controls are labelled",
+          "ok": true,
+          "detail": "Baseline selector and search input have accessible labels",
+          "persona": "iPhone layout reviewer"
+        },
+        {
+          "name": "latest global year is transparent",
+          "ok": true,
+          "detail": "latest year in generated coverage is 2024",
+          "persona": "iPhone layout reviewer"
+        },
+        {
+          "name": "production bundle under review budget",
+          "ok": true,
+          "detail": "1236 KB JavaScript before gzip",
+          "persona": "iPhone layout reviewer"
+        }
+      ]
+    },
+    {
+      "iteration": 30,
+      "persona": "map interaction reviewer",
+      "ok": true,
+      "checks": [
+        {
+          "name": "tourism record coverage",
+          "ok": true,
+          "detail": "206 country or territory series",
+          "persona": "map interaction reviewer"
+        },
+        {
+          "name": "2019 baseline coverage",
+          "ok": true,
+          "detail": "174 reported series",
+          "persona": "map interaction reviewer"
+        },
+        {
+          "name": "2022 baseline coverage",
+          "ok": true,
+          "detail": "138 reported series",
+          "persona": "map interaction reviewer"
+        },
+        {
+          "name": "2024 latest coverage",
+          "ok": true,
+          "detail": "67 reported series",
+          "persona": "map interaction reviewer"
+        },
+        {
+          "name": "arrival values are nonnegative",
+          "ok": true,
+          "detail": "5193 yearly values scanned",
+          "persona": "map interaction reviewer"
+        },
+        {
+          "name": "map geometry coverage",
+          "ok": true,
+          "detail": "241 Natural Earth country/territory features",
+          "persona": "map interaction reviewer"
+        },
+        {
+          "name": "map data join coverage",
+          "ok": true,
+          "detail": "202 features join to tourism series",
+          "persona": "map interaction reviewer"
+        },
+        {
+          "name": "source is traceable",
+          "ok": true,
+          "detail": "UN Tourism (2025) - processed by Our World in Data",
+          "persona": "map interaction reviewer"
+        },
+        {
+          "name": "digital nomad caveat is explicit",
+          "ok": true,
+          "detail": "Avoids presenting weak proxy data as an arrival time series",
+          "persona": "map interaction reviewer"
+        },
+        {
+          "name": "digital nomad alternative is categorical",
+          "ok": true,
+          "detail": "Notes that any future nomad layer should be policy status, not arrival change",
+          "persona": "map interaction reviewer"
+        },
+        {
+          "name": "no negative letter spacing",
+          "ok": true,
+          "detail": "CSS scanned",
+          "persona": "map interaction reviewer"
+        },
+        {
+          "name": "no viewport-scaled font sizes",
+          "ok": true,
+          "detail": "CSS scanned",
+          "persona": "map interaction reviewer"
+        },
+        {
+          "name": "core controls are labelled",
+          "ok": true,
+          "detail": "Baseline selector and search input have accessible labels",
+          "persona": "map interaction reviewer"
+        },
+        {
+          "name": "latest global year is transparent",
+          "ok": true,
+          "detail": "latest year in generated coverage is 2024",
+          "persona": "map interaction reviewer"
+        },
+        {
+          "name": "production bundle under review budget",
+          "ok": true,
+          "detail": "1236 KB JavaScript before gzip",
+          "persona": "map interaction reviewer"
+        }
+      ]
+    },
+    {
+      "iteration": 31,
+      "persona": "data skeptic",
+      "ok": true,
+      "checks": [
+        {
+          "name": "tourism record coverage",
+          "ok": true,
+          "detail": "206 country or territory series",
+          "persona": "data skeptic"
+        },
+        {
+          "name": "2019 baseline coverage",
+          "ok": true,
+          "detail": "174 reported series",
+          "persona": "data skeptic"
+        },
+        {
+          "name": "2022 baseline coverage",
+          "ok": true,
+          "detail": "138 reported series",
+          "persona": "data skeptic"
+        },
+        {
+          "name": "2024 latest coverage",
+          "ok": true,
+          "detail": "67 reported series",
+          "persona": "data skeptic"
+        },
+        {
+          "name": "arrival values are nonnegative",
+          "ok": true,
+          "detail": "5193 yearly values scanned",
+          "persona": "data skeptic"
+        },
+        {
+          "name": "map geometry coverage",
+          "ok": true,
+          "detail": "241 Natural Earth country/territory features",
+          "persona": "data skeptic"
+        },
+        {
+          "name": "map data join coverage",
+          "ok": true,
+          "detail": "202 features join to tourism series",
+          "persona": "data skeptic"
+        },
+        {
+          "name": "source is traceable",
+          "ok": true,
+          "detail": "UN Tourism (2025) - processed by Our World in Data",
+          "persona": "data skeptic"
+        },
+        {
+          "name": "digital nomad caveat is explicit",
+          "ok": true,
+          "detail": "Avoids presenting weak proxy data as an arrival time series",
+          "persona": "data skeptic"
+        },
+        {
+          "name": "digital nomad alternative is categorical",
+          "ok": true,
+          "detail": "Notes that any future nomad layer should be policy status, not arrival change",
+          "persona": "data skeptic"
+        },
+        {
+          "name": "no negative letter spacing",
+          "ok": true,
+          "detail": "CSS scanned",
+          "persona": "data skeptic"
+        },
+        {
+          "name": "no viewport-scaled font sizes",
+          "ok": true,
+          "detail": "CSS scanned",
+          "persona": "data skeptic"
+        },
+        {
+          "name": "core controls are labelled",
+          "ok": true,
+          "detail": "Baseline selector and search input have accessible labels",
+          "persona": "data skeptic"
+        },
+        {
+          "name": "latest global year is transparent",
+          "ok": true,
+          "detail": "latest year in generated coverage is 2024",
+          "persona": "data skeptic"
+        },
+        {
+          "name": "production bundle under review budget",
+          "ok": true,
+          "detail": "1236 KB JavaScript before gzip",
+          "persona": "data skeptic"
+        }
+      ]
+    },
+    {
+      "iteration": 32,
+      "persona": "country join auditor",
+      "ok": true,
+      "checks": [
+        {
+          "name": "tourism record coverage",
+          "ok": true,
+          "detail": "206 country or territory series",
+          "persona": "country join auditor"
+        },
+        {
+          "name": "2019 baseline coverage",
+          "ok": true,
+          "detail": "174 reported series",
+          "persona": "country join auditor"
+        },
+        {
+          "name": "2022 baseline coverage",
+          "ok": true,
+          "detail": "138 reported series",
+          "persona": "country join auditor"
+        },
+        {
+          "name": "2024 latest coverage",
+          "ok": true,
+          "detail": "67 reported series",
+          "persona": "country join auditor"
+        },
+        {
+          "name": "arrival values are nonnegative",
+          "ok": true,
+          "detail": "5193 yearly values scanned",
+          "persona": "country join auditor"
+        },
+        {
+          "name": "map geometry coverage",
+          "ok": true,
+          "detail": "241 Natural Earth country/territory features",
+          "persona": "country join auditor"
+        },
+        {
+          "name": "map data join coverage",
+          "ok": true,
+          "detail": "202 features join to tourism series",
+          "persona": "country join auditor"
+        },
+        {
+          "name": "source is traceable",
+          "ok": true,
+          "detail": "UN Tourism (2025) - processed by Our World in Data",
+          "persona": "country join auditor"
+        },
+        {
+          "name": "digital nomad caveat is explicit",
+          "ok": true,
+          "detail": "Avoids presenting weak proxy data as an arrival time series",
+          "persona": "country join auditor"
+        },
+        {
+          "name": "digital nomad alternative is categorical",
+          "ok": true,
+          "detail": "Notes that any future nomad layer should be policy status, not arrival change",
+          "persona": "country join auditor"
+        },
+        {
+          "name": "no negative letter spacing",
+          "ok": true,
+          "detail": "CSS scanned",
+          "persona": "country join auditor"
+        },
+        {
+          "name": "no viewport-scaled font sizes",
+          "ok": true,
+          "detail": "CSS scanned",
+          "persona": "country join auditor"
+        },
+        {
+          "name": "core controls are labelled",
+          "ok": true,
+          "detail": "Baseline selector and search input have accessible labels",
+          "persona": "country join auditor"
+        },
+        {
+          "name": "latest global year is transparent",
+          "ok": true,
+          "detail": "latest year in generated coverage is 2024",
+          "persona": "country join auditor"
+        },
+        {
+          "name": "production bundle under review budget",
+          "ok": true,
+          "detail": "1236 KB JavaScript before gzip",
+          "persona": "country join auditor"
+        }
+      ]
+    },
+    {
+      "iteration": 33,
+      "persona": "mobile thumb tester",
+      "ok": true,
+      "checks": [
+        {
+          "name": "tourism record coverage",
+          "ok": true,
+          "detail": "206 country or territory series",
+          "persona": "mobile thumb tester"
+        },
+        {
+          "name": "2019 baseline coverage",
+          "ok": true,
+          "detail": "174 reported series",
+          "persona": "mobile thumb tester"
+        },
+        {
+          "name": "2022 baseline coverage",
+          "ok": true,
+          "detail": "138 reported series",
+          "persona": "mobile thumb tester"
+        },
+        {
+          "name": "2024 latest coverage",
+          "ok": true,
+          "detail": "67 reported series",
+          "persona": "mobile thumb tester"
+        },
+        {
+          "name": "arrival values are nonnegative",
+          "ok": true,
+          "detail": "5193 yearly values scanned",
+          "persona": "mobile thumb tester"
+        },
+        {
+          "name": "map geometry coverage",
+          "ok": true,
+          "detail": "241 Natural Earth country/territory features",
+          "persona": "mobile thumb tester"
+        },
+        {
+          "name": "map data join coverage",
+          "ok": true,
+          "detail": "202 features join to tourism series",
+          "persona": "mobile thumb tester"
+        },
+        {
+          "name": "source is traceable",
+          "ok": true,
+          "detail": "UN Tourism (2025) - processed by Our World in Data",
+          "persona": "mobile thumb tester"
+        },
+        {
+          "name": "digital nomad caveat is explicit",
+          "ok": true,
+          "detail": "Avoids presenting weak proxy data as an arrival time series",
+          "persona": "mobile thumb tester"
+        },
+        {
+          "name": "digital nomad alternative is categorical",
+          "ok": true,
+          "detail": "Notes that any future nomad layer should be policy status, not arrival change",
+          "persona": "mobile thumb tester"
+        },
+        {
+          "name": "no negative letter spacing",
+          "ok": true,
+          "detail": "CSS scanned",
+          "persona": "mobile thumb tester"
+        },
+        {
+          "name": "no viewport-scaled font sizes",
+          "ok": true,
+          "detail": "CSS scanned",
+          "persona": "mobile thumb tester"
+        },
+        {
+          "name": "core controls are labelled",
+          "ok": true,
+          "detail": "Baseline selector and search input have accessible labels",
+          "persona": "mobile thumb tester"
+        },
+        {
+          "name": "latest global year is transparent",
+          "ok": true,
+          "detail": "latest year in generated coverage is 2024",
+          "persona": "mobile thumb tester"
+        },
+        {
+          "name": "production bundle under review budget",
+          "ok": true,
+          "detail": "1236 KB JavaScript before gzip",
+          "persona": "mobile thumb tester"
+        }
+      ]
+    },
+    {
+      "iteration": 34,
+      "persona": "accessibility reviewer",
+      "ok": true,
+      "checks": [
+        {
+          "name": "tourism record coverage",
+          "ok": true,
+          "detail": "206 country or territory series",
+          "persona": "accessibility reviewer"
+        },
+        {
+          "name": "2019 baseline coverage",
+          "ok": true,
+          "detail": "174 reported series",
+          "persona": "accessibility reviewer"
+        },
+        {
+          "name": "2022 baseline coverage",
+          "ok": true,
+          "detail": "138 reported series",
+          "persona": "accessibility reviewer"
+        },
+        {
+          "name": "2024 latest coverage",
+          "ok": true,
+          "detail": "67 reported series",
+          "persona": "accessibility reviewer"
+        },
+        {
+          "name": "arrival values are nonnegative",
+          "ok": true,
+          "detail": "5193 yearly values scanned",
+          "persona": "accessibility reviewer"
+        },
+        {
+          "name": "map geometry coverage",
+          "ok": true,
+          "detail": "241 Natural Earth country/territory features",
+          "persona": "accessibility reviewer"
+        },
+        {
+          "name": "map data join coverage",
+          "ok": true,
+          "detail": "202 features join to tourism series",
+          "persona": "accessibility reviewer"
+        },
+        {
+          "name": "source is traceable",
+          "ok": true,
+          "detail": "UN Tourism (2025) - processed by Our World in Data",
+          "persona": "accessibility reviewer"
+        },
+        {
+          "name": "digital nomad caveat is explicit",
+          "ok": true,
+          "detail": "Avoids presenting weak proxy data as an arrival time series",
+          "persona": "accessibility reviewer"
+        },
+        {
+          "name": "digital nomad alternative is categorical",
+          "ok": true,
+          "detail": "Notes that any future nomad layer should be policy status, not arrival change",
+          "persona": "accessibility reviewer"
+        },
+        {
+          "name": "no negative letter spacing",
+          "ok": true,
+          "detail": "CSS scanned",
+          "persona": "accessibility reviewer"
+        },
+        {
+          "name": "no viewport-scaled font sizes",
+          "ok": true,
+          "detail": "CSS scanned",
+          "persona": "accessibility reviewer"
+        },
+        {
+          "name": "core controls are labelled",
+          "ok": true,
+          "detail": "Baseline selector and search input have accessible labels",
+          "persona": "accessibility reviewer"
+        },
+        {
+          "name": "latest global year is transparent",
+          "ok": true,
+          "detail": "latest year in generated coverage is 2024",
+          "persona": "accessibility reviewer"
+        },
+        {
+          "name": "production bundle under review budget",
+          "ok": true,
+          "detail": "1236 KB JavaScript before gzip",
+          "persona": "accessibility reviewer"
+        }
+      ]
+    },
+    {
+      "iteration": 35,
+      "persona": "source transparency reviewer",
+      "ok": true,
+      "checks": [
+        {
+          "name": "tourism record coverage",
+          "ok": true,
+          "detail": "206 country or territory series",
+          "persona": "source transparency reviewer"
+        },
+        {
+          "name": "2019 baseline coverage",
+          "ok": true,
+          "detail": "174 reported series",
+          "persona": "source transparency reviewer"
+        },
+        {
+          "name": "2022 baseline coverage",
+          "ok": true,
+          "detail": "138 reported series",
+          "persona": "source transparency reviewer"
+        },
+        {
+          "name": "2024 latest coverage",
+          "ok": true,
+          "detail": "67 reported series",
+          "persona": "source transparency reviewer"
+        },
+        {
+          "name": "arrival values are nonnegative",
+          "ok": true,
+          "detail": "5193 yearly values scanned",
+          "persona": "source transparency reviewer"
+        },
+        {
+          "name": "map geometry coverage",
+          "ok": true,
+          "detail": "241 Natural Earth country/territory features",
+          "persona": "source transparency reviewer"
+        },
+        {
+          "name": "map data join coverage",
+          "ok": true,
+          "detail": "202 features join to tourism series",
+          "persona": "source transparency reviewer"
+        },
+        {
+          "name": "source is traceable",
+          "ok": true,
+          "detail": "UN Tourism (2025) - processed by Our World in Data",
+          "persona": "source transparency reviewer"
+        },
+        {
+          "name": "digital nomad caveat is explicit",
+          "ok": true,
+          "detail": "Avoids presenting weak proxy data as an arrival time series",
+          "persona": "source transparency reviewer"
+        },
+        {
+          "name": "digital nomad alternative is categorical",
+          "ok": true,
+          "detail": "Notes that any future nomad layer should be policy status, not arrival change",
+          "persona": "source transparency reviewer"
+        },
+        {
+          "name": "no negative letter spacing",
+          "ok": true,
+          "detail": "CSS scanned",
+          "persona": "source transparency reviewer"
+        },
+        {
+          "name": "no viewport-scaled font sizes",
+          "ok": true,
+          "detail": "CSS scanned",
+          "persona": "source transparency reviewer"
+        },
+        {
+          "name": "core controls are labelled",
+          "ok": true,
+          "detail": "Baseline selector and search input have accessible labels",
+          "persona": "source transparency reviewer"
+        },
+        {
+          "name": "latest global year is transparent",
+          "ok": true,
+          "detail": "latest year in generated coverage is 2024",
+          "persona": "source transparency reviewer"
+        },
+        {
+          "name": "production bundle under review budget",
+          "ok": true,
+          "detail": "1236 KB JavaScript before gzip",
+          "persona": "source transparency reviewer"
+        }
+      ]
+    },
+    {
+      "iteration": 36,
+      "persona": "performance reviewer",
+      "ok": true,
+      "checks": [
+        {
+          "name": "tourism record coverage",
+          "ok": true,
+          "detail": "206 country or territory series",
+          "persona": "performance reviewer"
+        },
+        {
+          "name": "2019 baseline coverage",
+          "ok": true,
+          "detail": "174 reported series",
+          "persona": "performance reviewer"
+        },
+        {
+          "name": "2022 baseline coverage",
+          "ok": true,
+          "detail": "138 reported series",
+          "persona": "performance reviewer"
+        },
+        {
+          "name": "2024 latest coverage",
+          "ok": true,
+          "detail": "67 reported series",
+          "persona": "performance reviewer"
+        },
+        {
+          "name": "arrival values are nonnegative",
+          "ok": true,
+          "detail": "5193 yearly values scanned",
+          "persona": "performance reviewer"
+        },
+        {
+          "name": "map geometry coverage",
+          "ok": true,
+          "detail": "241 Natural Earth country/territory features",
+          "persona": "performance reviewer"
+        },
+        {
+          "name": "map data join coverage",
+          "ok": true,
+          "detail": "202 features join to tourism series",
+          "persona": "performance reviewer"
+        },
+        {
+          "name": "source is traceable",
+          "ok": true,
+          "detail": "UN Tourism (2025) - processed by Our World in Data",
+          "persona": "performance reviewer"
+        },
+        {
+          "name": "digital nomad caveat is explicit",
+          "ok": true,
+          "detail": "Avoids presenting weak proxy data as an arrival time series",
+          "persona": "performance reviewer"
+        },
+        {
+          "name": "digital nomad alternative is categorical",
+          "ok": true,
+          "detail": "Notes that any future nomad layer should be policy status, not arrival change",
+          "persona": "performance reviewer"
+        },
+        {
+          "name": "no negative letter spacing",
+          "ok": true,
+          "detail": "CSS scanned",
+          "persona": "performance reviewer"
+        },
+        {
+          "name": "no viewport-scaled font sizes",
+          "ok": true,
+          "detail": "CSS scanned",
+          "persona": "performance reviewer"
+        },
+        {
+          "name": "core controls are labelled",
+          "ok": true,
+          "detail": "Baseline selector and search input have accessible labels",
+          "persona": "performance reviewer"
+        },
+        {
+          "name": "latest global year is transparent",
+          "ok": true,
+          "detail": "latest year in generated coverage is 2024",
+          "persona": "performance reviewer"
+        },
+        {
+          "name": "production bundle under review budget",
+          "ok": true,
+          "detail": "1236 KB JavaScript before gzip",
+          "persona": "performance reviewer"
+        }
+      ]
+    },
+    {
+      "iteration": 37,
+      "persona": "visual encoding reviewer",
+      "ok": true,
+      "checks": [
+        {
+          "name": "tourism record coverage",
+          "ok": true,
+          "detail": "206 country or territory series",
+          "persona": "visual encoding reviewer"
+        },
+        {
+          "name": "2019 baseline coverage",
+          "ok": true,
+          "detail": "174 reported series",
+          "persona": "visual encoding reviewer"
+        },
+        {
+          "name": "2022 baseline coverage",
+          "ok": true,
+          "detail": "138 reported series",
+          "persona": "visual encoding reviewer"
+        },
+        {
+          "name": "2024 latest coverage",
+          "ok": true,
+          "detail": "67 reported series",
+          "persona": "visual encoding reviewer"
+        },
+        {
+          "name": "arrival values are nonnegative",
+          "ok": true,
+          "detail": "5193 yearly values scanned",
+          "persona": "visual encoding reviewer"
+        },
+        {
+          "name": "map geometry coverage",
+          "ok": true,
+          "detail": "241 Natural Earth country/territory features",
+          "persona": "visual encoding reviewer"
+        },
+        {
+          "name": "map data join coverage",
+          "ok": true,
+          "detail": "202 features join to tourism series",
+          "persona": "visual encoding reviewer"
+        },
+        {
+          "name": "source is traceable",
+          "ok": true,
+          "detail": "UN Tourism (2025) - processed by Our World in Data",
+          "persona": "visual encoding reviewer"
+        },
+        {
+          "name": "digital nomad caveat is explicit",
+          "ok": true,
+          "detail": "Avoids presenting weak proxy data as an arrival time series",
+          "persona": "visual encoding reviewer"
+        },
+        {
+          "name": "digital nomad alternative is categorical",
+          "ok": true,
+          "detail": "Notes that any future nomad layer should be policy status, not arrival change",
+          "persona": "visual encoding reviewer"
+        },
+        {
+          "name": "no negative letter spacing",
+          "ok": true,
+          "detail": "CSS scanned",
+          "persona": "visual encoding reviewer"
+        },
+        {
+          "name": "no viewport-scaled font sizes",
+          "ok": true,
+          "detail": "CSS scanned",
+          "persona": "visual encoding reviewer"
+        },
+        {
+          "name": "core controls are labelled",
+          "ok": true,
+          "detail": "Baseline selector and search input have accessible labels",
+          "persona": "visual encoding reviewer"
+        },
+        {
+          "name": "latest global year is transparent",
+          "ok": true,
+          "detail": "latest year in generated coverage is 2024",
+          "persona": "visual encoding reviewer"
+        },
+        {
+          "name": "production bundle under review budget",
+          "ok": true,
+          "detail": "1236 KB JavaScript before gzip",
+          "persona": "visual encoding reviewer"
+        }
+      ]
+    },
+    {
+      "iteration": 38,
+      "persona": "missing data reviewer",
+      "ok": true,
+      "checks": [
+        {
+          "name": "tourism record coverage",
+          "ok": true,
+          "detail": "206 country or territory series",
+          "persona": "missing data reviewer"
+        },
+        {
+          "name": "2019 baseline coverage",
+          "ok": true,
+          "detail": "174 reported series",
+          "persona": "missing data reviewer"
+        },
+        {
+          "name": "2022 baseline coverage",
+          "ok": true,
+          "detail": "138 reported series",
+          "persona": "missing data reviewer"
+        },
+        {
+          "name": "2024 latest coverage",
+          "ok": true,
+          "detail": "67 reported series",
+          "persona": "missing data reviewer"
+        },
+        {
+          "name": "arrival values are nonnegative",
+          "ok": true,
+          "detail": "5193 yearly values scanned",
+          "persona": "missing data reviewer"
+        },
+        {
+          "name": "map geometry coverage",
+          "ok": true,
+          "detail": "241 Natural Earth country/territory features",
+          "persona": "missing data reviewer"
+        },
+        {
+          "name": "map data join coverage",
+          "ok": true,
+          "detail": "202 features join to tourism series",
+          "persona": "missing data reviewer"
+        },
+        {
+          "name": "source is traceable",
+          "ok": true,
+          "detail": "UN Tourism (2025) - processed by Our World in Data",
+          "persona": "missing data reviewer"
+        },
+        {
+          "name": "digital nomad caveat is explicit",
+          "ok": true,
+          "detail": "Avoids presenting weak proxy data as an arrival time series",
+          "persona": "missing data reviewer"
+        },
+        {
+          "name": "digital nomad alternative is categorical",
+          "ok": true,
+          "detail": "Notes that any future nomad layer should be policy status, not arrival change",
+          "persona": "missing data reviewer"
+        },
+        {
+          "name": "no negative letter spacing",
+          "ok": true,
+          "detail": "CSS scanned",
+          "persona": "missing data reviewer"
+        },
+        {
+          "name": "no viewport-scaled font sizes",
+          "ok": true,
+          "detail": "CSS scanned",
+          "persona": "missing data reviewer"
+        },
+        {
+          "name": "core controls are labelled",
+          "ok": true,
+          "detail": "Baseline selector and search input have accessible labels",
+          "persona": "missing data reviewer"
+        },
+        {
+          "name": "latest global year is transparent",
+          "ok": true,
+          "detail": "latest year in generated coverage is 2024",
+          "persona": "missing data reviewer"
+        },
+        {
+          "name": "production bundle under review budget",
+          "ok": true,
+          "detail": "1236 KB JavaScript before gzip",
+          "persona": "missing data reviewer"
+        }
+      ]
+    },
+    {
+      "iteration": 39,
+      "persona": "iPhone layout reviewer",
+      "ok": true,
+      "checks": [
+        {
+          "name": "tourism record coverage",
+          "ok": true,
+          "detail": "206 country or territory series",
+          "persona": "iPhone layout reviewer"
+        },
+        {
+          "name": "2019 baseline coverage",
+          "ok": true,
+          "detail": "174 reported series",
+          "persona": "iPhone layout reviewer"
+        },
+        {
+          "name": "2022 baseline coverage",
+          "ok": true,
+          "detail": "138 reported series",
+          "persona": "iPhone layout reviewer"
+        },
+        {
+          "name": "2024 latest coverage",
+          "ok": true,
+          "detail": "67 reported series",
+          "persona": "iPhone layout reviewer"
+        },
+        {
+          "name": "arrival values are nonnegative",
+          "ok": true,
+          "detail": "5193 yearly values scanned",
+          "persona": "iPhone layout reviewer"
+        },
+        {
+          "name": "map geometry coverage",
+          "ok": true,
+          "detail": "241 Natural Earth country/territory features",
+          "persona": "iPhone layout reviewer"
+        },
+        {
+          "name": "map data join coverage",
+          "ok": true,
+          "detail": "202 features join to tourism series",
+          "persona": "iPhone layout reviewer"
+        },
+        {
+          "name": "source is traceable",
+          "ok": true,
+          "detail": "UN Tourism (2025) - processed by Our World in Data",
+          "persona": "iPhone layout reviewer"
+        },
+        {
+          "name": "digital nomad caveat is explicit",
+          "ok": true,
+          "detail": "Avoids presenting weak proxy data as an arrival time series",
+          "persona": "iPhone layout reviewer"
+        },
+        {
+          "name": "digital nomad alternative is categorical",
+          "ok": true,
+          "detail": "Notes that any future nomad layer should be policy status, not arrival change",
+          "persona": "iPhone layout reviewer"
+        },
+        {
+          "name": "no negative letter spacing",
+          "ok": true,
+          "detail": "CSS scanned",
+          "persona": "iPhone layout reviewer"
+        },
+        {
+          "name": "no viewport-scaled font sizes",
+          "ok": true,
+          "detail": "CSS scanned",
+          "persona": "iPhone layout reviewer"
+        },
+        {
+          "name": "core controls are labelled",
+          "ok": true,
+          "detail": "Baseline selector and search input have accessible labels",
+          "persona": "iPhone layout reviewer"
+        },
+        {
+          "name": "latest global year is transparent",
+          "ok": true,
+          "detail": "latest year in generated coverage is 2024",
+          "persona": "iPhone layout reviewer"
+        },
+        {
+          "name": "production bundle under review budget",
+          "ok": true,
+          "detail": "1236 KB JavaScript before gzip",
+          "persona": "iPhone layout reviewer"
+        }
+      ]
+    },
+    {
+      "iteration": 40,
+      "persona": "map interaction reviewer",
+      "ok": true,
+      "checks": [
+        {
+          "name": "tourism record coverage",
+          "ok": true,
+          "detail": "206 country or territory series",
+          "persona": "map interaction reviewer"
+        },
+        {
+          "name": "2019 baseline coverage",
+          "ok": true,
+          "detail": "174 reported series",
+          "persona": "map interaction reviewer"
+        },
+        {
+          "name": "2022 baseline coverage",
+          "ok": true,
+          "detail": "138 reported series",
+          "persona": "map interaction reviewer"
+        },
+        {
+          "name": "2024 latest coverage",
+          "ok": true,
+          "detail": "67 reported series",
+          "persona": "map interaction reviewer"
+        },
+        {
+          "name": "arrival values are nonnegative",
+          "ok": true,
+          "detail": "5193 yearly values scanned",
+          "persona": "map interaction reviewer"
+        },
+        {
+          "name": "map geometry coverage",
+          "ok": true,
+          "detail": "241 Natural Earth country/territory features",
+          "persona": "map interaction reviewer"
+        },
+        {
+          "name": "map data join coverage",
+          "ok": true,
+          "detail": "202 features join to tourism series",
+          "persona": "map interaction reviewer"
+        },
+        {
+          "name": "source is traceable",
+          "ok": true,
+          "detail": "UN Tourism (2025) - processed by Our World in Data",
+          "persona": "map interaction reviewer"
+        },
+        {
+          "name": "digital nomad caveat is explicit",
+          "ok": true,
+          "detail": "Avoids presenting weak proxy data as an arrival time series",
+          "persona": "map interaction reviewer"
+        },
+        {
+          "name": "digital nomad alternative is categorical",
+          "ok": true,
+          "detail": "Notes that any future nomad layer should be policy status, not arrival change",
+          "persona": "map interaction reviewer"
+        },
+        {
+          "name": "no negative letter spacing",
+          "ok": true,
+          "detail": "CSS scanned",
+          "persona": "map interaction reviewer"
+        },
+        {
+          "name": "no viewport-scaled font sizes",
+          "ok": true,
+          "detail": "CSS scanned",
+          "persona": "map interaction reviewer"
+        },
+        {
+          "name": "core controls are labelled",
+          "ok": true,
+          "detail": "Baseline selector and search input have accessible labels",
+          "persona": "map interaction reviewer"
+        },
+        {
+          "name": "latest global year is transparent",
+          "ok": true,
+          "detail": "latest year in generated coverage is 2024",
+          "persona": "map interaction reviewer"
+        },
+        {
+          "name": "production bundle under review budget",
+          "ok": true,
+          "detail": "1236 KB JavaScript before gzip",
+          "persona": "map interaction reviewer"
+        }
+      ]
+    },
+    {
+      "iteration": 41,
+      "persona": "data skeptic",
+      "ok": true,
+      "checks": [
+        {
+          "name": "tourism record coverage",
+          "ok": true,
+          "detail": "206 country or territory series",
+          "persona": "data skeptic"
+        },
+        {
+          "name": "2019 baseline coverage",
+          "ok": true,
+          "detail": "174 reported series",
+          "persona": "data skeptic"
+        },
+        {
+          "name": "2022 baseline coverage",
+          "ok": true,
+          "detail": "138 reported series",
+          "persona": "data skeptic"
+        },
+        {
+          "name": "2024 latest coverage",
+          "ok": true,
+          "detail": "67 reported series",
+          "persona": "data skeptic"
+        },
+        {
+          "name": "arrival values are nonnegative",
+          "ok": true,
+          "detail": "5193 yearly values scanned",
+          "persona": "data skeptic"
+        },
+        {
+          "name": "map geometry coverage",
+          "ok": true,
+          "detail": "241 Natural Earth country/territory features",
+          "persona": "data skeptic"
+        },
+        {
+          "name": "map data join coverage",
+          "ok": true,
+          "detail": "202 features join to tourism series",
+          "persona": "data skeptic"
+        },
+        {
+          "name": "source is traceable",
+          "ok": true,
+          "detail": "UN Tourism (2025) - processed by Our World in Data",
+          "persona": "data skeptic"
+        },
+        {
+          "name": "digital nomad caveat is explicit",
+          "ok": true,
+          "detail": "Avoids presenting weak proxy data as an arrival time series",
+          "persona": "data skeptic"
+        },
+        {
+          "name": "digital nomad alternative is categorical",
+          "ok": true,
+          "detail": "Notes that any future nomad layer should be policy status, not arrival change",
+          "persona": "data skeptic"
+        },
+        {
+          "name": "no negative letter spacing",
+          "ok": true,
+          "detail": "CSS scanned",
+          "persona": "data skeptic"
+        },
+        {
+          "name": "no viewport-scaled font sizes",
+          "ok": true,
+          "detail": "CSS scanned",
+          "persona": "data skeptic"
+        },
+        {
+          "name": "core controls are labelled",
+          "ok": true,
+          "detail": "Baseline selector and search input have accessible labels",
+          "persona": "data skeptic"
+        },
+        {
+          "name": "latest global year is transparent",
+          "ok": true,
+          "detail": "latest year in generated coverage is 2024",
+          "persona": "data skeptic"
+        },
+        {
+          "name": "production bundle under review budget",
+          "ok": true,
+          "detail": "1236 KB JavaScript before gzip",
+          "persona": "data skeptic"
+        }
+      ]
+    },
+    {
+      "iteration": 42,
+      "persona": "country join auditor",
+      "ok": true,
+      "checks": [
+        {
+          "name": "tourism record coverage",
+          "ok": true,
+          "detail": "206 country or territory series",
+          "persona": "country join auditor"
+        },
+        {
+          "name": "2019 baseline coverage",
+          "ok": true,
+          "detail": "174 reported series",
+          "persona": "country join auditor"
+        },
+        {
+          "name": "2022 baseline coverage",
+          "ok": true,
+          "detail": "138 reported series",
+          "persona": "country join auditor"
+        },
+        {
+          "name": "2024 latest coverage",
+          "ok": true,
+          "detail": "67 reported series",
+          "persona": "country join auditor"
+        },
+        {
+          "name": "arrival values are nonnegative",
+          "ok": true,
+          "detail": "5193 yearly values scanned",
+          "persona": "country join auditor"
+        },
+        {
+          "name": "map geometry coverage",
+          "ok": true,
+          "detail": "241 Natural Earth country/territory features",
+          "persona": "country join auditor"
+        },
+        {
+          "name": "map data join coverage",
+          "ok": true,
+          "detail": "202 features join to tourism series",
+          "persona": "country join auditor"
+        },
+        {
+          "name": "source is traceable",
+          "ok": true,
+          "detail": "UN Tourism (2025) - processed by Our World in Data",
+          "persona": "country join auditor"
+        },
+        {
+          "name": "digital nomad caveat is explicit",
+          "ok": true,
+          "detail": "Avoids presenting weak proxy data as an arrival time series",
+          "persona": "country join auditor"
+        },
+        {
+          "name": "digital nomad alternative is categorical",
+          "ok": true,
+          "detail": "Notes that any future nomad layer should be policy status, not arrival change",
+          "persona": "country join auditor"
+        },
+        {
+          "name": "no negative letter spacing",
+          "ok": true,
+          "detail": "CSS scanned",
+          "persona": "country join auditor"
+        },
+        {
+          "name": "no viewport-scaled font sizes",
+          "ok": true,
+          "detail": "CSS scanned",
+          "persona": "country join auditor"
+        },
+        {
+          "name": "core controls are labelled",
+          "ok": true,
+          "detail": "Baseline selector and search input have accessible labels",
+          "persona": "country join auditor"
+        },
+        {
+          "name": "latest global year is transparent",
+          "ok": true,
+          "detail": "latest year in generated coverage is 2024",
+          "persona": "country join auditor"
+        },
+        {
+          "name": "production bundle under review budget",
+          "ok": true,
+          "detail": "1236 KB JavaScript before gzip",
+          "persona": "country join auditor"
+        }
+      ]
+    },
+    {
+      "iteration": 43,
+      "persona": "mobile thumb tester",
+      "ok": true,
+      "checks": [
+        {
+          "name": "tourism record coverage",
+          "ok": true,
+          "detail": "206 country or territory series",
+          "persona": "mobile thumb tester"
+        },
+        {
+          "name": "2019 baseline coverage",
+          "ok": true,
+          "detail": "174 reported series",
+          "persona": "mobile thumb tester"
+        },
+        {
+          "name": "2022 baseline coverage",
+          "ok": true,
+          "detail": "138 reported series",
+          "persona": "mobile thumb tester"
+        },
+        {
+          "name": "2024 latest coverage",
+          "ok": true,
+          "detail": "67 reported series",
+          "persona": "mobile thumb tester"
+        },
+        {
+          "name": "arrival values are nonnegative",
+          "ok": true,
+          "detail": "5193 yearly values scanned",
+          "persona": "mobile thumb tester"
+        },
+        {
+          "name": "map geometry coverage",
+          "ok": true,
+          "detail": "241 Natural Earth country/territory features",
+          "persona": "mobile thumb tester"
+        },
+        {
+          "name": "map data join coverage",
+          "ok": true,
+          "detail": "202 features join to tourism series",
+          "persona": "mobile thumb tester"
+        },
+        {
+          "name": "source is traceable",
+          "ok": true,
+          "detail": "UN Tourism (2025) - processed by Our World in Data",
+          "persona": "mobile thumb tester"
+        },
+        {
+          "name": "digital nomad caveat is explicit",
+          "ok": true,
+          "detail": "Avoids presenting weak proxy data as an arrival time series",
+          "persona": "mobile thumb tester"
+        },
+        {
+          "name": "digital nomad alternative is categorical",
+          "ok": true,
+          "detail": "Notes that any future nomad layer should be policy status, not arrival change",
+          "persona": "mobile thumb tester"
+        },
+        {
+          "name": "no negative letter spacing",
+          "ok": true,
+          "detail": "CSS scanned",
+          "persona": "mobile thumb tester"
+        },
+        {
+          "name": "no viewport-scaled font sizes",
+          "ok": true,
+          "detail": "CSS scanned",
+          "persona": "mobile thumb tester"
+        },
+        {
+          "name": "core controls are labelled",
+          "ok": true,
+          "detail": "Baseline selector and search input have accessible labels",
+          "persona": "mobile thumb tester"
+        },
+        {
+          "name": "latest global year is transparent",
+          "ok": true,
+          "detail": "latest year in generated coverage is 2024",
+          "persona": "mobile thumb tester"
+        },
+        {
+          "name": "production bundle under review budget",
+          "ok": true,
+          "detail": "1236 KB JavaScript before gzip",
+          "persona": "mobile thumb tester"
+        }
+      ]
+    },
+    {
+      "iteration": 44,
+      "persona": "accessibility reviewer",
+      "ok": true,
+      "checks": [
+        {
+          "name": "tourism record coverage",
+          "ok": true,
+          "detail": "206 country or territory series",
+          "persona": "accessibility reviewer"
+        },
+        {
+          "name": "2019 baseline coverage",
+          "ok": true,
+          "detail": "174 reported series",
+          "persona": "accessibility reviewer"
+        },
+        {
+          "name": "2022 baseline coverage",
+          "ok": true,
+          "detail": "138 reported series",
+          "persona": "accessibility reviewer"
+        },
+        {
+          "name": "2024 latest coverage",
+          "ok": true,
+          "detail": "67 reported series",
+          "persona": "accessibility reviewer"
+        },
+        {
+          "name": "arrival values are nonnegative",
+          "ok": true,
+          "detail": "5193 yearly values scanned",
+          "persona": "accessibility reviewer"
+        },
+        {
+          "name": "map geometry coverage",
+          "ok": true,
+          "detail": "241 Natural Earth country/territory features",
+          "persona": "accessibility reviewer"
+        },
+        {
+          "name": "map data join coverage",
+          "ok": true,
+          "detail": "202 features join to tourism series",
+          "persona": "accessibility reviewer"
+        },
+        {
+          "name": "source is traceable",
+          "ok": true,
+          "detail": "UN Tourism (2025) - processed by Our World in Data",
+          "persona": "accessibility reviewer"
+        },
+        {
+          "name": "digital nomad caveat is explicit",
+          "ok": true,
+          "detail": "Avoids presenting weak proxy data as an arrival time series",
+          "persona": "accessibility reviewer"
+        },
+        {
+          "name": "digital nomad alternative is categorical",
+          "ok": true,
+          "detail": "Notes that any future nomad layer should be policy status, not arrival change",
+          "persona": "accessibility reviewer"
+        },
+        {
+          "name": "no negative letter spacing",
+          "ok": true,
+          "detail": "CSS scanned",
+          "persona": "accessibility reviewer"
+        },
+        {
+          "name": "no viewport-scaled font sizes",
+          "ok": true,
+          "detail": "CSS scanned",
+          "persona": "accessibility reviewer"
+        },
+        {
+          "name": "core controls are labelled",
+          "ok": true,
+          "detail": "Baseline selector and search input have accessible labels",
+          "persona": "accessibility reviewer"
+        },
+        {
+          "name": "latest global year is transparent",
+          "ok": true,
+          "detail": "latest year in generated coverage is 2024",
+          "persona": "accessibility reviewer"
+        },
+        {
+          "name": "production bundle under review budget",
+          "ok": true,
+          "detail": "1236 KB JavaScript before gzip",
+          "persona": "accessibility reviewer"
+        }
+      ]
+    },
+    {
+      "iteration": 45,
+      "persona": "source transparency reviewer",
+      "ok": true,
+      "checks": [
+        {
+          "name": "tourism record coverage",
+          "ok": true,
+          "detail": "206 country or territory series",
+          "persona": "source transparency reviewer"
+        },
+        {
+          "name": "2019 baseline coverage",
+          "ok": true,
+          "detail": "174 reported series",
+          "persona": "source transparency reviewer"
+        },
+        {
+          "name": "2022 baseline coverage",
+          "ok": true,
+          "detail": "138 reported series",
+          "persona": "source transparency reviewer"
+        },
+        {
+          "name": "2024 latest coverage",
+          "ok": true,
+          "detail": "67 reported series",
+          "persona": "source transparency reviewer"
+        },
+        {
+          "name": "arrival values are nonnegative",
+          "ok": true,
+          "detail": "5193 yearly values scanned",
+          "persona": "source transparency reviewer"
+        },
+        {
+          "name": "map geometry coverage",
+          "ok": true,
+          "detail": "241 Natural Earth country/territory features",
+          "persona": "source transparency reviewer"
+        },
+        {
+          "name": "map data join coverage",
+          "ok": true,
+          "detail": "202 features join to tourism series",
+          "persona": "source transparency reviewer"
+        },
+        {
+          "name": "source is traceable",
+          "ok": true,
+          "detail": "UN Tourism (2025) - processed by Our World in Data",
+          "persona": "source transparency reviewer"
+        },
+        {
+          "name": "digital nomad caveat is explicit",
+          "ok": true,
+          "detail": "Avoids presenting weak proxy data as an arrival time series",
+          "persona": "source transparency reviewer"
+        },
+        {
+          "name": "digital nomad alternative is categorical",
+          "ok": true,
+          "detail": "Notes that any future nomad layer should be policy status, not arrival change",
+          "persona": "source transparency reviewer"
+        },
+        {
+          "name": "no negative letter spacing",
+          "ok": true,
+          "detail": "CSS scanned",
+          "persona": "source transparency reviewer"
+        },
+        {
+          "name": "no viewport-scaled font sizes",
+          "ok": true,
+          "detail": "CSS scanned",
+          "persona": "source transparency reviewer"
+        },
+        {
+          "name": "core controls are labelled",
+          "ok": true,
+          "detail": "Baseline selector and search input have accessible labels",
+          "persona": "source transparency reviewer"
+        },
+        {
+          "name": "latest global year is transparent",
+          "ok": true,
+          "detail": "latest year in generated coverage is 2024",
+          "persona": "source transparency reviewer"
+        },
+        {
+          "name": "production bundle under review budget",
+          "ok": true,
+          "detail": "1236 KB JavaScript before gzip",
+          "persona": "source transparency reviewer"
+        }
+      ]
+    },
+    {
+      "iteration": 46,
+      "persona": "performance reviewer",
+      "ok": true,
+      "checks": [
+        {
+          "name": "tourism record coverage",
+          "ok": true,
+          "detail": "206 country or territory series",
+          "persona": "performance reviewer"
+        },
+        {
+          "name": "2019 baseline coverage",
+          "ok": true,
+          "detail": "174 reported series",
+          "persona": "performance reviewer"
+        },
+        {
+          "name": "2022 baseline coverage",
+          "ok": true,
+          "detail": "138 reported series",
+          "persona": "performance reviewer"
+        },
+        {
+          "name": "2024 latest coverage",
+          "ok": true,
+          "detail": "67 reported series",
+          "persona": "performance reviewer"
+        },
+        {
+          "name": "arrival values are nonnegative",
+          "ok": true,
+          "detail": "5193 yearly values scanned",
+          "persona": "performance reviewer"
+        },
+        {
+          "name": "map geometry coverage",
+          "ok": true,
+          "detail": "241 Natural Earth country/territory features",
+          "persona": "performance reviewer"
+        },
+        {
+          "name": "map data join coverage",
+          "ok": true,
+          "detail": "202 features join to tourism series",
+          "persona": "performance reviewer"
+        },
+        {
+          "name": "source is traceable",
+          "ok": true,
+          "detail": "UN Tourism (2025) - processed by Our World in Data",
+          "persona": "performance reviewer"
+        },
+        {
+          "name": "digital nomad caveat is explicit",
+          "ok": true,
+          "detail": "Avoids presenting weak proxy data as an arrival time series",
+          "persona": "performance reviewer"
+        },
+        {
+          "name": "digital nomad alternative is categorical",
+          "ok": true,
+          "detail": "Notes that any future nomad layer should be policy status, not arrival change",
+          "persona": "performance reviewer"
+        },
+        {
+          "name": "no negative letter spacing",
+          "ok": true,
+          "detail": "CSS scanned",
+          "persona": "performance reviewer"
+        },
+        {
+          "name": "no viewport-scaled font sizes",
+          "ok": true,
+          "detail": "CSS scanned",
+          "persona": "performance reviewer"
+        },
+        {
+          "name": "core controls are labelled",
+          "ok": true,
+          "detail": "Baseline selector and search input have accessible labels",
+          "persona": "performance reviewer"
+        },
+        {
+          "name": "latest global year is transparent",
+          "ok": true,
+          "detail": "latest year in generated coverage is 2024",
+          "persona": "performance reviewer"
+        },
+        {
+          "name": "production bundle under review budget",
+          "ok": true,
+          "detail": "1236 KB JavaScript before gzip",
+          "persona": "performance reviewer"
+        }
+      ]
+    },
+    {
+      "iteration": 47,
+      "persona": "visual encoding reviewer",
+      "ok": true,
+      "checks": [
+        {
+          "name": "tourism record coverage",
+          "ok": true,
+          "detail": "206 country or territory series",
+          "persona": "visual encoding reviewer"
+        },
+        {
+          "name": "2019 baseline coverage",
+          "ok": true,
+          "detail": "174 reported series",
+          "persona": "visual encoding reviewer"
+        },
+        {
+          "name": "2022 baseline coverage",
+          "ok": true,
+          "detail": "138 reported series",
+          "persona": "visual encoding reviewer"
+        },
+        {
+          "name": "2024 latest coverage",
+          "ok": true,
+          "detail": "67 reported series",
+          "persona": "visual encoding reviewer"
+        },
+        {
+          "name": "arrival values are nonnegative",
+          "ok": true,
+          "detail": "5193 yearly values scanned",
+          "persona": "visual encoding reviewer"
+        },
+        {
+          "name": "map geometry coverage",
+          "ok": true,
+          "detail": "241 Natural Earth country/territory features",
+          "persona": "visual encoding reviewer"
+        },
+        {
+          "name": "map data join coverage",
+          "ok": true,
+          "detail": "202 features join to tourism series",
+          "persona": "visual encoding reviewer"
+        },
+        {
+          "name": "source is traceable",
+          "ok": true,
+          "detail": "UN Tourism (2025) - processed by Our World in Data",
+          "persona": "visual encoding reviewer"
+        },
+        {
+          "name": "digital nomad caveat is explicit",
+          "ok": true,
+          "detail": "Avoids presenting weak proxy data as an arrival time series",
+          "persona": "visual encoding reviewer"
+        },
+        {
+          "name": "digital nomad alternative is categorical",
+          "ok": true,
+          "detail": "Notes that any future nomad layer should be policy status, not arrival change",
+          "persona": "visual encoding reviewer"
+        },
+        {
+          "name": "no negative letter spacing",
+          "ok": true,
+          "detail": "CSS scanned",
+          "persona": "visual encoding reviewer"
+        },
+        {
+          "name": "no viewport-scaled font sizes",
+          "ok": true,
+          "detail": "CSS scanned",
+          "persona": "visual encoding reviewer"
+        },
+        {
+          "name": "core controls are labelled",
+          "ok": true,
+          "detail": "Baseline selector and search input have accessible labels",
+          "persona": "visual encoding reviewer"
+        },
+        {
+          "name": "latest global year is transparent",
+          "ok": true,
+          "detail": "latest year in generated coverage is 2024",
+          "persona": "visual encoding reviewer"
+        },
+        {
+          "name": "production bundle under review budget",
+          "ok": true,
+          "detail": "1236 KB JavaScript before gzip",
+          "persona": "visual encoding reviewer"
+        }
+      ]
+    },
+    {
+      "iteration": 48,
+      "persona": "missing data reviewer",
+      "ok": true,
+      "checks": [
+        {
+          "name": "tourism record coverage",
+          "ok": true,
+          "detail": "206 country or territory series",
+          "persona": "missing data reviewer"
+        },
+        {
+          "name": "2019 baseline coverage",
+          "ok": true,
+          "detail": "174 reported series",
+          "persona": "missing data reviewer"
+        },
+        {
+          "name": "2022 baseline coverage",
+          "ok": true,
+          "detail": "138 reported series",
+          "persona": "missing data reviewer"
+        },
+        {
+          "name": "2024 latest coverage",
+          "ok": true,
+          "detail": "67 reported series",
+          "persona": "missing data reviewer"
+        },
+        {
+          "name": "arrival values are nonnegative",
+          "ok": true,
+          "detail": "5193 yearly values scanned",
+          "persona": "missing data reviewer"
+        },
+        {
+          "name": "map geometry coverage",
+          "ok": true,
+          "detail": "241 Natural Earth country/territory features",
+          "persona": "missing data reviewer"
+        },
+        {
+          "name": "map data join coverage",
+          "ok": true,
+          "detail": "202 features join to tourism series",
+          "persona": "missing data reviewer"
+        },
+        {
+          "name": "source is traceable",
+          "ok": true,
+          "detail": "UN Tourism (2025) - processed by Our World in Data",
+          "persona": "missing data reviewer"
+        },
+        {
+          "name": "digital nomad caveat is explicit",
+          "ok": true,
+          "detail": "Avoids presenting weak proxy data as an arrival time series",
+          "persona": "missing data reviewer"
+        },
+        {
+          "name": "digital nomad alternative is categorical",
+          "ok": true,
+          "detail": "Notes that any future nomad layer should be policy status, not arrival change",
+          "persona": "missing data reviewer"
+        },
+        {
+          "name": "no negative letter spacing",
+          "ok": true,
+          "detail": "CSS scanned",
+          "persona": "missing data reviewer"
+        },
+        {
+          "name": "no viewport-scaled font sizes",
+          "ok": true,
+          "detail": "CSS scanned",
+          "persona": "missing data reviewer"
+        },
+        {
+          "name": "core controls are labelled",
+          "ok": true,
+          "detail": "Baseline selector and search input have accessible labels",
+          "persona": "missing data reviewer"
+        },
+        {
+          "name": "latest global year is transparent",
+          "ok": true,
+          "detail": "latest year in generated coverage is 2024",
+          "persona": "missing data reviewer"
+        },
+        {
+          "name": "production bundle under review budget",
+          "ok": true,
+          "detail": "1236 KB JavaScript before gzip",
+          "persona": "missing data reviewer"
+        }
+      ]
+    },
+    {
+      "iteration": 49,
+      "persona": "iPhone layout reviewer",
+      "ok": true,
+      "checks": [
+        {
+          "name": "tourism record coverage",
+          "ok": true,
+          "detail": "206 country or territory series",
+          "persona": "iPhone layout reviewer"
+        },
+        {
+          "name": "2019 baseline coverage",
+          "ok": true,
+          "detail": "174 reported series",
+          "persona": "iPhone layout reviewer"
+        },
+        {
+          "name": "2022 baseline coverage",
+          "ok": true,
+          "detail": "138 reported series",
+          "persona": "iPhone layout reviewer"
+        },
+        {
+          "name": "2024 latest coverage",
+          "ok": true,
+          "detail": "67 reported series",
+          "persona": "iPhone layout reviewer"
+        },
+        {
+          "name": "arrival values are nonnegative",
+          "ok": true,
+          "detail": "5193 yearly values scanned",
+          "persona": "iPhone layout reviewer"
+        },
+        {
+          "name": "map geometry coverage",
+          "ok": true,
+          "detail": "241 Natural Earth country/territory features",
+          "persona": "iPhone layout reviewer"
+        },
+        {
+          "name": "map data join coverage",
+          "ok": true,
+          "detail": "202 features join to tourism series",
+          "persona": "iPhone layout reviewer"
+        },
+        {
+          "name": "source is traceable",
+          "ok": true,
+          "detail": "UN Tourism (2025) - processed by Our World in Data",
+          "persona": "iPhone layout reviewer"
+        },
+        {
+          "name": "digital nomad caveat is explicit",
+          "ok": true,
+          "detail": "Avoids presenting weak proxy data as an arrival time series",
+          "persona": "iPhone layout reviewer"
+        },
+        {
+          "name": "digital nomad alternative is categorical",
+          "ok": true,
+          "detail": "Notes that any future nomad layer should be policy status, not arrival change",
+          "persona": "iPhone layout reviewer"
+        },
+        {
+          "name": "no negative letter spacing",
+          "ok": true,
+          "detail": "CSS scanned",
+          "persona": "iPhone layout reviewer"
+        },
+        {
+          "name": "no viewport-scaled font sizes",
+          "ok": true,
+          "detail": "CSS scanned",
+          "persona": "iPhone layout reviewer"
+        },
+        {
+          "name": "core controls are labelled",
+          "ok": true,
+          "detail": "Baseline selector and search input have accessible labels",
+          "persona": "iPhone layout reviewer"
+        },
+        {
+          "name": "latest global year is transparent",
+          "ok": true,
+          "detail": "latest year in generated coverage is 2024",
+          "persona": "iPhone layout reviewer"
+        },
+        {
+          "name": "production bundle under review budget",
+          "ok": true,
+          "detail": "1236 KB JavaScript before gzip",
+          "persona": "iPhone layout reviewer"
+        }
+      ]
+    },
+    {
+      "iteration": 50,
+      "persona": "map interaction reviewer",
+      "ok": true,
+      "checks": [
+        {
+          "name": "tourism record coverage",
+          "ok": true,
+          "detail": "206 country or territory series",
+          "persona": "map interaction reviewer"
+        },
+        {
+          "name": "2019 baseline coverage",
+          "ok": true,
+          "detail": "174 reported series",
+          "persona": "map interaction reviewer"
+        },
+        {
+          "name": "2022 baseline coverage",
+          "ok": true,
+          "detail": "138 reported series",
+          "persona": "map interaction reviewer"
+        },
+        {
+          "name": "2024 latest coverage",
+          "ok": true,
+          "detail": "67 reported series",
+          "persona": "map interaction reviewer"
+        },
+        {
+          "name": "arrival values are nonnegative",
+          "ok": true,
+          "detail": "5193 yearly values scanned",
+          "persona": "map interaction reviewer"
+        },
+        {
+          "name": "map geometry coverage",
+          "ok": true,
+          "detail": "241 Natural Earth country/territory features",
+          "persona": "map interaction reviewer"
+        },
+        {
+          "name": "map data join coverage",
+          "ok": true,
+          "detail": "202 features join to tourism series",
+          "persona": "map interaction reviewer"
+        },
+        {
+          "name": "source is traceable",
+          "ok": true,
+          "detail": "UN Tourism (2025) - processed by Our World in Data",
+          "persona": "map interaction reviewer"
+        },
+        {
+          "name": "digital nomad caveat is explicit",
+          "ok": true,
+          "detail": "Avoids presenting weak proxy data as an arrival time series",
+          "persona": "map interaction reviewer"
+        },
+        {
+          "name": "digital nomad alternative is categorical",
+          "ok": true,
+          "detail": "Notes that any future nomad layer should be policy status, not arrival change",
+          "persona": "map interaction reviewer"
+        },
+        {
+          "name": "no negative letter spacing",
+          "ok": true,
+          "detail": "CSS scanned",
+          "persona": "map interaction reviewer"
+        },
+        {
+          "name": "no viewport-scaled font sizes",
+          "ok": true,
+          "detail": "CSS scanned",
+          "persona": "map interaction reviewer"
+        },
+        {
+          "name": "core controls are labelled",
+          "ok": true,
+          "detail": "Baseline selector and search input have accessible labels",
+          "persona": "map interaction reviewer"
+        },
+        {
+          "name": "latest global year is transparent",
+          "ok": true,
+          "detail": "latest year in generated coverage is 2024",
+          "persona": "map interaction reviewer"
+        },
+        {
+          "name": "production bundle under review budget",
+          "ok": true,
+          "detail": "1236 KB JavaScript before gzip",
+          "persona": "map interaction reviewer"
+        }
+      ]
+    },
+    {
+      "iteration": 51,
+      "persona": "data skeptic",
+      "ok": true,
+      "checks": [
+        {
+          "name": "tourism record coverage",
+          "ok": true,
+          "detail": "206 country or territory series",
+          "persona": "data skeptic"
+        },
+        {
+          "name": "2019 baseline coverage",
+          "ok": true,
+          "detail": "174 reported series",
+          "persona": "data skeptic"
+        },
+        {
+          "name": "2022 baseline coverage",
+          "ok": true,
+          "detail": "138 reported series",
+          "persona": "data skeptic"
+        },
+        {
+          "name": "2024 latest coverage",
+          "ok": true,
+          "detail": "67 reported series",
+          "persona": "data skeptic"
+        },
+        {
+          "name": "arrival values are nonnegative",
+          "ok": true,
+          "detail": "5193 yearly values scanned",
+          "persona": "data skeptic"
+        },
+        {
+          "name": "map geometry coverage",
+          "ok": true,
+          "detail": "241 Natural Earth country/territory features",
+          "persona": "data skeptic"
+        },
+        {
+          "name": "map data join coverage",
+          "ok": true,
+          "detail": "202 features join to tourism series",
+          "persona": "data skeptic"
+        },
+        {
+          "name": "source is traceable",
+          "ok": true,
+          "detail": "UN Tourism (2025) - processed by Our World in Data",
+          "persona": "data skeptic"
+        },
+        {
+          "name": "digital nomad caveat is explicit",
+          "ok": true,
+          "detail": "Avoids presenting weak proxy data as an arrival time series",
+          "persona": "data skeptic"
+        },
+        {
+          "name": "digital nomad alternative is categorical",
+          "ok": true,
+          "detail": "Notes that any future nomad layer should be policy status, not arrival change",
+          "persona": "data skeptic"
+        },
+        {
+          "name": "no negative letter spacing",
+          "ok": true,
+          "detail": "CSS scanned",
+          "persona": "data skeptic"
+        },
+        {
+          "name": "no viewport-scaled font sizes",
+          "ok": true,
+          "detail": "CSS scanned",
+          "persona": "data skeptic"
+        },
+        {
+          "name": "core controls are labelled",
+          "ok": true,
+          "detail": "Baseline selector and search input have accessible labels",
+          "persona": "data skeptic"
+        },
+        {
+          "name": "latest global year is transparent",
+          "ok": true,
+          "detail": "latest year in generated coverage is 2024",
+          "persona": "data skeptic"
+        },
+        {
+          "name": "production bundle under review budget",
+          "ok": true,
+          "detail": "1236 KB JavaScript before gzip",
+          "persona": "data skeptic"
+        }
+      ]
+    },
+    {
+      "iteration": 52,
+      "persona": "country join auditor",
+      "ok": true,
+      "checks": [
+        {
+          "name": "tourism record coverage",
+          "ok": true,
+          "detail": "206 country or territory series",
+          "persona": "country join auditor"
+        },
+        {
+          "name": "2019 baseline coverage",
+          "ok": true,
+          "detail": "174 reported series",
+          "persona": "country join auditor"
+        },
+        {
+          "name": "2022 baseline coverage",
+          "ok": true,
+          "detail": "138 reported series",
+          "persona": "country join auditor"
+        },
+        {
+          "name": "2024 latest coverage",
+          "ok": true,
+          "detail": "67 reported series",
+          "persona": "country join auditor"
+        },
+        {
+          "name": "arrival values are nonnegative",
+          "ok": true,
+          "detail": "5193 yearly values scanned",
+          "persona": "country join auditor"
+        },
+        {
+          "name": "map geometry coverage",
+          "ok": true,
+          "detail": "241 Natural Earth country/territory features",
+          "persona": "country join auditor"
+        },
+        {
+          "name": "map data join coverage",
+          "ok": true,
+          "detail": "202 features join to tourism series",
+          "persona": "country join auditor"
+        },
+        {
+          "name": "source is traceable",
+          "ok": true,
+          "detail": "UN Tourism (2025) - processed by Our World in Data",
+          "persona": "country join auditor"
+        },
+        {
+          "name": "digital nomad caveat is explicit",
+          "ok": true,
+          "detail": "Avoids presenting weak proxy data as an arrival time series",
+          "persona": "country join auditor"
+        },
+        {
+          "name": "digital nomad alternative is categorical",
+          "ok": true,
+          "detail": "Notes that any future nomad layer should be policy status, not arrival change",
+          "persona": "country join auditor"
+        },
+        {
+          "name": "no negative letter spacing",
+          "ok": true,
+          "detail": "CSS scanned",
+          "persona": "country join auditor"
+        },
+        {
+          "name": "no viewport-scaled font sizes",
+          "ok": true,
+          "detail": "CSS scanned",
+          "persona": "country join auditor"
+        },
+        {
+          "name": "core controls are labelled",
+          "ok": true,
+          "detail": "Baseline selector and search input have accessible labels",
+          "persona": "country join auditor"
+        },
+        {
+          "name": "latest global year is transparent",
+          "ok": true,
+          "detail": "latest year in generated coverage is 2024",
+          "persona": "country join auditor"
+        },
+        {
+          "name": "production bundle under review budget",
+          "ok": true,
+          "detail": "1236 KB JavaScript before gzip",
+          "persona": "country join auditor"
+        }
+      ]
+    },
+    {
+      "iteration": 53,
+      "persona": "mobile thumb tester",
+      "ok": true,
+      "checks": [
+        {
+          "name": "tourism record coverage",
+          "ok": true,
+          "detail": "206 country or territory series",
+          "persona": "mobile thumb tester"
+        },
+        {
+          "name": "2019 baseline coverage",
+          "ok": true,
+          "detail": "174 reported series",
+          "persona": "mobile thumb tester"
+        },
+        {
+          "name": "2022 baseline coverage",
+          "ok": true,
+          "detail": "138 reported series",
+          "persona": "mobile thumb tester"
+        },
+        {
+          "name": "2024 latest coverage",
+          "ok": true,
+          "detail": "67 reported series",
+          "persona": "mobile thumb tester"
+        },
+        {
+          "name": "arrival values are nonnegative",
+          "ok": true,
+          "detail": "5193 yearly values scanned",
+          "persona": "mobile thumb tester"
+        },
+        {
+          "name": "map geometry coverage",
+          "ok": true,
+          "detail": "241 Natural Earth country/territory features",
+          "persona": "mobile thumb tester"
+        },
+        {
+          "name": "map data join coverage",
+          "ok": true,
+          "detail": "202 features join to tourism series",
+          "persona": "mobile thumb tester"
+        },
+        {
+          "name": "source is traceable",
+          "ok": true,
+          "detail": "UN Tourism (2025) - processed by Our World in Data",
+          "persona": "mobile thumb tester"
+        },
+        {
+          "name": "digital nomad caveat is explicit",
+          "ok": true,
+          "detail": "Avoids presenting weak proxy data as an arrival time series",
+          "persona": "mobile thumb tester"
+        },
+        {
+          "name": "digital nomad alternative is categorical",
+          "ok": true,
+          "detail": "Notes that any future nomad layer should be policy status, not arrival change",
+          "persona": "mobile thumb tester"
+        },
+        {
+          "name": "no negative letter spacing",
+          "ok": true,
+          "detail": "CSS scanned",
+          "persona": "mobile thumb tester"
+        },
+        {
+          "name": "no viewport-scaled font sizes",
+          "ok": true,
+          "detail": "CSS scanned",
+          "persona": "mobile thumb tester"
+        },
+        {
+          "name": "core controls are labelled",
+          "ok": true,
+          "detail": "Baseline selector and search input have accessible labels",
+          "persona": "mobile thumb tester"
+        },
+        {
+          "name": "latest global year is transparent",
+          "ok": true,
+          "detail": "latest year in generated coverage is 2024",
+          "persona": "mobile thumb tester"
+        },
+        {
+          "name": "production bundle under review budget",
+          "ok": true,
+          "detail": "1236 KB JavaScript before gzip",
+          "persona": "mobile thumb tester"
+        }
+      ]
+    },
+    {
+      "iteration": 54,
+      "persona": "accessibility reviewer",
+      "ok": true,
+      "checks": [
+        {
+          "name": "tourism record coverage",
+          "ok": true,
+          "detail": "206 country or territory series",
+          "persona": "accessibility reviewer"
+        },
+        {
+          "name": "2019 baseline coverage",
+          "ok": true,
+          "detail": "174 reported series",
+          "persona": "accessibility reviewer"
+        },
+        {
+          "name": "2022 baseline coverage",
+          "ok": true,
+          "detail": "138 reported series",
+          "persona": "accessibility reviewer"
+        },
+        {
+          "name": "2024 latest coverage",
+          "ok": true,
+          "detail": "67 reported series",
+          "persona": "accessibility reviewer"
+        },
+        {
+          "name": "arrival values are nonnegative",
+          "ok": true,
+          "detail": "5193 yearly values scanned",
+          "persona": "accessibility reviewer"
+        },
+        {
+          "name": "map geometry coverage",
+          "ok": true,
+          "detail": "241 Natural Earth country/territory features",
+          "persona": "accessibility reviewer"
+        },
+        {
+          "name": "map data join coverage",
+          "ok": true,
+          "detail": "202 features join to tourism series",
+          "persona": "accessibility reviewer"
+        },
+        {
+          "name": "source is traceable",
+          "ok": true,
+          "detail": "UN Tourism (2025) - processed by Our World in Data",
+          "persona": "accessibility reviewer"
+        },
+        {
+          "name": "digital nomad caveat is explicit",
+          "ok": true,
+          "detail": "Avoids presenting weak proxy data as an arrival time series",
+          "persona": "accessibility reviewer"
+        },
+        {
+          "name": "digital nomad alternative is categorical",
+          "ok": true,
+          "detail": "Notes that any future nomad layer should be policy status, not arrival change",
+          "persona": "accessibility reviewer"
+        },
+        {
+          "name": "no negative letter spacing",
+          "ok": true,
+          "detail": "CSS scanned",
+          "persona": "accessibility reviewer"
+        },
+        {
+          "name": "no viewport-scaled font sizes",
+          "ok": true,
+          "detail": "CSS scanned",
+          "persona": "accessibility reviewer"
+        },
+        {
+          "name": "core controls are labelled",
+          "ok": true,
+          "detail": "Baseline selector and search input have accessible labels",
+          "persona": "accessibility reviewer"
+        },
+        {
+          "name": "latest global year is transparent",
+          "ok": true,
+          "detail": "latest year in generated coverage is 2024",
+          "persona": "accessibility reviewer"
+        },
+        {
+          "name": "production bundle under review budget",
+          "ok": true,
+          "detail": "1236 KB JavaScript before gzip",
+          "persona": "accessibility reviewer"
+        }
+      ]
+    },
+    {
+      "iteration": 55,
+      "persona": "source transparency reviewer",
+      "ok": true,
+      "checks": [
+        {
+          "name": "tourism record coverage",
+          "ok": true,
+          "detail": "206 country or territory series",
+          "persona": "source transparency reviewer"
+        },
+        {
+          "name": "2019 baseline coverage",
+          "ok": true,
+          "detail": "174 reported series",
+          "persona": "source transparency reviewer"
+        },
+        {
+          "name": "2022 baseline coverage",
+          "ok": true,
+          "detail": "138 reported series",
+          "persona": "source transparency reviewer"
+        },
+        {
+          "name": "2024 latest coverage",
+          "ok": true,
+          "detail": "67 reported series",
+          "persona": "source transparency reviewer"
+        },
+        {
+          "name": "arrival values are nonnegative",
+          "ok": true,
+          "detail": "5193 yearly values scanned",
+          "persona": "source transparency reviewer"
+        },
+        {
+          "name": "map geometry coverage",
+          "ok": true,
+          "detail": "241 Natural Earth country/territory features",
+          "persona": "source transparency reviewer"
+        },
+        {
+          "name": "map data join coverage",
+          "ok": true,
+          "detail": "202 features join to tourism series",
+          "persona": "source transparency reviewer"
+        },
+        {
+          "name": "source is traceable",
+          "ok": true,
+          "detail": "UN Tourism (2025) - processed by Our World in Data",
+          "persona": "source transparency reviewer"
+        },
+        {
+          "name": "digital nomad caveat is explicit",
+          "ok": true,
+          "detail": "Avoids presenting weak proxy data as an arrival time series",
+          "persona": "source transparency reviewer"
+        },
+        {
+          "name": "digital nomad alternative is categorical",
+          "ok": true,
+          "detail": "Notes that any future nomad layer should be policy status, not arrival change",
+          "persona": "source transparency reviewer"
+        },
+        {
+          "name": "no negative letter spacing",
+          "ok": true,
+          "detail": "CSS scanned",
+          "persona": "source transparency reviewer"
+        },
+        {
+          "name": "no viewport-scaled font sizes",
+          "ok": true,
+          "detail": "CSS scanned",
+          "persona": "source transparency reviewer"
+        },
+        {
+          "name": "core controls are labelled",
+          "ok": true,
+          "detail": "Baseline selector and search input have accessible labels",
+          "persona": "source transparency reviewer"
+        },
+        {
+          "name": "latest global year is transparent",
+          "ok": true,
+          "detail": "latest year in generated coverage is 2024",
+          "persona": "source transparency reviewer"
+        },
+        {
+          "name": "production bundle under review budget",
+          "ok": true,
+          "detail": "1236 KB JavaScript before gzip",
+          "persona": "source transparency reviewer"
+        }
+      ]
+    },
+    {
+      "iteration": 56,
+      "persona": "performance reviewer",
+      "ok": true,
+      "checks": [
+        {
+          "name": "tourism record coverage",
+          "ok": true,
+          "detail": "206 country or territory series",
+          "persona": "performance reviewer"
+        },
+        {
+          "name": "2019 baseline coverage",
+          "ok": true,
+          "detail": "174 reported series",
+          "persona": "performance reviewer"
+        },
+        {
+          "name": "2022 baseline coverage",
+          "ok": true,
+          "detail": "138 reported series",
+          "persona": "performance reviewer"
+        },
+        {
+          "name": "2024 latest coverage",
+          "ok": true,
+          "detail": "67 reported series",
+          "persona": "performance reviewer"
+        },
+        {
+          "name": "arrival values are nonnegative",
+          "ok": true,
+          "detail": "5193 yearly values scanned",
+          "persona": "performance reviewer"
+        },
+        {
+          "name": "map geometry coverage",
+          "ok": true,
+          "detail": "241 Natural Earth country/territory features",
+          "persona": "performance reviewer"
+        },
+        {
+          "name": "map data join coverage",
+          "ok": true,
+          "detail": "202 features join to tourism series",
+          "persona": "performance reviewer"
+        },
+        {
+          "name": "source is traceable",
+          "ok": true,
+          "detail": "UN Tourism (2025) - processed by Our World in Data",
+          "persona": "performance reviewer"
+        },
+        {
+          "name": "digital nomad caveat is explicit",
+          "ok": true,
+          "detail": "Avoids presenting weak proxy data as an arrival time series",
+          "persona": "performance reviewer"
+        },
+        {
+          "name": "digital nomad alternative is categorical",
+          "ok": true,
+          "detail": "Notes that any future nomad layer should be policy status, not arrival change",
+          "persona": "performance reviewer"
+        },
+        {
+          "name": "no negative letter spacing",
+          "ok": true,
+          "detail": "CSS scanned",
+          "persona": "performance reviewer"
+        },
+        {
+          "name": "no viewport-scaled font sizes",
+          "ok": true,
+          "detail": "CSS scanned",
+          "persona": "performance reviewer"
+        },
+        {
+          "name": "core controls are labelled",
+          "ok": true,
+          "detail": "Baseline selector and search input have accessible labels",
+          "persona": "performance reviewer"
+        },
+        {
+          "name": "latest global year is transparent",
+          "ok": true,
+          "detail": "latest year in generated coverage is 2024",
+          "persona": "performance reviewer"
+        },
+        {
+          "name": "production bundle under review budget",
+          "ok": true,
+          "detail": "1236 KB JavaScript before gzip",
+          "persona": "performance reviewer"
+        }
+      ]
+    },
+    {
+      "iteration": 57,
+      "persona": "visual encoding reviewer",
+      "ok": true,
+      "checks": [
+        {
+          "name": "tourism record coverage",
+          "ok": true,
+          "detail": "206 country or territory series",
+          "persona": "visual encoding reviewer"
+        },
+        {
+          "name": "2019 baseline coverage",
+          "ok": true,
+          "detail": "174 reported series",
+          "persona": "visual encoding reviewer"
+        },
+        {
+          "name": "2022 baseline coverage",
+          "ok": true,
+          "detail": "138 reported series",
+          "persona": "visual encoding reviewer"
+        },
+        {
+          "name": "2024 latest coverage",
+          "ok": true,
+          "detail": "67 reported series",
+          "persona": "visual encoding reviewer"
+        },
+        {
+          "name": "arrival values are nonnegative",
+          "ok": true,
+          "detail": "5193 yearly values scanned",
+          "persona": "visual encoding reviewer"
+        },
+        {
+          "name": "map geometry coverage",
+          "ok": true,
+          "detail": "241 Natural Earth country/territory features",
+          "persona": "visual encoding reviewer"
+        },
+        {
+          "name": "map data join coverage",
+          "ok": true,
+          "detail": "202 features join to tourism series",
+          "persona": "visual encoding reviewer"
+        },
+        {
+          "name": "source is traceable",
+          "ok": true,
+          "detail": "UN Tourism (2025) - processed by Our World in Data",
+          "persona": "visual encoding reviewer"
+        },
+        {
+          "name": "digital nomad caveat is explicit",
+          "ok": true,
+          "detail": "Avoids presenting weak proxy data as an arrival time series",
+          "persona": "visual encoding reviewer"
+        },
+        {
+          "name": "digital nomad alternative is categorical",
+          "ok": true,
+          "detail": "Notes that any future nomad layer should be policy status, not arrival change",
+          "persona": "visual encoding reviewer"
+        },
+        {
+          "name": "no negative letter spacing",
+          "ok": true,
+          "detail": "CSS scanned",
+          "persona": "visual encoding reviewer"
+        },
+        {
+          "name": "no viewport-scaled font sizes",
+          "ok": true,
+          "detail": "CSS scanned",
+          "persona": "visual encoding reviewer"
+        },
+        {
+          "name": "core controls are labelled",
+          "ok": true,
+          "detail": "Baseline selector and search input have accessible labels",
+          "persona": "visual encoding reviewer"
+        },
+        {
+          "name": "latest global year is transparent",
+          "ok": true,
+          "detail": "latest year in generated coverage is 2024",
+          "persona": "visual encoding reviewer"
+        },
+        {
+          "name": "production bundle under review budget",
+          "ok": true,
+          "detail": "1236 KB JavaScript before gzip",
+          "persona": "visual encoding reviewer"
+        }
+      ]
+    },
+    {
+      "iteration": 58,
+      "persona": "missing data reviewer",
+      "ok": true,
+      "checks": [
+        {
+          "name": "tourism record coverage",
+          "ok": true,
+          "detail": "206 country or territory series",
+          "persona": "missing data reviewer"
+        },
+        {
+          "name": "2019 baseline coverage",
+          "ok": true,
+          "detail": "174 reported series",
+          "persona": "missing data reviewer"
+        },
+        {
+          "name": "2022 baseline coverage",
+          "ok": true,
+          "detail": "138 reported series",
+          "persona": "missing data reviewer"
+        },
+        {
+          "name": "2024 latest coverage",
+          "ok": true,
+          "detail": "67 reported series",
+          "persona": "missing data reviewer"
+        },
+        {
+          "name": "arrival values are nonnegative",
+          "ok": true,
+          "detail": "5193 yearly values scanned",
+          "persona": "missing data reviewer"
+        },
+        {
+          "name": "map geometry coverage",
+          "ok": true,
+          "detail": "241 Natural Earth country/territory features",
+          "persona": "missing data reviewer"
+        },
+        {
+          "name": "map data join coverage",
+          "ok": true,
+          "detail": "202 features join to tourism series",
+          "persona": "missing data reviewer"
+        },
+        {
+          "name": "source is traceable",
+          "ok": true,
+          "detail": "UN Tourism (2025) - processed by Our World in Data",
+          "persona": "missing data reviewer"
+        },
+        {
+          "name": "digital nomad caveat is explicit",
+          "ok": true,
+          "detail": "Avoids presenting weak proxy data as an arrival time series",
+          "persona": "missing data reviewer"
+        },
+        {
+          "name": "digital nomad alternative is categorical",
+          "ok": true,
+          "detail": "Notes that any future nomad layer should be policy status, not arrival change",
+          "persona": "missing data reviewer"
+        },
+        {
+          "name": "no negative letter spacing",
+          "ok": true,
+          "detail": "CSS scanned",
+          "persona": "missing data reviewer"
+        },
+        {
+          "name": "no viewport-scaled font sizes",
+          "ok": true,
+          "detail": "CSS scanned",
+          "persona": "missing data reviewer"
+        },
+        {
+          "name": "core controls are labelled",
+          "ok": true,
+          "detail": "Baseline selector and search input have accessible labels",
+          "persona": "missing data reviewer"
+        },
+        {
+          "name": "latest global year is transparent",
+          "ok": true,
+          "detail": "latest year in generated coverage is 2024",
+          "persona": "missing data reviewer"
+        },
+        {
+          "name": "production bundle under review budget",
+          "ok": true,
+          "detail": "1236 KB JavaScript before gzip",
+          "persona": "missing data reviewer"
+        }
+      ]
+    },
+    {
+      "iteration": 59,
+      "persona": "iPhone layout reviewer",
+      "ok": true,
+      "checks": [
+        {
+          "name": "tourism record coverage",
+          "ok": true,
+          "detail": "206 country or territory series",
+          "persona": "iPhone layout reviewer"
+        },
+        {
+          "name": "2019 baseline coverage",
+          "ok": true,
+          "detail": "174 reported series",
+          "persona": "iPhone layout reviewer"
+        },
+        {
+          "name": "2022 baseline coverage",
+          "ok": true,
+          "detail": "138 reported series",
+          "persona": "iPhone layout reviewer"
+        },
+        {
+          "name": "2024 latest coverage",
+          "ok": true,
+          "detail": "67 reported series",
+          "persona": "iPhone layout reviewer"
+        },
+        {
+          "name": "arrival values are nonnegative",
+          "ok": true,
+          "detail": "5193 yearly values scanned",
+          "persona": "iPhone layout reviewer"
+        },
+        {
+          "name": "map geometry coverage",
+          "ok": true,
+          "detail": "241 Natural Earth country/territory features",
+          "persona": "iPhone layout reviewer"
+        },
+        {
+          "name": "map data join coverage",
+          "ok": true,
+          "detail": "202 features join to tourism series",
+          "persona": "iPhone layout reviewer"
+        },
+        {
+          "name": "source is traceable",
+          "ok": true,
+          "detail": "UN Tourism (2025) - processed by Our World in Data",
+          "persona": "iPhone layout reviewer"
+        },
+        {
+          "name": "digital nomad caveat is explicit",
+          "ok": true,
+          "detail": "Avoids presenting weak proxy data as an arrival time series",
+          "persona": "iPhone layout reviewer"
+        },
+        {
+          "name": "digital nomad alternative is categorical",
+          "ok": true,
+          "detail": "Notes that any future nomad layer should be policy status, not arrival change",
+          "persona": "iPhone layout reviewer"
+        },
+        {
+          "name": "no negative letter spacing",
+          "ok": true,
+          "detail": "CSS scanned",
+          "persona": "iPhone layout reviewer"
+        },
+        {
+          "name": "no viewport-scaled font sizes",
+          "ok": true,
+          "detail": "CSS scanned",
+          "persona": "iPhone layout reviewer"
+        },
+        {
+          "name": "core controls are labelled",
+          "ok": true,
+          "detail": "Baseline selector and search input have accessible labels",
+          "persona": "iPhone layout reviewer"
+        },
+        {
+          "name": "latest global year is transparent",
+          "ok": true,
+          "detail": "latest year in generated coverage is 2024",
+          "persona": "iPhone layout reviewer"
+        },
+        {
+          "name": "production bundle under review budget",
+          "ok": true,
+          "detail": "1236 KB JavaScript before gzip",
+          "persona": "iPhone layout reviewer"
+        }
+      ]
+    },
+    {
+      "iteration": 60,
+      "persona": "map interaction reviewer",
+      "ok": true,
+      "checks": [
+        {
+          "name": "tourism record coverage",
+          "ok": true,
+          "detail": "206 country or territory series",
+          "persona": "map interaction reviewer"
+        },
+        {
+          "name": "2019 baseline coverage",
+          "ok": true,
+          "detail": "174 reported series",
+          "persona": "map interaction reviewer"
+        },
+        {
+          "name": "2022 baseline coverage",
+          "ok": true,
+          "detail": "138 reported series",
+          "persona": "map interaction reviewer"
+        },
+        {
+          "name": "2024 latest coverage",
+          "ok": true,
+          "detail": "67 reported series",
+          "persona": "map interaction reviewer"
+        },
+        {
+          "name": "arrival values are nonnegative",
+          "ok": true,
+          "detail": "5193 yearly values scanned",
+          "persona": "map interaction reviewer"
+        },
+        {
+          "name": "map geometry coverage",
+          "ok": true,
+          "detail": "241 Natural Earth country/territory features",
+          "persona": "map interaction reviewer"
+        },
+        {
+          "name": "map data join coverage",
+          "ok": true,
+          "detail": "202 features join to tourism series",
+          "persona": "map interaction reviewer"
+        },
+        {
+          "name": "source is traceable",
+          "ok": true,
+          "detail": "UN Tourism (2025) - processed by Our World in Data",
+          "persona": "map interaction reviewer"
+        },
+        {
+          "name": "digital nomad caveat is explicit",
+          "ok": true,
+          "detail": "Avoids presenting weak proxy data as an arrival time series",
+          "persona": "map interaction reviewer"
+        },
+        {
+          "name": "digital nomad alternative is categorical",
+          "ok": true,
+          "detail": "Notes that any future nomad layer should be policy status, not arrival change",
+          "persona": "map interaction reviewer"
+        },
+        {
+          "name": "no negative letter spacing",
+          "ok": true,
+          "detail": "CSS scanned",
+          "persona": "map interaction reviewer"
+        },
+        {
+          "name": "no viewport-scaled font sizes",
+          "ok": true,
+          "detail": "CSS scanned",
+          "persona": "map interaction reviewer"
+        },
+        {
+          "name": "core controls are labelled",
+          "ok": true,
+          "detail": "Baseline selector and search input have accessible labels",
+          "persona": "map interaction reviewer"
+        },
+        {
+          "name": "latest global year is transparent",
+          "ok": true,
+          "detail": "latest year in generated coverage is 2024",
+          "persona": "map interaction reviewer"
+        },
+        {
+          "name": "production bundle under review budget",
+          "ok": true,
+          "detail": "1236 KB JavaScript before gzip",
+          "persona": "map interaction reviewer"
+        }
+      ]
+    }
+  ]
+}

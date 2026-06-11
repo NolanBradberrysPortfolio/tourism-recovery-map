@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useRef, useState } from 'react'
-import type { PointerEvent } from 'react'
+import type { PointerEvent, TouchEvent } from 'react'
 import type { Feature, FeatureCollection, GeoJsonProperties, Geometry } from 'geojson'
 import { geoEqualEarth, geoPath } from 'd3-geo'
 import { feature as topojsonFeature } from 'topojson-client'
@@ -452,7 +452,7 @@ function CountryMap({
     onSelect({ iso3: tapTarget.iso3, name: tapTarget.name })
   }
   const onPointerDown = (event: PointerEvent<SVGSVGElement>) => {
-    if (event.pointerType === 'mouse' && event.button !== 0) {
+    if (event.pointerType === 'touch' || (event.pointerType === 'mouse' && event.button !== 0)) {
       return
     }
     event.preventDefault()
@@ -467,6 +467,9 @@ function CountryMap({
     startPanGesture(event.pointerId, { x: event.clientX, y: event.clientY })
   }
   const onPointerMove = (event: PointerEvent<SVGSVGElement>) => {
+    if (event.pointerType === 'touch') {
+      return
+    }
     if (!activePointersRef.current.has(event.pointerId)) {
       return
     }
@@ -505,6 +508,9 @@ function CountryMap({
     }
   }
   const onPointerUp = (event: PointerEvent<SVGSVGElement>) => {
+    if (event.pointerType === 'touch') {
+      return
+    }
     if (activePointersRef.current.has(event.pointerId)) {
       const shouldApplyTap =
         !draggedRef.current &&
@@ -529,6 +535,105 @@ function CountryMap({
       }
     }
   }
+  const getTouchPoints = (touches: TouchEvent<SVGSVGElement>['touches']) => {
+    const points: Array<{ id: number; point: { x: number; y: number } }> = []
+    for (let index = 0; index < touches.length; index += 1) {
+      const touch = touches[index]
+      points.push({
+        id: touch.identifier,
+        point: { x: touch.clientX, y: touch.clientY },
+      })
+    }
+    return points
+  }
+  const syncTouchPoints = (touches: TouchEvent<SVGSVGElement>['touches']) => {
+    activePointersRef.current = new Map(
+      getTouchPoints(touches).map((touch) => [touch.id, touch.point]),
+    )
+  }
+  const startTouchGesture = (
+    touches: TouchEvent<SVGSVGElement>['touches'],
+    target: EventTarget | null,
+  ) => {
+    syncTouchPoints(touches)
+    if (touches.length === 0) {
+      return
+    }
+    draggedRef.current = false
+    tapTargetRef.current = touches.length === 1 ? getTapTarget(target) : null
+    if (touches.length >= 2) {
+      startPinchGesture()
+      return
+    }
+    const firstTouch = getTouchPoints(touches)[0]
+    startPanGesture(firstTouch.id, firstTouch.point)
+  }
+  const onTouchStart = (event: TouchEvent<SVGSVGElement>) => {
+    event.preventDefault()
+    startTouchGesture(event.touches, event.target)
+  }
+  const onTouchMove = (event: TouchEvent<SVGSVGElement>) => {
+    event.preventDefault()
+    syncTouchPoints(event.touches)
+    const gesture = gestureRef.current
+    if (!gesture || event.touches.length === 0) {
+      return
+    }
+
+    if (event.touches.length >= 2 && gesture.type === 'pinch') {
+      const points = getGesturePointers()
+      const center = getCenter(points)
+      const centerSvg = getSvgPoint(center.x, center.y)
+      const focus = focusRef.current ?? { x: focusX, y: focusY }
+      const nextZoom = clampZoom(gesture.startZoom * (getDistance(points) / gesture.startDistance))
+      const nextPan = {
+        x: centerSvg.x - MAP_WIDTH / 2 - nextZoom * (gesture.startWorld.x - focus.x),
+        y: centerSvg.y - MAP_HEIGHT / 2 - nextZoom * (gesture.startWorld.y - focus.y),
+      }
+      draggedRef.current = true
+      zoomRef.current = nextZoom
+      setZoom(nextZoom)
+      setPanValue(nextPan)
+      return
+    }
+
+    if (event.touches.length === 1 && gesture.type === 'pan') {
+      const touch = getTouchPoints(event.touches)[0]
+      const deltaX = touch.point.x - gesture.startX
+      const deltaY = touch.point.y - gesture.startY
+      if (Math.abs(deltaX) + Math.abs(deltaY) > 5) {
+        draggedRef.current = true
+      }
+      const delta = getSvgDelta(deltaX, deltaY)
+      setPanValue({ x: gesture.startPan.x + delta.x, y: gesture.startPan.y + delta.y })
+    }
+  }
+  const onTouchEnd = (event: TouchEvent<SVGSVGElement>) => {
+    event.preventDefault()
+    const previousSize = activePointersRef.current.size
+    const shouldApplyTap =
+      !draggedRef.current &&
+      previousSize === 1 &&
+      event.touches.length === 0 &&
+      gestureRef.current?.type === 'pan'
+    const tapTarget = shouldApplyTap ? tapTargetRef.current : null
+    syncTouchPoints(event.touches)
+    const remainingTouches = getTouchPoints(event.touches)
+    if (remainingTouches.length >= 2) {
+      startPinchGesture()
+      return
+    }
+    if (remainingTouches.length === 1) {
+      startPanGesture(remainingTouches[0].id, remainingTouches[0].point)
+      return
+    }
+    gestureRef.current = null
+    tapTargetRef.current = null
+    applyTapTarget(tapTarget)
+    window.setTimeout(() => {
+      draggedRef.current = false
+    }, 0)
+  }
 
   return (
     <>
@@ -544,6 +649,10 @@ function CountryMap({
         onPointerLeave={onPointerUp}
         onPointerMove={onPointerMove}
         onPointerUp={onPointerUp}
+        onTouchCancel={onTouchEnd}
+        onTouchEnd={onTouchEnd}
+        onTouchMove={onTouchMove}
+        onTouchStart={onTouchStart}
       >
         <defs>
           <pattern id="no-comparison-pattern" width="8" height="8" patternUnits="userSpaceOnUse">

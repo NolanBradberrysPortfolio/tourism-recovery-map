@@ -222,6 +222,8 @@
   min-height: 0;
   overflow: hidden;
   background: #e6edf2;
+  overscroll-behavior: none;
+  touch-action: none;
 }
 
 .world-map {
@@ -231,6 +233,7 @@
   min-height: 560px;
   cursor: grab;
   touch-action: none;
+  -webkit-touch-callout: none;
   user-select: none;
 }
 

@@ -2,18 +2,24 @@
 
 Interactive country choropleth for international tourist arrivals recovery.
 
-The app compares each country or territory's latest reported arrivals year against
-2019, 2022, 2024, or its prior reported year. Countries with missing comparable
-data are shown in gray rather than imputed.
+The app compares the latest reported arrivals year for every country or territory
+with a defensible tourism-arrivals series against 2019, 2022, 2024, or its prior
+reported year. Countries with missing comparable data are shown in gray rather
+than imputed, and source-gap countries remain searchable with a no-series
+explanation.
 
 ## Data
 
 - Primary dataset: UN Tourism (2025), processed by Our World in Data.
+- Fallback dataset: World Bank WDI `ST.INT.ARVL`, used only to fill missing
+  years when overlapping country-year values match the primary series within 2%.
 - App feed: https://ourworldindata.org/grapher/international-tourist-trips
 - Metric: annual inbound overnight visitor arrivals.
 - Latest country-level year in the feed: 2024.
-- Generated coverage in this build: 2019 has 174 series, 2022 has 138, and
-  2024 has 67.
+- Generated coverage in this build: 212 data series; 208 are separately drawn by
+  the current base map, 2019 has 181 series, 2022 has 138, and 2024 has 67.
+- Searchable data records not separately drawn by the base map: French Guiana,
+  Guadeloupe, Martinique, Réunion, and Tuvalu.
 
 Tourism-arrival caveats matter: arrivals are trips, not unique people; collection
 methods vary by country; some countries use border statistics, accommodation

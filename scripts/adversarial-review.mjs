@@ -72,12 +72,12 @@ async function getBundleCheck() {
 
 const sharedChecks = [
   assertCheck(
-    tourismData.records.length >= 190,
+    tourismData.records.length >= 210,
     'tourism record coverage',
     `${tourismData.records.length} country or territory series`,
   ),
   assertCheck(
-    (tourismData.coverage['2019'] ?? 0) >= 160,
+    (tourismData.coverage['2019'] ?? 0) >= 180,
     '2019 baseline coverage',
     `${tourismData.coverage['2019'] ?? 0} reported series`,
   ),
@@ -112,6 +112,12 @@ const sharedChecks = [
     tourismData.source.name,
   ),
   assertCheck(
+    tourismData.source.fallbackName?.includes('World Bank') &&
+      (tourismData.source.fallbackFilledYears ?? 0) > 0,
+    'fallback source is traceable',
+    `${tourismData.source.fallbackFilledYears ?? 0} compatibility-checked fallback years`,
+  ),
+  assertCheck(
     appTsx.includes('Digital nomad arrivals are not mapped'),
     'digital nomad caveat is explicit',
     'Avoids presenting weak proxy data as an arrival time series',
@@ -132,10 +138,10 @@ const sharedChecks = [
     'CSS scanned',
   ),
   assertCheck(
-    appTsx.includes('aria-label="Comparison baseline"') &&
+    appTsx.includes('aria-label="Comparison year"') &&
       appTsx.includes('aria-label="Search countries"'),
     'core controls are labelled',
-    'Baseline selector and search input have accessible labels',
+    'Comparison selector and search input have accessible labels',
   ),
   assertCheck(
     latestYear === 2024,

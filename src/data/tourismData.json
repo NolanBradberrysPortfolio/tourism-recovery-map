@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-10T22:16:13.423Z",
+  "generatedAt": "2026-06-11T17:41:09.532Z",
   "baselines": [
     2019,
     2022,
@@ -7,32 +7,32 @@
   ],
   "valueColumn": "Arrivals of tourists from abroad",
   "coverage": {
-    "1995": 173,
-    "1996": 177,
-    "1997": 178,
-    "1998": 183,
-    "1999": 184,
-    "2000": 187,
-    "2001": 188,
-    "2002": 184,
-    "2003": 183,
-    "2004": 184,
-    "2005": 188,
-    "2006": 187,
-    "2007": 189,
-    "2008": 187,
-    "2009": 185,
-    "2010": 186,
-    "2011": 185,
-    "2012": 184,
-    "2013": 182,
-    "2014": 181,
-    "2015": 185,
-    "2016": 183,
-    "2017": 182,
-    "2018": 176,
-    "2019": 174,
-    "2020": 177,
+    "1995": 178,
+    "1996": 182,
+    "1997": 183,
+    "1998": 188,
+    "1999": 188,
+    "2000": 191,
+    "2001": 192,
+    "2002": 187,
+    "2003": 186,
+    "2004": 187,
+    "2005": 191,
+    "2006": 191,
+    "2007": 194,
+    "2008": 192,
+    "2009": 190,
+    "2010": 191,
+    "2011": 190,
+    "2012": 189,
+    "2013": 189,
+    "2014": 187,
+    "2015": 191,
+    "2016": 189,
+    "2017": 188,
+    "2018": 182,
+    "2019": 181,
+    "2020": 180,
     "2021": 167,
     "2022": 138,
     "2023": 69,
@@ -42,6 +42,13 @@
     "name": "UN Tourism (2025) - processed by Our World in Data",
     "dataUrl": "https://ourworldindata.org/grapher/international-tourist-trips.csv?v=1&csvType=full&useColumnShortNames=false",
     "metadataUrl": "https://ourworldindata.org/grapher/international-tourist-trips.metadata.json?v=1&csvType=full&useColumnShortNames=false",
+    "fallbackName": "World Bank World Development Indicators",
+    "fallbackDataUrl": "https://api.worldbank.org/v2/country/all/indicator/ST.INT.ARVL?format=json&per_page=20000",
+    "fallbackLastUpdated": "2026-04-08",
+    "fallbackMergeRule": "World Bank WDI fills missing years only when all overlapping country-year values differ by at most 2%; countries with fewer than 3 overlapping years can fill only configured baseline years. WDI-only countries are marked as fallback-only records.",
+    "fallbackFilledYears": 15,
+    "fallbackCompatibleCountries": 6,
+    "fallbackOnlyCountries": 6,
     "chartUrl": "https://ourworldindata.org/grapher/international-tourist-trips?v=1&csvType=full&useColumnShortNames=false",
     "originalSourceUrl": "https://www.untourism.int/tourism-statistics/tourism-statistics-database",
     "lastUpdated": "2026-01-21",
@@ -93,7 +100,87 @@
         "2022": 7104700,
         "2023": 9741000,
         "2024": 11483000
+      },
+      "sourceBlend": "owid-un-tourism",
+      "filledYears": {},
+      "fallbackCompatibility": {
+        "overlappingYears": 14,
+        "maxRelativeDifference": 0.18752531389226407
       }
+    },
+    {
+      "iso3": "DZA",
+      "name": "Algeria",
+      "sourceName": "Algeria",
+      "officialName": "People's Democratic Republic of Algeria",
+      "numericCode": "012",
+      "region": "Africa",
+      "subregion": "Northern Africa",
+      "latlng": [
+        28,
+        3
+      ],
+      "latestYear": 2020,
+      "latestValue": 591000,
+      "priorYear": 2019,
+      "years": {
+        "1995": 520000,
+        "1996": 605000,
+        "1997": 635000,
+        "1998": 678000,
+        "1999": 749000,
+        "2000": 866000,
+        "2001": 901000,
+        "2002": 988000,
+        "2003": 1166000,
+        "2004": 1234000,
+        "2005": 1443000,
+        "2006": 1638000,
+        "2007": 1743000,
+        "2008": 1772000,
+        "2009": 1912000,
+        "2010": 2070000,
+        "2011": 2395000,
+        "2012": 2634000,
+        "2013": 2733000,
+        "2014": 2301000,
+        "2015": 1710000,
+        "2016": 2039000,
+        "2017": 2451000,
+        "2018": 2657000,
+        "2019": 2371000,
+        "2020": 591000
+      },
+      "sourceBlend": "world-bank-wdi-only",
+      "filledYears": {
+        "1995": "World Bank WDI",
+        "1996": "World Bank WDI",
+        "1997": "World Bank WDI",
+        "1998": "World Bank WDI",
+        "1999": "World Bank WDI",
+        "2000": "World Bank WDI",
+        "2001": "World Bank WDI",
+        "2002": "World Bank WDI",
+        "2003": "World Bank WDI",
+        "2004": "World Bank WDI",
+        "2005": "World Bank WDI",
+        "2006": "World Bank WDI",
+        "2007": "World Bank WDI",
+        "2008": "World Bank WDI",
+        "2009": "World Bank WDI",
+        "2010": "World Bank WDI",
+        "2011": "World Bank WDI",
+        "2012": "World Bank WDI",
+        "2013": "World Bank WDI",
+        "2014": "World Bank WDI",
+        "2015": "World Bank WDI",
+        "2016": "World Bank WDI",
+        "2017": "World Bank WDI",
+        "2018": "World Bank WDI",
+        "2019": "World Bank WDI",
+        "2020": "World Bank WDI"
+      },
+      "fallbackCompatibility": null
     },
     {
       "iso3": "ASM",
@@ -134,6 +221,12 @@
         "2018": 20200,
         "2019": 19200,
         "2020": 900
+      },
+      "sourceBlend": "owid-un-tourism",
+      "filledYears": {},
+      "fallbackCompatibility": {
+        "overlappingYears": 23,
+        "maxRelativeDifference": 3.973643231347523e-8
       }
     },
     {
@@ -178,6 +271,12 @@
         "2022": 3555100,
         "2023": 4048100,
         "2024": 4167600
+      },
+      "sourceBlend": "owid-un-tourism",
+      "filledYears": {},
+      "fallbackCompatibility": {
+        "overlappingYears": 22,
+        "maxRelativeDifference": 3.9792349726775957
       }
     },
     {
@@ -224,6 +323,12 @@
         "2020": 64000,
         "2021": 64000,
         "2022": 130000
+      },
+      "sourceBlend": "owid-un-tourism",
+      "filledYears": {},
+      "fallbackCompatibility": {
+        "overlappingYears": 25,
+        "maxRelativeDifference": 0
       }
     },
     {
@@ -270,7 +375,10 @@
         "2020": 25400,
         "2021": 28400,
         "2022": 74100
-      }
+      },
+      "sourceBlend": "owid-un-tourism",
+      "filledYears": {},
+      "fallbackCompatibility": null
     },
     {
       "iso3": "ATG",
@@ -318,6 +426,12 @@
         "2022": 265100,
         "2023": 281800,
         "2024": 330200
+      },
+      "sourceBlend": "owid-un-tourism",
+      "filledYears": {},
+      "fallbackCompatibility": {
+        "overlappingYears": 26,
+        "maxRelativeDifference": 3.210526315789474
       }
     },
     {
@@ -366,6 +480,12 @@
         "2022": 3890000,
         "2023": 7285688,
         "2024": 6603877
+      },
+      "sourceBlend": "owid-un-tourism",
+      "filledYears": {},
+      "fallbackCompatibility": {
+        "overlappingYears": 25,
+        "maxRelativeDifference": 0
       }
     },
     {
@@ -414,6 +534,12 @@
         "2022": 1666000,
         "2023": 2316000,
         "2024": 2208000
+      },
+      "sourceBlend": "owid-un-tourism",
+      "filledYears": {},
+      "fallbackCompatibility": {
+        "overlappingYears": 26,
+        "maxRelativeDifference": 0.041666666666666664
       }
     },
     {
@@ -460,6 +586,12 @@
         "2020": 368000,
         "2021": 807000,
         "2022": 1101000
+      },
+      "sourceBlend": "owid-un-tourism",
+      "filledYears": {},
+      "fallbackCompatibility": {
+        "overlappingYears": 25,
+        "maxRelativeDifference": 0.9051321928460342
       }
     },
     {
@@ -487,6 +619,12 @@
         "2004": 4774000,
         "2005": 5020000,
         "2006": 5064000
+      },
+      "sourceBlend": "owid-un-tourism",
+      "filledYears": {},
+      "fallbackCompatibility": {
+        "overlappingYears": 9,
+        "maxRelativeDifference": 0.0954183266932271
       }
     },
     {
@@ -533,6 +671,12 @@
         "2020": 15091000,
         "2021": 12728000,
         "2022": 26215000
+      },
+      "sourceBlend": "owid-un-tourism",
+      "filledYears": {},
+      "fallbackCompatibility": {
+        "overlappingYears": 26,
+        "maxRelativeDifference": 0
       }
     },
     {
@@ -571,6 +715,12 @@
         "2019": 2876000,
         "2020": 587000,
         "2022": 1508000
+      },
+      "sourceBlend": "owid-un-tourism",
+      "filledYears": {},
+      "fallbackCompatibility": {
+        "overlappingYears": 19,
+        "maxRelativeDifference": 0.8210382513661202
       }
     },
     {
@@ -619,6 +769,12 @@
         "2022": 1452400,
         "2023": 1872059,
         "2024": 1869133
+      },
+      "sourceBlend": "owid-un-tourism",
+      "filledYears": {},
+      "fallbackCompatibility": {
+        "overlappingYears": 26,
+        "maxRelativeDifference": 3.466957153231663
       }
     },
     {
@@ -660,6 +816,12 @@
         "2022": 3712000,
         "2023": 5484000,
         "2024": 6618000
+      },
+      "sourceBlend": "owid-un-tourism",
+      "filledYears": {},
+      "fallbackCompatibility": {
+        "overlappingYears": 19,
+        "maxRelativeDifference": 1.8737334372564303
       }
     },
     {
@@ -705,6 +867,12 @@
         "2019": 323000,
         "2020": 182000,
         "2021": 135000
+      },
+      "sourceBlend": "owid-un-tourism",
+      "filledYears": {},
+      "fallbackCompatibility": {
+        "overlappingYears": 25,
+        "maxRelativeDifference": 0
       }
     },
     {
@@ -753,6 +921,12 @@
         "2022": 539700,
         "2023": 636045.9,
         "2024": 704340
+      },
+      "sourceBlend": "owid-un-tourism",
+      "filledYears": {},
+      "fallbackCompatibility": {
+        "overlappingYears": 25,
+        "maxRelativeDifference": 1.306159420289855
       }
     },
     {
@@ -796,6 +970,12 @@
         "2020": 577000,
         "2021": 787000,
         "2022": 1492000
+      },
+      "sourceBlend": "owid-un-tourism",
+      "filledYears": {},
+      "fallbackCompatibility": {
+        "overlappingYears": 21,
+        "maxRelativeDifference": 17.727272727272727
       }
     },
     {
@@ -844,6 +1024,12 @@
         "2022": 8220000,
         "2023": 9280000,
         "2024": 9638000
+      },
+      "sourceBlend": "owid-un-tourism",
+      "filledYears": {},
+      "fallbackCompatibility": {
+        "overlappingYears": 26,
+        "maxRelativeDifference": 0
       }
     },
     {
@@ -890,6 +1076,12 @@
         "2020": 144100,
         "2021": 219000,
         "2022": 372600
+      },
+      "sourceBlend": "owid-un-tourism",
+      "filledYears": {},
+      "fallbackCompatibility": {
+        "overlappingYears": 26,
+        "maxRelativeDifference": 4.753246753246753
       }
     },
     {
@@ -934,6 +1126,12 @@
         "2018": 295000,
         "2019": 309000,
         "2020": 325000
+      },
+      "sourceBlend": "owid-un-tourism",
+      "filledYears": {},
+      "fallbackCompatibility": {
+        "overlappingYears": 23,
+        "maxRelativeDifference": 12.125
       }
     },
     {
@@ -980,6 +1178,12 @@
         "2020": 42100,
         "2021": 72200,
         "2022": 145900
+      },
+      "sourceBlend": "owid-un-tourism",
+      "filledYears": {},
+      "fallbackCompatibility": {
+        "overlappingYears": 26,
+        "maxRelativeDifference": 1.9925650557620818
       }
     },
     {
@@ -1026,6 +1230,12 @@
         "2020": 29800,
         "2021": 1,
         "2022": 20900
+      },
+      "sourceBlend": "owid-un-tourism",
+      "filledYears": {},
+      "fallbackCompatibility": {
+        "overlappingYears": 26,
+        "maxRelativeDifference": 4.410054915715171e-8
       }
     },
     {
@@ -1072,6 +1282,12 @@
         "2020": 323300,
         "2021": 180000,
         "2022": 724000
+      },
+      "sourceBlend": "owid-un-tourism",
+      "filledYears": {},
+      "fallbackCompatibility": {
+        "overlappingYears": 26,
+        "maxRelativeDifference": 0.12075471698113208
       }
     },
     {
@@ -1118,6 +1334,12 @@
         "2022": 915000,
         "2023": 1198000,
         "2024": 1388775
+      },
+      "sourceBlend": "owid-un-tourism",
+      "filledYears": {},
+      "fallbackCompatibility": {
+        "overlappingYears": 24,
+        "maxRelativeDifference": 0
       }
     },
     {
@@ -1162,6 +1384,12 @@
         "2019": 1454600,
         "2020": 328500,
         "2021": 314000
+      },
+      "sourceBlend": "owid-un-tourism",
+      "filledYears": {},
+      "fallbackCompatibility": {
+        "overlappingYears": 18,
+        "maxRelativeDifference": 0.28125
       }
     },
     {
@@ -1210,6 +1438,12 @@
         "2022": 3630031,
         "2023": 5908341,
         "2024": 6773619
+      },
+      "sourceBlend": "owid-un-tourism",
+      "filledYears": {},
+      "fallbackCompatibility": {
+        "overlappingYears": 25,
+        "maxRelativeDifference": 0
       }
     },
     {
@@ -1256,6 +1490,12 @@
         "2020": 83000,
         "2021": 56000,
         "2022": 173000
+      },
+      "sourceBlend": "owid-un-tourism",
+      "filledYears": {},
+      "fallbackCompatibility": {
+        "overlappingYears": 26,
+        "maxRelativeDifference": 2.01835845709192e-8
       }
     },
     {
@@ -1292,6 +1532,12 @@
         "2019": 333000,
         "2020": 62300,
         "2021": 3500
+      },
+      "sourceBlend": "owid-un-tourism",
+      "filledYears": {},
+      "fallbackCompatibility": {
+        "overlappingYears": 8,
+        "maxRelativeDifference": 18.438356164383563
       }
     },
     {
@@ -1338,6 +1584,12 @@
         "2020": 1290000,
         "2021": 2300000,
         "2022": 5557000
+      },
+      "sourceBlend": "owid-un-tourism",
+      "filledYears": {},
+      "fallbackCompatibility": {
+        "overlappingYears": 26,
+        "maxRelativeDifference": 2.8550387596899225
       }
     },
     {
@@ -1386,6 +1638,12 @@
         "2022": 116000,
         "2023": 121000,
         "2024": 132000
+      },
+      "sourceBlend": "owid-un-tourism",
+      "filledYears": {},
+      "fallbackCompatibility": {
+        "overlappingYears": 26,
+        "maxRelativeDifference": 0
       }
     },
     {
@@ -1427,6 +1685,12 @@
         "2015": 131000,
         "2016": 187000,
         "2017": 299000
+      },
+      "sourceBlend": "owid-un-tourism",
+      "filledYears": {},
+      "fallbackCompatibility": {
+        "overlappingYears": 23,
+        "maxRelativeDifference": 0
       }
     },
     {
@@ -1473,6 +1737,12 @@
         "2020": 1306000,
         "2021": 196400,
         "2022": 2276600
+      },
+      "sourceBlend": "owid-un-tourism",
+      "filledYears": {},
+      "fallbackCompatibility": {
+        "overlappingYears": 26,
+        "maxRelativeDifference": 0
       }
     },
     {
@@ -1487,9 +1757,9 @@
         6,
         12
       ],
-      "latestYear": 2012,
-      "latestValue": 812000,
-      "priorYear": 2011,
+      "latestYear": 2019,
+      "latestValue": 1021000,
+      "priorYear": 2018,
       "years": {
         "1995": 100000,
         "1996": 145000,
@@ -1501,11 +1771,36 @@
         "2002": 226000,
         "2004": 190000,
         "2005": 176000,
+        "2006": 451000,
+        "2007": 477000,
         "2008": 480000,
         "2009": 495000,
         "2010": 569000,
         "2011": 600000,
-        "2012": 812000
+        "2012": 812000,
+        "2013": 783000,
+        "2014": 822000,
+        "2015": 897000,
+        "2016": 994000,
+        "2017": 1081000,
+        "2018": 997000,
+        "2019": 1021000
+      },
+      "sourceBlend": "owid-un-tourism-plus-compatible-wdi",
+      "filledYears": {
+        "2006": "World Bank WDI",
+        "2007": "World Bank WDI",
+        "2013": "World Bank WDI",
+        "2014": "World Bank WDI",
+        "2015": "World Bank WDI",
+        "2016": "World Bank WDI",
+        "2017": "World Bank WDI",
+        "2018": "World Bank WDI",
+        "2019": "World Bank WDI"
+      },
+      "fallbackCompatibility": {
+        "overlappingYears": 5,
+        "maxRelativeDifference": 0.014583333333333334
       }
     },
     {
@@ -1554,6 +1849,12 @@
         "2022": 12824000,
         "2023": 18344000,
         "2024": 19913000
+      },
+      "sourceBlend": "owid-un-tourism",
+      "filledYears": {},
+      "fallbackCompatibility": {
+        "overlappingYears": 25,
+        "maxRelativeDifference": 1.5511347557869715
       }
     },
     {
@@ -1600,6 +1901,12 @@
         "2020": 180000,
         "2021": 135000,
         "2022": 785000
+      },
+      "sourceBlend": "owid-un-tourism",
+      "filledYears": {},
+      "fallbackCompatibility": {
+        "overlappingYears": 26,
+        "maxRelativeDifference": 0
       }
     },
     {
@@ -1646,6 +1953,12 @@
         "2020": 122000,
         "2021": 17300,
         "2022": 284300
+      },
+      "sourceBlend": "owid-un-tourism",
+      "filledYears": {},
+      "fallbackCompatibility": {
+        "overlappingYears": 26,
+        "maxRelativeDifference": 10.708333333333334
       }
     },
     {
@@ -1690,6 +2003,12 @@
         "2018": 109000,
         "2019": 87000,
         "2020": 34600
+      },
+      "sourceBlend": "owid-un-tourism",
+      "filledYears": {},
+      "fallbackCompatibility": {
+        "overlappingYears": 25,
+        "maxRelativeDifference": 4.310392369983171e-8
       }
     },
     {
@@ -1735,6 +2054,12 @@
         "2019": 79000,
         "2020": 11000,
         "2021": 40000
+      },
+      "sourceBlend": "owid-un-tourism",
+      "filledYears": {},
+      "fallbackCompatibility": {
+        "overlappingYears": 26,
+        "maxRelativeDifference": 0.18181818181818182
       }
     },
     {
@@ -1783,6 +2108,12 @@
         "2022": 2030479,
         "2023": 3730507,
         "2024": 5239233
+      },
+      "sourceBlend": "owid-un-tourism",
+      "filledYears": {},
+      "fallbackCompatibility": {
+        "overlappingYears": 12,
+        "maxRelativeDifference": 0.37011070110701105
       }
     },
     {
@@ -1827,6 +2158,12 @@
         "2018": 62900000,
         "2019": 65725000,
         "2020": 7967000
+      },
+      "sourceBlend": "owid-un-tourism",
+      "filledYears": {},
+      "fallbackCompatibility": {
+        "overlappingYears": 26,
+        "maxRelativeDifference": 2.815990962721225
       }
     },
     {
@@ -1873,6 +2210,12 @@
         "2020": 1252000,
         "2021": 2127000,
         "2022": 4519000
+      },
+      "sourceBlend": "owid-un-tourism",
+      "filledYears": {},
+      "fallbackCompatibility": {
+        "overlappingYears": 26,
+        "maxRelativeDifference": 0.32783882783882784
       }
     },
     {
@@ -1918,6 +2261,12 @@
         "2019": 45100,
         "2020": 7000,
         "2021": 28800
+      },
+      "sourceBlend": "owid-un-tourism",
+      "filledYears": {},
+      "fallbackCompatibility": {
+        "overlappingYears": 26,
+        "maxRelativeDifference": 4.2503590500669703e-8
       }
     },
     {
@@ -1964,7 +2313,10 @@
         "2020": 25200,
         "2021": 26300,
         "2022": 113600
-      }
+      },
+      "sourceBlend": "owid-un-tourism",
+      "filledYears": {},
+      "fallbackCompatibility": null
     },
     {
       "iso3": "CRI",
@@ -2012,6 +2364,12 @@
         "2022": 2349537,
         "2023": 2751134,
         "2024": 2919483
+      },
+      "sourceBlend": "owid-un-tourism",
+      "filledYears": {},
+      "fallbackCompatibility": {
+        "overlappingYears": 26,
+        "maxRelativeDifference": 0.24907521578298397
       }
     },
     {
@@ -2058,6 +2416,12 @@
         "2020": 5545000,
         "2021": 10641000,
         "2022": 15324000
+      },
+      "sourceBlend": "owid-un-tourism",
+      "filledYears": {},
+      "fallbackCompatibility": {
+        "overlappingYears": 26,
+        "maxRelativeDifference": 9.841750841750843
       }
     },
     {
@@ -2104,6 +2468,12 @@
         "2020": 1085000,
         "2021": 355500,
         "2022": 1613400
+      },
+      "sourceBlend": "owid-un-tourism",
+      "filledYears": {},
+      "fallbackCompatibility": {
+        "overlappingYears": 26,
+        "maxRelativeDifference": 0.03302325581395349
       }
     },
     {
@@ -2150,6 +2520,12 @@
         "2020": 175000,
         "2021": 265000,
         "2022": 489600
+      },
+      "sourceBlend": "owid-un-tourism",
+      "filledYears": {},
+      "fallbackCompatibility": {
+        "overlappingYears": 25,
+        "maxRelativeDifference": 1.8009259259259258
       }
     },
     {
@@ -2198,6 +2574,12 @@
         "2022": 3201080,
         "2023": 3845652,
         "2024": 4040200
+      },
+      "sourceBlend": "owid-un-tourism",
+      "filledYears": {},
+      "fallbackCompatibility": {
+        "overlappingYears": 25,
+        "maxRelativeDifference": 0.12747353888633225
       }
     },
     {
@@ -2243,6 +2625,12 @@
         "2019": 14651000,
         "2020": 3919400,
         "2021": 3768000
+      },
+      "sourceBlend": "owid-un-tourism",
+      "filledYears": {},
+      "fallbackCompatibility": {
+        "overlappingYears": 17,
+        "maxRelativeDifference": 1.6316681735985534
       }
     },
     {
@@ -2288,6 +2676,12 @@
         "2020": 6229000,
         "2021": 7555000,
         "2022": 14190000
+      },
+      "sourceBlend": "owid-un-tourism",
+      "filledYears": {},
+      "fallbackCompatibility": {
+        "overlappingYears": 18,
+        "maxRelativeDifference": 5.07915947035118
       }
     },
     {
@@ -2331,6 +2725,12 @@
         "2020": 75000,
         "2021": 114000,
         "2022": 145000
+      },
+      "sourceBlend": "owid-un-tourism",
+      "filledYears": {},
+      "fallbackCompatibility": {
+        "overlappingYears": 19,
+        "maxRelativeDifference": 3.288532329391054e-8
       }
     },
     {
@@ -2377,6 +2777,12 @@
         "2020": 22000,
         "2021": 15000,
         "2022": 61000
+      },
+      "sourceBlend": "owid-un-tourism",
+      "filledYears": {},
+      "fallbackCompatibility": {
+        "overlappingYears": 26,
+        "maxRelativeDifference": 7.1066666666666665
       }
     },
     {
@@ -2425,6 +2831,12 @@
         "2022": 7163414,
         "2023": 8058671.5,
         "2024": 8535701
+      },
+      "sourceBlend": "owid-un-tourism",
+      "filledYears": {},
+      "fallbackCompatibility": {
+        "overlappingYears": 26,
+        "maxRelativeDifference": 0.1790562378797673
       }
     },
     {
@@ -2470,7 +2882,85 @@
         "2019": 479000,
         "2020": 202000,
         "2021": 382000
+      },
+      "sourceBlend": "owid-un-tourism",
+      "filledYears": {},
+      "fallbackCompatibility": {
+        "overlappingYears": 22,
+        "maxRelativeDifference": 0
       }
+    },
+    {
+      "iso3": "ECU",
+      "name": "Ecuador",
+      "sourceName": "Ecuador",
+      "officialName": "Republic of Ecuador",
+      "numericCode": "218",
+      "region": "Americas",
+      "subregion": "South America",
+      "latlng": [
+        -2,
+        -77.5
+      ],
+      "latestYear": 2019,
+      "latestValue": 2108000,
+      "priorYear": 2018,
+      "years": {
+        "1995": 440000,
+        "1996": 494000,
+        "1997": 529000,
+        "1998": 511000,
+        "1999": 518000,
+        "2000": 627000,
+        "2001": 641000,
+        "2002": 683000,
+        "2003": 761000,
+        "2004": 819000,
+        "2005": 860000,
+        "2006": 841000,
+        "2007": 937000,
+        "2008": 1005000,
+        "2009": 968000,
+        "2010": 1047000,
+        "2011": 1141000,
+        "2012": 1272000,
+        "2013": 1364000,
+        "2014": 1695000,
+        "2015": 1676000,
+        "2016": 1569000,
+        "2017": 1806000,
+        "2018": 2535000,
+        "2019": 2108000
+      },
+      "sourceBlend": "world-bank-wdi-only",
+      "filledYears": {
+        "1995": "World Bank WDI",
+        "1996": "World Bank WDI",
+        "1997": "World Bank WDI",
+        "1998": "World Bank WDI",
+        "1999": "World Bank WDI",
+        "2000": "World Bank WDI",
+        "2001": "World Bank WDI",
+        "2002": "World Bank WDI",
+        "2003": "World Bank WDI",
+        "2004": "World Bank WDI",
+        "2005": "World Bank WDI",
+        "2006": "World Bank WDI",
+        "2007": "World Bank WDI",
+        "2008": "World Bank WDI",
+        "2009": "World Bank WDI",
+        "2010": "World Bank WDI",
+        "2011": "World Bank WDI",
+        "2012": "World Bank WDI",
+        "2013": "World Bank WDI",
+        "2014": "World Bank WDI",
+        "2015": "World Bank WDI",
+        "2016": "World Bank WDI",
+        "2017": "World Bank WDI",
+        "2018": "World Bank WDI",
+        "2019": "World Bank WDI"
+      },
+      "fallbackCompatibility": null
     },
     {
       "iso3": "EGY",
@@ -2516,6 +3006,12 @@
         "2020": 3619000,
         "2021": 7967000,
         "2022": 11625000
+      },
+      "sourceBlend": "owid-un-tourism",
+      "filledYears": {},
+      "fallbackCompatibility": {
+        "overlappingYears": 25,
+        "maxRelativeDifference": 0.10430839002267574
       }
     },
     {
@@ -2564,7 +3060,79 @@
         "2022": 1891000,
         "2023": 2479099.5,
         "2024": 3186988.5
+      },
+      "sourceBlend": "owid-un-tourism",
+      "filledYears": {},
+      "fallbackCompatibility": {
+        "overlappingYears": 21,
+        "maxRelativeDifference": 0.5119537351696178
       }
+    },
+    {
+      "iso3": "ERI",
+      "name": "Eritrea",
+      "sourceName": "Eritrea",
+      "officialName": "State of Eritrea",
+      "numericCode": "232",
+      "region": "Africa",
+      "subregion": "Eastern Africa",
+      "latlng": [
+        15,
+        39
+      ],
+      "latestYear": 2016,
+      "latestValue": 142000,
+      "priorYear": 2015,
+      "years": {
+        "1995": 315000,
+        "1996": 417000,
+        "1997": 410000,
+        "1998": 188000,
+        "1999": 57000,
+        "2000": 70000,
+        "2001": 113000,
+        "2002": 101000,
+        "2003": 80000,
+        "2004": 87000,
+        "2005": 83000,
+        "2006": 78000,
+        "2007": 81000,
+        "2008": 70000,
+        "2009": 79000,
+        "2010": 84000,
+        "2011": 107000,
+        "2012": 129000,
+        "2013": 141000,
+        "2014": 119000,
+        "2015": 114000,
+        "2016": 142000
+      },
+      "sourceBlend": "world-bank-wdi-only",
+      "filledYears": {
+        "1995": "World Bank WDI",
+        "1996": "World Bank WDI",
+        "1997": "World Bank WDI",
+        "1998": "World Bank WDI",
+        "1999": "World Bank WDI",
+        "2000": "World Bank WDI",
+        "2001": "World Bank WDI",
+        "2002": "World Bank WDI",
+        "2003": "World Bank WDI",
+        "2004": "World Bank WDI",
+        "2005": "World Bank WDI",
+        "2006": "World Bank WDI",
+        "2007": "World Bank WDI",
+        "2008": "World Bank WDI",
+        "2009": "World Bank WDI",
+        "2010": "World Bank WDI",
+        "2011": "World Bank WDI",
+        "2012": "World Bank WDI",
+        "2013": "World Bank WDI",
+        "2014": "World Bank WDI",
+        "2015": "World Bank WDI",
+        "2016": "World Bank WDI"
+      },
+      "fallbackCompatibility": null
     },
     {
       "iso3": "EST",
@@ -2610,6 +3178,12 @@
         "2020": 1023000,
         "2021": 808000,
         "2022": 2166000
+      },
+      "sourceBlend": "owid-un-tourism",
+      "filledYears": {},
+      "fallbackCompatibility": {
+        "overlappingYears": 22,
+        "maxRelativeDifference": 2.983018867924528
       }
     },
     {
@@ -2656,6 +3230,12 @@
         "2020": 193700,
         "2021": 170300,
         "2022": 393000
+      },
+      "sourceBlend": "owid-un-tourism",
+      "filledYears": {},
+      "fallbackCompatibility": {
+        "overlappingYears": 24,
+        "maxRelativeDifference": 5.078066914498141
       }
     },
     {
@@ -2704,6 +3284,12 @@
         "2022": 897000,
         "2023": 247000,
         "2024": 536000
+      },
+      "sourceBlend": "owid-un-tourism",
+      "filledYears": {},
+      "fallbackCompatibility": {
+        "overlappingYears": 26,
+        "maxRelativeDifference": 0.9114391143911439
       }
     },
     {
@@ -2752,6 +3338,12 @@
         "2022": 636300,
         "2023": 929740,
         "2024": 928938
+      },
+      "sourceBlend": "owid-un-tourism",
+      "filledYears": {},
+      "fallbackCompatibility": {
+        "overlappingYears": 25,
+        "maxRelativeDifference": 0.5705882352941176
       }
     },
     {
@@ -2795,8 +3387,17 @@
         "2017": 3180000,
         "2018": 3224000,
         "2019": 3290000,
+        "2020": 896000,
         "2023": 4248000,
         "2024": 4475000
+      },
+      "sourceBlend": "owid-un-tourism-plus-compatible-wdi",
+      "filledYears": {
+        "2020": "World Bank WDI"
+      },
+      "fallbackCompatibility": {
+        "overlappingYears": 25,
+        "maxRelativeDifference": 0
       }
     },
     {
@@ -2842,6 +3443,12 @@
         "2019": 90914000,
         "2020": 41684000,
         "2021": 48395000
+      },
+      "sourceBlend": "owid-un-tourism",
+      "filledYears": {},
+      "fallbackCompatibility": {
+        "overlappingYears": 19,
+        "maxRelativeDifference": 1.8094472699357067
       }
     },
     {
@@ -2875,7 +3482,10 @@
         "2022": 73000,
         "2023": 77000,
         "2024": 86000
-      }
+      },
+      "sourceBlend": "owid-un-tourism",
+      "filledYears": {},
+      "fallbackCompatibility": null
     },
     {
       "iso3": "PYF",
@@ -2921,6 +3531,12 @@
         "2020": 77000,
         "2021": 83000,
         "2022": 218800
+      },
+      "sourceBlend": "owid-un-tourism",
+      "filledYears": {},
+      "fallbackCompatibility": {
+        "overlappingYears": 19,
+        "maxRelativeDifference": 0.3048780487804878
       }
     },
     {
@@ -2950,6 +3566,12 @@
         "2003": 222000,
         "2004": 244000,
         "2005": 269000
+      },
+      "sourceBlend": "owid-un-tourism",
+      "filledYears": {},
+      "fallbackCompatibility": {
+        "overlappingYears": 11,
+        "maxRelativeDifference": 0.9553903345724907
       }
     },
     {
@@ -2996,6 +3618,12 @@
         "2020": 246000,
         "2021": 332000,
         "2022": 570000
+      },
+      "sourceBlend": "owid-un-tourism",
+      "filledYears": {},
+      "fallbackCompatibility": {
+        "overlappingYears": 26,
+        "maxRelativeDifference": 0
       }
     },
     {
@@ -3029,6 +3657,12 @@
         "2022": 3653000,
         "2023": 4669000,
         "2024": 5092000
+      },
+      "sourceBlend": "owid-un-tourism",
+      "filledYears": {},
+      "fallbackCompatibility": {
+        "overlappingYears": 11,
+        "maxRelativeDifference": 0.9044048734770385
       }
     },
     {
@@ -3077,6 +3711,12 @@
         "2022": 28383000,
         "2023": 34712000,
         "2024": 37420000
+      },
+      "sourceBlend": "owid-un-tourism",
+      "filledYears": {},
+      "fallbackCompatibility": {
+        "overlappingYears": 26,
+        "maxRelativeDifference": 0.003061800016114737
       }
     },
     {
@@ -3123,6 +3763,12 @@
         "2020": 355000,
         "2021": 624000,
         "2022": 915000
+      },
+      "sourceBlend": "owid-un-tourism",
+      "filledYears": {},
+      "fallbackCompatibility": {
+        "overlappingYears": 21,
+        "maxRelativeDifference": 0
       }
     },
     {
@@ -3169,6 +3815,12 @@
         "2020": 7374400,
         "2021": 14705000,
         "2022": 27836000
+      },
+      "sourceBlend": "owid-un-tourism",
+      "filledYears": {},
+      "fallbackCompatibility": {
+        "overlappingYears": 20,
+        "maxRelativeDifference": 0.13194080406468003
       }
     },
     {
@@ -3215,6 +3867,12 @@
         "2020": 54200,
         "2021": 47000,
         "2022": 149000
+      },
+      "sourceBlend": "owid-un-tourism",
+      "filledYears": {},
+      "fallbackCompatibility": {
+        "overlappingYears": 26,
+        "maxRelativeDifference": 3.0454545454545454
       }
     },
     {
@@ -3256,7 +3914,10 @@
         "2016": 581000,
         "2017": 650000,
         "2018": 735000
-      }
+      },
+      "sourceBlend": "owid-un-tourism",
+      "filledYears": {},
+      "fallbackCompatibility": null
     },
     {
       "iso3": "GUM",
@@ -3304,6 +3965,12 @@
         "2022": 326878,
         "2023": 656518,
         "2024": 739146
+      },
+      "sourceBlend": "owid-un-tourism",
+      "filledYears": {},
+      "fallbackCompatibility": {
+        "overlappingYears": 26,
+        "maxRelativeDifference": 0.0005271609791177214
       }
     },
     {
@@ -3338,6 +4005,12 @@
         "2020": 395700,
         "2021": 602100,
         "2022": 1494000
+      },
+      "sourceBlend": "owid-un-tourism",
+      "filledYears": {},
+      "fallbackCompatibility": {
+        "overlappingYears": 14,
+        "maxRelativeDifference": 0.5011372251705838
       }
     },
     {
@@ -3377,6 +4050,12 @@
         "2015": 35000,
         "2016": 63000,
         "2017": 99000
+      },
+      "sourceBlend": "owid-un-tourism",
+      "filledYears": {},
+      "fallbackCompatibility": {
+        "overlappingYears": 21,
+        "maxRelativeDifference": 3.30993253573545e-8
       }
     },
     {
@@ -3411,6 +4090,12 @@
         "2017": 49500,
         "2018": 55000,
         "2019": 52400
+      },
+      "sourceBlend": "owid-un-tourism",
+      "filledYears": {},
+      "fallbackCompatibility": {
+        "overlappingYears": 16,
+        "maxRelativeDifference": 4.310392369983171e-8
       }
     },
     {
@@ -3457,6 +4142,12 @@
         "2020": 86500,
         "2021": 158300,
         "2022": 288000
+      },
+      "sourceBlend": "owid-un-tourism",
+      "filledYears": {},
+      "fallbackCompatibility": {
+        "overlappingYears": 26,
+        "maxRelativeDifference": 0.0011560517239432803
       }
     },
     {
@@ -3502,6 +4193,12 @@
         "2019": 286000,
         "2020": 203000,
         "2021": 148000
+      },
+      "sourceBlend": "owid-un-tourism",
+      "filledYears": {},
+      "fallbackCompatibility": {
+        "overlappingYears": 25,
+        "maxRelativeDifference": 4.166666666666667
       }
     },
     {
@@ -3548,6 +4245,12 @@
         "2020": 204000,
         "2021": 459000,
         "2022": 844000
+      },
+      "sourceBlend": "owid-un-tourism",
+      "filledYears": {},
+      "fallbackCompatibility": {
+        "overlappingYears": 25,
+        "maxRelativeDifference": 2.2794117647058822
       }
     },
     {
@@ -3596,6 +4299,12 @@
         "2022": 567800,
         "2023": 17159300,
         "2024": 21943900
+      },
+      "sourceBlend": "owid-un-tourism",
+      "filledYears": {},
+      "fallbackCompatibility": {
+        "overlappingYears": 26,
+        "maxRelativeDifference": 1.626195732155997
       }
     },
     {
@@ -3644,6 +4353,12 @@
         "2022": 12649000,
         "2023": 12933000,
         "2024": 13155000
+      },
+      "sourceBlend": "owid-un-tourism",
+      "filledYears": {},
+      "fallbackCompatibility": {
+        "overlappingYears": 26,
+        "maxRelativeDifference": 12.634468380820014
       }
     },
     {
@@ -3689,6 +4404,12 @@
         "2019": 2013000,
         "2020": 486300,
         "2021": 698000
+      },
+      "sourceBlend": "owid-un-tourism",
+      "filledYears": {},
+      "fallbackCompatibility": {
+        "overlappingYears": 26,
+        "maxRelativeDifference": 0.14705882352941177
       }
     },
     {
@@ -3729,12 +4450,23 @@
         "2014": 13107000,
         "2015": 13284000,
         "2016": 14570000,
+        "2017": 15543000,
+        "2018": 17423000,
         "2019": 17754000,
         "2020": 2699000,
         "2021": 1507000,
         "2022": 6374000,
         "2023": 9405000,
         "2024": 9824000
+      },
+      "sourceBlend": "owid-un-tourism-plus-compatible-wdi",
+      "filledYears": {
+        "2017": "World Bank WDI",
+        "2018": "World Bank WDI"
+      },
+      "fallbackCompatibility": {
+        "overlappingYears": 23,
+        "maxRelativeDifference": 0.009012053621719049
       }
     },
     {
@@ -3763,6 +4495,12 @@
         "2022": 5764000,
         "2023": 11382000,
         "2024": 13603000
+      },
+      "sourceBlend": "owid-un-tourism",
+      "filledYears": {},
+      "fallbackCompatibility": {
+        "overlappingYears": 6,
+        "maxRelativeDifference": 0.1802030456852792
       }
     },
     {
@@ -3782,7 +4520,58 @@
       "priorYear": null,
       "years": {
         "2021": 882000
-      }
+      },
+      "sourceBlend": "owid-un-tourism",
+      "filledYears": {},
+      "fallbackCompatibility": null
+    },
+    {
+      "iso3": "IRQ",
+      "name": "Iraq",
+      "sourceName": "Iraq",
+      "officialName": "Republic of Iraq",
+      "numericCode": "368",
+      "region": "Asia",
+      "subregion": "Western Asia",
+      "latlng": [
+        33,
+        44
+      ],
+      "latestYear": 2013,
+      "latestValue": 892000,
+      "priorYear": 2012,
+      "years": {
+        "1995": 61000,
+        "1996": 51000,
+        "1997": 15000,
+        "1998": 45000,
+        "1999": 30000,
+        "2000": 78000,
+        "2001": 127000,
+        "2008": 864000,
+        "2009": 1262000,
+        "2010": 1518000,
+        "2011": 1510000,
+        "2012": 1111000,
+        "2013": 892000
+      },
+      "sourceBlend": "world-bank-wdi-only",
+      "filledYears": {
+        "1995": "World Bank WDI",
+        "1996": "World Bank WDI",
+        "1997": "World Bank WDI",
+        "1998": "World Bank WDI",
+        "1999": "World Bank WDI",
+        "2000": "World Bank WDI",
+        "2001": "World Bank WDI",
+        "2008": "World Bank WDI",
+        "2009": "World Bank WDI",
+        "2010": "World Bank WDI",
+        "2011": "World Bank WDI",
+        "2012": "World Bank WDI",
+        "2013": "World Bank WDI"
+      },
+      "fallbackCompatibility": null
     },
     {
       "iso3": "IRL",
@@ -3825,6 +4614,12 @@
         "2017": 10338000,
         "2018": 10926000,
         "2019": 10951000
+      },
+      "sourceBlend": "owid-un-tourism",
+      "filledYears": {},
+      "fallbackCompatibility": {
+        "overlappingYears": 25,
+        "maxRelativeDifference": 0
       }
     },
     {
@@ -3873,6 +4668,12 @@
         "2022": 2675000,
         "2023": 3010000,
         "2024": 961000
+      },
+      "sourceBlend": "owid-un-tourism",
+      "filledYears": {},
+      "fallbackCompatibility": {
+        "overlappingYears": 24,
+        "maxRelativeDifference": 0.22868355333571175
       }
     },
     {
@@ -3921,7 +4722,71 @@
         "2022": 49811000,
         "2023": 57250000,
         "2024": 57725000
+      },
+      "sourceBlend": "owid-un-tourism",
+      "filledYears": {},
+      "fallbackCompatibility": {
+        "overlappingYears": 26,
+        "maxRelativeDifference": 0.7939585211902614
       }
+    },
+    {
+      "iso3": "CIV",
+      "name": "Ivory Coast",
+      "sourceName": "Cote d'Ivoire",
+      "officialName": "Republic of Côte d'Ivoire",
+      "numericCode": "384",
+      "region": "Africa",
+      "subregion": "Western Africa",
+      "latlng": [
+        8,
+        -5
+      ],
+      "latestYear": 2020,
+      "latestValue": 668000,
+      "priorYear": 2019,
+      "years": {
+        "1995": 188000,
+        "1996": 237000,
+        "1997": 274000,
+        "1998": 301000,
+        "2007": 182000,
+        "2008": 205000,
+        "2009": 231000,
+        "2010": 252000,
+        "2011": 270000,
+        "2012": 289000,
+        "2013": 380000,
+        "2014": 471000,
+        "2015": 1441000,
+        "2016": 1583000,
+        "2017": 1800000,
+        "2018": 1965000,
+        "2019": 2070000,
+        "2020": 668000
+      },
+      "sourceBlend": "world-bank-wdi-only",
+      "filledYears": {
+        "1995": "World Bank WDI",
+        "1996": "World Bank WDI",
+        "1997": "World Bank WDI",
+        "1998": "World Bank WDI",
+        "2007": "World Bank WDI",
+        "2008": "World Bank WDI",
+        "2009": "World Bank WDI",
+        "2010": "World Bank WDI",
+        "2011": "World Bank WDI",
+        "2012": "World Bank WDI",
+        "2013": "World Bank WDI",
+        "2014": "World Bank WDI",
+        "2015": "World Bank WDI",
+        "2016": "World Bank WDI",
+        "2017": "World Bank WDI",
+        "2018": "World Bank WDI",
+        "2019": "World Bank WDI",
+        "2020": "World Bank WDI"
+      },
+      "fallbackCompatibility": null
     },
     {
       "iso3": "JAM",
@@ -3967,6 +4832,12 @@
         "2020": 880400,
         "2021": 1464000,
         "2022": 2478400
+      },
+      "sourceBlend": "owid-un-tourism",
+      "filledYears": {},
+      "fallbackCompatibility": {
+        "overlappingYears": 26,
+        "maxRelativeDifference": 0.8392592592592593
       }
     },
     {
@@ -3985,11 +4856,20 @@
       "latestValue": 36870000,
       "priorYear": 2023,
       "years": {
+        "2019": 31881000,
         "2020": 4115799.8,
         "2021": 245800,
         "2022": 3832100,
         "2023": 25066000,
         "2024": 36870000
+      },
+      "sourceBlend": "owid-un-tourism-plus-compatible-wdi",
+      "filledYears": {
+        "2019": "World Bank WDI"
+      },
+      "fallbackCompatibility": {
+        "overlappingYears": 1,
+        "maxRelativeDifference": 1.1389038374180676e-9
       }
     },
     {
@@ -4038,6 +4918,12 @@
         "2022": 4276700,
         "2023": 5346000,
         "2024": 5217000
+      },
+      "sourceBlend": "owid-un-tourism",
+      "filledYears": {},
+      "fallbackCompatibility": {
+        "overlappingYears": 26,
+        "maxRelativeDifference": 2.048372093023256
       }
     },
     {
@@ -4076,6 +4962,12 @@
         "2022": 6715459,
         "2023": 9871166,
         "2024": 10381566
+      },
+      "sourceBlend": "owid-un-tourism",
+      "filledYears": {},
+      "fallbackCompatibility": {
+        "overlappingYears": 16,
+        "maxRelativeDifference": 0.4596205962059621
       }
     },
     {
@@ -4117,6 +5009,12 @@
         "2015": 1114000,
         "2016": 1268000,
         "2017": 1364000
+      },
+      "sourceBlend": "owid-un-tourism",
+      "filledYears": {},
+      "fallbackCompatibility": {
+        "overlappingYears": 23,
+        "maxRelativeDifference": 0.23624595469255663
       }
     },
     {
@@ -4163,6 +5061,12 @@
         "2020": 1400,
         "2021": 70,
         "2022": 1800
+      },
+      "sourceBlend": "owid-un-tourism",
+      "filledYears": {},
+      "fallbackCompatibility": {
+        "overlappingYears": 15,
+        "maxRelativeDifference": 25.551021653778776
       }
     },
     {
@@ -4210,6 +5114,12 @@
         "2021": 84971,
         "2022": 88670,
         "2023": 122456
+      },
+      "sourceBlend": "owid-un-tourism",
+      "filledYears": {},
+      "fallbackCompatibility": {
+        "overlappingYears": 26,
+        "maxRelativeDifference": 54.98039215686274
       }
     },
     {
@@ -4253,6 +5163,12 @@
         "2020": 69000,
         "2021": 144000,
         "2022": 345700
+      },
+      "sourceBlend": "owid-un-tourism",
+      "filledYears": {},
+      "fallbackCompatibility": {
+        "overlappingYears": 19,
+        "maxRelativeDifference": 35.204255319148935
       }
     },
     {
@@ -4297,6 +5213,12 @@
         "2018": 3770000,
         "2019": 4384000,
         "2020": 811600
+      },
+      "sourceBlend": "owid-un-tourism",
+      "filledYears": {},
+      "fallbackCompatibility": {
+        "overlappingYears": 26,
+        "maxRelativeDifference": 4.766666666666667
       }
     },
     {
@@ -4342,6 +5264,12 @@
         "2019": 1935000,
         "2020": 636000,
         "2021": 478000
+      },
+      "sourceBlend": "owid-un-tourism",
+      "filledYears": {},
+      "fallbackCompatibility": {
+        "overlappingYears": 26,
+        "maxRelativeDifference": 4.037735849056604
       }
     },
     {
@@ -4388,6 +5316,12 @@
         "2020": 414000,
         "2021": 890000,
         "2022": 1466000
+      },
+      "sourceBlend": "owid-un-tourism",
+      "filledYears": {},
+      "fallbackCompatibility": {
+        "overlappingYears": 25,
+        "maxRelativeDifference": 0
       }
     },
     {
@@ -4419,6 +5353,12 @@
         "2011": 397000,
         "2012": 317000,
         "2013": 320000
+      },
+      "sourceBlend": "owid-un-tourism",
+      "filledYears": {},
+      "fallbackCompatibility": {
+        "overlappingYears": 13,
+        "maxRelativeDifference": 1.4022988505747127
       }
     },
     {
@@ -4451,6 +5391,12 @@
         "2006": 42000,
         "2007": 38000,
         "2008": 34000
+      },
+      "sourceBlend": "owid-un-tourism",
+      "filledYears": {},
+      "fallbackCompatibility": {
+        "overlappingYears": 12,
+        "maxRelativeDifference": 31.714285714285715
       }
     },
     {
@@ -4499,6 +5445,12 @@
         "2022": 100814,
         "2023": 114399,
         "2024": 117789
+      },
+      "sourceBlend": "owid-un-tourism",
+      "filledYears": {},
+      "fallbackCompatibility": {
+        "overlappingYears": 26,
+        "maxRelativeDifference": 0.008403361344537815
       }
     },
     {
@@ -4547,6 +5499,12 @@
         "2022": 2168700,
         "2023": 2404700,
         "2024": 2383300
+      },
+      "sourceBlend": "owid-un-tourism",
+      "filledYears": {},
+      "fallbackCompatibility": {
+        "overlappingYears": 23,
+        "maxRelativeDifference": 3.203125
       }
     },
     {
@@ -4593,6 +5551,12 @@
         "2020": 525000,
         "2021": 615000,
         "2022": 1013000
+      },
+      "sourceBlend": "owid-un-tourism",
+      "filledYears": {},
+      "fallbackCompatibility": {
+        "overlappingYears": 26,
+        "maxRelativeDifference": 0
       }
     },
     {
@@ -4641,6 +5605,12 @@
         "2022": 2484028,
         "2023": 14227229,
         "2024": 16043768
+      },
+      "sourceBlend": "owid-un-tourism",
+      "filledYears": {},
+      "fallbackCompatibility": {
+        "overlappingYears": 26,
+        "maxRelativeDifference": 1.1664990328820115
       }
     },
     {
@@ -4686,6 +5656,12 @@
         "2019": 384000,
         "2020": 68300,
         "2021": 7800
+      },
+      "sourceBlend": "owid-un-tourism",
+      "filledYears": {},
+      "fallbackCompatibility": {
+        "overlappingYears": 7,
+        "maxRelativeDifference": 0.5333333333333333
       }
     },
     {
@@ -4731,6 +5707,12 @@
         "2019": 978000,
         "2020": 199000,
         "2021": 432000
+      },
+      "sourceBlend": "owid-un-tourism",
+      "filledYears": {},
+      "fallbackCompatibility": {
+        "overlappingYears": 24,
+        "maxRelativeDifference": 0
       }
     },
     {
@@ -4777,6 +5759,12 @@
         "2020": 4333000,
         "2021": 135000,
         "2022": 10071000
+      },
+      "sourceBlend": "owid-un-tourism",
+      "filledYears": {},
+      "fallbackCompatibility": {
+        "overlappingYears": 26,
+        "maxRelativeDifference": 0
       }
     },
     {
@@ -4823,6 +5811,12 @@
         "2020": 555000,
         "2021": 1322000,
         "2022": 1675000
+      },
+      "sourceBlend": "owid-un-tourism",
+      "filledYears": {},
+      "fallbackCompatibility": {
+        "overlappingYears": 26,
+        "maxRelativeDifference": 0
       }
     },
     {
@@ -4868,6 +5862,12 @@
         "2019": 217000,
         "2020": 75000,
         "2021": 168000
+      },
+      "sourceBlend": "owid-un-tourism",
+      "filledYears": {},
+      "fallbackCompatibility": {
+        "overlappingYears": 25,
+        "maxRelativeDifference": 0
       }
     },
     {
@@ -4916,6 +5916,12 @@
         "2022": 2286600,
         "2023": 2981500,
         "2024": 3563600
+      },
+      "sourceBlend": "owid-un-tourism",
+      "filledYears": {},
+      "fallbackCompatibility": {
+        "overlappingYears": 26,
+        "maxRelativeDifference": 0.4190549961270333
       }
     },
     {
@@ -4960,6 +5966,12 @@
         "2019": 6100,
         "2020": 1200,
         "2021": 35
+      },
+      "sourceBlend": "owid-un-tourism",
+      "filledYears": {},
+      "fallbackCompatibility": {
+        "overlappingYears": 24,
+        "maxRelativeDifference": 3.667978070062908e-8
       }
     },
     {
@@ -5006,7 +6018,10 @@
         "2020": 312300,
         "2021": 291000,
         "2022": 556000
-      }
+      },
+      "sourceBlend": "owid-un-tourism",
+      "filledYears": {},
+      "fallbackCompatibility": null
     },
     {
       "iso3": "MRT",
@@ -5026,6 +6041,12 @@
       "years": {
         "1999": 24000,
         "2000": 30000
+      },
+      "sourceBlend": "owid-un-tourism",
+      "filledYears": {},
+      "fallbackCompatibility": {
+        "overlappingYears": 2,
+        "maxRelativeDifference": 0
       }
     },
     {
@@ -5074,6 +6095,12 @@
         "2022": 997000,
         "2023": 1295000,
         "2024": 1382000
+      },
+      "sourceBlend": "owid-un-tourism",
+      "filledYears": {},
+      "fallbackCompatibility": {
+        "overlappingYears": 26,
+        "maxRelativeDifference": 0.045174537987679675
       }
     },
     {
@@ -5122,6 +6149,12 @@
         "2022": 38325550,
         "2023": 41949428,
         "2024": 45038750
+      },
+      "sourceBlend": "owid-un-tourism",
+      "filledYears": {},
+      "fallbackCompatibility": {
+        "overlappingYears": 26,
+        "maxRelativeDifference": 4.244394265609411
       }
     },
     {
@@ -5163,6 +6196,12 @@
         "2016": 29600,
         "2018": 19200,
         "2019": 18000
+      },
+      "sourceBlend": "owid-un-tourism",
+      "filledYears": {},
+      "fallbackCompatibility": {
+        "overlappingYears": 23,
+        "maxRelativeDifference": 4.435694769876305e-8
       }
     },
     {
@@ -5211,6 +6250,12 @@
         "2022": 162086,
         "2023": 195447,
         "2024": 254020
+      },
+      "sourceBlend": "owid-un-tourism",
+      "filledYears": {},
+      "fallbackCompatibility": {
+        "overlappingYears": 26,
+        "maxRelativeDifference": 0.009327579005986356
       }
     },
     {
@@ -5259,6 +6304,12 @@
         "2022": 290180,
         "2023": 341248,
         "2024": 348258
+      },
+      "sourceBlend": "owid-un-tourism",
+      "filledYears": {},
+      "fallbackCompatibility": {
+        "overlappingYears": 26,
+        "maxRelativeDifference": 0.07578021007108936
       }
     },
     {
@@ -5304,6 +6355,12 @@
         "2022": 286000,
         "2023": 594000,
         "2024": 727000
+      },
+      "sourceBlend": "owid-un-tourism",
+      "filledYears": {},
+      "fallbackCompatibility": {
+        "overlappingYears": 23,
+        "maxRelativeDifference": 0.3630434782608696
       }
     },
     {
@@ -5343,6 +6400,12 @@
         "2020": 351000,
         "2021": 1554000,
         "2022": 2036000
+      },
+      "sourceBlend": "owid-un-tourism",
+      "filledYears": {},
+      "fallbackCompatibility": {
+        "overlappingYears": 19,
+        "maxRelativeDifference": 0
       }
     },
     {
@@ -5388,7 +6451,10 @@
         "2019": 10400,
         "2020": 4500,
         "2021": 1600
-      }
+      },
+      "sourceBlend": "owid-un-tourism",
+      "filledYears": {},
+      "fallbackCompatibility": null
     },
     {
       "iso3": "MAR",
@@ -5434,6 +6500,12 @@
         "2020": 2778000,
         "2021": 3722000,
         "2022": 10869000
+      },
+      "sourceBlend": "owid-un-tourism",
+      "filledYears": {},
+      "fallbackCompatibility": {
+        "overlappingYears": 26,
+        "maxRelativeDifference": 0.07099816609903065
       }
     },
     {
@@ -5473,6 +6545,12 @@
         "2019": 2019000,
         "2020": 952000,
         "2021": 492000
+      },
+      "sourceBlend": "owid-un-tourism",
+      "filledYears": {},
+      "fallbackCompatibility": {
+        "overlappingYears": 19,
+        "maxRelativeDifference": 0.7430683918669131
       }
     },
     {
@@ -5521,6 +6599,12 @@
         "2022": 233000,
         "2023": 1067000,
         "2024": 808000
+      },
+      "sourceBlend": "owid-un-tourism",
+      "filledYears": {},
+      "fallbackCompatibility": {
+        "overlappingYears": 26,
+        "maxRelativeDifference": 0
       }
     },
     {
@@ -5568,6 +6652,12 @@
         "2021": 232800,
         "2022": 461000,
         "2023": 864000
+      },
+      "sourceBlend": "owid-un-tourism",
+      "filledYears": {},
+      "fallbackCompatibility": {
+        "overlappingYears": 26,
+        "maxRelativeDifference": 0.5477941176470589
       }
     },
     {
@@ -5614,6 +6704,12 @@
         "2020": 230000,
         "2021": 151000,
         "2022": 614800
+      },
+      "sourceBlend": "owid-un-tourism",
+      "filledYears": {},
+      "fallbackCompatibility": {
+        "overlappingYears": 26,
+        "maxRelativeDifference": 0
       }
     },
     {
@@ -5660,6 +6756,12 @@
         "2020": 7265000,
         "2021": 6248000,
         "2022": 16063000
+      },
+      "sourceBlend": "owid-un-tourism",
+      "filledYears": {},
+      "fallbackCompatibility": {
+        "overlappingYears": 26,
+        "maxRelativeDifference": 0
       }
     },
     {
@@ -5708,6 +6810,12 @@
         "2022": 78748,
         "2023": 125097,
         "2024": 59399
+      },
+      "sourceBlend": "owid-un-tourism",
+      "filledYears": {},
+      "fallbackCompatibility": {
+        "overlappingYears": 26,
+        "maxRelativeDifference": 0.03534982354058854
       }
     },
     {
@@ -5753,6 +6861,12 @@
         "2022": 1389056,
         "2023": 2827557,
         "2024": 3175839
+      },
+      "sourceBlend": "owid-un-tourism",
+      "filledYears": {},
+      "fallbackCompatibility": {
+        "overlappingYears": 23,
+        "maxRelativeDifference": 0.050243111831442464
       }
     },
     {
@@ -5799,6 +6913,12 @@
         "2020": 384000,
         "2021": 222400,
         "2022": 817900
+      },
+      "sourceBlend": "owid-un-tourism",
+      "filledYears": {},
+      "fallbackCompatibility": {
+        "overlappingYears": 26,
+        "maxRelativeDifference": 0.28052805280528054
       }
     },
     {
@@ -5843,6 +6963,12 @@
         "2018": 157000,
         "2019": 192000,
         "2020": 85000
+      },
+      "sourceBlend": "owid-un-tourism",
+      "filledYears": {},
+      "fallbackCompatibility": {
+        "overlappingYears": 26,
+        "maxRelativeDifference": 0
       }
     },
     {
@@ -5890,6 +7016,12 @@
         "2022": 528360,
         "2023": 528360,
         "2024": 538927.2
+      },
+      "sourceBlend": "owid-un-tourism",
+      "filledYears": {},
+      "fallbackCompatibility": {
+        "overlappingYears": 21,
+        "maxRelativeDifference": 8.61522633744856
       }
     },
     {
@@ -5935,7 +7067,10 @@
         "2019": 10200,
         "2020": 1300,
         "2021": 200
-      }
+      },
+      "sourceBlend": "owid-un-tourism",
+      "filledYears": {},
+      "fallbackCompatibility": null
     },
     {
       "iso3": "MKD",
@@ -5983,6 +7118,12 @@
         "2022": 537000,
         "2023": 734139,
         "2024": 830179
+      },
+      "sourceBlend": "owid-un-tourism",
+      "filledYears": {},
+      "fallbackCompatibility": {
+        "overlappingYears": 26,
+        "maxRelativeDifference": 0
       }
     },
     {
@@ -6029,6 +7170,12 @@
         "2020": 87000,
         "2021": 12200,
         "2022": 96100
+      },
+      "sourceBlend": "owid-un-tourism",
+      "filledYears": {},
+      "fallbackCompatibility": {
+        "overlappingYears": 25,
+        "maxRelativeDifference": 0.02608695652173913
       }
     },
     {
@@ -6075,6 +7222,12 @@
         "2020": 1397000,
         "2021": 1435000,
         "2022": 4979400
+      },
+      "sourceBlend": "owid-un-tourism",
+      "filledYears": {},
+      "fallbackCompatibility": {
+        "overlappingYears": 26,
+        "maxRelativeDifference": 0
       }
     },
     {
@@ -6123,6 +7276,12 @@
         "2022": 2105580.8,
         "2023": 2849060.2,
         "2024": 2659001.5
+      },
+      "sourceBlend": "owid-un-tourism",
+      "filledYears": {},
+      "fallbackCompatibility": {
+        "overlappingYears": 20,
+        "maxRelativeDifference": 0.40895262929161236
       }
     },
     {
@@ -6159,6 +7318,12 @@
         "2010": 907000,
         "2011": 1161000,
         "2012": 966000
+      },
+      "sourceBlend": "owid-un-tourism",
+      "filledYears": {},
+      "fallbackCompatibility": {
+        "overlappingYears": 18,
+        "maxRelativeDifference": 0
       }
     },
     {
@@ -6203,6 +7368,12 @@
         "2018": 106000,
         "2019": 94000,
         "2020": 18400
+      },
+      "sourceBlend": "owid-un-tourism",
+      "filledYears": {},
+      "fallbackCompatibility": {
+        "overlappingYears": 26,
+        "maxRelativeDifference": 2.0732048972643932e-8
       }
     },
     {
@@ -6246,6 +7417,12 @@
         "2018": 985000,
         "2019": 1110000,
         "2020": 170000
+      },
+      "sourceBlend": "owid-un-tourism",
+      "filledYears": {},
+      "fallbackCompatibility": {
+        "overlappingYears": 25,
+        "maxRelativeDifference": 0.45855758880516684
       }
     },
     {
@@ -6292,6 +7469,12 @@
         "2020": 414000,
         "2021": 618000,
         "2022": 1488000
+      },
+      "sourceBlend": "owid-un-tourism",
+      "filledYears": {},
+      "fallbackCompatibility": {
+        "overlappingYears": 26,
+        "maxRelativeDifference": 0.6167471819645732
       }
     },
     {
@@ -6338,6 +7521,12 @@
         "2020": 39000,
         "2021": 17000,
         "2022": 66800
+      },
+      "sourceBlend": "owid-un-tourism",
+      "filledYears": {},
+      "fallbackCompatibility": {
+        "overlappingYears": 13,
+        "maxRelativeDifference": 0.39285714285714285
       }
     },
     {
@@ -6386,6 +7575,12 @@
         "2022": 579400,
         "2023": 864000,
         "2024": 1061000
+      },
+      "sourceBlend": "owid-un-tourism",
+      "filledYears": {},
+      "fallbackCompatibility": {
+        "overlappingYears": 26,
+        "maxRelativeDifference": 34.794520547945204
       }
     },
     {
@@ -6432,6 +7627,12 @@
         "2020": 897000,
         "2021": 444000,
         "2022": 2009300
+      },
+      "sourceBlend": "owid-un-tourism",
+      "filledYears": {},
+      "fallbackCompatibility": {
+        "overlappingYears": 17,
+        "maxRelativeDifference": 0.2940151074956421
       }
     },
     {
@@ -6478,6 +7679,12 @@
         "2020": 1483000,
         "2021": 164000,
         "2022": 2654000
+      },
+      "sourceBlend": "owid-un-tourism",
+      "filledYears": {},
+      "fallbackCompatibility": {
+        "overlappingYears": 26,
+        "maxRelativeDifference": 0
       }
     },
     {
@@ -6526,6 +7733,12 @@
         "2022": 15948000,
         "2023": 18987000,
         "2024": 19723000
+      },
+      "sourceBlend": "owid-un-tourism",
+      "filledYears": {},
+      "fallbackCompatibility": {
+        "overlappingYears": 25,
+        "maxRelativeDifference": 3.9647910863509748
       }
     },
     {
@@ -6574,6 +7787,12 @@
         "2022": 22254000,
         "2023": 26504000,
         "2024": 28970000
+      },
+      "sourceBlend": "owid-un-tourism",
+      "filledYears": {},
+      "fallbackCompatibility": {
+        "overlappingYears": 26,
+        "maxRelativeDifference": 0.3506172839506173
       }
     },
     {
@@ -6622,6 +7841,12 @@
         "2022": 4231900,
         "2023": 5046200,
         "2024": 5551200
+      },
+      "sourceBlend": "owid-un-tourism",
+      "filledYears": {},
+      "fallbackCompatibility": {
+        "overlappingYears": 26,
+        "maxRelativeDifference": 0.5506289308176101
       }
     },
     {
@@ -6654,9 +7879,18 @@
         "2006": 946000,
         "2007": 964000,
         "2008": 1405000,
+        "2019": 2136500,
         "2020": 581700,
         "2021": 610800,
         "2022": 2559800
+      },
+      "sourceBlend": "owid-un-tourism-plus-compatible-wdi",
+      "filledYears": {
+        "2019": "World Bank WDI"
+      },
+      "fallbackCompatibility": {
+        "overlappingYears": 1,
+        "maxRelativeDifference": 0.0005157297576070139
       }
     },
     {
@@ -6699,6 +7933,12 @@
         "2016": 211000,
         "2017": 149000,
         "2018": 156000
+      },
+      "sourceBlend": "owid-un-tourism",
+      "filledYears": {},
+      "fallbackCompatibility": {
+        "overlappingYears": 9,
+        "maxRelativeDifference": 0.027522935779816515
       }
     },
     {
@@ -6745,7 +7985,10 @@
         "2020": 216700,
         "2021": 251000,
         "2022": 495000
-      }
+      },
+      "sourceBlend": "owid-un-tourism",
+      "filledYears": {},
+      "fallbackCompatibility": null
     },
     {
       "iso3": "ROU",
@@ -6774,6 +8017,12 @@
         "2022": 12696800,
         "2023": 14777000,
         "2024": 13353000
+      },
+      "sourceBlend": "owid-un-tourism",
+      "filledYears": {},
+      "fallbackCompatibility": {
+        "overlappingYears": 7,
+        "maxRelativeDifference": 0.9749727965179543
       }
     },
     {
@@ -6797,6 +8046,12 @@
         "2003": 20443000,
         "2004": 19892000,
         "2005": 19940000
+      },
+      "sourceBlend": "owid-un-tourism",
+      "filledYears": {},
+      "fallbackCompatibility": {
+        "overlappingYears": 5,
+        "maxRelativeDifference": 0.1133901705115346
       }
     },
     {
@@ -6833,6 +8088,12 @@
         "2019": 1544000,
         "2020": 460000,
         "2021": 480000
+      },
+      "sourceBlend": "owid-un-tourism",
+      "filledYears": {},
+      "fallbackCompatibility": {
+        "overlappingYears": 14,
+        "maxRelativeDifference": 0.1024793388429752
       }
     },
     {
@@ -6879,6 +8140,12 @@
         "2020": 30000,
         "2021": 20200,
         "2022": 79800
+      },
+      "sourceBlend": "owid-un-tourism",
+      "filledYears": {},
+      "fallbackCompatibility": {
+        "overlappingYears": 26,
+        "maxRelativeDifference": 9.382608695652173
       }
     },
     {
@@ -6925,6 +8192,12 @@
         "2020": 130700,
         "2021": 199000,
         "2022": 356000
+      },
+      "sourceBlend": "owid-un-tourism",
+      "filledYears": {},
+      "fallbackCompatibility": {
+        "overlappingYears": 26,
+        "maxRelativeDifference": 2.5323741007194243
       }
     },
     {
@@ -6971,6 +8244,12 @@
         "2020": 27000,
         "2021": 24200,
         "2022": 59000
+      },
+      "sourceBlend": "owid-un-tourism",
+      "filledYears": {},
+      "fallbackCompatibility": {
+        "overlappingYears": 25,
+        "maxRelativeDifference": 3.6666666666666665
       }
     },
     {
@@ -7017,6 +8296,12 @@
         "2020": 23100,
         "2021": 2600,
         "2022": 49400
+      },
+      "sourceBlend": "owid-un-tourism",
+      "filledYears": {},
+      "fallbackCompatibility": {
+        "overlappingYears": 15,
+        "maxRelativeDifference": 0.09634551495016612
       }
     },
     {
@@ -7062,6 +8347,12 @@
         "2019": 111000,
         "2020": 58000,
         "2021": 94000
+      },
+      "sourceBlend": "owid-un-tourism",
+      "filledYears": {},
+      "fallbackCompatibility": {
+        "overlappingYears": 25,
+        "maxRelativeDifference": 119.28571428571429
       }
     },
     {
@@ -7104,6 +8395,12 @@
         "2019": 34900,
         "2020": 10700,
         "2021": 15100
+      },
+      "sourceBlend": "owid-un-tourism",
+      "filledYears": {},
+      "fallbackCompatibility": {
+        "overlappingYears": 21,
+        "maxRelativeDifference": 4.568499697527073e-8
       }
     },
     {
@@ -7148,6 +8445,12 @@
         "2022": 16637861,
         "2023": 27423536,
         "2024": 29727444
+      },
+      "sourceBlend": "owid-un-tourism",
+      "filledYears": {},
+      "fallbackCompatibility": {
+        "overlappingYears": 17,
+        "maxRelativeDifference": 0.3227067669172932
       }
     },
     {
@@ -7189,6 +8492,12 @@
         "2015": 1006600,
         "2016": 1210000,
         "2017": 1365000
+      },
+      "sourceBlend": "owid-un-tourism",
+      "filledYears": {},
+      "fallbackCompatibility": {
+        "overlappingYears": 15,
+        "maxRelativeDifference": 0.014992503748125937
       }
     },
     {
@@ -7230,6 +8539,12 @@
         "2022": 1773000,
         "2023": 2134305,
         "2024": 2384735
+      },
+      "sourceBlend": "owid-un-tourism",
+      "filledYears": {},
+      "fallbackCompatibility": {
+        "overlappingYears": 19,
+        "maxRelativeDifference": 0
       }
     },
     {
@@ -7276,6 +8591,12 @@
         "2020": 114900,
         "2021": 183000,
         "2022": 332000
+      },
+      "sourceBlend": "owid-un-tourism",
+      "filledYears": {},
+      "fallbackCompatibility": {
+        "overlappingYears": 26,
+        "maxRelativeDifference": 0.12658227848101267
       }
     },
     {
@@ -7321,6 +8642,12 @@
         "2019": 63000,
         "2020": 24000,
         "2021": 40000
+      },
+      "sourceBlend": "owid-un-tourism",
+      "filledYears": {},
+      "fallbackCompatibility": {
+        "overlappingYears": 8,
+        "maxRelativeDifference": 0.2916666666666667
       }
     },
     {
@@ -7369,6 +8696,12 @@
         "2022": 5344000,
         "2023": 10812000,
         "2024": 13025000
+      },
+      "sourceBlend": "owid-un-tourism",
+      "filledYears": {},
+      "fallbackCompatibility": {
+        "overlappingYears": 26,
+        "maxRelativeDifference": 0.3144774688398849
       }
     },
     {
@@ -7415,7 +8748,47 @@
         "2020": 106000,
         "2021": 249000,
         "2022": 373000
+      },
+      "sourceBlend": "owid-un-tourism",
+      "filledYears": {},
+      "fallbackCompatibility": {
+        "overlappingYears": 25,
+        "maxRelativeDifference": 8.97191011235955
       }
+    },
+    {
+      "iso3": "SVK",
+      "name": "Slovakia",
+      "sourceName": "Slovak Republic",
+      "officialName": "Slovak Republic",
+      "numericCode": "703",
+      "region": "Europe",
+      "subregion": "Central Europe",
+      "latlng": [
+        48.66666666,
+        19.5
+      ],
+      "latestYear": 2018,
+      "latestValue": 15299000,
+      "priorYear": 2017,
+      "years": {
+        "2013": 12583000,
+        "2014": 11556000,
+        "2015": 14936000,
+        "2016": 17376000,
+        "2017": 15406000,
+        "2018": 15299000
+      },
+      "sourceBlend": "world-bank-wdi-only",
+      "filledYears": {
+        "2013": "World Bank WDI",
+        "2014": "World Bank WDI",
+        "2015": "World Bank WDI",
+        "2016": "World Bank WDI",
+        "2017": "World Bank WDI",
+        "2018": "World Bank WDI"
+      },
+      "fallbackCompatibility": null
     },
     {
       "iso3": "SVN",
@@ -7463,6 +8836,12 @@
         "2022": 3936000,
         "2023": 4658000,
         "2024": 5054000
+      },
+      "sourceBlend": "owid-un-tourism",
+      "filledYears": {},
+      "fallbackCompatibility": {
+        "overlappingYears": 26,
+        "maxRelativeDifference": 0
       }
     },
     {
@@ -7505,6 +8884,12 @@
         "2019": 28900,
         "2020": 4400,
         "2021": 700
+      },
+      "sourceBlend": "owid-un-tourism",
+      "filledYears": {},
+      "fallbackCompatibility": {
+        "overlappingYears": 23,
+        "maxRelativeDifference": 4.169068308299041e-8
       }
     },
     {
@@ -7553,6 +8938,12 @@
         "2022": 5698000,
         "2023": 8483000,
         "2024": 8919000
+      },
+      "sourceBlend": "owid-un-tourism",
+      "filledYears": {},
+      "fallbackCompatibility": {
+        "overlappingYears": 26,
+        "maxRelativeDifference": 0.5669362084456424
       }
     },
     {
@@ -7571,11 +8962,20 @@
       "latestValue": 16370000,
       "priorYear": 2023,
       "years": {
+        "2019": 17503000,
         "2020": 2519200,
         "2021": 967000,
         "2022": 3198000,
         "2023": 11032000,
         "2024": 16370000
+      },
+      "sourceBlend": "owid-un-tourism-plus-compatible-wdi",
+      "filledYears": {
+        "2019": "World Bank WDI"
+      },
+      "fallbackCompatibility": {
+        "overlappingYears": 1,
+        "maxRelativeDifference": 0.00007939028262940616
       }
     },
     {
@@ -7624,6 +9024,12 @@
         "2022": 71659000,
         "2023": 85169050,
         "2024": 93759300
+      },
+      "sourceBlend": "owid-un-tourism",
+      "filledYears": {},
+      "fallbackCompatibility": {
+        "overlappingYears": 26,
+        "maxRelativeDifference": 0.923097237627423
       }
     },
     {
@@ -7670,6 +9076,12 @@
         "2020": 508000,
         "2021": 194000,
         "2022": 720000
+      },
+      "sourceBlend": "owid-un-tourism",
+      "filledYears": {},
+      "fallbackCompatibility": {
+        "overlappingYears": 26,
+        "maxRelativeDifference": 0.23035714285714284
       }
     },
     {
@@ -7712,6 +9124,12 @@
         "2016": 800000,
         "2017": 813000,
         "2018": 836000
+      },
+      "sourceBlend": "owid-un-tourism",
+      "filledYears": {},
+      "fallbackCompatibility": {
+        "overlappingYears": 24,
+        "maxRelativeDifference": 0
       }
     },
     {
@@ -7753,6 +9171,12 @@
         "2015": 228000,
         "2016": 256000,
         "2017": 278000
+      },
+      "sourceBlend": "owid-un-tourism",
+      "filledYears": {},
+      "fallbackCompatibility": {
+        "overlappingYears": 20,
+        "maxRelativeDifference": 0.6046511627906976
       }
     },
     {
@@ -7799,6 +9223,12 @@
         "2020": 1957000,
         "2021": 2990000,
         "2022": 6629000
+      },
+      "sourceBlend": "owid-un-tourism",
+      "filledYears": {},
+      "fallbackCompatibility": {
+        "overlappingYears": 26,
+        "maxRelativeDifference": 0
       }
     },
     {
@@ -7844,6 +9274,12 @@
         "2020": 3690000,
         "2021": 4390000,
         "2022": 9159500
+      },
+      "sourceBlend": "owid-un-tourism",
+      "filledYears": {},
+      "fallbackCompatibility": {
+        "overlappingYears": 24,
+        "maxRelativeDifference": 0
       }
     },
     {
@@ -7879,6 +9315,12 @@
         "2009": 6092000,
         "2010": 8546000,
         "2011": 5070000
+      },
+      "sourceBlend": "owid-un-tourism",
+      "filledYears": {},
+      "fallbackCompatibility": {
+        "overlappingYears": 17,
+        "maxRelativeDifference": 1.9337349397590362
       }
     },
     {
@@ -7902,7 +9344,10 @@
         "2022": 895900,
         "2023": 6487000,
         "2024": 7858000
-      }
+      },
+      "sourceBlend": "owid-un-tourism",
+      "filledYears": {},
+      "fallbackCompatibility": null
     },
     {
       "iso3": "TJK",
@@ -7923,6 +9368,12 @@
         "1999": 1600,
         "2000": 3800,
         "2001": 3500
+      },
+      "sourceBlend": "owid-un-tourism",
+      "filledYears": {},
+      "fallbackCompatibility": {
+        "overlappingYears": 3,
+        "maxRelativeDifference": 1.8125
       }
     },
     {
@@ -7969,6 +9420,12 @@
         "2020": 592000,
         "2021": 922700,
         "2022": 1455000
+      },
+      "sourceBlend": "owid-un-tourism",
+      "filledYears": {},
+      "fallbackCompatibility": {
+        "overlappingYears": 25,
+        "maxRelativeDifference": 0.11170212765957446
       }
     },
     {
@@ -8014,6 +9471,12 @@
         "2019": 39916000,
         "2020": 6725000,
         "2021": 511000
+      },
+      "sourceBlend": "owid-un-tourism",
+      "filledYears": {},
+      "fallbackCompatibility": {
+        "overlappingYears": 25,
+        "maxRelativeDifference": 0
       }
     },
     {
@@ -8048,6 +9511,12 @@
         "2019": 80800,
         "2020": 17900,
         "2021": 5500
+      },
+      "sourceBlend": "owid-un-tourism",
+      "filledYears": {},
+      "fallbackCompatibility": {
+        "overlappingYears": 14,
+        "maxRelativeDifference": 0.07425738797329458
       }
     },
     {
@@ -8092,6 +9561,12 @@
         "2018": 573000,
         "2019": 876000,
         "2020": 482000
+      },
+      "sourceBlend": "owid-un-tourism",
+      "filledYears": {},
+      "fallbackCompatibility": {
+        "overlappingYears": 26,
+        "maxRelativeDifference": 0
       }
     },
     {
@@ -8138,6 +9613,12 @@
         "2020": 9000,
         "2021": 200,
         "2022": 18400
+      },
+      "sourceBlend": "owid-un-tourism",
+      "filledYears": {},
+      "fallbackCompatibility": {
+        "overlappingYears": 25,
+        "maxRelativeDifference": 0.6345732373794792
       }
     },
     {
@@ -8186,6 +9667,12 @@
         "2022": 226500,
         "2023": 309000,
         "2024": 334000
+      },
+      "sourceBlend": "owid-un-tourism",
+      "filledYears": {},
+      "fallbackCompatibility": {
+        "overlappingYears": 26,
+        "maxRelativeDifference": 0.4795383001049318
       }
     },
     {
@@ -8232,6 +9719,12 @@
         "2020": 2012000,
         "2021": 2475000,
         "2022": 6441000
+      },
+      "sourceBlend": "owid-un-tourism",
+      "filledYears": {},
+      "fallbackCompatibility": {
+        "overlappingYears": 26,
+        "maxRelativeDifference": 0
       }
     },
     {
@@ -8278,6 +9771,12 @@
         "2020": 15894000,
         "2021": 29925000,
         "2022": 50453000
+      },
+      "sourceBlend": "owid-un-tourism",
+      "filledYears": {},
+      "fallbackCompatibility": {
+        "overlappingYears": 26,
+        "maxRelativeDifference": 0.09092192573768178
       }
     },
     {
@@ -8308,6 +9807,12 @@
         "2005": 11600,
         "2006": 5600,
         "2007": 8200
+      },
+      "sourceBlend": "owid-un-tourism",
+      "filledYears": {},
+      "fallbackCompatibility": {
+        "overlappingYears": 4,
+        "maxRelativeDifference": 0.2995391705069124
       }
     },
     {
@@ -8353,6 +9858,12 @@
         "2019": 487000,
         "2020": 164500,
         "2021": 405000
+      },
+      "sourceBlend": "owid-un-tourism",
+      "filledYears": {},
+      "fallbackCompatibility": {
+        "overlappingYears": 13,
+        "maxRelativeDifference": 2.7150837988826817
       }
     },
     {
@@ -8399,6 +9910,12 @@
         "2020": 600,
         "2021": 40,
         "2022": 244
+      },
+      "sourceBlend": "owid-un-tourism",
+      "filledYears": {},
+      "fallbackCompatibility": {
+        "overlappingYears": 25,
+        "maxRelativeDifference": 0.03225807989797416
       }
     },
     {
@@ -8444,6 +9961,12 @@
         "2019": 1543000,
         "2020": 473000,
         "2021": 513000
+      },
+      "sourceBlend": "owid-un-tourism",
+      "filledYears": {},
+      "fallbackCompatibility": {
+        "overlappingYears": 26,
+        "maxRelativeDifference": 0
       }
     },
     {
@@ -8492,6 +10015,12 @@
         "2022": 2173000,
         "2023": 2346000,
         "2024": 2482000
+      },
+      "sourceBlend": "owid-un-tourism",
+      "filledYears": {},
+      "fallbackCompatibility": {
+        "overlappingYears": 26,
+        "maxRelativeDifference": 1.5968809073724008
       }
     },
     {
@@ -8529,6 +10058,12 @@
         "2019": 21561000,
         "2020": 7165000,
         "2021": 11479000
+      },
+      "sourceBlend": "owid-un-tourism",
+      "filledYears": {},
+      "fallbackCompatibility": {
+        "overlappingYears": 6,
+        "maxRelativeDifference": 0.17258012151569965
       }
     },
     {
@@ -8577,6 +10112,12 @@
         "2022": 30741000,
         "2023": 37214804,
         "2024": 38229570
+      },
+      "sourceBlend": "owid-un-tourism",
+      "filledYears": {},
+      "fallbackCompatibility": {
+        "overlappingYears": 26,
+        "maxRelativeDifference": 0.09907387465001077
       }
     },
     {
@@ -8625,6 +10166,12 @@
         "2022": 50770684,
         "2023": 66349860,
         "2024": 72390320
+      },
+      "sourceBlend": "owid-un-tourism",
+      "filledYears": {},
+      "fallbackCompatibility": {
+        "overlappingYears": 26,
+        "maxRelativeDifference": 2.593346018792789
       }
     },
     {
@@ -8670,6 +10217,12 @@
         "2019": 514000,
         "2020": 302700,
         "2021": 684800
+      },
+      "sourceBlend": "owid-un-tourism",
+      "filledYears": {},
+      "fallbackCompatibility": {
+        "overlappingYears": 26,
+        "maxRelativeDifference": 27.450611166171125
       }
     },
     {
@@ -8713,6 +10266,12 @@
         "2017": 3674000,
         "2018": 3469000,
         "2019": 3059000
+      },
+      "sourceBlend": "owid-un-tourism",
+      "filledYears": {},
+      "fallbackCompatibility": {
+        "overlappingYears": 25,
+        "maxRelativeDifference": 0.20834886321282148
       }
     },
     {
@@ -8736,7 +10295,10 @@
         "2022": 5232781,
         "2023": 6626302,
         "2024": 7957213
-      }
+      },
+      "sourceBlend": "owid-un-tourism",
+      "filledYears": {},
+      "fallbackCompatibility": null
     },
     {
       "iso3": "VUT",
@@ -8781,6 +10343,12 @@
         "2019": 120600,
         "2020": 22000,
         "2022": 30000
+      },
+      "sourceBlend": "owid-un-tourism",
+      "filledYears": {},
+      "fallbackCompatibility": {
+        "overlappingYears": 26,
+        "maxRelativeDifference": 2.7454546148126777
       }
     },
     {
@@ -8822,6 +10390,12 @@
         "2015": 789000,
         "2016": 601000,
         "2017": 427000
+      },
+      "sourceBlend": "owid-un-tourism",
+      "filledYears": {},
+      "fallbackCompatibility": {
+        "overlappingYears": 23,
+        "maxRelativeDifference": 0.36574074074074076
       }
     },
     {
@@ -8849,6 +10423,12 @@
         "2013": 7201000,
         "2014": 7488000,
         "2015": 7555000
+      },
+      "sourceBlend": "owid-un-tourism",
+      "filledYears": {},
+      "fallbackCompatibility": {
+        "overlappingYears": 9,
+        "maxRelativeDifference": 0.6482051282051282
       }
     },
     {
@@ -8888,6 +10468,12 @@
         "2013": 990000,
         "2014": 1017500,
         "2015": 366700
+      },
+      "sourceBlend": "owid-un-tourism",
+      "filledYears": {},
+      "fallbackCompatibility": {
+        "overlappingYears": 6,
+        "maxRelativeDifference": 0.4668192219679634
       }
     },
     {
@@ -8933,6 +10519,12 @@
         "2019": 1266000,
         "2020": 502000,
         "2021": 554000
+      },
+      "sourceBlend": "owid-un-tourism",
+      "filledYears": {},
+      "fallbackCompatibility": {
+        "overlappingYears": 26,
+        "maxRelativeDifference": 0
       }
     },
     {
@@ -8958,6 +10550,12 @@
         "1999": 2101000,
         "2000": 1868000,
         "2001": 2068000
+      },
+      "sourceBlend": "owid-un-tourism",
+      "filledYears": {},
+      "fallbackCompatibility": {
+        "overlappingYears": 7,
+        "maxRelativeDifference": 0.07205029013539652
       }
     }
   ]

@@ -19,6 +19,12 @@ export type CountryRecord = {
   latestValue: number
   priorYear: number | null
   years: Record<string, number>
+  sourceBlend?: 'owid-un-tourism' | 'owid-un-tourism-plus-compatible-wdi' | 'world-bank-wdi-only'
+  filledYears?: Record<string, string>
+  fallbackCompatibility?: {
+    overlappingYears: number
+    maxRelativeDifference: number
+  } | null
 }
 
 export type Comparison = {
@@ -40,6 +46,13 @@ export type TourismDataset = {
     name: string
     dataUrl: string
     metadataUrl: string
+    fallbackName?: string
+    fallbackDataUrl?: string
+    fallbackLastUpdated?: string | null
+    fallbackMergeRule?: string
+    fallbackFilledYears?: number
+    fallbackCompatibleCountries?: number
+    fallbackOnlyCountries?: number
     chartUrl: string
     originalSourceUrl: string
     lastUpdated: string | null

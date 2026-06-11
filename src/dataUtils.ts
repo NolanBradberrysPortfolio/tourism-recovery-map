@@ -3,14 +3,14 @@ import { interpolateRgbBasis } from 'd3-interpolate'
 import type { BaselineKey, Comparison, CountryRecord } from './types'
 
 const percentScale = scaleDiverging<string>(
-  interpolateRgbBasis(['#a50026', '#f6e8a8', '#118a67']),
+  interpolateRgbBasis(['#b5523c', '#f2efe8', '#247c8a']),
 )
   .domain([-100, 0, 100])
 
 export const baselineOptions: Array<{ key: BaselineKey; label: string }> = [
   { key: '2019', label: '2019' },
   { key: '2022', label: '2022' },
-  { key: '2024', label: '2024' },
+  { key: '2024', label: '2024 coverage' },
   { key: 'prior', label: 'Prior year' },
 ]
 
@@ -71,7 +71,7 @@ export function compareCountry(record: CountryRecord, baseline: BaselineKey): Co
 
 export function colorForComparison(comparison: Comparison): string {
   if (comparison.percentChange === null) {
-    return '#d7dbe1'
+    return '#d8dde5'
   }
   if (comparison.status === 'same-year') {
     return '#eef2f6'
@@ -98,7 +98,7 @@ export function formatNumber(value: number | null): string {
 
 export function formatPercent(value: number | null): string {
   if (value === null || !Number.isFinite(value)) {
-    return 'No data'
+    return 'No comparison'
   }
   const sign = value > 0 ? '+' : ''
   return `${sign}${new Intl.NumberFormat('en-US', {
@@ -108,13 +108,13 @@ export function formatPercent(value: number | null): string {
 
 export function describeComparison(comparison: Comparison): string {
   if (comparison.status === 'missing-baseline') {
-    return 'Baseline unavailable'
+    return comparison.baselineYear ? `No ${comparison.baselineYear} comparison` : 'No comparison'
   }
   if (comparison.status === 'missing-latest') {
-    return 'Latest year unavailable'
+    return 'No latest data'
   }
   if (comparison.status === 'same-year') {
-    return 'Same-year baseline'
+    return 'Same year'
   }
   if ((comparison.percentChange ?? 0) > 0) {
     return 'Increase'

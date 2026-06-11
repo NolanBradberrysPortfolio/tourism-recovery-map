@@ -1,14 +1,14 @@
 # Adversarial Review
 
-Generated: 2026-06-10T22:40:35.798Z
+Generated: 2026-06-11T17:57:20.589Z
 Iterations: 60
 Status: pass
 
 ## Summary
 
-- Tourism records: 206
+- Tourism records: 212
 - Map features: 241
-- Joined features: 202
+- Joined features: 208
 - Latest year: 2024
 - 2024 coverage: 67
 

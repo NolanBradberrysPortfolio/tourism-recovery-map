@@ -9,10 +9,10 @@ test('mobile adversarial interaction loop', async ({ page }, testInfo) => {
   const country = countries[iteration % countries.length]
 
   await page.goto('/')
-  await page.waitForFunction(() => document.querySelectorAll('.leaflet-pane svg path').length > 150)
-  await page.getByLabel('Comparison baseline').selectOption(baseline)
+  await page.waitForFunction(() => document.querySelectorAll('.country-path').length > 150)
+  await page.getByLabel('Comparison year').selectOption(baseline)
   await page.getByLabel('Search countries').fill(country)
-  await page.getByRole('button', { name: `Select ${country}`, exact: true }).click()
+  await page.getByLabel(`${country} country search option`).click()
   await expect(page.locator('.detail-panel')).toContainText(country)
 
   if (iteration % 3 === 0) {
@@ -22,13 +22,13 @@ test('mobile adversarial interaction loop', async ({ page }, testInfo) => {
   }
 
   if (iteration % 2 === 0) {
-    await page.locator('.leaflet-control-zoom-in').click()
-    await page.locator('.leaflet-control-zoom-out').click()
+    await page.getByLabel('Zoom in').click()
+    await page.getByLabel('Zoom out').click()
   }
 
   const checks = await page.evaluate(() => ({
     horizontalOverflow: document.documentElement.scrollWidth - window.innerWidth,
-    visiblePaths: document.querySelectorAll('.leaflet-pane svg path').length,
+    visiblePaths: document.querySelectorAll('.country-path').length,
     detailVisible: Boolean(document.querySelector('.detail-panel')),
   }))
 

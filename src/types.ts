@@ -20,6 +20,18 @@ export type CountryRecord = {
   years: Record<string, number>
   sourceBlend?: 'owid-un-tourism' | 'owid-un-tourism-plus-compatible-wdi' | 'world-bank-wdi-only'
   filledYears?: Record<string, string>
+  estimatedYears?: Record<
+    string,
+    {
+      source: 'regional-recovery-model'
+      basisYear: number
+      basisValue: number
+      multiplier: number
+      scope: string
+      sampleSize: number
+      confidence: 'medium' | 'low' | 'very-low'
+    }
+  >
   fallbackCompatibility?: {
     overlappingYears: number
     maxRelativeDifference: number
@@ -41,6 +53,8 @@ export type TourismDataset = {
   baselines: number[]
   valueColumn: string
   coverage: Record<string, number>
+  reportedCoverage?: Record<string, number>
+  estimatedCoverage?: Record<string, number>
   source: {
     name: string
     dataUrl: string
@@ -52,6 +66,9 @@ export type TourismDataset = {
     fallbackFilledYears?: number
     fallbackCompatibleCountries?: number
     fallbackOnlyCountries?: number
+    modeledEstimateYear?: number
+    modeledEstimateCount?: number
+    modeledEstimateRule?: string
     chartUrl: string
     originalSourceUrl: string
     lastUpdated: string | null

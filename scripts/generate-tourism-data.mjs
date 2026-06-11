@@ -13,6 +13,8 @@ const BASELINES = [2019, 2022, 2024]
 const BASELINE_FILL_YEARS = new Set(BASELINES.map(String))
 const MAX_FALLBACK_RELATIVE_DIFFERENCE = 0.02
 const MIN_OVERLAPS_FOR_FULL_FALLBACK_FILL = 3
+const ESTIMATE_TARGET_YEAR = 2024
+const MIN_ESTIMATE_SCOPE_SAMPLE = 3
 
 const countryByIso3 = new Map(
   worldCountries
@@ -118,6 +120,66 @@ function getCompatibility(primaryYears, fallbackYears) {
   }
 }
 
+function median(values) {
+  if (values.length === 0) {
+    return null
+  }
+  const sorted = [...values].sort((a, b) => a - b)
+  const midpoint = Math.floor(sorted.length / 2)
+  return sorted.length % 2 === 0
+    ? (sorted[midpoint - 1] + sorted[midpoint]) / 2
+    : sorted[midpoint]
+}
+
+function latestBasisYearBefore(record, targetYear) {
+  const years = Object.keys(record.years)
+    .map(Number)
+    .filter((year) => year < targetYear && Number.isFinite(record.years[String(year)]))
+    .sort((a, b) => b - a)
+  return years[0] ?? null
+}
+
+function getEstimateScope(records, record, basisYear, targetYear) {
+  const scopes = [
+    {
+      name: record.subregion ? `${record.subregion} median recovery` : '',
+      match: (candidate) => record.subregion && candidate.subregion === record.subregion,
+    },
+    {
+      name: record.region ? `${record.region} median recovery` : '',
+      match: (candidate) => record.region && candidate.region === record.region,
+    },
+    {
+      name: 'global median recovery',
+      match: () => true,
+    },
+  ].filter((scope) => scope.name)
+
+  for (const scope of scopes) {
+    const ratios = records
+      .filter(scope.match)
+      .map((candidate) => {
+        const targetValue = candidate.years[String(targetYear)]
+        const basisValue = candidate.years[String(basisYear)]
+        if (!Number.isFinite(targetValue) || !Number.isFinite(basisValue) || basisValue <= 0) {
+          return null
+        }
+        return targetValue / basisValue
+      })
+      .filter((ratio) => Number.isFinite(ratio) && ratio > 0)
+
+    if (ratios.length >= MIN_ESTIMATE_SCOPE_SAMPLE) {
+      return {
+        scope: scope.name,
+        sampleSize: ratios.length,
+        multiplier: median(ratios),
+      }
+    }
+  }
+
+  return null
+}
+
 const mergedIso3 = new Set([...byIso3.keys(), ...wdiByIso3.keys()])
 let compatibleFallbackCountries = 0
 let wdiOnlyCountries = 0
@@ -199,10 +261,57 @@ const records = [...mergedIso3]
   .filter(Boolean)
   .sort((a, b) => a.name.localeCompare(b.name))
 
+let modeledEstimateCount = 0
+
+for (const record of records) {
+  if (record.years[String(ESTIMATE_TARGET_YEAR)] !== undefined) {
+    continue
+  }
+
+  const preferredBasisYear = Number.isFinite(record.years['2019']) ? 2019 : null
+  const basisYear = preferredBasisYear ?? latestBasisYearBefore(record, ESTIMATE_TARGET_YEAR)
+  if (basisYear === null) {
+    continue
+  }
+
+  const basisValue = record.years[String(basisYear)]
+  if (!Number.isFinite(basisValue) || basisValue <= 0) {
+    continue
+  }
+
+  const estimateScope = getEstimateScope(records, record, basisYear, ESTIMATE_TARGET_YEAR)
+  if (!estimateScope) {
+    continue
+  }
+
+  const estimate = Math.max(0, Math.round(basisValue * estimateScope.multiplier))
+  record.years[String(ESTIMATE_TARGET_YEAR)] = estimate
+  record.estimatedYears = {
+    ...(record.estimatedYears ?? {}),
+    [String(ESTIMATE_TARGET_YEAR)]: {
+      source: 'regional-recovery-model',
+      basisYear,
+      basisValue,
+      multiplier: Number(estimateScope.multiplier.toFixed(6)),
+      scope: estimateScope.scope,
+      sampleSize: estimateScope.sampleSize,
+      confidence: basisYear >= 2022 ? 'medium' : basisYear >= 2018 ? 'low' : 'very-low',
+    },
+  }
+  modeledEstimateCount += 1
+}
+
 const coverage = {}
+const reportedCoverage = {}
+const estimatedCoverage = {}
 for (const record of records) {
   for (const year of Object.keys(record.years)) {
     coverage[year] = (coverage[year] ?? 0) + 1
+    if (record.estimatedYears?.[year]) {
+      estimatedCoverage[year] = (estimatedCoverage[year] ?? 0) + 1
+    } else {
+      reportedCoverage[year] = (reportedCoverage[year] ?? 0) + 1
+    }
   }
 }
 
@@ -211,6 +320,8 @@ const data = {
   baselines: BASELINES,
   valueColumn: VALUE_COLUMN,
   coverage,
+  reportedCoverage,
+  estimatedCoverage,
   source: {
     name: 'UN Tourism (2025) - processed by Our World in Data',
     dataUrl: DATA_URL,
@@ -223,6 +334,10 @@ const data = {
     fallbackFilledYears: filledYearCount,
     fallbackCompatibleCountries: compatibleFallbackCountries,
     fallbackOnlyCountries: wdiOnlyCountries,
+    modeledEstimateYear: ESTIMATE_TARGET_YEAR,
+    modeledEstimateCount,
+    modeledEstimateRule:
+      'Missing 2024 values are modeled from each country or territory latest available reported value, preferring 2019 when present, multiplied by the median reported recovery ratio for matching subregion, region, or global peers with at least 3 comparable reported series. Modeled 2024 values are labeled and are not official arrivals.',
     chartUrl: metadata.chart?.originalChartUrl ?? 'https://ourworldindata.org/grapher/international-tourist-trips',
     originalSourceUrl: 'https://www.untourism.int/tourism-statistics/tourism-statistics-database',
     lastUpdated: metadata.columns?.[VALUE_COLUMN]?.lastUpdated ?? null,
@@ -243,8 +358,9 @@ await writeFile('src/data/geoIndex.json', `${JSON.stringify(geoIndex, null, 2)}\
 console.log(
   [
     `Generated ${records.length} tourism records.`,
-    `2024 coverage: ${coverage['2024'] ?? 0} countries.`,
+    `2024 coverage: ${coverage['2024'] ?? 0} countries (${reportedCoverage['2024'] ?? 0} reported, ${estimatedCoverage['2024'] ?? 0} modeled).`,
     `World Bank fallback filled ${filledYearCount} years across ${compatibleFallbackCountries} compatible countries.`,
+    `Modeled ${modeledEstimateCount} missing 2024 values.`,
     `World Bank-only records: ${wdiOnlyCountries}.`,
   ].join(' '),
 )

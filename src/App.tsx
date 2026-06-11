@@ -87,7 +87,7 @@ const searchAliases: Record<string, string[]> = {
 const supplementalCountryNotes: Record<string, { text: string; url: string; label: string }> = {
   CHN: {
     text:
-      'China reports newer official 2024 inbound-tourism counts, but those national counts use a broader definition than the UN/OWID overnight-arrivals series used for this map, so they are shown as context instead of merged into the color scale.',
+      'China reports newer official 2024 inbound-tourism counts, but those national counts use a broader definition than the UN/OWID overnight-arrivals series used for this map. The map uses the modeled comparable-series estimate instead and keeps the official figure as context.',
     url: 'https://english.www.gov.cn/archive/statistics/202505/19/content_WS682ae46ec6d0868f4e8f2aa6.html',
     label: 'China official 2024 context',
   },
@@ -228,12 +228,41 @@ function yearValueLabel(value: number | null, year: number): string {
   return `No ${year} data`
 }
 
+function estimateForYear(record: CountryRecord, year: number | null) {
+  if (year === null) {
+    return null
+  }
+  return record.estimatedYears?.[String(year)] ?? null
+}
+
+function isEstimatedYear(record: CountryRecord, year: number | null): boolean {
+  return Boolean(estimateForYear(record, year))
+}
+
+function comparisonUsesEstimate(record: CountryRecord, comparison: Comparison | null): boolean {
+  if (!comparison) {
+    return false
+  }
+  return isEstimatedYear(record, comparison.fromYear) || isEstimatedYear(record, comparison.toYear)
+}
+
+function estimateLabelForYear(record: CountryRecord, year: number): string {
+  const estimate = estimateForYear(record, year)
+  if (!estimate) {
+    return ''
+  }
+  return `Modeled ${year} estimate from ${estimate.basisYear}; ${estimate.scope}, n=${estimate.sampleSize}`
+}
+
 function sourceLabelForYear(record: CountryRecord, year: number | null): string {
   if (year === null) {
     return 'No source'
   }
   if (record.years[String(year)] === undefined) {
     return 'No source'
+  }
+  if (year !== null && isEstimatedYear(record, year)) {
+    return estimateLabelForYear(record, year)
   }
   const filledSource = record.filledYears?.[String(year)]
   if (filledSource) {
@@ -279,6 +308,9 @@ function searchSourceLabel(country: SearchCountry): string {
 }
 
 function recordSourceNote(record: CountryRecord): string {
+  if (record.estimatedYears?.['2024']) {
+    return '; 2024 modeled estimate'
+  }
   if (record.sourceBlend === 'owid-un-tourism-plus-compatible-wdi') {
     return `; WDI fallback years ${compactFilledYears(record)}`
   }
@@ -308,6 +340,16 @@ function statusLabelForComparison(comparison: Comparison | null): string {
     return `no ${comparison.toYear} data`
   }
   return comparison.percentChange === null ? 'no comparison' : comparisonValueLabel(comparison)
+}
+
+function coverageLabelForYear(year: number): string {
+  const total = tourismData.coverage[String(year)] ?? 0
+  const estimated = tourismData.estimatedCoverage?.[String(year)] ?? 0
+  const reported = tourismData.reportedCoverage?.[String(year)] ?? total - estimated
+  if (estimated > 0) {
+    return `${total} with ${year}: ${reported} reported / ${estimated} modeled`
+  }
+  return `${total} with ${year}`
 }
 
 function CountryMap({
@@ -689,6 +731,9 @@ function CountryMap({
             const comparison = getComparisonForFeature(countryFeature, fromYear, toYear)
             const isSelected = selected?.iso3 === summary.iso3
             const isStale = Boolean(summary.record && summary.record.latestYear < toYear)
+            const usesEstimate = Boolean(
+              summary.record && comparisonUsesEstimate(summary.record, comparison),
+            )
             const path = pathGenerator(countryFeature)
             if (!path) {
               return null
@@ -702,6 +747,7 @@ function CountryMap({
                   comparison ? 'has-data' : 'missing-data',
                   comparison?.status === 'same-year' ? 'same-year-data' : '',
                   comparison?.percentChange === null ? 'missing-comparison' : '',
+                  usesEstimate ? 'estimated-data' : '',
                   isStale ? 'stale-data' : '',
                   isSelected ? 'is-selected' : '',
                 ]
@@ -715,6 +761,8 @@ function CountryMap({
               >
                 <title>
                   {`${summary.name}: ${statusLabelForComparison(comparison)}${
+                    usesEstimate ? '; uses modeled estimate' : ''
+                  }${
                     isStale ? `; latest year ${summary.record?.latestYear}` : ''
                   }${summary.record ? recordSourceNote(summary.record) : ''}`}
                 </title>
@@ -803,12 +851,14 @@ function DetailPanel({
     )
   }
   const hasPercentChange = comparison.percentChange !== null
+  const usesEstimate = comparisonUsesEstimate(record, comparison)
+  const comparisonDescriptor = describeComparison(comparison)
   const primaryValue = hasPercentChange
     ? comparisonValueLabel(comparison)
     : formatCompact(comparison.toValue)
   const primaryNote = hasPercentChange
-    ? `${describeComparison(comparison)} from ${comparison.fromYear} to ${comparison.toYear}`
-    : describeComparison(comparison)
+    ? `${usesEstimate ? `Estimated ${comparisonDescriptor.toLowerCase()}` : comparisonDescriptor} from ${comparison.fromYear} to ${comparison.toYear}`
+    : comparisonDescriptor
   const supplementalNote = supplementalCountryNotes[record.iso3]
 
   return (
@@ -832,6 +882,9 @@ function DetailPanel({
         <span>
           Color compares {comparison.fromYear} arrivals with {comparison.toYear} arrivals where both exist.
         </span>
+        {usesEstimate && (
+          <span>One selected year uses a modeled estimate; reported values and estimates are source-labelled below.</span>
+        )}
         <span>No comparison means one or both selected years are missing.</span>
         {record.sourceBlend === 'owid-un-tourism-plus-compatible-wdi' && (
           <span>Some missing years are filled from compatible World Bank WDI values.</span>
@@ -909,6 +962,9 @@ function Legend({ fromYear, toYear }: { fromYear: number; toYear: number }) {
           <i className="state-swatch no-series" aria-hidden="true" /> No series
         </span>
         <span>
+          <i className="state-swatch estimated-year" aria-hidden="true" /> Modeled year
+        </span>
+        <span>
           <i className="state-swatch stale-year" aria-hidden="true" /> Latest before to year
         </span>
       </div>
@@ -928,6 +984,9 @@ function SourcePanel({ onClose }: { onClose: () => void }) {
   const wdiOnlyRecords = tourismData.records.filter(
     (record) => record.sourceBlend === 'world-bank-wdi-only',
   )
+  const modeledEstimateRecords = tourismData.records.filter((record) => record.estimatedYears?.['2024'])
+  const reported2024Count = tourismData.reportedCoverage?.['2024'] ?? tourismData.coverage['2024'] ?? 0
+  const estimated2024Count = tourismData.estimatedCoverage?.['2024'] ?? modeledEstimateRecords.length
 
   useEffect(() => {
     dialogRef.current?.focus()
@@ -973,9 +1032,15 @@ function SourcePanel({ onClose }: { onClose: () => void }) {
         <h2>Data Notes</h2>
         <p>
           {tourismData.source.description} The map compares the selected From year with
-          the selected To year where both values exist; {tourismData.coverage['2024'] ?? 0}
-          {' '}countries report 2024 in the comparable series.
+          the selected To year where both values exist; {reported2024Count} countries
+          report 2024 in the comparable series and {estimated2024Count} additional
+          records have clearly labelled modeled 2024 estimates.
         </p>
+        {tourismData.source.modeledEstimateRule && (
+          <p>
+            {tourismData.source.modeledEstimateRule}
+          </p>
+        )}
         {tourismData.source.fallbackFilledYears !== undefined && (
           <p>
             World Bank WDI adds {tourismData.source.fallbackFilledYears} missing years
@@ -998,6 +1063,13 @@ function SourcePanel({ onClose }: { onClose: () => void }) {
             WDI-only records: {wdiOnlyRecords.map((record) => record.name).join(', ')}.
           </p>
         )}
+        {modeledEstimateRecords.length > 0 && (
+          <p className="source-audit">
+            Modeled 2024 estimates are used for {modeledEstimateRecords.length} records missing
+            reported 2024 values. Country detail panels show each estimate&apos;s basis year,
+            peer scope, and sample size.
+          </p>
+        )}
         {unmappedDataRecords.length > 0 && (
           <p className="source-audit">
             Searchable records not separately drawn by the base map:{' '}
@@ -1009,6 +1081,7 @@ function SourcePanel({ onClose }: { onClose: () => void }) {
           <li>Country methods differ, so exact comparability varies.</li>
           <li>Hatching means the selected comparison cannot be calculated.</li>
           <li>Dotted shapes are map geographies without a matching tourism series.</li>
+          <li>Brown dotted outlines mean the selected comparison uses a modeled year.</li>
           <li>Dashed borders mean the country&apos;s latest reported year is before the selected To year.</li>
           <li>World Bank fallback years are used only when overlapping values match the primary series within 2%.</li>
           <li>Some small countries and territories in the source are searchable even when not separately drawn on this map.</li>
@@ -1273,8 +1346,8 @@ function App() {
             <span>{tourismData.records.length} data series</span>
             <span>{matchedFeatureCount} mapped country shapes</span>
             <span>{unmappedDataRecords.length} searchable not drawn</span>
-            <span>{tourismData.coverage[String(fromYear)] ?? 0} with {fromYear}</span>
-            <span>{tourismData.coverage[String(toYear)] ?? 0} with {toYear}</span>
+            <span>{coverageLabelForYear(fromYear)}</span>
+            <span>{coverageLabelForYear(toYear)}</span>
             <span>{completeComparisonCount} with both</span>
           </div>
         </div>

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-11T22:04:22.566Z",
+  "generatedAt": "2026-06-11T22:38:43.055Z",
   "iterations": 60,
   "personas": [
     "data skeptic",
@@ -20,7 +20,9 @@
     "mapFeatures": 241,
     "joinedFeatures": 208,
     "latestYear": 2024,
-    "coverage2024": 67,
+    "coverage2024": 212,
+    "reported2024": 67,
+    "estimated2024": 145,
     "yearPairScenarios": 5
   },
   "iterationsDetail": [
@@ -51,13 +53,25 @@
         {
           "name": "2024 selected-year coverage",
           "ok": true,
-          "detail": "67 reported series",
+          "detail": "212 reported or modeled series",
+          "persona": "data skeptic"
+        },
+        {
+          "name": "2024 full modeled coverage",
+          "ok": true,
+          "detail": "212/212 records have 2024 values",
+          "persona": "data skeptic"
+        },
+        {
+          "name": "2024 reported and modeled counts are transparent",
+          "ok": true,
+          "detail": "67 reported, 145 modeled",
           "persona": "data skeptic"
         },
         {
           "name": "arrival values are nonnegative",
           "ok": true,
-          "detail": "5318 yearly values scanned",
+          "detail": "5463 yearly values scanned",
           "persona": "data skeptic"
         },
         {
@@ -124,6 +138,12 @@
           "name": "same-year missing copy is not duplicated",
           "ok": true,
           "detail": "Same-year missing data reads as one missing selected year",
+          "persona": "data skeptic"
+        },
+        {
+          "name": "modeled values are labelled in UI",
+          "ok": true,
+          "detail": "Estimated 2024 values are distinguished from reported values",
           "persona": "data skeptic"
         },
         {
@@ -179,13 +199,25 @@
         {
           "name": "2024 selected-year coverage",
           "ok": true,
-          "detail": "67 reported series",
+          "detail": "212 reported or modeled series",
+          "persona": "country join auditor"
+        },
+        {
+          "name": "2024 full modeled coverage",
+          "ok": true,
+          "detail": "212/212 records have 2024 values",
+          "persona": "country join auditor"
+        },
+        {
+          "name": "2024 reported and modeled counts are transparent",
+          "ok": true,
+          "detail": "67 reported, 145 modeled",
           "persona": "country join auditor"
         },
         {
           "name": "arrival values are nonnegative",
           "ok": true,
-          "detail": "5318 yearly values scanned",
+          "detail": "5463 yearly values scanned",
           "persona": "country join auditor"
         },
         {
@@ -252,6 +284,12 @@
           "name": "same-year missing copy is not duplicated",
           "ok": true,
           "detail": "Same-year missing data reads as one missing selected year",
+          "persona": "country join auditor"
+        },
+        {
+          "name": "modeled values are labelled in UI",
+          "ok": true,
+          "detail": "Estimated 2024 values are distinguished from reported values",
           "persona": "country join auditor"
         },
         {
@@ -307,13 +345,25 @@
         {
           "name": "2024 selected-year coverage",
           "ok": true,
-          "detail": "67 reported series",
+          "detail": "212 reported or modeled series",
+          "persona": "mobile thumb tester"
+        },
+        {
+          "name": "2024 full modeled coverage",
+          "ok": true,
+          "detail": "212/212 records have 2024 values",
+          "persona": "mobile thumb tester"
+        },
+        {
+          "name": "2024 reported and modeled counts are transparent",
+          "ok": true,
+          "detail": "67 reported, 145 modeled",
           "persona": "mobile thumb tester"
         },
         {
           "name": "arrival values are nonnegative",
           "ok": true,
-          "detail": "5318 yearly values scanned",
+          "detail": "5463 yearly values scanned",
           "persona": "mobile thumb tester"
         },
         {
@@ -380,6 +430,12 @@
           "name": "same-year missing copy is not duplicated",
           "ok": true,
           "detail": "Same-year missing data reads as one missing selected year",
+          "persona": "mobile thumb tester"
+        },
+        {
+          "name": "modeled values are labelled in UI",
+          "ok": true,
+          "detail": "Estimated 2024 values are distinguished from reported values",
           "persona": "mobile thumb tester"
         },
         {
@@ -411,7 +467,7 @@
     {
       "iteration": 4,
       "persona": "accessibility reviewer",
-      "scenario": "China missing to",
+      "scenario": "China modeled to",
       "ok": true,
       "checks": [
         {
@@ -435,13 +491,25 @@
         {
           "name": "2024 selected-year coverage",
           "ok": true,
-          "detail": "67 reported series",
+          "detail": "212 reported or modeled series",
+          "persona": "accessibility reviewer"
+        },
+        {
+          "name": "2024 full modeled coverage",
+          "ok": true,
+          "detail": "212/212 records have 2024 values",
+          "persona": "accessibility reviewer"
+        },
+        {
+          "name": "2024 reported and modeled counts are transparent",
+          "ok": true,
+          "detail": "67 reported, 145 modeled",
           "persona": "accessibility reviewer"
         },
         {
           "name": "arrival values are nonnegative",
           "ok": true,
-          "detail": "5318 yearly values scanned",
+          "detail": "5463 yearly values scanned",
           "persona": "accessibility reviewer"
         },
         {
@@ -511,6 +579,12 @@
           "persona": "accessibility reviewer"
         },
         {
+          "name": "modeled values are labelled in UI",
+          "ok": true,
+          "detail": "Estimated 2024 values are distinguished from reported values",
+          "persona": "accessibility reviewer"
+        },
+        {
           "name": "latest global year is transparent",
           "ok": true,
           "detail": "latest year in generated coverage is 2024",
@@ -523,15 +597,15 @@
           "persona": "accessibility reviewer"
         },
         {
-          "name": "China missing to record exists",
+          "name": "China modeled to record exists",
           "ok": true,
           "detail": "CHN is present",
           "persona": "accessibility reviewer"
         },
         {
-          "name": "China missing to is missing to-year only",
+          "name": "China modeled to uses labelled to-year estimate",
           "ok": true,
-          "detail": "China: 2019=65725000, 2024=missing",
+          "detail": "China: 2019=65725000, 2024=61470505",
           "persona": "accessibility reviewer"
         }
       ]
@@ -539,7 +613,7 @@
     {
       "iteration": 5,
       "persona": "source transparency reviewer",
-      "scenario": "Australia same-year missing",
+      "scenario": "Australia modeled same-year",
       "ok": true,
       "checks": [
         {
@@ -563,13 +637,25 @@
         {
           "name": "2024 selected-year coverage",
           "ok": true,
-          "detail": "67 reported series",
+          "detail": "212 reported or modeled series",
+          "persona": "source transparency reviewer"
+        },
+        {
+          "name": "2024 full modeled coverage",
+          "ok": true,
+          "detail": "212/212 records have 2024 values",
+          "persona": "source transparency reviewer"
+        },
+        {
+          "name": "2024 reported and modeled counts are transparent",
+          "ok": true,
+          "detail": "67 reported, 145 modeled",
           "persona": "source transparency reviewer"
         },
         {
           "name": "arrival values are nonnegative",
           "ok": true,
-          "detail": "5318 yearly values scanned",
+          "detail": "5463 yearly values scanned",
           "persona": "source transparency reviewer"
         },
         {
@@ -639,6 +725,12 @@
           "persona": "source transparency reviewer"
         },
         {
+          "name": "modeled values are labelled in UI",
+          "ok": true,
+          "detail": "Estimated 2024 values are distinguished from reported values",
+          "persona": "source transparency reviewer"
+        },
+        {
           "name": "latest global year is transparent",
           "ok": true,
           "detail": "latest year in generated coverage is 2024",
@@ -651,15 +743,15 @@
           "persona": "source transparency reviewer"
         },
         {
-          "name": "Australia same-year missing record exists",
+          "name": "Australia modeled same-year record exists",
           "ok": true,
           "detail": "AUS is present",
           "persona": "source transparency reviewer"
         },
         {
-          "name": "Australia same-year missing avoids duplicate same-year data",
+          "name": "Australia modeled same-year uses labelled same-year estimate",
           "ok": true,
-          "detail": "Australia: 2024=missing, 2024=missing",
+          "detail": "Australia: 2024=3088313, 2024=3088313",
           "persona": "source transparency reviewer"
         }
       ]
@@ -691,13 +783,25 @@
         {
           "name": "2024 selected-year coverage",
           "ok": true,
-          "detail": "67 reported series",
+          "detail": "212 reported or modeled series",
+          "persona": "performance reviewer"
+        },
+        {
+          "name": "2024 full modeled coverage",
+          "ok": true,
+          "detail": "212/212 records have 2024 values",
+          "persona": "performance reviewer"
+        },
+        {
+          "name": "2024 reported and modeled counts are transparent",
+          "ok": true,
+          "detail": "67 reported, 145 modeled",
           "persona": "performance reviewer"
         },
         {
           "name": "arrival values are nonnegative",
           "ok": true,
-          "detail": "5318 yearly values scanned",
+          "detail": "5463 yearly values scanned",
           "persona": "performance reviewer"
         },
         {
@@ -764,6 +868,12 @@
           "name": "same-year missing copy is not duplicated",
           "ok": true,
           "detail": "Same-year missing data reads as one missing selected year",
+          "persona": "performance reviewer"
+        },
+        {
+          "name": "modeled values are labelled in UI",
+          "ok": true,
+          "detail": "Estimated 2024 values are distinguished from reported values",
           "persona": "performance reviewer"
         },
         {
@@ -819,13 +929,25 @@
         {
           "name": "2024 selected-year coverage",
           "ok": true,
-          "detail": "67 reported series",
+          "detail": "212 reported or modeled series",
+          "persona": "visual encoding reviewer"
+        },
+        {
+          "name": "2024 full modeled coverage",
+          "ok": true,
+          "detail": "212/212 records have 2024 values",
+          "persona": "visual encoding reviewer"
+        },
+        {
+          "name": "2024 reported and modeled counts are transparent",
+          "ok": true,
+          "detail": "67 reported, 145 modeled",
           "persona": "visual encoding reviewer"
         },
         {
           "name": "arrival values are nonnegative",
           "ok": true,
-          "detail": "5318 yearly values scanned",
+          "detail": "5463 yearly values scanned",
           "persona": "visual encoding reviewer"
         },
         {
@@ -892,6 +1014,12 @@
           "name": "same-year missing copy is not duplicated",
           "ok": true,
           "detail": "Same-year missing data reads as one missing selected year",
+          "persona": "visual encoding reviewer"
+        },
+        {
+          "name": "modeled values are labelled in UI",
+          "ok": true,
+          "detail": "Estimated 2024 values are distinguished from reported values",
           "persona": "visual encoding reviewer"
         },
         {
@@ -947,13 +1075,25 @@
         {
           "name": "2024 selected-year coverage",
           "ok": true,
-          "detail": "67 reported series",
+          "detail": "212 reported or modeled series",
+          "persona": "missing data reviewer"
+        },
+        {
+          "name": "2024 full modeled coverage",
+          "ok": true,
+          "detail": "212/212 records have 2024 values",
+          "persona": "missing data reviewer"
+        },
+        {
+          "name": "2024 reported and modeled counts are transparent",
+          "ok": true,
+          "detail": "67 reported, 145 modeled",
           "persona": "missing data reviewer"
         },
         {
           "name": "arrival values are nonnegative",
           "ok": true,
-          "detail": "5318 yearly values scanned",
+          "detail": "5463 yearly values scanned",
           "persona": "missing data reviewer"
         },
         {
@@ -1020,6 +1160,12 @@
           "name": "same-year missing copy is not duplicated",
           "ok": true,
           "detail": "Same-year missing data reads as one missing selected year",
+          "persona": "missing data reviewer"
+        },
+        {
+          "name": "modeled values are labelled in UI",
+          "ok": true,
+          "detail": "Estimated 2024 values are distinguished from reported values",
           "persona": "missing data reviewer"
         },
         {
@@ -1051,7 +1197,7 @@
     {
       "iteration": 9,
       "persona": "iPhone layout reviewer",
-      "scenario": "China missing to",
+      "scenario": "China modeled to",
       "ok": true,
       "checks": [
         {
@@ -1075,13 +1221,25 @@
         {
           "name": "2024 selected-year coverage",
           "ok": true,
-          "detail": "67 reported series",
+          "detail": "212 reported or modeled series",
+          "persona": "iPhone layout reviewer"
+        },
+        {
+          "name": "2024 full modeled coverage",
+          "ok": true,
+          "detail": "212/212 records have 2024 values",
+          "persona": "iPhone layout reviewer"
+        },
+        {
+          "name": "2024 reported and modeled counts are transparent",
+          "ok": true,
+          "detail": "67 reported, 145 modeled",
           "persona": "iPhone layout reviewer"
         },
         {
           "name": "arrival values are nonnegative",
           "ok": true,
-          "detail": "5318 yearly values scanned",
+          "detail": "5463 yearly values scanned",
           "persona": "iPhone layout reviewer"
         },
         {
@@ -1151,6 +1309,12 @@
           "persona": "iPhone layout reviewer"
         },
         {
+          "name": "modeled values are labelled in UI",
+          "ok": true,
+          "detail": "Estimated 2024 values are distinguished from reported values",
+          "persona": "iPhone layout reviewer"
+        },
+        {
           "name": "latest global year is transparent",
           "ok": true,
           "detail": "latest year in generated coverage is 2024",
@@ -1163,15 +1327,15 @@
           "persona": "iPhone layout reviewer"
         },
         {
-          "name": "China missing to record exists",
+          "name": "China modeled to record exists",
           "ok": true,
           "detail": "CHN is present",
           "persona": "iPhone layout reviewer"
         },
         {
-          "name": "China missing to is missing to-year only",
+          "name": "China modeled to uses labelled to-year estimate",
           "ok": true,
-          "detail": "China: 2019=65725000, 2024=missing",
+          "detail": "China: 2019=65725000, 2024=61470505",
           "persona": "iPhone layout reviewer"
         }
       ]
@@ -1179,7 +1343,7 @@
     {
       "iteration": 10,
       "persona": "map interaction reviewer",
-      "scenario": "Australia same-year missing",
+      "scenario": "Australia modeled same-year",
       "ok": true,
       "checks": [
         {
@@ -1203,13 +1367,25 @@
         {
           "name": "2024 selected-year coverage",
           "ok": true,
-          "detail": "67 reported series",
+          "detail": "212 reported or modeled series",
+          "persona": "map interaction reviewer"
+        },
+        {
+          "name": "2024 full modeled coverage",
+          "ok": true,
+          "detail": "212/212 records have 2024 values",
+          "persona": "map interaction reviewer"
+        },
+        {
+          "name": "2024 reported and modeled counts are transparent",
+          "ok": true,
+          "detail": "67 reported, 145 modeled",
           "persona": "map interaction reviewer"
         },
         {
           "name": "arrival values are nonnegative",
           "ok": true,
-          "detail": "5318 yearly values scanned",
+          "detail": "5463 yearly values scanned",
           "persona": "map interaction reviewer"
         },
         {
@@ -1279,6 +1455,12 @@
           "persona": "map interaction reviewer"
         },
         {
+          "name": "modeled values are labelled in UI",
+          "ok": true,
+          "detail": "Estimated 2024 values are distinguished from reported values",
+          "persona": "map interaction reviewer"
+        },
+        {
           "name": "latest global year is transparent",
           "ok": true,
           "detail": "latest year in generated coverage is 2024",
@@ -1291,15 +1473,15 @@
           "persona": "map interaction reviewer"
         },
         {
-          "name": "Australia same-year missing record exists",
+          "name": "Australia modeled same-year record exists",
           "ok": true,
           "detail": "AUS is present",
           "persona": "map interaction reviewer"
         },
         {
-          "name": "Australia same-year missing avoids duplicate same-year data",
+          "name": "Australia modeled same-year uses labelled same-year estimate",
           "ok": true,
-          "detail": "Australia: 2024=missing, 2024=missing",
+          "detail": "Australia: 2024=3088313, 2024=3088313",
           "persona": "map interaction reviewer"
         }
       ]
@@ -1331,13 +1513,25 @@
         {
           "name": "2024 selected-year coverage",
           "ok": true,
-          "detail": "67 reported series",
+          "detail": "212 reported or modeled series",
+          "persona": "data skeptic"
+        },
+        {
+          "name": "2024 full modeled coverage",
+          "ok": true,
+          "detail": "212/212 records have 2024 values",
+          "persona": "data skeptic"
+        },
+        {
+          "name": "2024 reported and modeled counts are transparent",
+          "ok": true,
+          "detail": "67 reported, 145 modeled",
           "persona": "data skeptic"
         },
         {
           "name": "arrival values are nonnegative",
           "ok": true,
-          "detail": "5318 yearly values scanned",
+          "detail": "5463 yearly values scanned",
           "persona": "data skeptic"
         },
         {
@@ -1404,6 +1598,12 @@
           "name": "same-year missing copy is not duplicated",
           "ok": true,
           "detail": "Same-year missing data reads as one missing selected year",
+          "persona": "data skeptic"
+        },
+        {
+          "name": "modeled values are labelled in UI",
+          "ok": true,
+          "detail": "Estimated 2024 values are distinguished from reported values",
           "persona": "data skeptic"
         },
         {
@@ -1459,13 +1659,25 @@
         {
           "name": "2024 selected-year coverage",
           "ok": true,
-          "detail": "67 reported series",
+          "detail": "212 reported or modeled series",
+          "persona": "country join auditor"
+        },
+        {
+          "name": "2024 full modeled coverage",
+          "ok": true,
+          "detail": "212/212 records have 2024 values",
+          "persona": "country join auditor"
+        },
+        {
+          "name": "2024 reported and modeled counts are transparent",
+          "ok": true,
+          "detail": "67 reported, 145 modeled",
           "persona": "country join auditor"
         },
         {
           "name": "arrival values are nonnegative",
           "ok": true,
-          "detail": "5318 yearly values scanned",
+          "detail": "5463 yearly values scanned",
           "persona": "country join auditor"
         },
         {
@@ -1532,6 +1744,12 @@
           "name": "same-year missing copy is not duplicated",
           "ok": true,
           "detail": "Same-year missing data reads as one missing selected year",
+          "persona": "country join auditor"
+        },
+        {
+          "name": "modeled values are labelled in UI",
+          "ok": true,
+          "detail": "Estimated 2024 values are distinguished from reported values",
           "persona": "country join auditor"
         },
         {
@@ -1587,13 +1805,25 @@
         {
           "name": "2024 selected-year coverage",
           "ok": true,
-          "detail": "67 reported series",
+          "detail": "212 reported or modeled series",
+          "persona": "mobile thumb tester"
+        },
+        {
+          "name": "2024 full modeled coverage",
+          "ok": true,
+          "detail": "212/212 records have 2024 values",
+          "persona": "mobile thumb tester"
+        },
+        {
+          "name": "2024 reported and modeled counts are transparent",
+          "ok": true,
+          "detail": "67 reported, 145 modeled",
           "persona": "mobile thumb tester"
         },
         {
           "name": "arrival values are nonnegative",
           "ok": true,
-          "detail": "5318 yearly values scanned",
+          "detail": "5463 yearly values scanned",
           "persona": "mobile thumb tester"
         },
         {
@@ -1660,6 +1890,12 @@
           "name": "same-year missing copy is not duplicated",
           "ok": true,
           "detail": "Same-year missing data reads as one missing selected year",
+          "persona": "mobile thumb tester"
+        },
+        {
+          "name": "modeled values are labelled in UI",
+          "ok": true,
+          "detail": "Estimated 2024 values are distinguished from reported values",
           "persona": "mobile thumb tester"
         },
         {
@@ -1691,7 +1927,7 @@
     {
       "iteration": 14,
       "persona": "accessibility reviewer",
-      "scenario": "China missing to",
+      "scenario": "China modeled to",
       "ok": true,
       "checks": [
         {
@@ -1715,13 +1951,25 @@
         {
           "name": "2024 selected-year coverage",
           "ok": true,
-          "detail": "67 reported series",
+          "detail": "212 reported or modeled series",
+          "persona": "accessibility reviewer"
+        },
+        {
+          "name": "2024 full modeled coverage",
+          "ok": true,
+          "detail": "212/212 records have 2024 values",
+          "persona": "accessibility reviewer"
+        },
+        {
+          "name": "2024 reported and modeled counts are transparent",
+          "ok": true,
+          "detail": "67 reported, 145 modeled",
           "persona": "accessibility reviewer"
         },
         {
           "name": "arrival values are nonnegative",
           "ok": true,
-          "detail": "5318 yearly values scanned",
+          "detail": "5463 yearly values scanned",
           "persona": "accessibility reviewer"
         },
         {
@@ -1791,6 +2039,12 @@
           "persona": "accessibility reviewer"
         },
         {
+          "name": "modeled values are labelled in UI",
+          "ok": true,
+          "detail": "Estimated 2024 values are distinguished from reported values",
+          "persona": "accessibility reviewer"
+        },
+        {
           "name": "latest global year is transparent",
           "ok": true,
           "detail": "latest year in generated coverage is 2024",
@@ -1803,15 +2057,15 @@
           "persona": "accessibility reviewer"
         },
         {
-          "name": "China missing to record exists",
+          "name": "China modeled to record exists",
           "ok": true,
           "detail": "CHN is present",
           "persona": "accessibility reviewer"
         },
         {
-          "name": "China missing to is missing to-year only",
+          "name": "China modeled to uses labelled to-year estimate",
           "ok": true,
-          "detail": "China: 2019=65725000, 2024=missing",
+          "detail": "China: 2019=65725000, 2024=61470505",
           "persona": "accessibility reviewer"
         }
       ]
@@ -1819,7 +2073,7 @@
     {
       "iteration": 15,
       "persona": "source transparency reviewer",
-      "scenario": "Australia same-year missing",
+      "scenario": "Australia modeled same-year",
       "ok": true,
       "checks": [
         {
@@ -1843,13 +2097,25 @@
         {
           "name": "2024 selected-year coverage",
           "ok": true,
-          "detail": "67 reported series",
+          "detail": "212 reported or modeled series",
+          "persona": "source transparency reviewer"
+        },
+        {
+          "name": "2024 full modeled coverage",
+          "ok": true,
+          "detail": "212/212 records have 2024 values",
+          "persona": "source transparency reviewer"
+        },
+        {
+          "name": "2024 reported and modeled counts are transparent",
+          "ok": true,
+          "detail": "67 reported, 145 modeled",
           "persona": "source transparency reviewer"
         },
         {
           "name": "arrival values are nonnegative",
           "ok": true,
-          "detail": "5318 yearly values scanned",
+          "detail": "5463 yearly values scanned",
           "persona": "source transparency reviewer"
         },
         {
@@ -1919,6 +2185,12 @@
           "persona": "source transparency reviewer"
         },
         {
+          "name": "modeled values are labelled in UI",
+          "ok": true,
+          "detail": "Estimated 2024 values are distinguished from reported values",
+          "persona": "source transparency reviewer"
+        },
+        {
           "name": "latest global year is transparent",
           "ok": true,
           "detail": "latest year in generated coverage is 2024",
@@ -1931,15 +2203,15 @@
           "persona": "source transparency reviewer"
         },
         {
-          "name": "Australia same-year missing record exists",
+          "name": "Australia modeled same-year record exists",
           "ok": true,
           "detail": "AUS is present",
           "persona": "source transparency reviewer"
         },
         {
-          "name": "Australia same-year missing avoids duplicate same-year data",
+          "name": "Australia modeled same-year uses labelled same-year estimate",
           "ok": true,
-          "detail": "Australia: 2024=missing, 2024=missing",
+          "detail": "Australia: 2024=3088313, 2024=3088313",
           "persona": "source transparency reviewer"
         }
       ]
@@ -1971,13 +2243,25 @@
         {
           "name": "2024 selected-year coverage",
           "ok": true,
-          "detail": "67 reported series",
+          "detail": "212 reported or modeled series",
+          "persona": "performance reviewer"
+        },
+        {
+          "name": "2024 full modeled coverage",
+          "ok": true,
+          "detail": "212/212 records have 2024 values",
+          "persona": "performance reviewer"
+        },
+        {
+          "name": "2024 reported and modeled counts are transparent",
+          "ok": true,
+          "detail": "67 reported, 145 modeled",
           "persona": "performance reviewer"
         },
         {
           "name": "arrival values are nonnegative",
           "ok": true,
-          "detail": "5318 yearly values scanned",
+          "detail": "5463 yearly values scanned",
           "persona": "performance reviewer"
         },
         {
@@ -2044,6 +2328,12 @@
           "name": "same-year missing copy is not duplicated",
           "ok": true,
           "detail": "Same-year missing data reads as one missing selected year",
+          "persona": "performance reviewer"
+        },
+        {
+          "name": "modeled values are labelled in UI",
+          "ok": true,
+          "detail": "Estimated 2024 values are distinguished from reported values",
           "persona": "performance reviewer"
         },
         {
@@ -2099,13 +2389,25 @@
         {
           "name": "2024 selected-year coverage",
           "ok": true,
-          "detail": "67 reported series",
+          "detail": "212 reported or modeled series",
+          "persona": "visual encoding reviewer"
+        },
+        {
+          "name": "2024 full modeled coverage",
+          "ok": true,
+          "detail": "212/212 records have 2024 values",
+          "persona": "visual encoding reviewer"
+        },
+        {
+          "name": "2024 reported and modeled counts are transparent",
+          "ok": true,
+          "detail": "67 reported, 145 modeled",
           "persona": "visual encoding reviewer"
         },
         {
           "name": "arrival values are nonnegative",
           "ok": true,
-          "detail": "5318 yearly values scanned",
+          "detail": "5463 yearly values scanned",
           "persona": "visual encoding reviewer"
         },
         {
@@ -2172,6 +2474,12 @@
           "name": "same-year missing copy is not duplicated",
           "ok": true,
           "detail": "Same-year missing data reads as one missing selected year",
+          "persona": "visual encoding reviewer"
+        },
+        {
+          "name": "modeled values are labelled in UI",
+          "ok": true,
+          "detail": "Estimated 2024 values are distinguished from reported values",
           "persona": "visual encoding reviewer"
         },
         {
@@ -2227,13 +2535,25 @@
         {
           "name": "2024 selected-year coverage",
           "ok": true,
-          "detail": "67 reported series",
+          "detail": "212 reported or modeled series",
+          "persona": "missing data reviewer"
+        },
+        {
+          "name": "2024 full modeled coverage",
+          "ok": true,
+          "detail": "212/212 records have 2024 values",
+          "persona": "missing data reviewer"
+        },
+        {
+          "name": "2024 reported and modeled counts are transparent",
+          "ok": true,
+          "detail": "67 reported, 145 modeled",
           "persona": "missing data reviewer"
         },
         {
           "name": "arrival values are nonnegative",
           "ok": true,
-          "detail": "5318 yearly values scanned",
+          "detail": "5463 yearly values scanned",
           "persona": "missing data reviewer"
         },
         {
@@ -2300,6 +2620,12 @@
           "name": "same-year missing copy is not duplicated",
           "ok": true,
           "detail": "Same-year missing data reads as one missing selected year",
+          "persona": "missing data reviewer"
+        },
+        {
+          "name": "modeled values are labelled in UI",
+          "ok": true,
+          "detail": "Estimated 2024 values are distinguished from reported values",
           "persona": "missing data reviewer"
         },
         {
@@ -2331,7 +2657,7 @@
     {
       "iteration": 19,
       "persona": "iPhone layout reviewer",
-      "scenario": "China missing to",
+      "scenario": "China modeled to",
       "ok": true,
       "checks": [
         {
@@ -2355,13 +2681,25 @@
         {
           "name": "2024 selected-year coverage",
           "ok": true,
-          "detail": "67 reported series",
+          "detail": "212 reported or modeled series",
+          "persona": "iPhone layout reviewer"
+        },
+        {
+          "name": "2024 full modeled coverage",
+          "ok": true,
+          "detail": "212/212 records have 2024 values",
+          "persona": "iPhone layout reviewer"
+        },
+        {
+          "name": "2024 reported and modeled counts are transparent",
+          "ok": true,
+          "detail": "67 reported, 145 modeled",
           "persona": "iPhone layout reviewer"
         },
         {
           "name": "arrival values are nonnegative",
           "ok": true,
-          "detail": "5318 yearly values scanned",
+          "detail": "5463 yearly values scanned",
           "persona": "iPhone layout reviewer"
         },
         {
@@ -2431,6 +2769,12 @@
           "persona": "iPhone layout reviewer"
         },
         {
+          "name": "modeled values are labelled in UI",
+          "ok": true,
+          "detail": "Estimated 2024 values are distinguished from reported values",
+          "persona": "iPhone layout reviewer"
+        },
+        {
           "name": "latest global year is transparent",
           "ok": true,
           "detail": "latest year in generated coverage is 2024",
@@ -2443,15 +2787,15 @@
           "persona": "iPhone layout reviewer"
         },
         {
-          "name": "China missing to record exists",
+          "name": "China modeled to record exists",
           "ok": true,
           "detail": "CHN is present",
           "persona": "iPhone layout reviewer"
         },
         {
-          "name": "China missing to is missing to-year only",
+          "name": "China modeled to uses labelled to-year estimate",
           "ok": true,
-          "detail": "China: 2019=65725000, 2024=missing",
+          "detail": "China: 2019=65725000, 2024=61470505",
           "persona": "iPhone layout reviewer"
         }
       ]
@@ -2459,7 +2803,7 @@
     {
       "iteration": 20,
       "persona": "map interaction reviewer",
-      "scenario": "Australia same-year missing",
+      "scenario": "Australia modeled same-year",
       "ok": true,
       "checks": [
         {
@@ -2483,13 +2827,25 @@
         {
           "name": "2024 selected-year coverage",
           "ok": true,
-          "detail": "67 reported series",
+          "detail": "212 reported or modeled series",
+          "persona": "map interaction reviewer"
+        },
+        {
+          "name": "2024 full modeled coverage",
+          "ok": true,
+          "detail": "212/212 records have 2024 values",
+          "persona": "map interaction reviewer"
+        },
+        {
+          "name": "2024 reported and modeled counts are transparent",
+          "ok": true,
+          "detail": "67 reported, 145 modeled",
           "persona": "map interaction reviewer"
         },
         {
           "name": "arrival values are nonnegative",
           "ok": true,
-          "detail": "5318 yearly values scanned",
+          "detail": "5463 yearly values scanned",
           "persona": "map interaction reviewer"
         },
         {
@@ -2559,6 +2915,12 @@
           "persona": "map interaction reviewer"
         },
         {
+          "name": "modeled values are labelled in UI",
+          "ok": true,
+          "detail": "Estimated 2024 values are distinguished from reported values",
+          "persona": "map interaction reviewer"
+        },
+        {
           "name": "latest global year is transparent",
           "ok": true,
           "detail": "latest year in generated coverage is 2024",
@@ -2571,15 +2933,15 @@
           "persona": "map interaction reviewer"
         },
         {
-          "name": "Australia same-year missing record exists",
+          "name": "Australia modeled same-year record exists",
           "ok": true,
           "detail": "AUS is present",
           "persona": "map interaction reviewer"
         },
         {
-          "name": "Australia same-year missing avoids duplicate same-year data",
+          "name": "Australia modeled same-year uses labelled same-year estimate",
           "ok": true,
-          "detail": "Australia: 2024=missing, 2024=missing",
+          "detail": "Australia: 2024=3088313, 2024=3088313",
           "persona": "map interaction reviewer"
         }
       ]
@@ -2611,13 +2973,25 @@
         {
           "name": "2024 selected-year coverage",
           "ok": true,
-          "detail": "67 reported series",
+          "detail": "212 reported or modeled series",
+          "persona": "data skeptic"
+        },
+        {
+          "name": "2024 full modeled coverage",
+          "ok": true,
+          "detail": "212/212 records have 2024 values",
+          "persona": "data skeptic"
+        },
+        {
+          "name": "2024 reported and modeled counts are transparent",
+          "ok": true,
+          "detail": "67 reported, 145 modeled",
           "persona": "data skeptic"
         },
         {
           "name": "arrival values are nonnegative",
           "ok": true,
-          "detail": "5318 yearly values scanned",
+          "detail": "5463 yearly values scanned",
           "persona": "data skeptic"
         },
         {
@@ -2684,6 +3058,12 @@
           "name": "same-year missing copy is not duplicated",
           "ok": true,
           "detail": "Same-year missing data reads as one missing selected year",
+          "persona": "data skeptic"
+        },
+        {
+          "name": "modeled values are labelled in UI",
+          "ok": true,
+          "detail": "Estimated 2024 values are distinguished from reported values",
           "persona": "data skeptic"
         },
         {
@@ -2739,13 +3119,25 @@
         {
           "name": "2024 selected-year coverage",
           "ok": true,
-          "detail": "67 reported series",
+          "detail": "212 reported or modeled series",
+          "persona": "country join auditor"
+        },
+        {
+          "name": "2024 full modeled coverage",
+          "ok": true,
+          "detail": "212/212 records have 2024 values",
+          "persona": "country join auditor"
+        },
+        {
+          "name": "2024 reported and modeled counts are transparent",
+          "ok": true,
+          "detail": "67 reported, 145 modeled",
           "persona": "country join auditor"
         },
         {
           "name": "arrival values are nonnegative",
           "ok": true,
-          "detail": "5318 yearly values scanned",
+          "detail": "5463 yearly values scanned",
           "persona": "country join auditor"
         },
         {
@@ -2812,6 +3204,12 @@
           "name": "same-year missing copy is not duplicated",
           "ok": true,
           "detail": "Same-year missing data reads as one missing selected year",
+          "persona": "country join auditor"
+        },
+        {
+          "name": "modeled values are labelled in UI",
+          "ok": true,
+          "detail": "Estimated 2024 values are distinguished from reported values",
           "persona": "country join auditor"
         },
         {
@@ -2867,13 +3265,25 @@
         {
           "name": "2024 selected-year coverage",
           "ok": true,
-          "detail": "67 reported series",
+          "detail": "212 reported or modeled series",
+          "persona": "mobile thumb tester"
+        },
+        {
+          "name": "2024 full modeled coverage",
+          "ok": true,
+          "detail": "212/212 records have 2024 values",
+          "persona": "mobile thumb tester"
+        },
+        {
+          "name": "2024 reported and modeled counts are transparent",
+          "ok": true,
+          "detail": "67 reported, 145 modeled",
           "persona": "mobile thumb tester"
         },
         {
           "name": "arrival values are nonnegative",
           "ok": true,
-          "detail": "5318 yearly values scanned",
+          "detail": "5463 yearly values scanned",
           "persona": "mobile thumb tester"
         },
         {
@@ -2940,6 +3350,12 @@
           "name": "same-year missing copy is not duplicated",
           "ok": true,
           "detail": "Same-year missing data reads as one missing selected year",
+          "persona": "mobile thumb tester"
+        },
+        {
+          "name": "modeled values are labelled in UI",
+          "ok": true,
+          "detail": "Estimated 2024 values are distinguished from reported values",
           "persona": "mobile thumb tester"
         },
         {
@@ -2971,7 +3387,7 @@
     {
       "iteration": 24,
       "persona": "accessibility reviewer",
-      "scenario": "China missing to",
+      "scenario": "China modeled to",
       "ok": true,
       "checks": [
         {
@@ -2995,13 +3411,25 @@
         {
           "name": "2024 selected-year coverage",
           "ok": true,
-          "detail": "67 reported series",
+          "detail": "212 reported or modeled series",
+          "persona": "accessibility reviewer"
+        },
+        {
+          "name": "2024 full modeled coverage",
+          "ok": true,
+          "detail": "212/212 records have 2024 values",
+          "persona": "accessibility reviewer"
+        },
+        {
+          "name": "2024 reported and modeled counts are transparent",
+          "ok": true,
+          "detail": "67 reported, 145 modeled",
           "persona": "accessibility reviewer"
         },
         {
           "name": "arrival values are nonnegative",
           "ok": true,
-          "detail": "5318 yearly values scanned",
+          "detail": "5463 yearly values scanned",
           "persona": "accessibility reviewer"
         },
         {
@@ -3071,6 +3499,12 @@
           "persona": "accessibility reviewer"
         },
         {
+          "name": "modeled values are labelled in UI",
+          "ok": true,
+          "detail": "Estimated 2024 values are distinguished from reported values",
+          "persona": "accessibility reviewer"
+        },
+        {
           "name": "latest global year is transparent",
           "ok": true,
           "detail": "latest year in generated coverage is 2024",
@@ -3083,15 +3517,15 @@
           "persona": "accessibility reviewer"
         },
         {
-          "name": "China missing to record exists",
+          "name": "China modeled to record exists",
           "ok": true,
           "detail": "CHN is present",
           "persona": "accessibility reviewer"
         },
         {
-          "name": "China missing to is missing to-year only",
+          "name": "China modeled to uses labelled to-year estimate",
           "ok": true,
-          "detail": "China: 2019=65725000, 2024=missing",
+          "detail": "China: 2019=65725000, 2024=61470505",
           "persona": "accessibility reviewer"
         }
       ]
@@ -3099,7 +3533,7 @@
     {
       "iteration": 25,
       "persona": "source transparency reviewer",
-      "scenario": "Australia same-year missing",
+      "scenario": "Australia modeled same-year",
       "ok": true,
       "checks": [
         {
@@ -3123,13 +3557,25 @@
         {
           "name": "2024 selected-year coverage",
           "ok": true,
-          "detail": "67 reported series",
+          "detail": "212 reported or modeled series",
+          "persona": "source transparency reviewer"
+        },
+        {
+          "name": "2024 full modeled coverage",
+          "ok": true,
+          "detail": "212/212 records have 2024 values",
+          "persona": "source transparency reviewer"
+        },
+        {
+          "name": "2024 reported and modeled counts are transparent",
+          "ok": true,
+          "detail": "67 reported, 145 modeled",
           "persona": "source transparency reviewer"
         },
         {
           "name": "arrival values are nonnegative",
           "ok": true,
-          "detail": "5318 yearly values scanned",
+          "detail": "5463 yearly values scanned",
           "persona": "source transparency reviewer"
         },
         {
@@ -3199,6 +3645,12 @@
           "persona": "source transparency reviewer"
         },
         {
+          "name": "modeled values are labelled in UI",
+          "ok": true,
+          "detail": "Estimated 2024 values are distinguished from reported values",
+          "persona": "source transparency reviewer"
+        },
+        {
           "name": "latest global year is transparent",
           "ok": true,
           "detail": "latest year in generated coverage is 2024",
@@ -3211,15 +3663,15 @@
           "persona": "source transparency reviewer"
         },
         {
-          "name": "Australia same-year missing record exists",
+          "name": "Australia modeled same-year record exists",
           "ok": true,
           "detail": "AUS is present",
           "persona": "source transparency reviewer"
         },
         {
-          "name": "Australia same-year missing avoids duplicate same-year data",
+          "name": "Australia modeled same-year uses labelled same-year estimate",
           "ok": true,
-          "detail": "Australia: 2024=missing, 2024=missing",
+          "detail": "Australia: 2024=3088313, 2024=3088313",
           "persona": "source transparency reviewer"
         }
       ]
@@ -3251,13 +3703,25 @@
         {
           "name": "2024 selected-year coverage",
           "ok": true,
-          "detail": "67 reported series",
+          "detail": "212 reported or modeled series",
+          "persona": "performance reviewer"
+        },
+        {
+          "name": "2024 full modeled coverage",
+          "ok": true,
+          "detail": "212/212 records have 2024 values",
+          "persona": "performance reviewer"
+        },
+        {
+          "name": "2024 reported and modeled counts are transparent",
+          "ok": true,
+          "detail": "67 reported, 145 modeled",
           "persona": "performance reviewer"
         },
         {
           "name": "arrival values are nonnegative",
           "ok": true,
-          "detail": "5318 yearly values scanned",
+          "detail": "5463 yearly values scanned",
           "persona": "performance reviewer"
         },
         {
@@ -3324,6 +3788,12 @@
           "name": "same-year missing copy is not duplicated",
           "ok": true,
           "detail": "Same-year missing data reads as one missing selected year",
+          "persona": "performance reviewer"
+        },
+        {
+          "name": "modeled values are labelled in UI",
+          "ok": true,
+          "detail": "Estimated 2024 values are distinguished from reported values",
           "persona": "performance reviewer"
         },
         {
@@ -3379,13 +3849,25 @@
         {
           "name": "2024 selected-year coverage",
           "ok": true,
-          "detail": "67 reported series",
+          "detail": "212 reported or modeled series",
+          "persona": "visual encoding reviewer"
+        },
+        {
+          "name": "2024 full modeled coverage",
+          "ok": true,
+          "detail": "212/212 records have 2024 values",
+          "persona": "visual encoding reviewer"
+        },
+        {
+          "name": "2024 reported and modeled counts are transparent",
+          "ok": true,
+          "detail": "67 reported, 145 modeled",
           "persona": "visual encoding reviewer"
         },
         {
           "name": "arrival values are nonnegative",
           "ok": true,
-          "detail": "5318 yearly values scanned",
+          "detail": "5463 yearly values scanned",
           "persona": "visual encoding reviewer"
         },
         {
@@ -3452,6 +3934,12 @@
           "name": "same-year missing copy is not duplicated",
           "ok": true,
           "detail": "Same-year missing data reads as one missing selected year",
+          "persona": "visual encoding reviewer"
+        },
+        {
+          "name": "modeled values are labelled in UI",
+          "ok": true,
+          "detail": "Estimated 2024 values are distinguished from reported values",
           "persona": "visual encoding reviewer"
         },
         {
@@ -3507,13 +3995,25 @@
         {
           "name": "2024 selected-year coverage",
           "ok": true,
-          "detail": "67 reported series",
+          "detail": "212 reported or modeled series",
+          "persona": "missing data reviewer"
+        },
+        {
+          "name": "2024 full modeled coverage",
+          "ok": true,
+          "detail": "212/212 records have 2024 values",
+          "persona": "missing data reviewer"
+        },
+        {
+          "name": "2024 reported and modeled counts are transparent",
+          "ok": true,
+          "detail": "67 reported, 145 modeled",
           "persona": "missing data reviewer"
         },
         {
           "name": "arrival values are nonnegative",
           "ok": true,
-          "detail": "5318 yearly values scanned",
+          "detail": "5463 yearly values scanned",
           "persona": "missing data reviewer"
         },
         {
@@ -3580,6 +4080,12 @@
           "name": "same-year missing copy is not duplicated",
           "ok": true,
           "detail": "Same-year missing data reads as one missing selected year",
+          "persona": "missing data reviewer"
+        },
+        {
+          "name": "modeled values are labelled in UI",
+          "ok": true,
+          "detail": "Estimated 2024 values are distinguished from reported values",
           "persona": "missing data reviewer"
         },
         {
@@ -3611,7 +4117,7 @@
     {
       "iteration": 29,
       "persona": "iPhone layout reviewer",
-      "scenario": "China missing to",
+      "scenario": "China modeled to",
       "ok": true,
       "checks": [
         {
@@ -3635,13 +4141,25 @@
         {
           "name": "2024 selected-year coverage",
           "ok": true,
-          "detail": "67 reported series",
+          "detail": "212 reported or modeled series",
+          "persona": "iPhone layout reviewer"
+        },
+        {
+          "name": "2024 full modeled coverage",
+          "ok": true,
+          "detail": "212/212 records have 2024 values",
+          "persona": "iPhone layout reviewer"
+        },
+        {
+          "name": "2024 reported and modeled counts are transparent",
+          "ok": true,
+          "detail": "67 reported, 145 modeled",
           "persona": "iPhone layout reviewer"
         },
         {
           "name": "arrival values are nonnegative",
           "ok": true,
-          "detail": "5318 yearly values scanned",
+          "detail": "5463 yearly values scanned",
           "persona": "iPhone layout reviewer"
         },
         {
@@ -3711,6 +4229,12 @@
           "persona": "iPhone layout reviewer"
         },
         {
+          "name": "modeled values are labelled in UI",
+          "ok": true,
+          "detail": "Estimated 2024 values are distinguished from reported values",
+          "persona": "iPhone layout reviewer"
+        },
+        {
           "name": "latest global year is transparent",
           "ok": true,
           "detail": "latest year in generated coverage is 2024",
@@ -3723,15 +4247,15 @@
           "persona": "iPhone layout reviewer"
         },
         {
-          "name": "China missing to record exists",
+          "name": "China modeled to record exists",
           "ok": true,
           "detail": "CHN is present",
           "persona": "iPhone layout reviewer"
         },
         {
-          "name": "China missing to is missing to-year only",
+          "name": "China modeled to uses labelled to-year estimate",
           "ok": true,
-          "detail": "China: 2019=65725000, 2024=missing",
+          "detail": "China: 2019=65725000, 2024=61470505",
           "persona": "iPhone layout reviewer"
         }
       ]
@@ -3739,7 +4263,7 @@
     {
       "iteration": 30,
       "persona": "map interaction reviewer",
-      "scenario": "Australia same-year missing",
+      "scenario": "Australia modeled same-year",
       "ok": true,
       "checks": [
         {
@@ -3763,13 +4287,25 @@
         {
           "name": "2024 selected-year coverage",
           "ok": true,
-          "detail": "67 reported series",
+          "detail": "212 reported or modeled series",
+          "persona": "map interaction reviewer"
+        },
+        {
+          "name": "2024 full modeled coverage",
+          "ok": true,
+          "detail": "212/212 records have 2024 values",
+          "persona": "map interaction reviewer"
+        },
+        {
+          "name": "2024 reported and modeled counts are transparent",
+          "ok": true,
+          "detail": "67 reported, 145 modeled",
           "persona": "map interaction reviewer"
         },
         {
           "name": "arrival values are nonnegative",
           "ok": true,
-          "detail": "5318 yearly values scanned",
+          "detail": "5463 yearly values scanned",
           "persona": "map interaction reviewer"
         },
         {
@@ -3839,6 +4375,12 @@
           "persona": "map interaction reviewer"
         },
         {
+          "name": "modeled values are labelled in UI",
+          "ok": true,
+          "detail": "Estimated 2024 values are distinguished from reported values",
+          "persona": "map interaction reviewer"
+        },
+        {
           "name": "latest global year is transparent",
           "ok": true,
           "detail": "latest year in generated coverage is 2024",
@@ -3851,15 +4393,15 @@
           "persona": "map interaction reviewer"
         },
         {
-          "name": "Australia same-year missing record exists",
+          "name": "Australia modeled same-year record exists",
           "ok": true,
           "detail": "AUS is present",
           "persona": "map interaction reviewer"
         },
         {
-          "name": "Australia same-year missing avoids duplicate same-year data",
+          "name": "Australia modeled same-year uses labelled same-year estimate",
           "ok": true,
-          "detail": "Australia: 2024=missing, 2024=missing",
+          "detail": "Australia: 2024=3088313, 2024=3088313",
           "persona": "map interaction reviewer"
         }
       ]
@@ -3891,13 +4433,25 @@
         {
           "name": "2024 selected-year coverage",
           "ok": true,
-          "detail": "67 reported series",
+          "detail": "212 reported or modeled series",
+          "persona": "data skeptic"
+        },
+        {
+          "name": "2024 full modeled coverage",
+          "ok": true,
+          "detail": "212/212 records have 2024 values",
+          "persona": "data skeptic"
+        },
+        {
+          "name": "2024 reported and modeled counts are transparent",
+          "ok": true,
+          "detail": "67 reported, 145 modeled",
           "persona": "data skeptic"
         },
         {
           "name": "arrival values are nonnegative",
           "ok": true,
-          "detail": "5318 yearly values scanned",
+          "detail": "5463 yearly values scanned",
           "persona": "data skeptic"
         },
         {
@@ -3964,6 +4518,12 @@
           "name": "same-year missing copy is not duplicated",
           "ok": true,
           "detail": "Same-year missing data reads as one missing selected year",
+          "persona": "data skeptic"
+        },
+        {
+          "name": "modeled values are labelled in UI",
+          "ok": true,
+          "detail": "Estimated 2024 values are distinguished from reported values",
           "persona": "data skeptic"
         },
         {
@@ -4019,13 +4579,25 @@
         {
           "name": "2024 selected-year coverage",
           "ok": true,
-          "detail": "67 reported series",
+          "detail": "212 reported or modeled series",
+          "persona": "country join auditor"
+        },
+        {
+          "name": "2024 full modeled coverage",
+          "ok": true,
+          "detail": "212/212 records have 2024 values",
+          "persona": "country join auditor"
+        },
+        {
+          "name": "2024 reported and modeled counts are transparent",
+          "ok": true,
+          "detail": "67 reported, 145 modeled",
           "persona": "country join auditor"
         },
         {
           "name": "arrival values are nonnegative",
           "ok": true,
-          "detail": "5318 yearly values scanned",
+          "detail": "5463 yearly values scanned",
           "persona": "country join auditor"
         },
         {
@@ -4092,6 +4664,12 @@
           "name": "same-year missing copy is not duplicated",
           "ok": true,
           "detail": "Same-year missing data reads as one missing selected year",
+          "persona": "country join auditor"
+        },
+        {
+          "name": "modeled values are labelled in UI",
+          "ok": true,
+          "detail": "Estimated 2024 values are distinguished from reported values",
           "persona": "country join auditor"
         },
         {
@@ -4147,13 +4725,25 @@
         {
           "name": "2024 selected-year coverage",
           "ok": true,
-          "detail": "67 reported series",
+          "detail": "212 reported or modeled series",
+          "persona": "mobile thumb tester"
+        },
+        {
+          "name": "2024 full modeled coverage",
+          "ok": true,
+          "detail": "212/212 records have 2024 values",
+          "persona": "mobile thumb tester"
+        },
+        {
+          "name": "2024 reported and modeled counts are transparent",
+          "ok": true,
+          "detail": "67 reported, 145 modeled",
           "persona": "mobile thumb tester"
         },
         {
           "name": "arrival values are nonnegative",
           "ok": true,
-          "detail": "5318 yearly values scanned",
+          "detail": "5463 yearly values scanned",
           "persona": "mobile thumb tester"
         },
         {
@@ -4220,6 +4810,12 @@
           "name": "same-year missing copy is not duplicated",
           "ok": true,
           "detail": "Same-year missing data reads as one missing selected year",
+          "persona": "mobile thumb tester"
+        },
+        {
+          "name": "modeled values are labelled in UI",
+          "ok": true,
+          "detail": "Estimated 2024 values are distinguished from reported values",
           "persona": "mobile thumb tester"
         },
         {
@@ -4251,7 +4847,7 @@
     {
       "iteration": 34,
       "persona": "accessibility reviewer",
-      "scenario": "China missing to",
+      "scenario": "China modeled to",
       "ok": true,
       "checks": [
         {
@@ -4275,13 +4871,25 @@
         {
           "name": "2024 selected-year coverage",
           "ok": true,
-          "detail": "67 reported series",
+          "detail": "212 reported or modeled series",
+          "persona": "accessibility reviewer"
+        },
+        {
+          "name": "2024 full modeled coverage",
+          "ok": true,
+          "detail": "212/212 records have 2024 values",
+          "persona": "accessibility reviewer"
+        },
+        {
+          "name": "2024 reported and modeled counts are transparent",
+          "ok": true,
+          "detail": "67 reported, 145 modeled",
           "persona": "accessibility reviewer"
         },
         {
           "name": "arrival values are nonnegative",
           "ok": true,
-          "detail": "5318 yearly values scanned",
+          "detail": "5463 yearly values scanned",
           "persona": "accessibility reviewer"
         },
         {
@@ -4351,6 +4959,12 @@
           "persona": "accessibility reviewer"
         },
         {
+          "name": "modeled values are labelled in UI",
+          "ok": true,
+          "detail": "Estimated 2024 values are distinguished from reported values",
+          "persona": "accessibility reviewer"
+        },
+        {
           "name": "latest global year is transparent",
           "ok": true,
           "detail": "latest year in generated coverage is 2024",
@@ -4363,15 +4977,15 @@
           "persona": "accessibility reviewer"
         },
         {
-          "name": "China missing to record exists",
+          "name": "China modeled to record exists",
           "ok": true,
           "detail": "CHN is present",
           "persona": "accessibility reviewer"
         },
         {
-          "name": "China missing to is missing to-year only",
+          "name": "China modeled to uses labelled to-year estimate",
           "ok": true,
-          "detail": "China: 2019=65725000, 2024=missing",
+          "detail": "China: 2019=65725000, 2024=61470505",
           "persona": "accessibility reviewer"
         }
       ]
@@ -4379,7 +4993,7 @@
     {
       "iteration": 35,
       "persona": "source transparency reviewer",
-      "scenario": "Australia same-year missing",
+      "scenario": "Australia modeled same-year",
       "ok": true,
       "checks": [
         {
@@ -4403,13 +5017,25 @@
         {
           "name": "2024 selected-year coverage",
           "ok": true,
-          "detail": "67 reported series",
+          "detail": "212 reported or modeled series",
+          "persona": "source transparency reviewer"
+        },
+        {
+          "name": "2024 full modeled coverage",
+          "ok": true,
+          "detail": "212/212 records have 2024 values",
+          "persona": "source transparency reviewer"
+        },
+        {
+          "name": "2024 reported and modeled counts are transparent",
+          "ok": true,
+          "detail": "67 reported, 145 modeled",
           "persona": "source transparency reviewer"
         },
         {
           "name": "arrival values are nonnegative",
           "ok": true,
-          "detail": "5318 yearly values scanned",
+          "detail": "5463 yearly values scanned",
           "persona": "source transparency reviewer"
         },
         {
@@ -4479,6 +5105,12 @@
           "persona": "source transparency reviewer"
         },
         {
+          "name": "modeled values are labelled in UI",
+          "ok": true,
+          "detail": "Estimated 2024 values are distinguished from reported values",
+          "persona": "source transparency reviewer"
+        },
+        {
           "name": "latest global year is transparent",
           "ok": true,
           "detail": "latest year in generated coverage is 2024",
@@ -4491,15 +5123,15 @@
           "persona": "source transparency reviewer"
         },
         {
-          "name": "Australia same-year missing record exists",
+          "name": "Australia modeled same-year record exists",
           "ok": true,
           "detail": "AUS is present",
           "persona": "source transparency reviewer"
         },
         {
-          "name": "Australia same-year missing avoids duplicate same-year data",
+          "name": "Australia modeled same-year uses labelled same-year estimate",
           "ok": true,
-          "detail": "Australia: 2024=missing, 2024=missing",
+          "detail": "Australia: 2024=3088313, 2024=3088313",
           "persona": "source transparency reviewer"
         }
       ]
@@ -4531,13 +5163,25 @@
         {
           "name": "2024 selected-year coverage",
           "ok": true,
-          "detail": "67 reported series",
+          "detail": "212 reported or modeled series",
+          "persona": "performance reviewer"
+        },
+        {
+          "name": "2024 full modeled coverage",
+          "ok": true,
+          "detail": "212/212 records have 2024 values",
+          "persona": "performance reviewer"
+        },
+        {
+          "name": "2024 reported and modeled counts are transparent",
+          "ok": true,
+          "detail": "67 reported, 145 modeled",
           "persona": "performance reviewer"
         },
         {
           "name": "arrival values are nonnegative",
           "ok": true,
-          "detail": "5318 yearly values scanned",
+          "detail": "5463 yearly values scanned",
           "persona": "performance reviewer"
         },
         {
@@ -4604,6 +5248,12 @@
           "name": "same-year missing copy is not duplicated",
           "ok": true,
           "detail": "Same-year missing data reads as one missing selected year",
+          "persona": "performance reviewer"
+        },
+        {
+          "name": "modeled values are labelled in UI",
+          "ok": true,
+          "detail": "Estimated 2024 values are distinguished from reported values",
           "persona": "performance reviewer"
         },
         {
@@ -4659,13 +5309,25 @@
         {
           "name": "2024 selected-year coverage",
           "ok": true,
-          "detail": "67 reported series",
+          "detail": "212 reported or modeled series",
+          "persona": "visual encoding reviewer"
+        },
+        {
+          "name": "2024 full modeled coverage",
+          "ok": true,
+          "detail": "212/212 records have 2024 values",
+          "persona": "visual encoding reviewer"
+        },
+        {
+          "name": "2024 reported and modeled counts are transparent",
+          "ok": true,
+          "detail": "67 reported, 145 modeled",
           "persona": "visual encoding reviewer"
         },
         {
           "name": "arrival values are nonnegative",
           "ok": true,
-          "detail": "5318 yearly values scanned",
+          "detail": "5463 yearly values scanned",
           "persona": "visual encoding reviewer"
         },
         {
@@ -4732,6 +5394,12 @@
           "name": "same-year missing copy is not duplicated",
           "ok": true,
           "detail": "Same-year missing data reads as one missing selected year",
+          "persona": "visual encoding reviewer"
+        },
+        {
+          "name": "modeled values are labelled in UI",
+          "ok": true,
+          "detail": "Estimated 2024 values are distinguished from reported values",
           "persona": "visual encoding reviewer"
         },
         {
@@ -4787,13 +5455,25 @@
         {
           "name": "2024 selected-year coverage",
           "ok": true,
-          "detail": "67 reported series",
+          "detail": "212 reported or modeled series",
+          "persona": "missing data reviewer"
+        },
+        {
+          "name": "2024 full modeled coverage",
+          "ok": true,
+          "detail": "212/212 records have 2024 values",
+          "persona": "missing data reviewer"
+        },
+        {
+          "name": "2024 reported and modeled counts are transparent",
+          "ok": true,
+          "detail": "67 reported, 145 modeled",
           "persona": "missing data reviewer"
         },
         {
           "name": "arrival values are nonnegative",
           "ok": true,
-          "detail": "5318 yearly values scanned",
+          "detail": "5463 yearly values scanned",
           "persona": "missing data reviewer"
         },
         {
@@ -4860,6 +5540,12 @@
           "name": "same-year missing copy is not duplicated",
           "ok": true,
           "detail": "Same-year missing data reads as one missing selected year",
+          "persona": "missing data reviewer"
+        },
+        {
+          "name": "modeled values are labelled in UI",
+          "ok": true,
+          "detail": "Estimated 2024 values are distinguished from reported values",
           "persona": "missing data reviewer"
         },
         {
@@ -4891,7 +5577,7 @@
     {
       "iteration": 39,
       "persona": "iPhone layout reviewer",
-      "scenario": "China missing to",
+      "scenario": "China modeled to",
       "ok": true,
       "checks": [
         {
@@ -4915,13 +5601,25 @@
         {
           "name": "2024 selected-year coverage",
           "ok": true,
-          "detail": "67 reported series",
+          "detail": "212 reported or modeled series",
+          "persona": "iPhone layout reviewer"
+        },
+        {
+          "name": "2024 full modeled coverage",
+          "ok": true,
+          "detail": "212/212 records have 2024 values",
+          "persona": "iPhone layout reviewer"
+        },
+        {
+          "name": "2024 reported and modeled counts are transparent",
+          "ok": true,
+          "detail": "67 reported, 145 modeled",
           "persona": "iPhone layout reviewer"
         },
         {
           "name": "arrival values are nonnegative",
           "ok": true,
-          "detail": "5318 yearly values scanned",
+          "detail": "5463 yearly values scanned",
           "persona": "iPhone layout reviewer"
         },
         {
@@ -4991,6 +5689,12 @@
           "persona": "iPhone layout reviewer"
         },
         {
+          "name": "modeled values are labelled in UI",
+          "ok": true,
+          "detail": "Estimated 2024 values are distinguished from reported values",
+          "persona": "iPhone layout reviewer"
+        },
+        {
           "name": "latest global year is transparent",
           "ok": true,
           "detail": "latest year in generated coverage is 2024",
@@ -5003,15 +5707,15 @@
           "persona": "iPhone layout reviewer"
         },
         {
-          "name": "China missing to record exists",
+          "name": "China modeled to record exists",
           "ok": true,
           "detail": "CHN is present",
           "persona": "iPhone layout reviewer"
         },
         {
-          "name": "China missing to is missing to-year only",
+          "name": "China modeled to uses labelled to-year estimate",
           "ok": true,
-          "detail": "China: 2019=65725000, 2024=missing",
+          "detail": "China: 2019=65725000, 2024=61470505",
           "persona": "iPhone layout reviewer"
         }
       ]
@@ -5019,7 +5723,7 @@
     {
       "iteration": 40,
       "persona": "map interaction reviewer",
-      "scenario": "Australia same-year missing",
+      "scenario": "Australia modeled same-year",
       "ok": true,
       "checks": [
         {
@@ -5043,13 +5747,25 @@
         {
           "name": "2024 selected-year coverage",
           "ok": true,
-          "detail": "67 reported series",
+          "detail": "212 reported or modeled series",
+          "persona": "map interaction reviewer"
+        },
+        {
+          "name": "2024 full modeled coverage",
+          "ok": true,
+          "detail": "212/212 records have 2024 values",
+          "persona": "map interaction reviewer"
+        },
+        {
+          "name": "2024 reported and modeled counts are transparent",
+          "ok": true,
+          "detail": "67 reported, 145 modeled",
           "persona": "map interaction reviewer"
         },
         {
           "name": "arrival values are nonnegative",
           "ok": true,
-          "detail": "5318 yearly values scanned",
+          "detail": "5463 yearly values scanned",
           "persona": "map interaction reviewer"
         },
         {
@@ -5119,6 +5835,12 @@
           "persona": "map interaction reviewer"
         },
         {
+          "name": "modeled values are labelled in UI",
+          "ok": true,
+          "detail": "Estimated 2024 values are distinguished from reported values",
+          "persona": "map interaction reviewer"
+        },
+        {
           "name": "latest global year is transparent",
           "ok": true,
           "detail": "latest year in generated coverage is 2024",
@@ -5131,15 +5853,15 @@
           "persona": "map interaction reviewer"
         },
         {
-          "name": "Australia same-year missing record exists",
+          "name": "Australia modeled same-year record exists",
           "ok": true,
           "detail": "AUS is present",
           "persona": "map interaction reviewer"
         },
         {
-          "name": "Australia same-year missing avoids duplicate same-year data",
+          "name": "Australia modeled same-year uses labelled same-year estimate",
           "ok": true,
-          "detail": "Australia: 2024=missing, 2024=missing",
+          "detail": "Australia: 2024=3088313, 2024=3088313",
           "persona": "map interaction reviewer"
         }
       ]
@@ -5171,13 +5893,25 @@
         {
           "name": "2024 selected-year coverage",
           "ok": true,
-          "detail": "67 reported series",
+          "detail": "212 reported or modeled series",
+          "persona": "data skeptic"
+        },
+        {
+          "name": "2024 full modeled coverage",
+          "ok": true,
+          "detail": "212/212 records have 2024 values",
+          "persona": "data skeptic"
+        },
+        {
+          "name": "2024 reported and modeled counts are transparent",
+          "ok": true,
+          "detail": "67 reported, 145 modeled",
           "persona": "data skeptic"
         },
         {
           "name": "arrival values are nonnegative",
           "ok": true,
-          "detail": "5318 yearly values scanned",
+          "detail": "5463 yearly values scanned",
           "persona": "data skeptic"
         },
         {
@@ -5244,6 +5978,12 @@
           "name": "same-year missing copy is not duplicated",
           "ok": true,
           "detail": "Same-year missing data reads as one missing selected year",
+          "persona": "data skeptic"
+        },
+        {
+          "name": "modeled values are labelled in UI",
+          "ok": true,
+          "detail": "Estimated 2024 values are distinguished from reported values",
           "persona": "data skeptic"
         },
         {
@@ -5299,13 +6039,25 @@
         {
           "name": "2024 selected-year coverage",
           "ok": true,
-          "detail": "67 reported series",
+          "detail": "212 reported or modeled series",
+          "persona": "country join auditor"
+        },
+        {
+          "name": "2024 full modeled coverage",
+          "ok": true,
+          "detail": "212/212 records have 2024 values",
+          "persona": "country join auditor"
+        },
+        {
+          "name": "2024 reported and modeled counts are transparent",
+          "ok": true,
+          "detail": "67 reported, 145 modeled",
           "persona": "country join auditor"
         },
         {
           "name": "arrival values are nonnegative",
           "ok": true,
-          "detail": "5318 yearly values scanned",
+          "detail": "5463 yearly values scanned",
           "persona": "country join auditor"
         },
         {
@@ -5372,6 +6124,12 @@
           "name": "same-year missing copy is not duplicated",
           "ok": true,
           "detail": "Same-year missing data reads as one missing selected year",
+          "persona": "country join auditor"
+        },
+        {
+          "name": "modeled values are labelled in UI",
+          "ok": true,
+          "detail": "Estimated 2024 values are distinguished from reported values",
           "persona": "country join auditor"
         },
         {
@@ -5427,13 +6185,25 @@
         {
           "name": "2024 selected-year coverage",
           "ok": true,
-          "detail": "67 reported series",
+          "detail": "212 reported or modeled series",
+          "persona": "mobile thumb tester"
+        },
+        {
+          "name": "2024 full modeled coverage",
+          "ok": true,
+          "detail": "212/212 records have 2024 values",
+          "persona": "mobile thumb tester"
+        },
+        {
+          "name": "2024 reported and modeled counts are transparent",
+          "ok": true,
+          "detail": "67 reported, 145 modeled",
           "persona": "mobile thumb tester"
         },
         {
           "name": "arrival values are nonnegative",
           "ok": true,
-          "detail": "5318 yearly values scanned",
+          "detail": "5463 yearly values scanned",
           "persona": "mobile thumb tester"
         },
         {
@@ -5500,6 +6270,12 @@
           "name": "same-year missing copy is not duplicated",
           "ok": true,
           "detail": "Same-year missing data reads as one missing selected year",
+          "persona": "mobile thumb tester"
+        },
+        {
+          "name": "modeled values are labelled in UI",
+          "ok": true,
+          "detail": "Estimated 2024 values are distinguished from reported values",
           "persona": "mobile thumb tester"
         },
         {
@@ -5531,7 +6307,7 @@
     {
       "iteration": 44,
       "persona": "accessibility reviewer",
-      "scenario": "China missing to",
+      "scenario": "China modeled to",
       "ok": true,
       "checks": [
         {
@@ -5555,13 +6331,25 @@
         {
           "name": "2024 selected-year coverage",
           "ok": true,
-          "detail": "67 reported series",
+          "detail": "212 reported or modeled series",
+          "persona": "accessibility reviewer"
+        },
+        {
+          "name": "2024 full modeled coverage",
+          "ok": true,
+          "detail": "212/212 records have 2024 values",
+          "persona": "accessibility reviewer"
+        },
+        {
+          "name": "2024 reported and modeled counts are transparent",
+          "ok": true,
+          "detail": "67 reported, 145 modeled",
           "persona": "accessibility reviewer"
         },
         {
           "name": "arrival values are nonnegative",
           "ok": true,
-          "detail": "5318 yearly values scanned",
+          "detail": "5463 yearly values scanned",
           "persona": "accessibility reviewer"
         },
         {
@@ -5631,6 +6419,12 @@
           "persona": "accessibility reviewer"
         },
         {
+          "name": "modeled values are labelled in UI",
+          "ok": true,
+          "detail": "Estimated 2024 values are distinguished from reported values",
+          "persona": "accessibility reviewer"
+        },
+        {
           "name": "latest global year is transparent",
           "ok": true,
           "detail": "latest year in generated coverage is 2024",
@@ -5643,15 +6437,15 @@
           "persona": "accessibility reviewer"
         },
         {
-          "name": "China missing to record exists",
+          "name": "China modeled to record exists",
           "ok": true,
           "detail": "CHN is present",
           "persona": "accessibility reviewer"
         },
         {
-          "name": "China missing to is missing to-year only",
+          "name": "China modeled to uses labelled to-year estimate",
           "ok": true,
-          "detail": "China: 2019=65725000, 2024=missing",
+          "detail": "China: 2019=65725000, 2024=61470505",
           "persona": "accessibility reviewer"
         }
       ]
@@ -5659,7 +6453,7 @@
     {
       "iteration": 45,
       "persona": "source transparency reviewer",
-      "scenario": "Australia same-year missing",
+      "scenario": "Australia modeled same-year",
       "ok": true,
       "checks": [
         {
@@ -5683,13 +6477,25 @@
         {
           "name": "2024 selected-year coverage",
           "ok": true,
-          "detail": "67 reported series",
+          "detail": "212 reported or modeled series",
+          "persona": "source transparency reviewer"
+        },
+        {
+          "name": "2024 full modeled coverage",
+          "ok": true,
+          "detail": "212/212 records have 2024 values",
+          "persona": "source transparency reviewer"
+        },
+        {
+          "name": "2024 reported and modeled counts are transparent",
+          "ok": true,
+          "detail": "67 reported, 145 modeled",
           "persona": "source transparency reviewer"
         },
         {
           "name": "arrival values are nonnegative",
           "ok": true,
-          "detail": "5318 yearly values scanned",
+          "detail": "5463 yearly values scanned",
           "persona": "source transparency reviewer"
         },
         {
@@ -5759,6 +6565,12 @@
           "persona": "source transparency reviewer"
         },
         {
+          "name": "modeled values are labelled in UI",
+          "ok": true,
+          "detail": "Estimated 2024 values are distinguished from reported values",
+          "persona": "source transparency reviewer"
+        },
+        {
           "name": "latest global year is transparent",
           "ok": true,
           "detail": "latest year in generated coverage is 2024",
@@ -5771,15 +6583,15 @@
           "persona": "source transparency reviewer"
         },
         {
-          "name": "Australia same-year missing record exists",
+          "name": "Australia modeled same-year record exists",
           "ok": true,
           "detail": "AUS is present",
           "persona": "source transparency reviewer"
         },
         {
-          "name": "Australia same-year missing avoids duplicate same-year data",
+          "name": "Australia modeled same-year uses labelled same-year estimate",
           "ok": true,
-          "detail": "Australia: 2024=missing, 2024=missing",
+          "detail": "Australia: 2024=3088313, 2024=3088313",
           "persona": "source transparency reviewer"
         }
       ]
@@ -5811,13 +6623,25 @@
         {
           "name": "2024 selected-year coverage",
           "ok": true,
-          "detail": "67 reported series",
+          "detail": "212 reported or modeled series",
+          "persona": "performance reviewer"
+        },
+        {
+          "name": "2024 full modeled coverage",
+          "ok": true,
+          "detail": "212/212 records have 2024 values",
+          "persona": "performance reviewer"
+        },
+        {
+          "name": "2024 reported and modeled counts are transparent",
+          "ok": true,
+          "detail": "67 reported, 145 modeled",
           "persona": "performance reviewer"
         },
         {
           "name": "arrival values are nonnegative",
           "ok": true,
-          "detail": "5318 yearly values scanned",
+          "detail": "5463 yearly values scanned",
           "persona": "performance reviewer"
         },
         {
@@ -5884,6 +6708,12 @@
           "name": "same-year missing copy is not duplicated",
           "ok": true,
           "detail": "Same-year missing data reads as one missing selected year",
+          "persona": "performance reviewer"
+        },
+        {
+          "name": "modeled values are labelled in UI",
+          "ok": true,
+          "detail": "Estimated 2024 values are distinguished from reported values",
           "persona": "performance reviewer"
         },
         {
@@ -5939,13 +6769,25 @@
         {
           "name": "2024 selected-year coverage",
           "ok": true,
-          "detail": "67 reported series",
+          "detail": "212 reported or modeled series",
+          "persona": "visual encoding reviewer"
+        },
+        {
+          "name": "2024 full modeled coverage",
+          "ok": true,
+          "detail": "212/212 records have 2024 values",
+          "persona": "visual encoding reviewer"
+        },
+        {
+          "name": "2024 reported and modeled counts are transparent",
+          "ok": true,
+          "detail": "67 reported, 145 modeled",
           "persona": "visual encoding reviewer"
         },
         {
           "name": "arrival values are nonnegative",
           "ok": true,
-          "detail": "5318 yearly values scanned",
+          "detail": "5463 yearly values scanned",
           "persona": "visual encoding reviewer"
         },
         {
@@ -6012,6 +6854,12 @@
           "name": "same-year missing copy is not duplicated",
           "ok": true,
           "detail": "Same-year missing data reads as one missing selected year",
+          "persona": "visual encoding reviewer"
+        },
+        {
+          "name": "modeled values are labelled in UI",
+          "ok": true,
+          "detail": "Estimated 2024 values are distinguished from reported values",
           "persona": "visual encoding reviewer"
         },
         {
@@ -6067,13 +6915,25 @@
         {
           "name": "2024 selected-year coverage",
           "ok": true,
-          "detail": "67 reported series",
+          "detail": "212 reported or modeled series",
+          "persona": "missing data reviewer"
+        },
+        {
+          "name": "2024 full modeled coverage",
+          "ok": true,
+          "detail": "212/212 records have 2024 values",
+          "persona": "missing data reviewer"
+        },
+        {
+          "name": "2024 reported and modeled counts are transparent",
+          "ok": true,
+          "detail": "67 reported, 145 modeled",
           "persona": "missing data reviewer"
         },
         {
           "name": "arrival values are nonnegative",
           "ok": true,
-          "detail": "5318 yearly values scanned",
+          "detail": "5463 yearly values scanned",
           "persona": "missing data reviewer"
         },
         {
@@ -6140,6 +7000,12 @@
           "name": "same-year missing copy is not duplicated",
           "ok": true,
           "detail": "Same-year missing data reads as one missing selected year",
+          "persona": "missing data reviewer"
+        },
+        {
+          "name": "modeled values are labelled in UI",
+          "ok": true,
+          "detail": "Estimated 2024 values are distinguished from reported values",
           "persona": "missing data reviewer"
         },
         {
@@ -6171,7 +7037,7 @@
     {
       "iteration": 49,
       "persona": "iPhone layout reviewer",
-      "scenario": "China missing to",
+      "scenario": "China modeled to",
       "ok": true,
       "checks": [
         {
@@ -6195,13 +7061,25 @@
         {
           "name": "2024 selected-year coverage",
           "ok": true,
-          "detail": "67 reported series",
+          "detail": "212 reported or modeled series",
+          "persona": "iPhone layout reviewer"
+        },
+        {
+          "name": "2024 full modeled coverage",
+          "ok": true,
+          "detail": "212/212 records have 2024 values",
+          "persona": "iPhone layout reviewer"
+        },
+        {
+          "name": "2024 reported and modeled counts are transparent",
+          "ok": true,
+          "detail": "67 reported, 145 modeled",
           "persona": "iPhone layout reviewer"
         },
         {
           "name": "arrival values are nonnegative",
           "ok": true,
-          "detail": "5318 yearly values scanned",
+          "detail": "5463 yearly values scanned",
           "persona": "iPhone layout reviewer"
         },
         {
@@ -6271,6 +7149,12 @@
           "persona": "iPhone layout reviewer"
         },
         {
+          "name": "modeled values are labelled in UI",
+          "ok": true,
+          "detail": "Estimated 2024 values are distinguished from reported values",
+          "persona": "iPhone layout reviewer"
+        },
+        {
           "name": "latest global year is transparent",
           "ok": true,
           "detail": "latest year in generated coverage is 2024",
@@ -6283,15 +7167,15 @@
           "persona": "iPhone layout reviewer"
         },
         {
-          "name": "China missing to record exists",
+          "name": "China modeled to record exists",
           "ok": true,
           "detail": "CHN is present",
           "persona": "iPhone layout reviewer"
         },
         {
-          "name": "China missing to is missing to-year only",
+          "name": "China modeled to uses labelled to-year estimate",
           "ok": true,
-          "detail": "China: 2019=65725000, 2024=missing",
+          "detail": "China: 2019=65725000, 2024=61470505",
           "persona": "iPhone layout reviewer"
         }
       ]
@@ -6299,7 +7183,7 @@
     {
       "iteration": 50,
       "persona": "map interaction reviewer",
-      "scenario": "Australia same-year missing",
+      "scenario": "Australia modeled same-year",
       "ok": true,
       "checks": [
         {
@@ -6323,13 +7207,25 @@
         {
           "name": "2024 selected-year coverage",
           "ok": true,
-          "detail": "67 reported series",
+          "detail": "212 reported or modeled series",
+          "persona": "map interaction reviewer"
+        },
+        {
+          "name": "2024 full modeled coverage",
+          "ok": true,
+          "detail": "212/212 records have 2024 values",
+          "persona": "map interaction reviewer"
+        },
+        {
+          "name": "2024 reported and modeled counts are transparent",
+          "ok": true,
+          "detail": "67 reported, 145 modeled",
           "persona": "map interaction reviewer"
         },
         {
           "name": "arrival values are nonnegative",
           "ok": true,
-          "detail": "5318 yearly values scanned",
+          "detail": "5463 yearly values scanned",
           "persona": "map interaction reviewer"
         },
         {
@@ -6399,6 +7295,12 @@
           "persona": "map interaction reviewer"
         },
         {
+          "name": "modeled values are labelled in UI",
+          "ok": true,
+          "detail": "Estimated 2024 values are distinguished from reported values",
+          "persona": "map interaction reviewer"
+        },
+        {
           "name": "latest global year is transparent",
           "ok": true,
           "detail": "latest year in generated coverage is 2024",
@@ -6411,15 +7313,15 @@
           "persona": "map interaction reviewer"
         },
         {
-          "name": "Australia same-year missing record exists",
+          "name": "Australia modeled same-year record exists",
           "ok": true,
           "detail": "AUS is present",
           "persona": "map interaction reviewer"
         },
         {
-          "name": "Australia same-year missing avoids duplicate same-year data",
+          "name": "Australia modeled same-year uses labelled same-year estimate",
           "ok": true,
-          "detail": "Australia: 2024=missing, 2024=missing",
+          "detail": "Australia: 2024=3088313, 2024=3088313",
           "persona": "map interaction reviewer"
         }
       ]
@@ -6451,13 +7353,25 @@
         {
           "name": "2024 selected-year coverage",
           "ok": true,
-          "detail": "67 reported series",
+          "detail": "212 reported or modeled series",
+          "persona": "data skeptic"
+        },
+        {
+          "name": "2024 full modeled coverage",
+          "ok": true,
+          "detail": "212/212 records have 2024 values",
+          "persona": "data skeptic"
+        },
+        {
+          "name": "2024 reported and modeled counts are transparent",
+          "ok": true,
+          "detail": "67 reported, 145 modeled",
           "persona": "data skeptic"
         },
         {
           "name": "arrival values are nonnegative",
           "ok": true,
-          "detail": "5318 yearly values scanned",
+          "detail": "5463 yearly values scanned",
           "persona": "data skeptic"
         },
         {
@@ -6524,6 +7438,12 @@
           "name": "same-year missing copy is not duplicated",
           "ok": true,
           "detail": "Same-year missing data reads as one missing selected year",
+          "persona": "data skeptic"
+        },
+        {
+          "name": "modeled values are labelled in UI",
+          "ok": true,
+          "detail": "Estimated 2024 values are distinguished from reported values",
           "persona": "data skeptic"
         },
         {
@@ -6579,13 +7499,25 @@
         {
           "name": "2024 selected-year coverage",
           "ok": true,
-          "detail": "67 reported series",
+          "detail": "212 reported or modeled series",
+          "persona": "country join auditor"
+        },
+        {
+          "name": "2024 full modeled coverage",
+          "ok": true,
+          "detail": "212/212 records have 2024 values",
+          "persona": "country join auditor"
+        },
+        {
+          "name": "2024 reported and modeled counts are transparent",
+          "ok": true,
+          "detail": "67 reported, 145 modeled",
           "persona": "country join auditor"
         },
         {
           "name": "arrival values are nonnegative",
           "ok": true,
-          "detail": "5318 yearly values scanned",
+          "detail": "5463 yearly values scanned",
           "persona": "country join auditor"
         },
         {
@@ -6652,6 +7584,12 @@
           "name": "same-year missing copy is not duplicated",
           "ok": true,
           "detail": "Same-year missing data reads as one missing selected year",
+          "persona": "country join auditor"
+        },
+        {
+          "name": "modeled values are labelled in UI",
+          "ok": true,
+          "detail": "Estimated 2024 values are distinguished from reported values",
           "persona": "country join auditor"
         },
         {
@@ -6707,13 +7645,25 @@
         {
           "name": "2024 selected-year coverage",
           "ok": true,
-          "detail": "67 reported series",
+          "detail": "212 reported or modeled series",
+          "persona": "mobile thumb tester"
+        },
+        {
+          "name": "2024 full modeled coverage",
+          "ok": true,
+          "detail": "212/212 records have 2024 values",
+          "persona": "mobile thumb tester"
+        },
+        {
+          "name": "2024 reported and modeled counts are transparent",
+          "ok": true,
+          "detail": "67 reported, 145 modeled",
           "persona": "mobile thumb tester"
         },
         {
           "name": "arrival values are nonnegative",
           "ok": true,
-          "detail": "5318 yearly values scanned",
+          "detail": "5463 yearly values scanned",
           "persona": "mobile thumb tester"
         },
         {
@@ -6780,6 +7730,12 @@
           "name": "same-year missing copy is not duplicated",
           "ok": true,
           "detail": "Same-year missing data reads as one missing selected year",
+          "persona": "mobile thumb tester"
+        },
+        {
+          "name": "modeled values are labelled in UI",
+          "ok": true,
+          "detail": "Estimated 2024 values are distinguished from reported values",
           "persona": "mobile thumb tester"
         },
         {
@@ -6811,7 +7767,7 @@
     {
       "iteration": 54,
       "persona": "accessibility reviewer",
-      "scenario": "China missing to",
+      "scenario": "China modeled to",
       "ok": true,
       "checks": [
         {
@@ -6835,13 +7791,25 @@
         {
           "name": "2024 selected-year coverage",
           "ok": true,
-          "detail": "67 reported series",
+          "detail": "212 reported or modeled series",
+          "persona": "accessibility reviewer"
+        },
+        {
+          "name": "2024 full modeled coverage",
+          "ok": true,
+          "detail": "212/212 records have 2024 values",
+          "persona": "accessibility reviewer"
+        },
+        {
+          "name": "2024 reported and modeled counts are transparent",
+          "ok": true,
+          "detail": "67 reported, 145 modeled",
           "persona": "accessibility reviewer"
         },
         {
           "name": "arrival values are nonnegative",
           "ok": true,
-          "detail": "5318 yearly values scanned",
+          "detail": "5463 yearly values scanned",
           "persona": "accessibility reviewer"
         },
         {
@@ -6911,6 +7879,12 @@
           "persona": "accessibility reviewer"
         },
         {
+          "name": "modeled values are labelled in UI",
+          "ok": true,
+          "detail": "Estimated 2024 values are distinguished from reported values",
+          "persona": "accessibility reviewer"
+        },
+        {
           "name": "latest global year is transparent",
           "ok": true,
           "detail": "latest year in generated coverage is 2024",
@@ -6923,15 +7897,15 @@
           "persona": "accessibility reviewer"
         },
         {
-          "name": "China missing to record exists",
+          "name": "China modeled to record exists",
           "ok": true,
           "detail": "CHN is present",
           "persona": "accessibility reviewer"
         },
         {
-          "name": "China missing to is missing to-year only",
+          "name": "China modeled to uses labelled to-year estimate",
           "ok": true,
-          "detail": "China: 2019=65725000, 2024=missing",
+          "detail": "China: 2019=65725000, 2024=61470505",
           "persona": "accessibility reviewer"
         }
       ]
@@ -6939,7 +7913,7 @@
     {
       "iteration": 55,
       "persona": "source transparency reviewer",
-      "scenario": "Australia same-year missing",
+      "scenario": "Australia modeled same-year",
       "ok": true,
       "checks": [
         {
@@ -6963,13 +7937,25 @@
         {
           "name": "2024 selected-year coverage",
           "ok": true,
-          "detail": "67 reported series",
+          "detail": "212 reported or modeled series",
+          "persona": "source transparency reviewer"
+        },
+        {
+          "name": "2024 full modeled coverage",
+          "ok": true,
+          "detail": "212/212 records have 2024 values",
+          "persona": "source transparency reviewer"
+        },
+        {
+          "name": "2024 reported and modeled counts are transparent",
+          "ok": true,
+          "detail": "67 reported, 145 modeled",
           "persona": "source transparency reviewer"
         },
         {
           "name": "arrival values are nonnegative",
           "ok": true,
-          "detail": "5318 yearly values scanned",
+          "detail": "5463 yearly values scanned",
           "persona": "source transparency reviewer"
         },
         {
@@ -7039,6 +8025,12 @@
           "persona": "source transparency reviewer"
         },
         {
+          "name": "modeled values are labelled in UI",
+          "ok": true,
+          "detail": "Estimated 2024 values are distinguished from reported values",
+          "persona": "source transparency reviewer"
+        },
+        {
           "name": "latest global year is transparent",
           "ok": true,
           "detail": "latest year in generated coverage is 2024",
@@ -7051,15 +8043,15 @@
           "persona": "source transparency reviewer"
         },
         {
-          "name": "Australia same-year missing record exists",
+          "name": "Australia modeled same-year record exists",
           "ok": true,
           "detail": "AUS is present",
           "persona": "source transparency reviewer"
         },
         {
-          "name": "Australia same-year missing avoids duplicate same-year data",
+          "name": "Australia modeled same-year uses labelled same-year estimate",
           "ok": true,
-          "detail": "Australia: 2024=missing, 2024=missing",
+          "detail": "Australia: 2024=3088313, 2024=3088313",
           "persona": "source transparency reviewer"
         }
       ]
@@ -7091,13 +8083,25 @@
         {
           "name": "2024 selected-year coverage",
           "ok": true,
-          "detail": "67 reported series",
+          "detail": "212 reported or modeled series",
+          "persona": "performance reviewer"
+        },
+        {
+          "name": "2024 full modeled coverage",
+          "ok": true,
+          "detail": "212/212 records have 2024 values",
+          "persona": "performance reviewer"
+        },
+        {
+          "name": "2024 reported and modeled counts are transparent",
+          "ok": true,
+          "detail": "67 reported, 145 modeled",
           "persona": "performance reviewer"
         },
         {
           "name": "arrival values are nonnegative",
           "ok": true,
-          "detail": "5318 yearly values scanned",
+          "detail": "5463 yearly values scanned",
           "persona": "performance reviewer"
         },
         {
@@ -7164,6 +8168,12 @@
           "name": "same-year missing copy is not duplicated",
           "ok": true,
           "detail": "Same-year missing data reads as one missing selected year",
+          "persona": "performance reviewer"
+        },
+        {
+          "name": "modeled values are labelled in UI",
+          "ok": true,
+          "detail": "Estimated 2024 values are distinguished from reported values",
           "persona": "performance reviewer"
         },
         {
@@ -7219,13 +8229,25 @@
         {
           "name": "2024 selected-year coverage",
           "ok": true,
-          "detail": "67 reported series",
+          "detail": "212 reported or modeled series",
+          "persona": "visual encoding reviewer"
+        },
+        {
+          "name": "2024 full modeled coverage",
+          "ok": true,
+          "detail": "212/212 records have 2024 values",
+          "persona": "visual encoding reviewer"
+        },
+        {
+          "name": "2024 reported and modeled counts are transparent",
+          "ok": true,
+          "detail": "67 reported, 145 modeled",
           "persona": "visual encoding reviewer"
         },
         {
           "name": "arrival values are nonnegative",
           "ok": true,
-          "detail": "5318 yearly values scanned",
+          "detail": "5463 yearly values scanned",
           "persona": "visual encoding reviewer"
         },
         {
@@ -7292,6 +8314,12 @@
           "name": "same-year missing copy is not duplicated",
           "ok": true,
           "detail": "Same-year missing data reads as one missing selected year",
+          "persona": "visual encoding reviewer"
+        },
+        {
+          "name": "modeled values are labelled in UI",
+          "ok": true,
+          "detail": "Estimated 2024 values are distinguished from reported values",
           "persona": "visual encoding reviewer"
         },
         {
@@ -7347,13 +8375,25 @@
         {
           "name": "2024 selected-year coverage",
           "ok": true,
-          "detail": "67 reported series",
+          "detail": "212 reported or modeled series",
+          "persona": "missing data reviewer"
+        },
+        {
+          "name": "2024 full modeled coverage",
+          "ok": true,
+          "detail": "212/212 records have 2024 values",
+          "persona": "missing data reviewer"
+        },
+        {
+          "name": "2024 reported and modeled counts are transparent",
+          "ok": true,
+          "detail": "67 reported, 145 modeled",
           "persona": "missing data reviewer"
         },
         {
           "name": "arrival values are nonnegative",
           "ok": true,
-          "detail": "5318 yearly values scanned",
+          "detail": "5463 yearly values scanned",
           "persona": "missing data reviewer"
         },
         {
@@ -7420,6 +8460,12 @@
           "name": "same-year missing copy is not duplicated",
           "ok": true,
           "detail": "Same-year missing data reads as one missing selected year",
+          "persona": "missing data reviewer"
+        },
+        {
+          "name": "modeled values are labelled in UI",
+          "ok": true,
+          "detail": "Estimated 2024 values are distinguished from reported values",
           "persona": "missing data reviewer"
         },
         {
@@ -7451,7 +8497,7 @@
     {
       "iteration": 59,
       "persona": "iPhone layout reviewer",
-      "scenario": "China missing to",
+      "scenario": "China modeled to",
       "ok": true,
       "checks": [
         {
@@ -7475,13 +8521,25 @@
         {
           "name": "2024 selected-year coverage",
           "ok": true,
-          "detail": "67 reported series",
+          "detail": "212 reported or modeled series",
+          "persona": "iPhone layout reviewer"
+        },
+        {
+          "name": "2024 full modeled coverage",
+          "ok": true,
+          "detail": "212/212 records have 2024 values",
+          "persona": "iPhone layout reviewer"
+        },
+        {
+          "name": "2024 reported and modeled counts are transparent",
+          "ok": true,
+          "detail": "67 reported, 145 modeled",
           "persona": "iPhone layout reviewer"
         },
         {
           "name": "arrival values are nonnegative",
           "ok": true,
-          "detail": "5318 yearly values scanned",
+          "detail": "5463 yearly values scanned",
           "persona": "iPhone layout reviewer"
         },
         {
@@ -7551,6 +8609,12 @@
           "persona": "iPhone layout reviewer"
         },
         {
+          "name": "modeled values are labelled in UI",
+          "ok": true,
+          "detail": "Estimated 2024 values are distinguished from reported values",
+          "persona": "iPhone layout reviewer"
+        },
+        {
           "name": "latest global year is transparent",
           "ok": true,
           "detail": "latest year in generated coverage is 2024",
@@ -7563,15 +8627,15 @@
           "persona": "iPhone layout reviewer"
         },
         {
-          "name": "China missing to record exists",
+          "name": "China modeled to record exists",
           "ok": true,
           "detail": "CHN is present",
           "persona": "iPhone layout reviewer"
         },
         {
-          "name": "China missing to is missing to-year only",
+          "name": "China modeled to uses labelled to-year estimate",
           "ok": true,
-          "detail": "China: 2019=65725000, 2024=missing",
+          "detail": "China: 2019=65725000, 2024=61470505",
           "persona": "iPhone layout reviewer"
         }
       ]
@@ -7579,7 +8643,7 @@
     {
       "iteration": 60,
       "persona": "map interaction reviewer",
-      "scenario": "Australia same-year missing",
+      "scenario": "Australia modeled same-year",
       "ok": true,
       "checks": [
         {
@@ -7603,13 +8667,25 @@
         {
           "name": "2024 selected-year coverage",
           "ok": true,
-          "detail": "67 reported series",
+          "detail": "212 reported or modeled series",
+          "persona": "map interaction reviewer"
+        },
+        {
+          "name": "2024 full modeled coverage",
+          "ok": true,
+          "detail": "212/212 records have 2024 values",
+          "persona": "map interaction reviewer"
+        },
+        {
+          "name": "2024 reported and modeled counts are transparent",
+          "ok": true,
+          "detail": "67 reported, 145 modeled",
           "persona": "map interaction reviewer"
         },
         {
           "name": "arrival values are nonnegative",
           "ok": true,
-          "detail": "5318 yearly values scanned",
+          "detail": "5463 yearly values scanned",
           "persona": "map interaction reviewer"
         },
         {
@@ -7679,6 +8755,12 @@
           "persona": "map interaction reviewer"
         },
         {
+          "name": "modeled values are labelled in UI",
+          "ok": true,
+          "detail": "Estimated 2024 values are distinguished from reported values",
+          "persona": "map interaction reviewer"
+        },
+        {
           "name": "latest global year is transparent",
           "ok": true,
           "detail": "latest year in generated coverage is 2024",
@@ -7691,15 +8773,15 @@
           "persona": "map interaction reviewer"
         },
         {
-          "name": "Australia same-year missing record exists",
+          "name": "Australia modeled same-year record exists",
           "ok": true,
           "detail": "AUS is present",
           "persona": "map interaction reviewer"
         },
         {
-          "name": "Australia same-year missing avoids duplicate same-year data",
+          "name": "Australia modeled same-year uses labelled same-year estimate",
           "ok": true,
-          "detail": "Australia: 2024=missing, 2024=missing",
+          "detail": "Australia: 2024=3088313, 2024=3088313",
           "persona": "map interaction reviewer"
         }
       ]

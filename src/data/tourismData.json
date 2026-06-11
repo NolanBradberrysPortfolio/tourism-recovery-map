@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-11T21:48:28.110Z",
+  "generatedAt": "2026-06-11T22:30:36.215Z",
   "baselines": [
     2019,
     2022,
@@ -36,7 +36,42 @@
     "2021": 167,
     "2022": 138,
     "2023": 69,
+    "2024": 212
+  },
+  "reportedCoverage": {
+    "1995": 178,
+    "1996": 182,
+    "1997": 183,
+    "1998": 188,
+    "1999": 188,
+    "2000": 191,
+    "2001": 192,
+    "2002": 187,
+    "2003": 186,
+    "2004": 187,
+    "2005": 191,
+    "2006": 191,
+    "2007": 194,
+    "2008": 192,
+    "2009": 190,
+    "2010": 191,
+    "2011": 190,
+    "2012": 189,
+    "2013": 189,
+    "2014": 187,
+    "2015": 191,
+    "2016": 189,
+    "2017": 188,
+    "2018": 182,
+    "2019": 181,
+    "2020": 180,
+    "2021": 167,
+    "2022": 138,
+    "2023": 69,
     "2024": 67
+  },
+  "estimatedCoverage": {
+    "2024": 145
   },
   "source": {
     "name": "UN Tourism (2025) - processed by Our World in Data",
@@ -49,6 +84,9 @@
     "fallbackFilledYears": 15,
     "fallbackCompatibleCountries": 6,
     "fallbackOnlyCountries": 6,
+    "modeledEstimateYear": 2024,
+    "modeledEstimateCount": 145,
+    "modeledEstimateRule": "Missing 2024 values are modeled from each country or territory latest available reported value, preferring 2019 when present, multiplied by the median reported recovery ratio for matching subregion, region, or global peers with at least 3 comparable reported series. Modeled 2024 values are labeled and are not official arrivals.",
     "chartUrl": "https://ourworldindata.org/grapher/international-tourist-trips?v=1&csvType=full&useColumnShortNames=false",
     "originalSourceUrl": "https://www.untourism.int/tourism-statistics/tourism-statistics-database",
     "lastUpdated": "2026-01-21",
@@ -149,7 +187,8 @@
         "2017": 2451000,
         "2018": 2657000,
         "2019": 2371000,
-        "2020": 591000
+        "2020": 591000,
+        "2024": 2067656
       },
       "sourceBlend": "world-bank-wdi-only",
       "filledYears": {
@@ -180,7 +219,18 @@
         "2019": "World Bank WDI",
         "2020": "World Bank WDI"
       },
-      "fallbackCompatibility": null
+      "fallbackCompatibility": null,
+      "estimatedYears": {
+        "2024": {
+          "source": "regional-recovery-model",
+          "basisYear": 2019,
+          "basisValue": 2371000,
+          "multiplier": 0.872061,
+          "scope": "Africa median recovery",
+          "sampleSize": 5,
+          "confidence": "low"
+        }
+      }
     },
     {
       "iso3": "ASM",
@@ -220,13 +270,25 @@
         "2017": 20000,
         "2018": 20200,
         "2019": 19200,
-        "2020": 900
+        "2020": 900,
+        "2024": 12588
       },
       "sourceBlend": "owid-un-tourism",
       "filledYears": {},
       "fallbackCompatibility": {
         "overlappingYears": 23,
         "maxRelativeDifference": 3.973643231347523e-8
+      },
+      "estimatedYears": {
+        "2024": {
+          "source": "regional-recovery-model",
+          "basisYear": 2019,
+          "basisValue": 19200,
+          "multiplier": 0.655649,
+          "scope": "Oceania median recovery",
+          "sampleSize": 4,
+          "confidence": "low"
+        }
       }
     },
     {
@@ -322,13 +384,25 @@
         "2019": 218000,
         "2020": 64000,
         "2021": 64000,
-        "2022": 130000
+        "2022": 130000,
+        "2024": 190109
       },
       "sourceBlend": "owid-un-tourism",
       "filledYears": {},
       "fallbackCompatibility": {
         "overlappingYears": 25,
         "maxRelativeDifference": 0
+      },
+      "estimatedYears": {
+        "2024": {
+          "source": "regional-recovery-model",
+          "basisYear": 2019,
+          "basisValue": 218000,
+          "multiplier": 0.872061,
+          "scope": "Africa median recovery",
+          "sampleSize": 6,
+          "confidence": "low"
+        }
       }
     },
     {
@@ -374,11 +448,23 @@
         "2019": 95000,
         "2020": 25400,
         "2021": 28400,
-        "2022": 74100
+        "2022": 74100,
+        "2024": 115007
       },
       "sourceBlend": "owid-un-tourism",
       "filledYears": {},
-      "fallbackCompatibility": null
+      "fallbackCompatibility": null,
+      "estimatedYears": {
+        "2024": {
+          "source": "regional-recovery-model",
+          "basisYear": 2019,
+          "basisValue": 95000,
+          "multiplier": 1.210598,
+          "scope": "Caribbean median recovery",
+          "sampleSize": 6,
+          "confidence": "low"
+        }
+      }
     },
     {
       "iso3": "ATG",
@@ -585,13 +671,25 @@
         "2019": 1119000,
         "2020": 368000,
         "2021": 807000,
-        "2022": 1101000
+        "2022": 1101000,
+        "2024": 1354661
       },
       "sourceBlend": "owid-un-tourism",
       "filledYears": {},
       "fallbackCompatibility": {
         "overlappingYears": 25,
         "maxRelativeDifference": 0.9051321928460342
+      },
+      "estimatedYears": {
+        "2024": {
+          "source": "regional-recovery-model",
+          "basisYear": 2019,
+          "basisValue": 1119000,
+          "multiplier": 1.2106,
+          "scope": "Caribbean median recovery",
+          "sampleSize": 7,
+          "confidence": "low"
+        }
       }
     },
     {
@@ -618,13 +716,25 @@
         "2003": 4354000,
         "2004": 4774000,
         "2005": 5020000,
-        "2006": 5064000
+        "2006": 5064000,
+        "2024": 3088313
       },
       "sourceBlend": "owid-un-tourism",
       "filledYears": {},
       "fallbackCompatibility": {
         "overlappingYears": 9,
         "maxRelativeDifference": 0.0954183266932271
+      },
+      "estimatedYears": {
+        "2024": {
+          "source": "regional-recovery-model",
+          "basisYear": 2006,
+          "basisValue": 5064000,
+          "multiplier": 0.609856,
+          "scope": "Oceania median recovery",
+          "sampleSize": 5,
+          "confidence": "very-low"
+        }
       }
     },
     {
@@ -670,13 +780,25 @@
         "2019": 31884000,
         "2020": 15091000,
         "2021": 12728000,
-        "2022": 26215000
+        "2022": 26215000,
+        "2024": 29721530
       },
       "sourceBlend": "owid-un-tourism",
       "filledYears": {},
       "fallbackCompatibility": {
         "overlappingYears": 26,
         "maxRelativeDifference": 0
+      },
+      "estimatedYears": {
+        "2024": {
+          "source": "regional-recovery-model",
+          "basisYear": 2019,
+          "basisValue": 31884000,
+          "multiplier": 0.932177,
+          "scope": "Central Europe median recovery",
+          "sampleSize": 3,
+          "confidence": "low"
+        }
       }
     },
     {
@@ -714,13 +836,25 @@
         "2018": 2633000,
         "2019": 2876000,
         "2020": 587000,
-        "2022": 1508000
+        "2022": 1508000,
+        "2024": 3342860
       },
       "sourceBlend": "owid-un-tourism",
       "filledYears": {},
       "fallbackCompatibility": {
         "overlappingYears": 19,
         "maxRelativeDifference": 0.8210382513661202
+      },
+      "estimatedYears": {
+        "2024": {
+          "source": "regional-recovery-model",
+          "basisYear": 2019,
+          "basisValue": 2876000,
+          "multiplier": 1.16233,
+          "scope": "Western Asia median recovery",
+          "sampleSize": 7,
+          "confidence": "low"
+        }
       }
     },
     {
@@ -866,13 +1000,25 @@
         "2018": 267000,
         "2019": 323000,
         "2020": 182000,
-        "2021": 135000
+        "2021": 135000,
+        "2024": 323738
       },
       "sourceBlend": "owid-un-tourism",
       "filledYears": {},
       "fallbackCompatibility": {
         "overlappingYears": 25,
         "maxRelativeDifference": 0
+      },
+      "estimatedYears": {
+        "2024": {
+          "source": "regional-recovery-model",
+          "basisYear": 2019,
+          "basisValue": 323000,
+          "multiplier": 1.002283,
+          "scope": "Asia median recovery",
+          "sampleSize": 17,
+          "confidence": "low"
+        }
       }
     },
     {
@@ -969,13 +1115,25 @@
         "2019": 2206000,
         "2020": 577000,
         "2021": 787000,
-        "2022": 1492000
+        "2022": 1492000,
+        "2024": 2371145
       },
       "sourceBlend": "owid-un-tourism",
       "filledYears": {},
       "fallbackCompatibility": {
         "overlappingYears": 21,
         "maxRelativeDifference": 17.727272727272727
+      },
+      "estimatedYears": {
+        "2024": {
+          "source": "regional-recovery-model",
+          "basisYear": 2019,
+          "basisValue": 2206000,
+          "multiplier": 1.074862,
+          "scope": "Europe median recovery",
+          "sampleSize": 23,
+          "confidence": "low"
+        }
       }
     },
     {
@@ -1075,13 +1233,25 @@
         "2019": 503000,
         "2020": 144100,
         "2021": 219000,
-        "2022": 372600
+        "2022": 372600,
+        "2024": 536303
       },
       "sourceBlend": "owid-un-tourism",
       "filledYears": {},
       "fallbackCompatibility": {
         "overlappingYears": 26,
         "maxRelativeDifference": 4.753246753246753
+      },
+      "estimatedYears": {
+        "2024": {
+          "source": "regional-recovery-model",
+          "basisYear": 2019,
+          "basisValue": 503000,
+          "multiplier": 1.066208,
+          "scope": "Americas median recovery",
+          "sampleSize": 17,
+          "confidence": "low"
+        }
       }
     },
     {
@@ -1125,13 +1295,25 @@
         "2017": 281000,
         "2018": 295000,
         "2019": 309000,
-        "2020": 325000
+        "2020": 325000,
+        "2024": 269467
       },
       "sourceBlend": "owid-un-tourism",
       "filledYears": {},
       "fallbackCompatibility": {
         "overlappingYears": 23,
         "maxRelativeDifference": 12.125
+      },
+      "estimatedYears": {
+        "2024": {
+          "source": "regional-recovery-model",
+          "basisYear": 2019,
+          "basisValue": 309000,
+          "multiplier": 0.872061,
+          "scope": "Africa median recovery",
+          "sampleSize": 7,
+          "confidence": "low"
+        }
       }
     },
     {
@@ -1177,13 +1359,25 @@
         "2019": 269000,
         "2020": 42100,
         "2021": 72200,
-        "2022": 145900
+        "2022": 145900,
+        "2024": 245122
       },
       "sourceBlend": "owid-un-tourism",
       "filledYears": {},
       "fallbackCompatibility": {
         "overlappingYears": 26,
         "maxRelativeDifference": 1.9925650557620818
+      },
+      "estimatedYears": {
+        "2024": {
+          "source": "regional-recovery-model",
+          "basisYear": 2019,
+          "basisValue": 269000,
+          "multiplier": 0.911235,
+          "scope": "North America median recovery",
+          "sampleSize": 3,
+          "confidence": "low"
+        }
       }
     },
     {
@@ -1229,13 +1423,25 @@
         "2019": 316000,
         "2020": 29800,
         "2021": 1,
-        "2022": 20900
+        "2022": 20900,
+        "2024": 316722
       },
       "sourceBlend": "owid-un-tourism",
       "filledYears": {},
       "fallbackCompatibility": {
         "overlappingYears": 26,
         "maxRelativeDifference": 4.410054915715171e-8
+      },
+      "estimatedYears": {
+        "2024": {
+          "source": "regional-recovery-model",
+          "basisYear": 2019,
+          "basisValue": 316000,
+          "multiplier": 1.002284,
+          "scope": "Asia median recovery",
+          "sampleSize": 18,
+          "confidence": "low"
+        }
       }
     },
     {
@@ -1281,13 +1487,25 @@
         "2019": 1239000,
         "2020": 323300,
         "2021": 180000,
-        "2022": 724000
+        "2022": 724000,
+        "2024": 1213442
       },
       "sourceBlend": "owid-un-tourism",
       "filledYears": {},
       "fallbackCompatibility": {
         "overlappingYears": 26,
         "maxRelativeDifference": 0.12075471698113208
+      },
+      "estimatedYears": {
+        "2024": {
+          "source": "regional-recovery-model",
+          "basisYear": 2019,
+          "basisValue": 1239000,
+          "multiplier": 0.979372,
+          "scope": "South America median recovery",
+          "sampleSize": 4,
+          "confidence": "low"
+        }
       }
     },
     {
@@ -1383,13 +1601,25 @@
         "2018": 1655000,
         "2019": 1454600,
         "2020": 328500,
-        "2021": 314000
+        "2021": 314000,
+        "2024": 1268499
       },
       "sourceBlend": "owid-un-tourism",
       "filledYears": {},
       "fallbackCompatibility": {
         "overlappingYears": 18,
         "maxRelativeDifference": 0.28125
+      },
+      "estimatedYears": {
+        "2024": {
+          "source": "regional-recovery-model",
+          "basisYear": 2019,
+          "basisValue": 1454600,
+          "multiplier": 0.872061,
+          "scope": "Africa median recovery",
+          "sampleSize": 8,
+          "confidence": "low"
+        }
       }
     },
     {
@@ -1489,13 +1719,25 @@
         "2019": 302400,
         "2020": 83000,
         "2021": 56000,
-        "2022": 173000
+        "2022": 173000,
+        "2024": 366085
       },
       "sourceBlend": "owid-un-tourism",
       "filledYears": {},
       "fallbackCompatibility": {
         "overlappingYears": 26,
         "maxRelativeDifference": 2.01835845709192e-8
+      },
+      "estimatedYears": {
+        "2024": {
+          "source": "regional-recovery-model",
+          "basisYear": 2019,
+          "basisValue": 302400,
+          "multiplier": 1.2106,
+          "scope": "Caribbean median recovery",
+          "sampleSize": 8,
+          "confidence": "low"
+        }
       }
     },
     {
@@ -1531,13 +1773,25 @@
         "2018": 278000,
         "2019": 333000,
         "2020": 62300,
-        "2021": 3500
+        "2021": 3500,
+        "2024": 286879
       },
       "sourceBlend": "owid-un-tourism",
       "filledYears": {},
       "fallbackCompatibility": {
         "overlappingYears": 8,
         "maxRelativeDifference": 18.438356164383563
+      },
+      "estimatedYears": {
+        "2024": {
+          "source": "regional-recovery-model",
+          "basisYear": 2019,
+          "basisValue": 333000,
+          "multiplier": 0.861499,
+          "scope": "South-Eastern Asia median recovery",
+          "sampleSize": 3,
+          "confidence": "low"
+        }
       }
     },
     {
@@ -1583,13 +1837,25 @@
         "2019": 7775000,
         "2020": 1290000,
         "2021": 2300000,
-        "2022": 5557000
+        "2022": 5557000,
+        "2024": 9525869
       },
       "sourceBlend": "owid-un-tourism",
       "filledYears": {},
       "fallbackCompatibility": {
         "overlappingYears": 26,
         "maxRelativeDifference": 2.8550387596899225
+      },
+      "estimatedYears": {
+        "2024": {
+          "source": "regional-recovery-model",
+          "basisYear": 2019,
+          "basisValue": 7775000,
+          "multiplier": 1.225192,
+          "scope": "Southeast Europe median recovery",
+          "sampleSize": 4,
+          "confidence": "low"
+        }
       }
     },
     {
@@ -1684,13 +1950,25 @@
         "2014": 235000,
         "2015": 131000,
         "2016": 187000,
-        "2017": 299000
+        "2017": 299000,
+        "2024": 252235
       },
       "sourceBlend": "owid-un-tourism",
       "filledYears": {},
       "fallbackCompatibility": {
         "overlappingYears": 23,
         "maxRelativeDifference": 0
+      },
+      "estimatedYears": {
+        "2024": {
+          "source": "regional-recovery-model",
+          "basisYear": 2017,
+          "basisValue": 299000,
+          "multiplier": 0.843597,
+          "scope": "Africa median recovery",
+          "sampleSize": 9,
+          "confidence": "very-low"
+        }
       }
     },
     {
@@ -1736,13 +2014,25 @@
         "2019": 6611000,
         "2020": 1306000,
         "2021": 196400,
-        "2022": 2276600
+        "2022": 2276600,
+        "2024": 5695367
       },
       "sourceBlend": "owid-un-tourism",
       "filledYears": {},
       "fallbackCompatibility": {
         "overlappingYears": 26,
         "maxRelativeDifference": 0
+      },
+      "estimatedYears": {
+        "2024": {
+          "source": "regional-recovery-model",
+          "basisYear": 2019,
+          "basisValue": 6611000,
+          "multiplier": 0.861499,
+          "scope": "South-Eastern Asia median recovery",
+          "sampleSize": 4,
+          "confidence": "low"
+        }
       }
     },
     {
@@ -1784,7 +2074,8 @@
         "2016": 994000,
         "2017": 1081000,
         "2018": 997000,
-        "2019": 1021000
+        "2019": 1021000,
+        "2024": 890374
       },
       "sourceBlend": "owid-un-tourism-plus-compatible-wdi",
       "filledYears": {
@@ -1801,6 +2092,17 @@
       "fallbackCompatibility": {
         "overlappingYears": 5,
         "maxRelativeDifference": 0.014583333333333334
+      },
+      "estimatedYears": {
+        "2024": {
+          "source": "regional-recovery-model",
+          "basisYear": 2019,
+          "basisValue": 1021000,
+          "multiplier": 0.872061,
+          "scope": "Africa median recovery",
+          "sampleSize": 9,
+          "confidence": "low"
+        }
       }
     },
     {
@@ -1900,13 +2202,25 @@
         "2019": 758000,
         "2020": 180000,
         "2021": 135000,
-        "2022": 785000
+        "2022": 785000,
+        "2024": 661023
       },
       "sourceBlend": "owid-un-tourism",
       "filledYears": {},
       "fallbackCompatibility": {
         "overlappingYears": 26,
         "maxRelativeDifference": 0
+      },
+      "estimatedYears": {
+        "2024": {
+          "source": "regional-recovery-model",
+          "basisYear": 2019,
+          "basisValue": 758000,
+          "multiplier": 0.872061,
+          "scope": "Western Africa median recovery",
+          "sampleSize": 3,
+          "confidence": "low"
+        }
       }
     },
     {
@@ -1952,13 +2266,25 @@
         "2019": 503000,
         "2020": 122000,
         "2021": 17300,
-        "2022": 284300
+        "2022": 284300,
+        "2024": 608932
       },
       "sourceBlend": "owid-un-tourism",
       "filledYears": {},
       "fallbackCompatibility": {
         "overlappingYears": 26,
         "maxRelativeDifference": 10.708333333333334
+      },
+      "estimatedYears": {
+        "2024": {
+          "source": "regional-recovery-model",
+          "basisYear": 2019,
+          "basisValue": 503000,
+          "multiplier": 1.2106,
+          "scope": "Caribbean median recovery",
+          "sampleSize": 9,
+          "confidence": "low"
+        }
       }
     },
     {
@@ -2002,13 +2328,25 @@
         "2017": 107000,
         "2018": 109000,
         "2019": 87000,
-        "2020": 34600
+        "2020": 34600,
+        "2024": 75869
       },
       "sourceBlend": "owid-un-tourism",
       "filledYears": {},
       "fallbackCompatibility": {
         "overlappingYears": 25,
         "maxRelativeDifference": 4.310392369983171e-8
+      },
+      "estimatedYears": {
+        "2024": {
+          "source": "regional-recovery-model",
+          "basisYear": 2019,
+          "basisValue": 87000,
+          "multiplier": 0.872061,
+          "scope": "Africa median recovery",
+          "sampleSize": 11,
+          "confidence": "low"
+        }
       }
     },
     {
@@ -2053,13 +2391,25 @@
         "2018": 77000,
         "2019": 79000,
         "2020": 11000,
-        "2021": 40000
+        "2021": 40000,
+        "2024": 68893
       },
       "sourceBlend": "owid-un-tourism",
       "filledYears": {},
       "fallbackCompatibility": {
         "overlappingYears": 26,
         "maxRelativeDifference": 0.18181818181818182
+      },
+      "estimatedYears": {
+        "2024": {
+          "source": "regional-recovery-model",
+          "basisYear": 2019,
+          "basisValue": 79000,
+          "multiplier": 0.87206,
+          "scope": "Middle Africa median recovery",
+          "sampleSize": 3,
+          "confidence": "low"
+        }
       }
     },
     {
@@ -2157,13 +2507,25 @@
         "2017": 60740000,
         "2018": 62900000,
         "2019": 65725000,
-        "2020": 7967000
+        "2020": 7967000,
+        "2024": 61470505
       },
       "sourceBlend": "owid-un-tourism",
       "filledYears": {},
       "fallbackCompatibility": {
         "overlappingYears": 26,
         "maxRelativeDifference": 2.815990962721225
+      },
+      "estimatedYears": {
+        "2024": {
+          "source": "regional-recovery-model",
+          "basisYear": 2019,
+          "basisValue": 65725000,
+          "multiplier": 0.935268,
+          "scope": "Eastern Asia median recovery",
+          "sampleSize": 5,
+          "confidence": "low"
+        }
       }
     },
     {
@@ -2209,13 +2571,25 @@
         "2019": 4169000,
         "2020": 1252000,
         "2021": 2127000,
-        "2022": 4519000
+        "2022": 4519000,
+        "2024": 4083002
       },
       "sourceBlend": "owid-un-tourism",
       "filledYears": {},
       "fallbackCompatibility": {
         "overlappingYears": 26,
         "maxRelativeDifference": 0.32783882783882784
+      },
+      "estimatedYears": {
+        "2024": {
+          "source": "regional-recovery-model",
+          "basisYear": 2019,
+          "basisValue": 4169000,
+          "multiplier": 0.979372,
+          "scope": "South America median recovery",
+          "sampleSize": 5,
+          "confidence": "low"
+        }
       }
     },
     {
@@ -2260,13 +2634,25 @@
         "2018": 35900,
         "2019": 45100,
         "2020": 7000,
-        "2021": 28800
+        "2021": 28800,
+        "2024": 39330
       },
       "sourceBlend": "owid-un-tourism",
       "filledYears": {},
       "fallbackCompatibility": {
         "overlappingYears": 26,
         "maxRelativeDifference": 4.2503590500669703e-8
+      },
+      "estimatedYears": {
+        "2024": {
+          "source": "regional-recovery-model",
+          "basisYear": 2019,
+          "basisValue": 45100,
+          "multiplier": 0.872061,
+          "scope": "Africa median recovery",
+          "sampleSize": 13,
+          "confidence": "low"
+        }
       }
     },
     {
@@ -2312,11 +2698,23 @@
         "2019": 172000,
         "2020": 25200,
         "2021": 26300,
-        "2022": 113600
+        "2022": 113600,
+        "2024": 112768
       },
       "sourceBlend": "owid-un-tourism",
       "filledYears": {},
-      "fallbackCompatibility": null
+      "fallbackCompatibility": null,
+      "estimatedYears": {
+        "2024": {
+          "source": "regional-recovery-model",
+          "basisYear": 2019,
+          "basisValue": 172000,
+          "multiplier": 0.655625,
+          "scope": "Oceania median recovery",
+          "sampleSize": 5,
+          "confidence": "low"
+        }
+      }
     },
     {
       "iso3": "CRI",
@@ -2415,13 +2813,25 @@
         "2019": 17353000,
         "2020": 5545000,
         "2021": 10641000,
-        "2022": 15324000
+        "2022": 15324000,
+        "2024": 21260759
       },
       "sourceBlend": "owid-un-tourism",
       "filledYears": {},
       "fallbackCompatibility": {
         "overlappingYears": 26,
         "maxRelativeDifference": 9.841750841750843
+      },
+      "estimatedYears": {
+        "2024": {
+          "source": "regional-recovery-model",
+          "basisYear": 2019,
+          "basisValue": 17353000,
+          "multiplier": 1.225192,
+          "scope": "Southeast Europe median recovery",
+          "sampleSize": 5,
+          "confidence": "low"
+        }
       }
     },
     {
@@ -2467,13 +2877,25 @@
         "2019": 4263000,
         "2020": 1085000,
         "2021": 355500,
-        "2022": 1613400
+        "2022": 1613400,
+        "2024": 5160787
       },
       "sourceBlend": "owid-un-tourism",
       "filledYears": {},
       "fallbackCompatibility": {
         "overlappingYears": 26,
         "maxRelativeDifference": 0.03302325581395349
+      },
+      "estimatedYears": {
+        "2024": {
+          "source": "regional-recovery-model",
+          "basisYear": 2019,
+          "basisValue": 4263000,
+          "multiplier": 1.2106,
+          "scope": "Caribbean median recovery",
+          "sampleSize": 10,
+          "confidence": "low"
+        }
       }
     },
     {
@@ -2519,13 +2941,25 @@
         "2019": 464000,
         "2020": 175000,
         "2021": 265000,
-        "2022": 489600
+        "2022": 489600,
+        "2024": 561718
       },
       "sourceBlend": "owid-un-tourism",
       "filledYears": {},
       "fallbackCompatibility": {
         "overlappingYears": 25,
         "maxRelativeDifference": 1.8009259259259258
+      },
+      "estimatedYears": {
+        "2024": {
+          "source": "regional-recovery-model",
+          "basisYear": 2019,
+          "basisValue": 464000,
+          "multiplier": 1.2106,
+          "scope": "Caribbean median recovery",
+          "sampleSize": 11,
+          "confidence": "low"
+        }
       }
     },
     {
@@ -2624,13 +3058,25 @@
         "2018": 14282600,
         "2019": 14651000,
         "2020": 3919400,
-        "2021": 3768000
+        "2021": 3768000,
+        "2024": 13657325
       },
       "sourceBlend": "owid-un-tourism",
       "filledYears": {},
       "fallbackCompatibility": {
         "overlappingYears": 17,
         "maxRelativeDifference": 1.6316681735985534
+      },
+      "estimatedYears": {
+        "2024": {
+          "source": "regional-recovery-model",
+          "basisYear": 2019,
+          "basisValue": 14651000,
+          "multiplier": 0.932177,
+          "scope": "Central Europe median recovery",
+          "sampleSize": 4,
+          "confidence": "low"
+        }
       }
     },
     {
@@ -2675,13 +3121,25 @@
         "2019": 14725000,
         "2020": 6229000,
         "2021": 7555000,
-        "2022": 14190000
+        "2022": 14190000,
+        "2024": 14281050
       },
       "sourceBlend": "owid-un-tourism",
       "filledYears": {},
       "fallbackCompatibility": {
         "overlappingYears": 18,
         "maxRelativeDifference": 5.07915947035118
+      },
+      "estimatedYears": {
+        "2024": {
+          "source": "regional-recovery-model",
+          "basisYear": 2019,
+          "basisValue": 14725000,
+          "multiplier": 0.969851,
+          "scope": "Northern Europe median recovery",
+          "sampleSize": 3,
+          "confidence": "low"
+        }
       }
     },
     {
@@ -2724,13 +3182,25 @@
         "2019": 167000,
         "2020": 75000,
         "2021": 114000,
-        "2022": 145000
+        "2022": 145000,
+        "2024": 145634
       },
       "sourceBlend": "owid-un-tourism",
       "filledYears": {},
       "fallbackCompatibility": {
         "overlappingYears": 19,
         "maxRelativeDifference": 3.288532329391054e-8
+      },
+      "estimatedYears": {
+        "2024": {
+          "source": "regional-recovery-model",
+          "basisYear": 2019,
+          "basisValue": 167000,
+          "multiplier": 0.872062,
+          "scope": "Eastern Africa median recovery",
+          "sampleSize": 3,
+          "confidence": "low"
+        }
       }
     },
     {
@@ -2776,13 +3246,25 @@
         "2019": 90000,
         "2020": 22000,
         "2021": 15000,
-        "2022": 61000
+        "2022": 61000,
+        "2024": 108954
       },
       "sourceBlend": "owid-un-tourism",
       "filledYears": {},
       "fallbackCompatibility": {
         "overlappingYears": 26,
         "maxRelativeDifference": 7.1066666666666665
+      },
+      "estimatedYears": {
+        "2024": {
+          "source": "regional-recovery-model",
+          "basisYear": 2019,
+          "basisValue": 90000,
+          "multiplier": 1.2106,
+          "scope": "Caribbean median recovery",
+          "sampleSize": 12,
+          "confidence": "low"
+        }
       }
     },
     {
@@ -2881,13 +3363,25 @@
         "2018": 392000,
         "2019": 479000,
         "2020": 202000,
-        "2021": 382000
+        "2021": 382000,
+        "2024": 417717
       },
       "sourceBlend": "owid-un-tourism",
       "filledYears": {},
       "fallbackCompatibility": {
         "overlappingYears": 22,
         "maxRelativeDifference": 0
+      },
+      "estimatedYears": {
+        "2024": {
+          "source": "regional-recovery-model",
+          "basisYear": 2019,
+          "basisValue": 479000,
+          "multiplier": 0.87206,
+          "scope": "Middle Africa median recovery",
+          "sampleSize": 4,
+          "confidence": "low"
+        }
       }
     },
     {
@@ -2930,7 +3424,8 @@
         "2016": 1569000,
         "2017": 1806000,
         "2018": 2535000,
-        "2019": 2108000
+        "2019": 2108000,
+        "2024": 2064516
       },
       "sourceBlend": "world-bank-wdi-only",
       "filledYears": {
@@ -2960,7 +3455,18 @@
         "2018": "World Bank WDI",
         "2019": "World Bank WDI"
       },
-      "fallbackCompatibility": null
+      "fallbackCompatibility": null,
+      "estimatedYears": {
+        "2024": {
+          "source": "regional-recovery-model",
+          "basisYear": 2019,
+          "basisValue": 2108000,
+          "multiplier": 0.979372,
+          "scope": "South America median recovery",
+          "sampleSize": 6,
+          "confidence": "low"
+        }
+      }
     },
     {
       "iso3": "EGY",
@@ -3005,13 +3511,25 @@
         "2019": 12876000,
         "2020": 3619000,
         "2021": 7967000,
-        "2022": 11625000
+        "2022": 11625000,
+        "2024": 11228653
       },
       "sourceBlend": "owid-un-tourism",
       "filledYears": {},
       "fallbackCompatibility": {
         "overlappingYears": 25,
         "maxRelativeDifference": 0.10430839002267574
+      },
+      "estimatedYears": {
+        "2024": {
+          "source": "regional-recovery-model",
+          "basisYear": 2019,
+          "basisValue": 12876000,
+          "multiplier": 0.872061,
+          "scope": "Africa median recovery",
+          "sampleSize": 16,
+          "confidence": "low"
+        }
       }
     },
     {
@@ -3105,7 +3623,8 @@
         "2013": 141000,
         "2014": 119000,
         "2015": 114000,
-        "2016": 142000
+        "2016": 142000,
+        "2024": 172727
       },
       "sourceBlend": "world-bank-wdi-only",
       "filledYears": {
@@ -3132,7 +3651,18 @@
         "2015": "World Bank WDI",
         "2016": "World Bank WDI"
       },
-      "fallbackCompatibility": null
+      "fallbackCompatibility": null,
+      "estimatedYears": {
+        "2024": {
+          "source": "regional-recovery-model",
+          "basisYear": 2016,
+          "basisValue": 142000,
+          "multiplier": 1.216386,
+          "scope": "Eastern Africa median recovery",
+          "sampleSize": 4,
+          "confidence": "very-low"
+        }
+      }
     },
     {
       "iso3": "EST",
@@ -3177,13 +3707,25 @@
         "2019": 3336000,
         "2020": 1023000,
         "2021": 808000,
-        "2022": 2166000
+        "2022": 2166000,
+        "2024": 3235422
       },
       "sourceBlend": "owid-un-tourism",
       "filledYears": {},
       "fallbackCompatibility": {
         "overlappingYears": 22,
         "maxRelativeDifference": 2.983018867924528
+      },
+      "estimatedYears": {
+        "2024": {
+          "source": "regional-recovery-model",
+          "basisYear": 2019,
+          "basisValue": 3336000,
+          "multiplier": 0.969851,
+          "scope": "Northern Europe median recovery",
+          "sampleSize": 4,
+          "confidence": "low"
+        }
       }
     },
     {
@@ -3229,13 +3771,25 @@
         "2019": 680000,
         "2020": 193700,
         "2021": 170300,
-        "2022": 393000
+        "2022": 393000,
+        "2024": 593001
       },
       "sourceBlend": "owid-un-tourism",
       "filledYears": {},
       "fallbackCompatibility": {
         "overlappingYears": 24,
         "maxRelativeDifference": 5.078066914498141
+      },
+      "estimatedYears": {
+        "2024": {
+          "source": "regional-recovery-model",
+          "basisYear": 2019,
+          "basisValue": 680000,
+          "multiplier": 0.872061,
+          "scope": "Africa median recovery",
+          "sampleSize": 17,
+          "confidence": "low"
+        }
       }
     },
     {
@@ -3442,13 +3996,25 @@
         "2018": 89322000,
         "2019": 90914000,
         "2020": 41684000,
-        "2021": 48395000
+        "2021": 48395000,
+        "2024": 90503199
       },
       "sourceBlend": "owid-un-tourism",
       "filledYears": {},
       "fallbackCompatibility": {
         "overlappingYears": 19,
         "maxRelativeDifference": 1.8094472699357067
+      },
+      "estimatedYears": {
+        "2024": {
+          "source": "regional-recovery-model",
+          "basisYear": 2019,
+          "basisValue": 90914000,
+          "multiplier": 0.995481,
+          "scope": "Western Europe median recovery",
+          "sampleSize": 4,
+          "confidence": "low"
+        }
       }
     },
     {
@@ -3530,13 +4096,25 @@
         "2019": 237000,
         "2020": 77000,
         "2021": 83000,
-        "2022": 218800
+        "2022": 218800,
+        "2024": 155383
       },
       "sourceBlend": "owid-un-tourism",
       "filledYears": {},
       "fallbackCompatibility": {
         "overlappingYears": 19,
         "maxRelativeDifference": 0.3048780487804878
+      },
+      "estimatedYears": {
+        "2024": {
+          "source": "regional-recovery-model",
+          "basisYear": 2019,
+          "basisValue": 237000,
+          "multiplier": 0.655626,
+          "scope": "Oceania median recovery",
+          "sampleSize": 6,
+          "confidence": "low"
+        }
       }
     },
     {
@@ -3565,13 +4143,25 @@
         "2002": 208000,
         "2003": 222000,
         "2004": 244000,
-        "2005": 269000
+        "2005": 269000,
+        "2024": 1360856
       },
       "sourceBlend": "owid-un-tourism",
       "filledYears": {},
       "fallbackCompatibility": {
         "overlappingYears": 11,
         "maxRelativeDifference": 0.9553903345724907
+      },
+      "estimatedYears": {
+        "2024": {
+          "source": "regional-recovery-model",
+          "basisYear": 2005,
+          "basisValue": 269000,
+          "multiplier": 5.058943,
+          "scope": "Middle Africa median recovery",
+          "sampleSize": 5,
+          "confidence": "very-low"
+        }
       }
     },
     {
@@ -3617,13 +4207,25 @@
         "2019": 620000,
         "2020": 246000,
         "2021": 332000,
-        "2022": 570000
+        "2022": 570000,
+        "2024": 540678
       },
       "sourceBlend": "owid-un-tourism",
       "filledYears": {},
       "fallbackCompatibility": {
         "overlappingYears": 26,
         "maxRelativeDifference": 0
+      },
+      "estimatedYears": {
+        "2024": {
+          "source": "regional-recovery-model",
+          "basisYear": 2019,
+          "basisValue": 620000,
+          "multiplier": 0.872062,
+          "scope": "Western Africa median recovery",
+          "sampleSize": 4,
+          "confidence": "low"
+        }
       }
     },
     {
@@ -3762,13 +4364,25 @@
         "2019": 1130000,
         "2020": 355000,
         "2021": 624000,
-        "2022": 915000
+        "2022": 915000,
+        "2024": 985429
       },
       "sourceBlend": "owid-un-tourism",
       "filledYears": {},
       "fallbackCompatibility": {
         "overlappingYears": 21,
         "maxRelativeDifference": 0
+      },
+      "estimatedYears": {
+        "2024": {
+          "source": "regional-recovery-model",
+          "basisYear": 2019,
+          "basisValue": 1130000,
+          "multiplier": 0.872061,
+          "scope": "Western Africa median recovery",
+          "sampleSize": 5,
+          "confidence": "low"
+        }
       }
     },
     {
@@ -3814,13 +4428,25 @@
         "2019": 31348400,
         "2020": 7374400,
         "2021": 14705000,
-        "2022": 27836000
+        "2022": 27836000,
+        "2024": 37887477
       },
       "sourceBlend": "owid-un-tourism",
       "filledYears": {},
       "fallbackCompatibility": {
         "overlappingYears": 20,
         "maxRelativeDifference": 0.13194080406468003
+      },
+      "estimatedYears": {
+        "2024": {
+          "source": "regional-recovery-model",
+          "basisYear": 2019,
+          "basisValue": 31348400,
+          "multiplier": 1.208594,
+          "scope": "Southern Europe median recovery",
+          "sampleSize": 6,
+          "confidence": "low"
+        }
       }
     },
     {
@@ -3866,13 +4492,25 @@
         "2019": 188000,
         "2020": 54200,
         "2021": 47000,
-        "2022": 149000
+        "2022": 149000,
+        "2024": 227593
       },
       "sourceBlend": "owid-un-tourism",
       "filledYears": {},
       "fallbackCompatibility": {
         "overlappingYears": 26,
         "maxRelativeDifference": 3.0454545454545454
+      },
+      "estimatedYears": {
+        "2024": {
+          "source": "regional-recovery-model",
+          "basisYear": 2019,
+          "basisValue": 188000,
+          "multiplier": 1.2106,
+          "scope": "Caribbean median recovery",
+          "sampleSize": 13,
+          "confidence": "low"
+        }
       }
     },
     {
@@ -3913,11 +4551,23 @@
         "2015": 512000,
         "2016": 581000,
         "2017": 650000,
-        "2018": 735000
+        "2018": 735000,
+        "2024": 937635
       },
       "sourceBlend": "owid-un-tourism",
       "filledYears": {},
-      "fallbackCompatibility": null
+      "fallbackCompatibility": null,
+      "estimatedYears": {
+        "2024": {
+          "source": "regional-recovery-model",
+          "basisYear": 2018,
+          "basisValue": 735000,
+          "multiplier": 1.275694,
+          "scope": "Caribbean median recovery",
+          "sampleSize": 14,
+          "confidence": "low"
+        }
+      }
     },
     {
       "iso3": "GUM",
@@ -4004,13 +4654,25 @@
         "2019": 1752400,
         "2020": 395700,
         "2021": 602100,
-        "2022": 1494000
+        "2022": 1494000,
+        "2024": 1868424
       },
       "sourceBlend": "owid-un-tourism",
       "filledYears": {},
       "fallbackCompatibility": {
         "overlappingYears": 14,
         "maxRelativeDifference": 0.5011372251705838
+      },
+      "estimatedYears": {
+        "2024": {
+          "source": "regional-recovery-model",
+          "basisYear": 2019,
+          "basisValue": 1752400,
+          "multiplier": 1.066209,
+          "scope": "Central America median recovery",
+          "sampleSize": 3,
+          "confidence": "low"
+        }
       }
     },
     {
@@ -4049,13 +4711,25 @@
         "2014": 33000,
         "2015": 35000,
         "2016": 63000,
-        "2017": 99000
+        "2017": 99000,
+        "2024": 96451
       },
       "sourceBlend": "owid-un-tourism",
       "filledYears": {},
       "fallbackCompatibility": {
         "overlappingYears": 21,
         "maxRelativeDifference": 3.30993253573545e-8
+      },
+      "estimatedYears": {
+        "2024": {
+          "source": "regional-recovery-model",
+          "basisYear": 2017,
+          "basisValue": 99000,
+          "multiplier": 0.974256,
+          "scope": "Western Africa median recovery",
+          "sampleSize": 6,
+          "confidence": "very-low"
+        }
       }
     },
     {
@@ -4089,13 +4763,25 @@
         "2016": 45200,
         "2017": 49500,
         "2018": 55000,
-        "2019": 52400
+        "2019": 52400,
+        "2024": 45696
       },
       "sourceBlend": "owid-un-tourism",
       "filledYears": {},
       "fallbackCompatibility": {
         "overlappingYears": 16,
         "maxRelativeDifference": 4.310392369983171e-8
+      },
+      "estimatedYears": {
+        "2024": {
+          "source": "regional-recovery-model",
+          "basisYear": 2019,
+          "basisValue": 52400,
+          "multiplier": 0.872061,
+          "scope": "Western Africa median recovery",
+          "sampleSize": 6,
+          "confidence": "low"
+        }
       }
     },
     {
@@ -4141,13 +4827,25 @@
         "2019": 315000,
         "2020": 86500,
         "2021": 158300,
-        "2022": 288000
+        "2022": 288000,
+        "2024": 308502
       },
       "sourceBlend": "owid-un-tourism",
       "filledYears": {},
       "fallbackCompatibility": {
         "overlappingYears": 26,
         "maxRelativeDifference": 0.0011560517239432803
+      },
+      "estimatedYears": {
+        "2024": {
+          "source": "regional-recovery-model",
+          "basisYear": 2019,
+          "basisValue": 315000,
+          "multiplier": 0.979372,
+          "scope": "South America median recovery",
+          "sampleSize": 7,
+          "confidence": "low"
+        }
       }
     },
     {
@@ -4192,13 +4890,25 @@
         "2018": 447000,
         "2019": 286000,
         "2020": 203000,
-        "2021": 148000
+        "2021": 148000,
+        "2024": 346232
       },
       "sourceBlend": "owid-un-tourism",
       "filledYears": {},
       "fallbackCompatibility": {
         "overlappingYears": 25,
         "maxRelativeDifference": 4.166666666666667
+      },
+      "estimatedYears": {
+        "2024": {
+          "source": "regional-recovery-model",
+          "basisYear": 2019,
+          "basisValue": 286000,
+          "multiplier": 1.2106,
+          "scope": "Caribbean median recovery",
+          "sampleSize": 14,
+          "confidence": "low"
+        }
       }
     },
     {
@@ -4244,13 +4954,25 @@
         "2019": 724000,
         "2020": 204000,
         "2021": 459000,
-        "2022": 844000
+        "2022": 844000,
+        "2024": 771935
       },
       "sourceBlend": "owid-un-tourism",
       "filledYears": {},
       "fallbackCompatibility": {
         "overlappingYears": 25,
         "maxRelativeDifference": 2.2794117647058822
+      },
+      "estimatedYears": {
+        "2024": {
+          "source": "regional-recovery-model",
+          "basisYear": 2019,
+          "basisValue": 724000,
+          "multiplier": 1.066209,
+          "scope": "Central America median recovery",
+          "sampleSize": 4,
+          "confidence": "low"
+        }
       }
     },
     {
@@ -4403,13 +5125,25 @@
         "2018": 2343800,
         "2019": 2013000,
         "2020": 486300,
-        "2021": 698000
+        "2021": 698000,
+        "2024": 1952309
       },
       "sourceBlend": "owid-un-tourism",
       "filledYears": {},
       "fallbackCompatibility": {
         "overlappingYears": 26,
         "maxRelativeDifference": 0.14705882352941177
+      },
+      "estimatedYears": {
+        "2024": {
+          "source": "regional-recovery-model",
+          "basisYear": 2019,
+          "basisValue": 2013000,
+          "multiplier": 0.969851,
+          "scope": "Northern Europe median recovery",
+          "sampleSize": 5,
+          "confidence": "low"
+        }
       }
     },
     {
@@ -4519,11 +5253,23 @@
       "latestValue": 882000,
       "priorYear": null,
       "years": {
-        "2021": 882000
+        "2021": 882000,
+        "2024": 5749680
       },
       "sourceBlend": "owid-un-tourism",
       "filledYears": {},
-      "fallbackCompatibility": null
+      "fallbackCompatibility": null,
+      "estimatedYears": {
+        "2024": {
+          "source": "regional-recovery-model",
+          "basisYear": 2021,
+          "basisValue": 882000,
+          "multiplier": 6.518912,
+          "scope": "Southern Asia median recovery",
+          "sampleSize": 3,
+          "confidence": "low"
+        }
+      }
     },
     {
       "iso3": "IRQ",
@@ -4553,7 +5299,8 @@
         "2010": 1518000,
         "2011": 1510000,
         "2012": 1111000,
-        "2013": 892000
+        "2013": 892000,
+        "2024": 1574918
       },
       "sourceBlend": "world-bank-wdi-only",
       "filledYears": {
@@ -4571,7 +5318,18 @@
         "2012": "World Bank WDI",
         "2013": "World Bank WDI"
       },
-      "fallbackCompatibility": null
+      "fallbackCompatibility": null,
+      "estimatedYears": {
+        "2024": {
+          "source": "regional-recovery-model",
+          "basisYear": 2013,
+          "basisValue": 892000,
+          "multiplier": 1.765603,
+          "scope": "Western Asia median recovery",
+          "sampleSize": 7,
+          "confidence": "very-low"
+        }
+      }
     },
     {
       "iso3": "IRL",
@@ -4613,13 +5371,25 @@
         "2016": 10100000,
         "2017": 10338000,
         "2018": 10926000,
-        "2019": 10951000
+        "2019": 10951000,
+        "2024": 10620834
       },
       "sourceBlend": "owid-un-tourism",
       "filledYears": {},
       "fallbackCompatibility": {
         "overlappingYears": 25,
         "maxRelativeDifference": 0
+      },
+      "estimatedYears": {
+        "2024": {
+          "source": "regional-recovery-model",
+          "basisYear": 2019,
+          "basisValue": 10951000,
+          "multiplier": 0.969851,
+          "scope": "Northern Europe median recovery",
+          "sampleSize": 6,
+          "confidence": "low"
+        }
       }
     },
     {
@@ -4763,7 +5533,8 @@
         "2017": 1800000,
         "2018": 1965000,
         "2019": 2070000,
-        "2020": 668000
+        "2020": 668000,
+        "2024": 1805167
       },
       "sourceBlend": "world-bank-wdi-only",
       "filledYears": {
@@ -4786,7 +5557,18 @@
         "2019": "World Bank WDI",
         "2020": "World Bank WDI"
       },
-      "fallbackCompatibility": null
+      "fallbackCompatibility": null,
+      "estimatedYears": {
+        "2024": {
+          "source": "regional-recovery-model",
+          "basisYear": 2019,
+          "basisValue": 2070000,
+          "multiplier": 0.872061,
+          "scope": "Western Africa median recovery",
+          "sampleSize": 7,
+          "confidence": "low"
+        }
+      }
     },
     {
       "iso3": "JAM",
@@ -4831,13 +5613,25 @@
         "2019": 2681000,
         "2020": 880400,
         "2021": 1464000,
-        "2022": 2478400
+        "2022": 2478400,
+        "2024": 3245619
       },
       "sourceBlend": "owid-un-tourism",
       "filledYears": {},
       "fallbackCompatibility": {
         "overlappingYears": 26,
         "maxRelativeDifference": 0.8392592592592593
+      },
+      "estimatedYears": {
+        "2024": {
+          "source": "regional-recovery-model",
+          "basisYear": 2019,
+          "basisValue": 2681000,
+          "multiplier": 1.2106,
+          "scope": "Caribbean median recovery",
+          "sampleSize": 15,
+          "confidence": "low"
+        }
       }
     },
     {
@@ -5008,13 +5802,25 @@
         "2014": 1261000,
         "2015": 1114000,
         "2016": 1268000,
-        "2017": 1364000
+        "2017": 1364000,
+        "2024": 1404656
       },
       "sourceBlend": "owid-un-tourism",
       "filledYears": {},
       "fallbackCompatibility": {
         "overlappingYears": 23,
         "maxRelativeDifference": 0.23624595469255663
+      },
+      "estimatedYears": {
+        "2024": {
+          "source": "regional-recovery-model",
+          "basisYear": 2017,
+          "basisValue": 1364000,
+          "multiplier": 1.029806,
+          "scope": "Eastern Africa median recovery",
+          "sampleSize": 5,
+          "confidence": "very-low"
+        }
       }
     },
     {
@@ -5060,13 +5866,25 @@
         "2019": 7900,
         "2020": 1400,
         "2021": 70,
-        "2022": 1800
+        "2022": 1800,
+        "2024": 5179
       },
       "sourceBlend": "owid-un-tourism",
       "filledYears": {},
       "fallbackCompatibility": {
         "overlappingYears": 15,
         "maxRelativeDifference": 25.551021653778776
+      },
+      "estimatedYears": {
+        "2024": {
+          "source": "regional-recovery-model",
+          "basisYear": 2019,
+          "basisValue": 7900,
+          "multiplier": 0.655625,
+          "scope": "Oceania median recovery",
+          "sampleSize": 7,
+          "confidence": "low"
+        }
       }
     },
     {
@@ -5113,13 +5931,25 @@
         "2020": 86485,
         "2021": 84971,
         "2022": 88670,
-        "2023": 122456
+        "2023": 122456,
+        "2024": 177836
       },
       "sourceBlend": "owid-un-tourism",
       "filledYears": {},
       "fallbackCompatibility": {
         "overlappingYears": 26,
         "maxRelativeDifference": 54.98039215686274
+      },
+      "estimatedYears": {
+        "2024": {
+          "source": "regional-recovery-model",
+          "basisYear": 2019,
+          "basisValue": 153000,
+          "multiplier": 1.16233,
+          "scope": "Western Asia median recovery",
+          "sampleSize": 8,
+          "confidence": "low"
+        }
       }
     },
     {
@@ -5162,13 +5992,25 @@
         "2019": 235000,
         "2020": 69000,
         "2021": 144000,
-        "2022": 345700
+        "2022": 345700,
+        "2024": 235537
       },
       "sourceBlend": "owid-un-tourism",
       "filledYears": {},
       "fallbackCompatibility": {
         "overlappingYears": 19,
         "maxRelativeDifference": 35.204255319148935
+      },
+      "estimatedYears": {
+        "2024": {
+          "source": "regional-recovery-model",
+          "basisYear": 2019,
+          "basisValue": 235000,
+          "multiplier": 1.002283,
+          "scope": "Asia median recovery",
+          "sampleSize": 23,
+          "confidence": "low"
+        }
       }
     },
     {
@@ -5212,13 +6054,25 @@
         "2017": 3257000,
         "2018": 3770000,
         "2019": 4384000,
-        "2020": 811600
+        "2020": 811600,
+        "2024": 3776810
       },
       "sourceBlend": "owid-un-tourism",
       "filledYears": {},
       "fallbackCompatibility": {
         "overlappingYears": 26,
         "maxRelativeDifference": 4.766666666666667
+      },
+      "estimatedYears": {
+        "2024": {
+          "source": "regional-recovery-model",
+          "basisYear": 2019,
+          "basisValue": 4384000,
+          "multiplier": 0.861499,
+          "scope": "South-Eastern Asia median recovery",
+          "sampleSize": 5,
+          "confidence": "low"
+        }
       }
     },
     {
@@ -5263,13 +6117,25 @@
         "2018": 1946000,
         "2019": 1935000,
         "2020": 636000,
-        "2021": 478000
+        "2021": 478000,
+        "2024": 1876661
       },
       "sourceBlend": "owid-un-tourism",
       "filledYears": {},
       "fallbackCompatibility": {
         "overlappingYears": 26,
         "maxRelativeDifference": 4.037735849056604
+      },
+      "estimatedYears": {
+        "2024": {
+          "source": "regional-recovery-model",
+          "basisYear": 2019,
+          "basisValue": 1935000,
+          "multiplier": 0.969851,
+          "scope": "Northern Europe median recovery",
+          "sampleSize": 7,
+          "confidence": "low"
+        }
       }
     },
     {
@@ -5315,13 +6181,25 @@
         "2019": 1936000,
         "2020": 414000,
         "2021": 890000,
-        "2022": 1466000
+        "2022": 1466000,
+        "2024": 2250270
       },
       "sourceBlend": "owid-un-tourism",
       "filledYears": {},
       "fallbackCompatibility": {
         "overlappingYears": 25,
         "maxRelativeDifference": 0
+      },
+      "estimatedYears": {
+        "2024": {
+          "source": "regional-recovery-model",
+          "basisYear": 2019,
+          "basisValue": 1936000,
+          "multiplier": 1.16233,
+          "scope": "Western Asia median recovery",
+          "sampleSize": 9,
+          "confidence": "low"
+        }
       }
     },
     {
@@ -5352,13 +6230,25 @@
         "2010": 414000,
         "2011": 397000,
         "2012": 317000,
-        "2013": 320000
+        "2013": 320000,
+        "2024": 262901
       },
       "sourceBlend": "owid-un-tourism",
       "filledYears": {},
       "fallbackCompatibility": {
         "overlappingYears": 13,
         "maxRelativeDifference": 1.4022988505747127
+      },
+      "estimatedYears": {
+        "2024": {
+          "source": "regional-recovery-model",
+          "basisYear": 2013,
+          "basisValue": 320000,
+          "multiplier": 0.821567,
+          "scope": "Southern Africa median recovery",
+          "sampleSize": 3,
+          "confidence": "very-low"
+        }
       }
     },
     {
@@ -5390,13 +6280,25 @@
         "2005": 81000,
         "2006": 42000,
         "2007": 38000,
-        "2008": 34000
+        "2008": 34000,
+        "2024": 48001
       },
       "sourceBlend": "owid-un-tourism",
       "filledYears": {},
       "fallbackCompatibility": {
         "overlappingYears": 12,
         "maxRelativeDifference": 31.714285714285715
+      },
+      "estimatedYears": {
+        "2024": {
+          "source": "regional-recovery-model",
+          "basisYear": 2008,
+          "basisValue": 34000,
+          "multiplier": 1.411789,
+          "scope": "Africa median recovery",
+          "sampleSize": 27,
+          "confidence": "very-low"
+        }
       }
     },
     {
@@ -5550,13 +6452,25 @@
         "2019": 1041000,
         "2020": 525000,
         "2021": 615000,
-        "2022": 1013000
+        "2022": 1013000,
+        "2024": 1036296
       },
       "sourceBlend": "owid-un-tourism",
       "filledYears": {},
       "fallbackCompatibility": {
         "overlappingYears": 26,
         "maxRelativeDifference": 0
+      },
+      "estimatedYears": {
+        "2024": {
+          "source": "regional-recovery-model",
+          "basisYear": 2019,
+          "basisValue": 1041000,
+          "multiplier": 0.995481,
+          "scope": "Western Europe median recovery",
+          "sampleSize": 5,
+          "confidence": "low"
+        }
       }
     },
     {
@@ -5655,13 +6569,25 @@
         "2018": 291000,
         "2019": 384000,
         "2020": 68300,
-        "2021": 7800
+        "2021": 7800,
+        "2024": 334871
       },
       "sourceBlend": "owid-un-tourism",
       "filledYears": {},
       "fallbackCompatibility": {
         "overlappingYears": 7,
         "maxRelativeDifference": 0.5333333333333333
+      },
+      "estimatedYears": {
+        "2024": {
+          "source": "regional-recovery-model",
+          "basisYear": 2019,
+          "basisValue": 384000,
+          "multiplier": 0.872061,
+          "scope": "Eastern Africa median recovery",
+          "sampleSize": 4,
+          "confidence": "low"
+        }
       }
     },
     {
@@ -5706,13 +6632,25 @@
         "2018": 871000,
         "2019": 978000,
         "2020": 199000,
-        "2021": 432000
+        "2021": 432000,
+        "2024": 852875
       },
       "sourceBlend": "owid-un-tourism",
       "filledYears": {},
       "fallbackCompatibility": {
         "overlappingYears": 24,
         "maxRelativeDifference": 0
+      },
+      "estimatedYears": {
+        "2024": {
+          "source": "regional-recovery-model",
+          "basisYear": 2019,
+          "basisValue": 978000,
+          "multiplier": 0.87206,
+          "scope": "Eastern Africa median recovery",
+          "sampleSize": 5,
+          "confidence": "low"
+        }
       }
     },
     {
@@ -5758,13 +6696,25 @@
         "2019": 26101000,
         "2020": 4333000,
         "2021": 135000,
-        "2022": 10071000
+        "2022": 10071000,
+        "2024": 22485975
       },
       "sourceBlend": "owid-un-tourism",
       "filledYears": {},
       "fallbackCompatibility": {
         "overlappingYears": 26,
         "maxRelativeDifference": 0
+      },
+      "estimatedYears": {
+        "2024": {
+          "source": "regional-recovery-model",
+          "basisYear": 2019,
+          "basisValue": 26101000,
+          "multiplier": 0.861499,
+          "scope": "South-Eastern Asia median recovery",
+          "sampleSize": 6,
+          "confidence": "low"
+        }
       }
     },
     {
@@ -5810,13 +6760,25 @@
         "2019": 1703000,
         "2020": 555000,
         "2021": 1322000,
-        "2022": 1675000
+        "2022": 1675000,
+        "2024": 1706891
       },
       "sourceBlend": "owid-un-tourism",
       "filledYears": {},
       "fallbackCompatibility": {
         "overlappingYears": 26,
         "maxRelativeDifference": 0
+      },
+      "estimatedYears": {
+        "2024": {
+          "source": "regional-recovery-model",
+          "basisYear": 2019,
+          "basisValue": 1703000,
+          "multiplier": 1.002285,
+          "scope": "Southern Asia median recovery",
+          "sampleSize": 3,
+          "confidence": "low"
+        }
       }
     },
     {
@@ -5861,13 +6823,25 @@
         "2018": 203000,
         "2019": 217000,
         "2020": 75000,
-        "2021": 168000
+        "2021": 168000,
+        "2024": 189237
       },
       "sourceBlend": "owid-un-tourism",
       "filledYears": {},
       "fallbackCompatibility": {
         "overlappingYears": 25,
         "maxRelativeDifference": 0
+      },
+      "estimatedYears": {
+        "2024": {
+          "source": "regional-recovery-model",
+          "basisYear": 2019,
+          "basisValue": 217000,
+          "multiplier": 0.872061,
+          "scope": "Western Africa median recovery",
+          "sampleSize": 8,
+          "confidence": "low"
+        }
       }
     },
     {
@@ -5965,13 +6939,25 @@
         "2018": 6800,
         "2019": 6100,
         "2020": 1200,
-        "2021": 35
+        "2021": 35,
+        "2024": 3999
       },
       "sourceBlend": "owid-un-tourism",
       "filledYears": {},
       "fallbackCompatibility": {
         "overlappingYears": 24,
         "maxRelativeDifference": 3.667978070062908e-8
+      },
+      "estimatedYears": {
+        "2024": {
+          "source": "regional-recovery-model",
+          "basisYear": 2019,
+          "basisValue": 6100,
+          "multiplier": 0.655625,
+          "scope": "Oceania median recovery",
+          "sampleSize": 8,
+          "confidence": "low"
+        }
       }
     },
     {
@@ -6017,11 +7003,23 @@
         "2019": 556000,
         "2020": 312300,
         "2021": 291000,
-        "2022": 556000
+        "2022": 556000,
+        "2024": 673094
       },
       "sourceBlend": "owid-un-tourism",
       "filledYears": {},
-      "fallbackCompatibility": null
+      "fallbackCompatibility": null,
+      "estimatedYears": {
+        "2024": {
+          "source": "regional-recovery-model",
+          "basisYear": 2019,
+          "basisValue": 556000,
+          "multiplier": 1.2106,
+          "scope": "Caribbean median recovery",
+          "sampleSize": 16,
+          "confidence": "low"
+        }
+      }
     },
     {
       "iso3": "MRT",
@@ -6040,13 +7038,25 @@
       "priorYear": 1999,
       "years": {
         "1999": 24000,
-        "2000": 30000
+        "2000": 30000,
+        "2024": 79150
       },
       "sourceBlend": "owid-un-tourism",
       "filledYears": {},
       "fallbackCompatibility": {
         "overlappingYears": 2,
         "maxRelativeDifference": 0
+      },
+      "estimatedYears": {
+        "2024": {
+          "source": "regional-recovery-model",
+          "basisYear": 2000,
+          "basisValue": 30000,
+          "multiplier": 2.638347,
+          "scope": "Western Africa median recovery",
+          "sampleSize": 8,
+          "confidence": "very-low"
+        }
       }
     },
     {
@@ -6195,13 +7205,25 @@
         "2015": 31200,
         "2016": 29600,
         "2018": 19200,
-        "2019": 18000
+        "2019": 18000,
+        "2024": 11800
       },
       "sourceBlend": "owid-un-tourism",
       "filledYears": {},
       "fallbackCompatibility": {
         "overlappingYears": 23,
         "maxRelativeDifference": 4.435694769876305e-8
+      },
+      "estimatedYears": {
+        "2024": {
+          "source": "regional-recovery-model",
+          "basisYear": 2019,
+          "basisValue": 18000,
+          "multiplier": 0.65557,
+          "scope": "Micronesia median recovery",
+          "sampleSize": 3,
+          "confidence": "low"
+        }
       }
     },
     {
@@ -6399,13 +7421,25 @@
         "2019": 2510000,
         "2020": 351000,
         "2021": 1554000,
-        "2022": 2036000
+        "2022": 2036000,
+        "2024": 3075232
       },
       "sourceBlend": "owid-un-tourism",
       "filledYears": {},
       "fallbackCompatibility": {
         "overlappingYears": 19,
         "maxRelativeDifference": 0
+      },
+      "estimatedYears": {
+        "2024": {
+          "source": "regional-recovery-model",
+          "basisYear": 2019,
+          "basisValue": 2510000,
+          "multiplier": 1.225192,
+          "scope": "Southeast Europe median recovery",
+          "sampleSize": 6,
+          "confidence": "low"
+        }
       }
     },
     {
@@ -6450,11 +7484,23 @@
         "2018": 10200,
         "2019": 10400,
         "2020": 4500,
-        "2021": 1600
+        "2021": 1600,
+        "2024": 12590
       },
       "sourceBlend": "owid-un-tourism",
       "filledYears": {},
-      "fallbackCompatibility": null
+      "fallbackCompatibility": null,
+      "estimatedYears": {
+        "2024": {
+          "source": "regional-recovery-model",
+          "basisYear": 2019,
+          "basisValue": 10400,
+          "multiplier": 1.2106,
+          "scope": "Caribbean median recovery",
+          "sampleSize": 17,
+          "confidence": "low"
+        }
+      }
     },
     {
       "iso3": "MAR",
@@ -6499,13 +7545,25 @@
         "2019": 12932000,
         "2020": 2778000,
         "2021": 3722000,
-        "2022": 10869000
+        "2022": 10869000,
+        "2024": 11277488
       },
       "sourceBlend": "owid-un-tourism",
       "filledYears": {},
       "fallbackCompatibility": {
         "overlappingYears": 26,
         "maxRelativeDifference": 0.07099816609903065
+      },
+      "estimatedYears": {
+        "2024": {
+          "source": "regional-recovery-model",
+          "basisYear": 2019,
+          "basisValue": 12932000,
+          "multiplier": 0.872061,
+          "scope": "Africa median recovery",
+          "sampleSize": 25,
+          "confidence": "low"
+        }
       }
     },
     {
@@ -6544,13 +7602,25 @@
         "2018": 2743000,
         "2019": 2019000,
         "2020": 952000,
-        "2021": 492000
+        "2021": 492000,
+        "2024": 1760689
       },
       "sourceBlend": "owid-un-tourism",
       "filledYears": {},
       "fallbackCompatibility": {
         "overlappingYears": 19,
         "maxRelativeDifference": 0.7430683918669131
+      },
+      "estimatedYears": {
+        "2024": {
+          "source": "regional-recovery-model",
+          "basisYear": 2019,
+          "basisValue": 2019000,
+          "multiplier": 0.87206,
+          "scope": "Eastern Africa median recovery",
+          "sampleSize": 6,
+          "confidence": "low"
+        }
       }
     },
     {
@@ -6651,13 +7721,25 @@
         "2020": 169600,
         "2021": 232800,
         "2022": 461000,
-        "2023": 864000
+        "2023": 864000,
+        "2024": 1391808
       },
       "sourceBlend": "owid-un-tourism",
       "filledYears": {},
       "fallbackCompatibility": {
         "overlappingYears": 26,
         "maxRelativeDifference": 0.5477941176470589
+      },
+      "estimatedYears": {
+        "2024": {
+          "source": "regional-recovery-model",
+          "basisYear": 2019,
+          "basisValue": 1596000,
+          "multiplier": 0.87206,
+          "scope": "Southern Africa median recovery",
+          "sampleSize": 3,
+          "confidence": "low"
+        }
       }
     },
     {
@@ -6703,13 +7785,25 @@
         "2019": 1197000,
         "2020": 230000,
         "2021": 151000,
-        "2022": 614800
+        "2022": 614800,
+        "2024": 1199735
       },
       "sourceBlend": "owid-un-tourism",
       "filledYears": {},
       "fallbackCompatibility": {
         "overlappingYears": 26,
         "maxRelativeDifference": 0
+      },
+      "estimatedYears": {
+        "2024": {
+          "source": "regional-recovery-model",
+          "basisYear": 2019,
+          "basisValue": 1197000,
+          "multiplier": 1.002285,
+          "scope": "Southern Asia median recovery",
+          "sampleSize": 4,
+          "confidence": "low"
+        }
       }
     },
     {
@@ -6755,13 +7849,25 @@
         "2019": 20129000,
         "2020": 7265000,
         "2021": 6248000,
-        "2022": 16063000
+        "2022": 16063000,
+        "2024": 20038044
       },
       "sourceBlend": "owid-un-tourism",
       "filledYears": {},
       "fallbackCompatibility": {
         "overlappingYears": 26,
         "maxRelativeDifference": 0
+      },
+      "estimatedYears": {
+        "2024": {
+          "source": "regional-recovery-model",
+          "basisYear": 2019,
+          "basisValue": 20129000,
+          "multiplier": 0.995481,
+          "scope": "Western Europe median recovery",
+          "sampleSize": 6,
+          "confidence": "low"
+        }
       }
     },
     {
@@ -6912,13 +8018,25 @@
         "2019": 1295000,
         "2020": 384000,
         "2021": 222400,
-        "2022": 817900
+        "2022": 817900,
+        "2024": 1380740
       },
       "sourceBlend": "owid-un-tourism",
       "filledYears": {},
       "fallbackCompatibility": {
         "overlappingYears": 26,
         "maxRelativeDifference": 0.28052805280528054
+      },
+      "estimatedYears": {
+        "2024": {
+          "source": "regional-recovery-model",
+          "basisYear": 2019,
+          "basisValue": 1295000,
+          "multiplier": 1.066209,
+          "scope": "Central America median recovery",
+          "sampleSize": 5,
+          "confidence": "low"
+        }
       }
     },
     {
@@ -6962,13 +8080,25 @@
         "2017": 164000,
         "2018": 157000,
         "2019": 192000,
-        "2020": 85000
+        "2020": 85000,
+        "2024": 167436
       },
       "sourceBlend": "owid-un-tourism",
       "filledYears": {},
       "fallbackCompatibility": {
         "overlappingYears": 26,
         "maxRelativeDifference": 0
+      },
+      "estimatedYears": {
+        "2024": {
+          "source": "regional-recovery-model",
+          "basisYear": 2019,
+          "basisValue": 192000,
+          "multiplier": 0.872061,
+          "scope": "Western Africa median recovery",
+          "sampleSize": 9,
+          "confidence": "low"
+        }
       }
     },
     {
@@ -7066,11 +8196,23 @@
         "2018": 10500,
         "2019": 10200,
         "2020": 1300,
-        "2021": 200
+        "2021": 200,
+        "2024": 6687
       },
       "sourceBlend": "owid-un-tourism",
       "filledYears": {},
-      "fallbackCompatibility": null
+      "fallbackCompatibility": null,
+      "estimatedYears": {
+        "2024": {
+          "source": "regional-recovery-model",
+          "basisYear": 2019,
+          "basisValue": 10200,
+          "multiplier": 0.655625,
+          "scope": "Polynesia median recovery",
+          "sampleSize": 3,
+          "confidence": "low"
+        }
+      }
     },
     {
       "iso3": "MKD",
@@ -7169,13 +8311,25 @@
         "2019": 484000,
         "2020": 87000,
         "2021": 12200,
-        "2022": 96100
+        "2022": 96100,
+        "2024": 317292
       },
       "sourceBlend": "owid-un-tourism",
       "filledYears": {},
       "fallbackCompatibility": {
         "overlappingYears": 25,
         "maxRelativeDifference": 0.02608695652173913
+      },
+      "estimatedYears": {
+        "2024": {
+          "source": "regional-recovery-model",
+          "basisYear": 2019,
+          "basisValue": 484000,
+          "multiplier": 0.655563,
+          "scope": "Micronesia median recovery",
+          "sampleSize": 4,
+          "confidence": "low"
+        }
       }
     },
     {
@@ -7221,13 +8375,25 @@
         "2019": 5879000,
         "2020": 1397000,
         "2021": 1435000,
-        "2022": 4979400
+        "2022": 4979400,
+        "2024": 5701752
       },
       "sourceBlend": "owid-un-tourism",
       "filledYears": {},
       "fallbackCompatibility": {
         "overlappingYears": 26,
         "maxRelativeDifference": 0
+      },
+      "estimatedYears": {
+        "2024": {
+          "source": "regional-recovery-model",
+          "basisYear": 2019,
+          "basisValue": 5879000,
+          "multiplier": 0.969851,
+          "scope": "Northern Europe median recovery",
+          "sampleSize": 8,
+          "confidence": "low"
+        }
       }
     },
     {
@@ -7317,13 +8483,25 @@
         "2009": 855000,
         "2010": 907000,
         "2011": 1161000,
-        "2012": 966000
+        "2012": 966000,
+        "2024": 1721145
       },
       "sourceBlend": "owid-un-tourism",
       "filledYears": {},
       "fallbackCompatibility": {
         "overlappingYears": 18,
         "maxRelativeDifference": 0
+      },
+      "estimatedYears": {
+        "2024": {
+          "source": "regional-recovery-model",
+          "basisYear": 2012,
+          "basisValue": 966000,
+          "multiplier": 1.781723,
+          "scope": "Southern Asia median recovery",
+          "sampleSize": 5,
+          "confidence": "very-low"
+        }
       }
     },
     {
@@ -7367,13 +8545,25 @@
         "2017": 123000,
         "2018": 106000,
         "2019": 94000,
-        "2020": 18400
+        "2020": 18400,
+        "2024": 61623
       },
       "sourceBlend": "owid-un-tourism",
       "filledYears": {},
       "fallbackCompatibility": {
         "overlappingYears": 26,
         "maxRelativeDifference": 2.0732048972643932e-8
+      },
+      "estimatedYears": {
+        "2024": {
+          "source": "regional-recovery-model",
+          "basisYear": 2019,
+          "basisValue": 94000,
+          "multiplier": 0.655562,
+          "scope": "Micronesia median recovery",
+          "sampleSize": 5,
+          "confidence": "low"
+        }
       }
     },
     {
@@ -7416,13 +8606,25 @@
         "2017": 929000,
         "2018": 985000,
         "2019": 1110000,
-        "2020": 170000
+        "2020": 170000,
+        "2024": 1290186
       },
       "sourceBlend": "owid-un-tourism",
       "filledYears": {},
       "fallbackCompatibility": {
         "overlappingYears": 25,
         "maxRelativeDifference": 0.45855758880516684
+      },
+      "estimatedYears": {
+        "2024": {
+          "source": "regional-recovery-model",
+          "basisYear": 2019,
+          "basisValue": 1110000,
+          "multiplier": 1.16233,
+          "scope": "Western Asia median recovery",
+          "sampleSize": 10,
+          "confidence": "low"
+        }
       }
     },
     {
@@ -7468,13 +8670,25 @@
         "2019": 1753000,
         "2020": 414000,
         "2021": 618000,
-        "2022": 1488000
+        "2022": 1488000,
+        "2024": 1869064
       },
       "sourceBlend": "owid-un-tourism",
       "filledYears": {},
       "fallbackCompatibility": {
         "overlappingYears": 26,
         "maxRelativeDifference": 0.6167471819645732
+      },
+      "estimatedYears": {
+        "2024": {
+          "source": "regional-recovery-model",
+          "basisYear": 2019,
+          "basisValue": 1753000,
+          "multiplier": 1.066209,
+          "scope": "Central America median recovery",
+          "sampleSize": 6,
+          "confidence": "low"
+        }
       }
     },
     {
@@ -7520,13 +8734,25 @@
         "2019": 160000,
         "2020": 39000,
         "2021": 17000,
-        "2022": 66800
+        "2022": 66800,
+        "2024": 104892
       },
       "sourceBlend": "owid-un-tourism",
       "filledYears": {},
       "fallbackCompatibility": {
         "overlappingYears": 13,
         "maxRelativeDifference": 0.39285714285714285
+      },
+      "estimatedYears": {
+        "2024": {
+          "source": "regional-recovery-model",
+          "basisYear": 2019,
+          "basisValue": 160000,
+          "multiplier": 0.655574,
+          "scope": "Oceania median recovery",
+          "sampleSize": 13,
+          "confidence": "low"
+        }
       }
     },
     {
@@ -7626,13 +8852,25 @@
         "2019": 4372000,
         "2020": 897000,
         "2021": 444000,
-        "2022": 2009300
+        "2022": 2009300,
+        "2024": 4281814
       },
       "sourceBlend": "owid-un-tourism",
       "filledYears": {},
       "fallbackCompatibility": {
         "overlappingYears": 17,
         "maxRelativeDifference": 0.2940151074956421
+      },
+      "estimatedYears": {
+        "2024": {
+          "source": "regional-recovery-model",
+          "basisYear": 2019,
+          "basisValue": 4372000,
+          "multiplier": 0.979372,
+          "scope": "South America median recovery",
+          "sampleSize": 8,
+          "confidence": "low"
+        }
       }
     },
     {
@@ -7678,13 +8916,25 @@
         "2019": 8261000,
         "2020": 1483000,
         "2021": 164000,
-        "2022": 2654000
+        "2022": 2654000,
+        "2024": 7116840
       },
       "sourceBlend": "owid-un-tourism",
       "filledYears": {},
       "fallbackCompatibility": {
         "overlappingYears": 26,
         "maxRelativeDifference": 0
+      },
+      "estimatedYears": {
+        "2024": {
+          "source": "regional-recovery-model",
+          "basisYear": 2019,
+          "basisValue": 8261000,
+          "multiplier": 0.861499,
+          "scope": "South-Eastern Asia median recovery",
+          "sampleSize": 7,
+          "confidence": "low"
+        }
       }
     },
     {
@@ -7882,7 +9132,8 @@
         "2019": 2136500,
         "2020": 581700,
         "2021": 610800,
-        "2022": 2559800
+        "2022": 2559800,
+        "2024": 2483317
       },
       "sourceBlend": "owid-un-tourism-plus-compatible-wdi",
       "filledYears": {
@@ -7891,6 +9142,17 @@
       "fallbackCompatibility": {
         "overlappingYears": 1,
         "maxRelativeDifference": 0.0005157297576070139
+      },
+      "estimatedYears": {
+        "2024": {
+          "source": "regional-recovery-model",
+          "basisYear": 2019,
+          "basisValue": 2136500,
+          "multiplier": 1.16233,
+          "scope": "Western Asia median recovery",
+          "sampleSize": 11,
+          "confidence": "low"
+        }
       }
     },
     {
@@ -7932,13 +9194,25 @@
         "2015": 220000,
         "2016": 211000,
         "2017": 149000,
-        "2018": 156000
+        "2018": 156000,
+        "2024": 139316
       },
       "sourceBlend": "owid-un-tourism",
       "filledYears": {},
       "fallbackCompatibility": {
         "overlappingYears": 9,
         "maxRelativeDifference": 0.027522935779816515
+      },
+      "estimatedYears": {
+        "2024": {
+          "source": "regional-recovery-model",
+          "basisYear": 2018,
+          "basisValue": 156000,
+          "multiplier": 0.893053,
+          "scope": "Middle Africa median recovery",
+          "sampleSize": 5,
+          "confidence": "low"
+        }
       }
     },
     {
@@ -7984,11 +9258,23 @@
         "2019": 533600,
         "2020": 216700,
         "2021": 251000,
-        "2022": 495000
+        "2022": 495000,
+        "2024": 465331
       },
       "sourceBlend": "owid-un-tourism",
       "filledYears": {},
-      "fallbackCompatibility": null
+      "fallbackCompatibility": null,
+      "estimatedYears": {
+        "2024": {
+          "source": "regional-recovery-model",
+          "basisYear": 2019,
+          "basisValue": 533600,
+          "multiplier": 0.87206,
+          "scope": "Eastern Africa median recovery",
+          "sampleSize": 7,
+          "confidence": "low"
+        }
+      }
     },
     {
       "iso3": "ROU",
@@ -8045,13 +9331,25 @@
         "2002": 21279000,
         "2003": 20443000,
         "2004": 19892000,
-        "2005": 19940000
+        "2005": 19940000,
+        "2024": 75599385
       },
       "sourceBlend": "owid-un-tourism",
       "filledYears": {},
       "fallbackCompatibility": {
         "overlappingYears": 5,
         "maxRelativeDifference": 0.1133901705115346
+      },
+      "estimatedYears": {
+        "2024": {
+          "source": "regional-recovery-model",
+          "basisYear": 2005,
+          "basisValue": 19940000,
+          "multiplier": 3.791343,
+          "scope": "Eastern Europe median recovery",
+          "sampleSize": 3,
+          "confidence": "very-low"
+        }
       }
     },
     {
@@ -8087,13 +9385,25 @@
         "2018": 1619000,
         "2019": 1544000,
         "2020": 460000,
-        "2021": 480000
+        "2021": 480000,
+        "2024": 1346461
       },
       "sourceBlend": "owid-un-tourism",
       "filledYears": {},
       "fallbackCompatibility": {
         "overlappingYears": 14,
         "maxRelativeDifference": 0.1024793388429752
+      },
+      "estimatedYears": {
+        "2024": {
+          "source": "regional-recovery-model",
+          "basisYear": 2019,
+          "basisValue": 1544000,
+          "multiplier": 0.87206,
+          "scope": "Eastern Africa median recovery",
+          "sampleSize": 8,
+          "confidence": "low"
+        }
       }
     },
     {
@@ -8139,13 +9449,25 @@
         "2019": 120000,
         "2020": 30000,
         "2021": 20200,
-        "2022": 79800
+        "2022": 79800,
+        "2024": 145272
       },
       "sourceBlend": "owid-un-tourism",
       "filledYears": {},
       "fallbackCompatibility": {
         "overlappingYears": 26,
         "maxRelativeDifference": 9.382608695652173
+      },
+      "estimatedYears": {
+        "2024": {
+          "source": "regional-recovery-model",
+          "basisYear": 2019,
+          "basisValue": 120000,
+          "multiplier": 1.2106,
+          "scope": "Caribbean median recovery",
+          "sampleSize": 18,
+          "confidence": "low"
+        }
       }
     },
     {
@@ -8191,13 +9513,25 @@
         "2019": 424000,
         "2020": 130700,
         "2021": 199000,
-        "2022": 356000
+        "2022": 356000,
+        "2024": 513294
       },
       "sourceBlend": "owid-un-tourism",
       "filledYears": {},
       "fallbackCompatibility": {
         "overlappingYears": 26,
         "maxRelativeDifference": 2.5323741007194243
+      },
+      "estimatedYears": {
+        "2024": {
+          "source": "regional-recovery-model",
+          "basisYear": 2019,
+          "basisValue": 424000,
+          "multiplier": 1.2106,
+          "scope": "Caribbean median recovery",
+          "sampleSize": 19,
+          "confidence": "low"
+        }
       }
     },
     {
@@ -8243,13 +9577,25 @@
         "2019": 84000,
         "2020": 27000,
         "2021": 24200,
-        "2022": 59000
+        "2022": 59000,
+        "2024": 101690
       },
       "sourceBlend": "owid-un-tourism",
       "filledYears": {},
       "fallbackCompatibility": {
         "overlappingYears": 25,
         "maxRelativeDifference": 3.6666666666666665
+      },
+      "estimatedYears": {
+        "2024": {
+          "source": "regional-recovery-model",
+          "basisYear": 2019,
+          "basisValue": 84000,
+          "multiplier": 1.2106,
+          "scope": "Caribbean median recovery",
+          "sampleSize": 20,
+          "confidence": "low"
+        }
       }
     },
     {
@@ -8295,13 +9641,25 @@
         "2019": 172000,
         "2020": 23100,
         "2021": 2600,
-        "2022": 49400
+        "2022": 49400,
+        "2024": 112767
       },
       "sourceBlend": "owid-un-tourism",
       "filledYears": {},
       "fallbackCompatibility": {
         "overlappingYears": 15,
         "maxRelativeDifference": 0.09634551495016612
+      },
+      "estimatedYears": {
+        "2024": {
+          "source": "regional-recovery-model",
+          "basisYear": 2019,
+          "basisValue": 172000,
+          "multiplier": 0.655625,
+          "scope": "Polynesia median recovery",
+          "sampleSize": 4,
+          "confidence": "low"
+        }
       }
     },
     {
@@ -8346,13 +9704,25 @@
         "2018": 84000,
         "2019": 111000,
         "2020": 58000,
-        "2021": 94000
+        "2021": 94000,
+        "2024": 134154
       },
       "sourceBlend": "owid-un-tourism",
       "filledYears": {},
       "fallbackCompatibility": {
         "overlappingYears": 25,
         "maxRelativeDifference": 119.28571428571429
+      },
+      "estimatedYears": {
+        "2024": {
+          "source": "regional-recovery-model",
+          "basisYear": 2019,
+          "basisValue": 111000,
+          "multiplier": 1.208594,
+          "scope": "Southern Europe median recovery",
+          "sampleSize": 7,
+          "confidence": "low"
+        }
       }
     },
     {
@@ -8394,13 +9764,25 @@
         "2018": 33400,
         "2019": 34900,
         "2020": 10700,
-        "2021": 15100
+        "2021": 15100,
+        "2024": 30435
       },
       "sourceBlend": "owid-un-tourism",
       "filledYears": {},
       "fallbackCompatibility": {
         "overlappingYears": 21,
         "maxRelativeDifference": 4.568499697527073e-8
+      },
+      "estimatedYears": {
+        "2024": {
+          "source": "regional-recovery-model",
+          "basisYear": 2019,
+          "basisValue": 34900,
+          "multiplier": 0.872061,
+          "scope": "Middle Africa median recovery",
+          "sampleSize": 5,
+          "confidence": "low"
+        }
       }
     },
     {
@@ -8491,13 +9873,25 @@
         "2014": 963000,
         "2015": 1006600,
         "2016": 1210000,
-        "2017": 1365000
+        "2017": 1365000,
+        "2024": 1338386
       },
       "sourceBlend": "owid-un-tourism",
       "filledYears": {},
       "fallbackCompatibility": {
         "overlappingYears": 15,
         "maxRelativeDifference": 0.014992503748125937
+      },
+      "estimatedYears": {
+        "2024": {
+          "source": "regional-recovery-model",
+          "basisYear": 2017,
+          "basisValue": 1365000,
+          "multiplier": 0.980503,
+          "scope": "Western Africa median recovery",
+          "sampleSize": 11,
+          "confidence": "very-low"
+        }
       }
     },
     {
@@ -8590,13 +9984,25 @@
         "2019": 384000,
         "2020": 114900,
         "2021": 183000,
-        "2022": 332000
+        "2022": 332000,
+        "2024": 334871
       },
       "sourceBlend": "owid-un-tourism",
       "filledYears": {},
       "fallbackCompatibility": {
         "overlappingYears": 26,
         "maxRelativeDifference": 0.12658227848101267
+      },
+      "estimatedYears": {
+        "2024": {
+          "source": "regional-recovery-model",
+          "basisYear": 2019,
+          "basisValue": 384000,
+          "multiplier": 0.87206,
+          "scope": "Eastern Africa median recovery",
+          "sampleSize": 9,
+          "confidence": "low"
+        }
       }
     },
     {
@@ -8641,13 +10047,25 @@
         "2018": 57000,
         "2019": 63000,
         "2020": 24000,
-        "2021": 40000
+        "2021": 40000,
+        "2024": 54940
       },
       "sourceBlend": "owid-un-tourism",
       "filledYears": {},
       "fallbackCompatibility": {
         "overlappingYears": 8,
         "maxRelativeDifference": 0.2916666666666667
+      },
+      "estimatedYears": {
+        "2024": {
+          "source": "regional-recovery-model",
+          "basisYear": 2019,
+          "basisValue": 63000,
+          "multiplier": 0.872061,
+          "scope": "Western Africa median recovery",
+          "sampleSize": 10,
+          "confidence": "low"
+        }
       }
     },
     {
@@ -8747,13 +10165,25 @@
         "2019": 320000,
         "2020": 106000,
         "2021": 249000,
-        "2022": 373000
+        "2022": 373000,
+        "2024": 387392
       },
       "sourceBlend": "owid-un-tourism",
       "filledYears": {},
       "fallbackCompatibility": {
         "overlappingYears": 25,
         "maxRelativeDifference": 8.97191011235955
+      },
+      "estimatedYears": {
+        "2024": {
+          "source": "regional-recovery-model",
+          "basisYear": 2019,
+          "basisValue": 320000,
+          "multiplier": 1.2106,
+          "scope": "Caribbean median recovery",
+          "sampleSize": 21,
+          "confidence": "low"
+        }
       }
     },
     {
@@ -8777,7 +10207,8 @@
         "2015": 14936000,
         "2016": 17376000,
         "2017": 15406000,
-        "2018": 15299000
+        "2018": 15299000,
+        "2024": 14755636
       },
       "sourceBlend": "world-bank-wdi-only",
       "filledYears": {
@@ -8788,7 +10219,18 @@
         "2017": "World Bank WDI",
         "2018": "World Bank WDI"
       },
-      "fallbackCompatibility": null
+      "fallbackCompatibility": null,
+      "estimatedYears": {
+        "2024": {
+          "source": "regional-recovery-model",
+          "basisYear": 2018,
+          "basisValue": 15299000,
+          "multiplier": 0.964484,
+          "scope": "Central Europe median recovery",
+          "sampleSize": 5,
+          "confidence": "low"
+        }
+      }
     },
     {
       "iso3": "SVN",
@@ -8883,13 +10325,25 @@
         "2018": 27900,
         "2019": 28900,
         "2020": 4400,
-        "2021": 700
+        "2021": 700,
+        "2024": 18946
       },
       "sourceBlend": "owid-un-tourism",
       "filledYears": {},
       "fallbackCompatibility": {
         "overlappingYears": 23,
         "maxRelativeDifference": 4.169068308299041e-8
+      },
+      "estimatedYears": {
+        "2024": {
+          "source": "regional-recovery-model",
+          "basisYear": 2019,
+          "basisValue": 28900,
+          "multiplier": 0.655575,
+          "scope": "Melanesia median recovery",
+          "sampleSize": 3,
+          "confidence": "low"
+        }
       }
     },
     {
@@ -9075,13 +10529,25 @@
         "2019": 1914000,
         "2020": 508000,
         "2021": 194000,
-        "2022": 720000
+        "2022": 720000,
+        "2024": 1918373
       },
       "sourceBlend": "owid-un-tourism",
       "filledYears": {},
       "fallbackCompatibility": {
         "overlappingYears": 26,
         "maxRelativeDifference": 0.23035714285714284
+      },
+      "estimatedYears": {
+        "2024": {
+          "source": "regional-recovery-model",
+          "basisYear": 2019,
+          "basisValue": 1914000,
+          "multiplier": 1.002285,
+          "scope": "Southern Asia median recovery",
+          "sampleSize": 5,
+          "confidence": "low"
+        }
       }
     },
     {
@@ -9123,13 +10589,25 @@
         "2015": 741000,
         "2016": 800000,
         "2017": 813000,
-        "2018": 836000
+        "2018": 836000,
+        "2024": 767189
       },
       "sourceBlend": "owid-un-tourism",
       "filledYears": {},
       "fallbackCompatibility": {
         "overlappingYears": 24,
         "maxRelativeDifference": 0
+      },
+      "estimatedYears": {
+        "2024": {
+          "source": "regional-recovery-model",
+          "basisYear": 2018,
+          "basisValue": 836000,
+          "multiplier": 0.91769,
+          "scope": "Northern Africa median recovery",
+          "sampleSize": 3,
+          "confidence": "low"
+        }
       }
     },
     {
@@ -9170,13 +10648,25 @@
         "2014": 252000,
         "2015": 228000,
         "2016": 256000,
-        "2017": 278000
+        "2017": 278000,
+        "2024": 290507
       },
       "sourceBlend": "owid-un-tourism",
       "filledYears": {},
       "fallbackCompatibility": {
         "overlappingYears": 20,
         "maxRelativeDifference": 0.6046511627906976
+      },
+      "estimatedYears": {
+        "2024": {
+          "source": "regional-recovery-model",
+          "basisYear": 2017,
+          "basisValue": 278000,
+          "multiplier": 1.044989,
+          "scope": "South America median recovery",
+          "sampleSize": 10,
+          "confidence": "very-low"
+        }
       }
     },
     {
@@ -9222,13 +10712,25 @@
         "2019": 7616000,
         "2020": 1957000,
         "2021": 2990000,
-        "2022": 6629000
+        "2022": 6629000,
+        "2024": 7386382
       },
       "sourceBlend": "owid-un-tourism",
       "filledYears": {},
       "fallbackCompatibility": {
         "overlappingYears": 26,
         "maxRelativeDifference": 0
+      },
+      "estimatedYears": {
+        "2024": {
+          "source": "regional-recovery-model",
+          "basisYear": 2019,
+          "basisValue": 7616000,
+          "multiplier": 0.969851,
+          "scope": "Northern Europe median recovery",
+          "sampleSize": 9,
+          "confidence": "low"
+        }
       }
     },
     {
@@ -9273,13 +10775,25 @@
         "2019": 11818000,
         "2020": 3690000,
         "2021": 4390000,
-        "2022": 9159500
+        "2022": 9159500,
+        "2024": 11764599
       },
       "sourceBlend": "owid-un-tourism",
       "filledYears": {},
       "fallbackCompatibility": {
         "overlappingYears": 24,
         "maxRelativeDifference": 0
+      },
+      "estimatedYears": {
+        "2024": {
+          "source": "regional-recovery-model",
+          "basisYear": 2019,
+          "basisValue": 11818000,
+          "multiplier": 0.995481,
+          "scope": "Western Europe median recovery",
+          "sampleSize": 7,
+          "confidence": "low"
+        }
       }
     },
     {
@@ -9314,13 +10828,25 @@
         "2008": 5430000,
         "2009": 6092000,
         "2010": 8546000,
-        "2011": 5070000
+        "2011": 5070000,
+        "2024": 10629674
       },
       "sourceBlend": "owid-un-tourism",
       "filledYears": {},
       "fallbackCompatibility": {
         "overlappingYears": 17,
         "maxRelativeDifference": 1.9337349397590362
+      },
+      "estimatedYears": {
+        "2024": {
+          "source": "regional-recovery-model",
+          "basisYear": 2011,
+          "basisValue": 5070000,
+          "multiplier": 2.096583,
+          "scope": "Western Asia median recovery",
+          "sampleSize": 11,
+          "confidence": "very-low"
+        }
       }
     },
     {
@@ -9367,13 +10893,25 @@
       "years": {
         "1999": 1600,
         "2000": 3800,
-        "2001": 3500
+        "2001": 3500,
+        "2024": 12048
       },
       "sourceBlend": "owid-un-tourism",
       "filledYears": {},
       "fallbackCompatibility": {
         "overlappingYears": 3,
         "maxRelativeDifference": 1.8125
+      },
+      "estimatedYears": {
+        "2024": {
+          "source": "regional-recovery-model",
+          "basisYear": 2001,
+          "basisValue": 3500,
+          "multiplier": 3.44229,
+          "scope": "Asia median recovery",
+          "sampleSize": 31,
+          "confidence": "very-low"
+        }
       }
     },
     {
@@ -9419,13 +10957,25 @@
         "2019": 1443000,
         "2020": 592000,
         "2021": 922700,
-        "2022": 1455000
+        "2022": 1455000,
+        "2024": 1258382
       },
       "sourceBlend": "owid-un-tourism",
       "filledYears": {},
       "fallbackCompatibility": {
         "overlappingYears": 25,
         "maxRelativeDifference": 0.11170212765957446
+      },
+      "estimatedYears": {
+        "2024": {
+          "source": "regional-recovery-model",
+          "basisYear": 2019,
+          "basisValue": 1443000,
+          "multiplier": 0.87206,
+          "scope": "Eastern Africa median recovery",
+          "sampleSize": 10,
+          "confidence": "low"
+        }
       }
     },
     {
@@ -9470,13 +11020,25 @@
         "2018": 38178000,
         "2019": 39916000,
         "2020": 6725000,
-        "2021": 511000
+        "2021": 511000,
+        "2024": 34387578
       },
       "sourceBlend": "owid-un-tourism",
       "filledYears": {},
       "fallbackCompatibility": {
         "overlappingYears": 25,
         "maxRelativeDifference": 0
+      },
+      "estimatedYears": {
+        "2024": {
+          "source": "regional-recovery-model",
+          "basisYear": 2019,
+          "basisValue": 39916000,
+          "multiplier": 0.861499,
+          "scope": "South-Eastern Asia median recovery",
+          "sampleSize": 8,
+          "confidence": "low"
+        }
       }
     },
     {
@@ -9510,13 +11072,25 @@
         "2018": 74600,
         "2019": 80800,
         "2020": 17900,
-        "2021": 5500
+        "2021": 5500,
+        "2024": 69609
       },
       "sourceBlend": "owid-un-tourism",
       "filledYears": {},
       "fallbackCompatibility": {
         "overlappingYears": 14,
         "maxRelativeDifference": 0.07425738797329458
+      },
+      "estimatedYears": {
+        "2024": {
+          "source": "regional-recovery-model",
+          "basisYear": 2019,
+          "basisValue": 80800,
+          "multiplier": 0.861499,
+          "scope": "South-Eastern Asia median recovery",
+          "sampleSize": 9,
+          "confidence": "low"
+        }
       }
     },
     {
@@ -9560,13 +11134,25 @@
         "2017": 514000,
         "2018": 573000,
         "2019": 876000,
-        "2020": 482000
+        "2020": 482000,
+        "2024": 763926
       },
       "sourceBlend": "owid-un-tourism",
       "filledYears": {},
       "fallbackCompatibility": {
         "overlappingYears": 26,
         "maxRelativeDifference": 0
+      },
+      "estimatedYears": {
+        "2024": {
+          "source": "regional-recovery-model",
+          "basisYear": 2019,
+          "basisValue": 876000,
+          "multiplier": 0.872061,
+          "scope": "Western Africa median recovery",
+          "sampleSize": 11,
+          "confidence": "low"
+        }
       }
     },
     {
@@ -9612,13 +11198,25 @@
         "2019": 67300,
         "2020": 9000,
         "2021": 200,
-        "2022": 18400
+        "2022": 18400,
+        "2024": 44124
       },
       "sourceBlend": "owid-un-tourism",
       "filledYears": {},
       "fallbackCompatibility": {
         "overlappingYears": 25,
         "maxRelativeDifference": 0.6345732373794792
+      },
+      "estimatedYears": {
+        "2024": {
+          "source": "regional-recovery-model",
+          "basisYear": 2019,
+          "basisValue": 67300,
+          "multiplier": 0.655624,
+          "scope": "Polynesia median recovery",
+          "sampleSize": 5,
+          "confidence": "low"
+        }
       }
     },
     {
@@ -9718,13 +11316,25 @@
         "2019": 9429000,
         "2020": 2012000,
         "2021": 2475000,
-        "2022": 6441000
+        "2022": 6441000,
+        "2024": 8222660
       },
       "sourceBlend": "owid-un-tourism",
       "filledYears": {},
       "fallbackCompatibility": {
         "overlappingYears": 26,
         "maxRelativeDifference": 0
+      },
+      "estimatedYears": {
+        "2024": {
+          "source": "regional-recovery-model",
+          "basisYear": 2019,
+          "basisValue": 9429000,
+          "multiplier": 0.872061,
+          "scope": "Northern Africa median recovery",
+          "sampleSize": 3,
+          "confidence": "low"
+        }
       }
     },
     {
@@ -9770,13 +11380,25 @@
         "2019": 51192000,
         "2020": 15894000,
         "2021": 29925000,
-        "2022": 50453000
+        "2022": 50453000,
+        "2024": 59501974
       },
       "sourceBlend": "owid-un-tourism",
       "filledYears": {},
       "fallbackCompatibility": {
         "overlappingYears": 26,
         "maxRelativeDifference": 0.09092192573768178
+      },
+      "estimatedYears": {
+        "2024": {
+          "source": "regional-recovery-model",
+          "basisYear": 2019,
+          "basisValue": 51192000,
+          "multiplier": 1.16233,
+          "scope": "Western Asia median recovery",
+          "sampleSize": 12,
+          "confidence": "low"
+        }
       }
     },
     {
@@ -9806,13 +11428,25 @@
         "2004": 14800,
         "2005": 11600,
         "2006": 5600,
-        "2007": 8200
+        "2007": 8200,
+        "2024": 18144
       },
       "sourceBlend": "owid-un-tourism",
       "filledYears": {},
       "fallbackCompatibility": {
         "overlappingYears": 4,
         "maxRelativeDifference": 0.2995391705069124
+      },
+      "estimatedYears": {
+        "2024": {
+          "source": "regional-recovery-model",
+          "basisYear": 2007,
+          "basisValue": 8200,
+          "multiplier": 2.212655,
+          "scope": "Asia median recovery",
+          "sampleSize": 35,
+          "confidence": "very-low"
+        }
       }
     },
     {
@@ -9857,13 +11491,25 @@
         "2018": 441000,
         "2019": 487000,
         "2020": 164500,
-        "2021": 405000
+        "2021": 405000,
+        "2024": 589562
       },
       "sourceBlend": "owid-un-tourism",
       "filledYears": {},
       "fallbackCompatibility": {
         "overlappingYears": 13,
         "maxRelativeDifference": 2.7150837988826817
+      },
+      "estimatedYears": {
+        "2024": {
+          "source": "regional-recovery-model",
+          "basisYear": 2019,
+          "basisValue": 487000,
+          "multiplier": 1.2106,
+          "scope": "Caribbean median recovery",
+          "sampleSize": 22,
+          "confidence": "low"
+        }
       }
     },
     {
@@ -9909,13 +11555,25 @@
         "2019": 3700,
         "2020": 600,
         "2021": 40,
-        "2022": 244
+        "2022": 244,
+        "2024": 2426
       },
       "sourceBlend": "owid-un-tourism",
       "filledYears": {},
       "fallbackCompatibility": {
         "overlappingYears": 25,
         "maxRelativeDifference": 0.03225807989797416
+      },
+      "estimatedYears": {
+        "2024": {
+          "source": "regional-recovery-model",
+          "basisYear": 2019,
+          "basisValue": 3700,
+          "multiplier": 0.655625,
+          "scope": "Polynesia median recovery",
+          "sampleSize": 6,
+          "confidence": "low"
+        }
       }
     },
     {
@@ -9960,13 +11618,25 @@
         "2018": 1506000,
         "2019": 1543000,
         "2020": 473000,
-        "2021": 513000
+        "2021": 513000,
+        "2024": 1345588
       },
       "sourceBlend": "owid-un-tourism",
       "filledYears": {},
       "fallbackCompatibility": {
         "overlappingYears": 26,
         "maxRelativeDifference": 0
+      },
+      "estimatedYears": {
+        "2024": {
+          "source": "regional-recovery-model",
+          "basisYear": 2019,
+          "basisValue": 1543000,
+          "multiplier": 0.87206,
+          "scope": "Eastern Africa median recovery",
+          "sampleSize": 11,
+          "confidence": "low"
+        }
       }
     },
     {
@@ -10057,13 +11727,25 @@
         "2018": 20214000,
         "2019": 21561000,
         "2020": 7165000,
-        "2021": 11479000
+        "2021": 11479000,
+        "2024": 25060987
       },
       "sourceBlend": "owid-un-tourism",
       "filledYears": {},
       "fallbackCompatibility": {
         "overlappingYears": 6,
         "maxRelativeDifference": 0.17258012151569965
+      },
+      "estimatedYears": {
+        "2024": {
+          "source": "regional-recovery-model",
+          "basisYear": 2019,
+          "basisValue": 21561000,
+          "multiplier": 1.16233,
+          "scope": "Western Asia median recovery",
+          "sampleSize": 13,
+          "confidence": "low"
+        }
       }
     },
     {
@@ -10216,13 +11898,25 @@
         "2018": 381000,
         "2019": 514000,
         "2020": 302700,
-        "2021": 684800
+        "2021": 684800,
+        "2024": 622248
       },
       "sourceBlend": "owid-un-tourism",
       "filledYears": {},
       "fallbackCompatibility": {
         "overlappingYears": 26,
         "maxRelativeDifference": 27.450611166171125
+      },
+      "estimatedYears": {
+        "2024": {
+          "source": "regional-recovery-model",
+          "basisYear": 2019,
+          "basisValue": 514000,
+          "multiplier": 1.2106,
+          "scope": "Caribbean median recovery",
+          "sampleSize": 23,
+          "confidence": "low"
+        }
       }
     },
     {
@@ -10265,13 +11959,25 @@
         "2016": 3037000,
         "2017": 3674000,
         "2018": 3469000,
-        "2019": 3059000
+        "2019": 3059000,
+        "2024": 2995899
       },
       "sourceBlend": "owid-un-tourism",
       "filledYears": {},
       "fallbackCompatibility": {
         "overlappingYears": 25,
         "maxRelativeDifference": 0.20834886321282148
+      },
+      "estimatedYears": {
+        "2024": {
+          "source": "regional-recovery-model",
+          "basisYear": 2019,
+          "basisValue": 3059000,
+          "multiplier": 0.979372,
+          "scope": "South America median recovery",
+          "sampleSize": 9,
+          "confidence": "low"
+        }
       }
     },
     {
@@ -10342,13 +12048,25 @@
         "2018": 115600,
         "2019": 120600,
         "2020": 22000,
-        "2022": 30000
+        "2022": 30000,
+        "2024": 79062
       },
       "sourceBlend": "owid-un-tourism",
       "filledYears": {},
       "fallbackCompatibility": {
         "overlappingYears": 26,
         "maxRelativeDifference": 2.7454546148126777
+      },
+      "estimatedYears": {
+        "2024": {
+          "source": "regional-recovery-model",
+          "basisYear": 2019,
+          "basisValue": 120600,
+          "multiplier": 0.655573,
+          "scope": "Melanesia median recovery",
+          "sampleSize": 4,
+          "confidence": "low"
+        }
       }
     },
     {
@@ -10389,13 +12107,25 @@
         "2014": 857000,
         "2015": 789000,
         "2016": 601000,
-        "2017": 427000
+        "2017": 427000,
+        "2024": 442587
       },
       "sourceBlend": "owid-un-tourism",
       "filledYears": {},
       "fallbackCompatibility": {
         "overlappingYears": 23,
         "maxRelativeDifference": 0.36574074074074076
+      },
+      "estimatedYears": {
+        "2024": {
+          "source": "regional-recovery-model",
+          "basisYear": 2017,
+          "basisValue": 427000,
+          "multiplier": 1.036504,
+          "scope": "South America median recovery",
+          "sampleSize": 12,
+          "confidence": "very-low"
+        }
       }
     },
     {
@@ -10422,13 +12152,25 @@
         "2001": 1599000,
         "2013": 7201000,
         "2014": 7488000,
-        "2015": 7555000
+        "2015": 7555000,
+        "2024": 8609748
       },
       "sourceBlend": "owid-un-tourism",
       "filledYears": {},
       "fallbackCompatibility": {
         "overlappingYears": 9,
         "maxRelativeDifference": 0.6482051282051282
+      },
+      "estimatedYears": {
+        "2024": {
+          "source": "regional-recovery-model",
+          "basisYear": 2015,
+          "basisValue": 7555000,
+          "multiplier": 1.139609,
+          "scope": "South-Eastern Asia median recovery",
+          "sampleSize": 10,
+          "confidence": "very-low"
+        }
       }
     },
     {
@@ -10467,13 +12209,25 @@
         "2012": 874000,
         "2013": 990000,
         "2014": 1017500,
-        "2015": 366700
+        "2015": 366700,
+        "2024": 552697
       },
       "sourceBlend": "owid-un-tourism",
       "filledYears": {},
       "fallbackCompatibility": {
         "overlappingYears": 6,
         "maxRelativeDifference": 0.4668192219679634
+      },
+      "estimatedYears": {
+        "2024": {
+          "source": "regional-recovery-model",
+          "basisYear": 2015,
+          "basisValue": 366700,
+          "multiplier": 1.507219,
+          "scope": "Western Asia median recovery",
+          "sampleSize": 13,
+          "confidence": "very-low"
+        }
       }
     },
     {
@@ -10518,13 +12272,25 @@
         "2018": 1072000,
         "2019": 1266000,
         "2020": 502000,
-        "2021": 554000
+        "2021": 554000,
+        "2024": 1104028
       },
       "sourceBlend": "owid-un-tourism",
       "filledYears": {},
       "fallbackCompatibility": {
         "overlappingYears": 26,
         "maxRelativeDifference": 0
+      },
+      "estimatedYears": {
+        "2024": {
+          "source": "regional-recovery-model",
+          "basisYear": 2019,
+          "basisValue": 1266000,
+          "multiplier": 0.87206,
+          "scope": "Eastern Africa median recovery",
+          "sampleSize": 12,
+          "confidence": "low"
+        }
       }
     },
     {
@@ -10549,13 +12315,25 @@
         "1998": 1986000,
         "1999": 2101000,
         "2000": 1868000,
-        "2001": 2068000
+        "2001": 2068000,
+        "2024": 5260652
       },
       "sourceBlend": "owid-un-tourism",
       "filledYears": {},
       "fallbackCompatibility": {
         "overlappingYears": 7,
         "maxRelativeDifference": 0.07205029013539652
+      },
+      "estimatedYears": {
+        "2024": {
+          "source": "regional-recovery-model",
+          "basisYear": 2001,
+          "basisValue": 2068000,
+          "multiplier": 2.543836,
+          "scope": "Eastern Africa median recovery",
+          "sampleSize": 16,
+          "confidence": "very-low"
+        }
       }
     }
   ]

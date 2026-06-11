@@ -3,22 +3,29 @@
 Interactive country choropleth for international tourist arrivals recovery.
 
 The app compares any selected From year with any selected To year for every
-country or territory with a defensible tourism-arrivals series. Countries with
-missing comparable data are shown in gray rather than imputed, and source-gap
-countries remain searchable with a no-series explanation.
+country or territory with a defensible tourism-arrivals series. Reported values
+stay source-labelled; missing 2024 values are filled with clearly labelled model
+estimates, while other missing selected years remain gray instead of being hidden.
+Source-gap countries remain searchable with a no-series explanation.
 
 ## Data
 
 - Primary dataset: UN Tourism (2025), processed by Our World in Data.
 - Fallback dataset: World Bank WDI `ST.INT.ARVL`, used only to fill missing
   years when overlapping country-year values match the primary series within 2%.
+- Modeled 2024 fill: when a record lacks reported 2024 arrivals, the app models
+  2024 from that record's latest reported value, preferring 2019 when present,
+  multiplied by the median reported recovery ratio for comparable subregion,
+  region, or global peers. These values are labelled as estimates, not official
+  arrivals.
 - App feed: https://ourworldindata.org/grapher/international-tourist-trips
 - Metric: annual inbound overnight visitor arrivals.
 - Latest country-level year in the feed: 2024.
 - Generated coverage in this build: 212 data series; 208 are separately drawn by
-  the current base map, 2019 has 181 series, 2022 has 138, and 2024 has 67.
+  the current base map, 2019 has 181 series, 2022 has 138, and 2024 has 212
+  values: 67 reported and 145 modeled.
 - Searchable data records not separately drawn by the base map: French Guiana,
-  Guadeloupe, Martinique, Réunion, and Tuvalu.
+  Guadeloupe, Martinique, Reunion, and Tuvalu.
 
 Tourism-arrival caveats matter: arrivals are trips, not unique people; collection
 methods vary by country; some countries use border statistics, accommodation

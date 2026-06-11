@@ -54,8 +54,8 @@ const yearPairScenarios = [
   { label: 'Japan increase', iso3: 'JPN', fromYear: 2019, toYear: 2024, expected: 'ready-positive' },
   { label: 'Japan reverse', iso3: 'JPN', fromYear: 2024, toYear: 2019, expected: 'ready-negative' },
   { label: 'Kazakhstan missing from', iso3: 'KAZ', fromYear: 2019, toYear: 2024, expected: 'missing-from' },
-  { label: 'China missing to', iso3: 'CHN', fromYear: 2019, toYear: 2024, expected: 'missing-to' },
-  { label: 'Australia same-year missing', iso3: 'AUS', fromYear: 2024, toYear: 2024, expected: 'missing-same-year' },
+  { label: 'China modeled to', iso3: 'CHN', fromYear: 2019, toYear: 2024, expected: 'estimated-to' },
+  { label: 'Australia modeled same-year', iso3: 'AUS', fromYear: 2024, toYear: 2024, expected: 'estimated-same-year' },
 ]
 
 function hasComparableYear(record, year) {
@@ -91,11 +91,23 @@ function yearPairChecks(scenario) {
   if (scenario.expected === 'missing-to') {
     checks.push(assertCheck(hasFrom && !hasTo, `${scenario.label} is missing to-year only`, detail))
   }
-  if (scenario.expected === 'missing-same-year') {
+  if (scenario.expected === 'estimated-to') {
     checks.push(
       assertCheck(
-        scenario.fromYear === scenario.toYear && !hasFrom && !hasTo,
-        `${scenario.label} avoids duplicate same-year data`,
+        hasFrom && hasTo && Boolean(record.estimatedYears?.[String(scenario.toYear)]),
+        `${scenario.label} uses labelled to-year estimate`,
+        detail,
+      ),
+    )
+  }
+  if (scenario.expected === 'estimated-same-year') {
+    checks.push(
+      assertCheck(
+        scenario.fromYear === scenario.toYear &&
+          hasFrom &&
+          hasTo &&
+          Boolean(record.estimatedYears?.[String(scenario.toYear)]),
+        `${scenario.label} uses labelled same-year estimate`,
         detail,
       ),
     )
@@ -142,7 +154,18 @@ const sharedChecks = [
   assertCheck(
     (tourismData.coverage['2024'] ?? 0) >= 60,
     '2024 selected-year coverage',
-    `${tourismData.coverage['2024'] ?? 0} reported series`,
+    `${tourismData.coverage['2024'] ?? 0} reported or modeled series`,
+  ),
+  assertCheck(
+    tourismData.coverage['2024'] === tourismData.records.length,
+    '2024 full modeled coverage',
+    `${tourismData.coverage['2024'] ?? 0}/${tourismData.records.length} records have 2024 values`,
+  ),
+  assertCheck(
+    (tourismData.reportedCoverage?.['2024'] ?? 0) >= 60 &&
+      (tourismData.estimatedCoverage?.['2024'] ?? 0) >= 100,
+    '2024 reported and modeled counts are transparent',
+    `${tourismData.reportedCoverage?.['2024'] ?? 0} reported, ${tourismData.estimatedCoverage?.['2024'] ?? 0} modeled`,
   ),
   assertCheck(
     allArrivalValues.every((value) => Number.isFinite(value) && value >= 0),
@@ -209,6 +232,13 @@ const sharedChecks = [
     'Same-year missing data reads as one missing selected year',
   ),
   assertCheck(
+    appTsx.includes('Modeled 2024 estimate') &&
+      appTsx.includes('reported / ${estimated} modeled') &&
+      appTsx.includes('comparisonUsesEstimate'),
+    'modeled values are labelled in UI',
+    'Estimated 2024 values are distinguished from reported values',
+  ),
+  assertCheck(
     latestYear === 2024,
     'latest global year is transparent',
     `latest year in generated coverage is ${latestYear}`,
@@ -255,6 +285,8 @@ const report = {
     joinedFeatures: joinedFeatures.length,
     latestYear,
     coverage2024: tourismData.coverage['2024'],
+    reported2024: tourismData.reportedCoverage?.['2024'],
+    estimated2024: tourismData.estimatedCoverage?.['2024'],
     yearPairScenarios: yearPairScenarios.length,
   },
   iterationsDetail: iterations,
@@ -278,6 +310,8 @@ await writeFile(
     `- Joined features: ${report.summary.joinedFeatures}`,
     `- Latest year: ${report.summary.latestYear}`,
     `- 2024 coverage: ${report.summary.coverage2024}`,
+    `- 2024 reported: ${report.summary.reported2024}`,
+    `- 2024 modeled: ${report.summary.estimated2024}`,
     '',
     '## Failures',
     '',

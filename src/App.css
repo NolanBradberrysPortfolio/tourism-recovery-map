@@ -291,6 +291,12 @@
   stroke-dasharray: 2.4 1.7;
 }
 
+.country-path.estimated-data:not(.is-selected) {
+  stroke: #7a5b1f;
+  stroke-dasharray: 1.2 1.8;
+  stroke-width: 0.85;
+}
+
 .map-tools {
   position: absolute;
   top: 14px;
@@ -406,6 +412,11 @@
     radial-gradient(circle at 30% 30%, #8c97a6 0 2px, transparent 2px),
     radial-gradient(circle at 72% 72%, #8c97a6 0 2px, transparent 2px),
     #cfd6df;
+}
+
+.state-swatch.estimated-year {
+  background: #f4e4ad;
+  border-color: #7a5b1f;
 }
 
 .state-swatch.stale-year {
@@ -558,6 +569,7 @@
 }
 
 .stat-grid small {
+  overflow-wrap: anywhere;
   color: #667084;
   font-size: 11px;
   line-height: 1.2;

@@ -1,10 +1,9 @@
-export type BaselineKey = '2019' | '2022' | '2024' | 'prior'
-
 export type ComparisonStatus =
   | 'ready'
   | 'same-year'
-  | 'missing-baseline'
-  | 'missing-latest'
+  | 'missing-from'
+  | 'missing-to'
+  | 'missing-both'
 
 export type CountryRecord = {
   iso3: string
@@ -29,10 +28,10 @@ export type CountryRecord = {
 
 export type Comparison = {
   status: ComparisonStatus
-  baselineYear: number | null
-  baselineValue: number | null
-  latestYear: number
-  latestValue: number
+  fromYear: number
+  fromValue: number | null
+  toYear: number
+  toValue: number | null
   absoluteChange: number | null
   percentChange: number | null
 }

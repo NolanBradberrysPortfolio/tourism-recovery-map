@@ -1,69 +1,63 @@
 import { scaleDiverging } from 'd3-scale'
 import { interpolateRgbBasis } from 'd3-interpolate'
-import type { BaselineKey, Comparison, CountryRecord } from './types'
+import type { Comparison, CountryRecord } from './types'
 
 const percentScale = scaleDiverging<string>(
   interpolateRgbBasis(['#b5523c', '#f2efe8', '#247c8a']),
 )
   .domain([-100, 0, 100])
 
-export const baselineOptions: Array<{ key: BaselineKey; label: string }> = [
-  { key: '2019', label: '2019' },
-  { key: '2022', label: '2022' },
-  { key: '2024', label: '2024 coverage' },
-  { key: 'prior', label: 'Prior year' },
-]
+export function compareCountry(record: CountryRecord, fromYear: number, toYear: number): Comparison {
+  const fromValue = record.years[String(fromYear)]
+  const toValue = record.years[String(toYear)]
+  const hasFromValue = Number.isFinite(fromValue) && fromValue > 0
+  const hasToValue = Number.isFinite(toValue)
 
-export function compareCountry(record: CountryRecord, baseline: BaselineKey): Comparison {
-  const baselineYear =
-    baseline === 'prior' ? record.priorYear : Number.parseInt(baseline, 10)
-
-  if (!Number.isFinite(record.latestValue)) {
+  if (!hasFromValue && !hasToValue) {
     return {
-      status: 'missing-latest',
-      baselineYear,
-      baselineValue: null,
-      latestYear: record.latestYear,
-      latestValue: record.latestValue,
+      status: 'missing-both',
+      fromYear,
+      fromValue: null,
+      toYear,
+      toValue: null,
       absoluteChange: null,
       percentChange: null,
     }
   }
 
-  if (baselineYear === null) {
+  if (!hasFromValue) {
     return {
-      status: 'missing-baseline',
-      baselineYear,
-      baselineValue: null,
-      latestYear: record.latestYear,
-      latestValue: record.latestValue,
+      status: 'missing-from',
+      fromYear,
+      fromValue: null,
+      toYear,
+      toValue: hasToValue ? toValue : null,
       absoluteChange: null,
       percentChange: null,
     }
   }
 
-  const baselineValue = record.years[String(baselineYear)]
-  if (!Number.isFinite(baselineValue) || baselineValue <= 0) {
+  if (!hasToValue) {
     return {
-      status: 'missing-baseline',
-      baselineYear,
-      baselineValue: null,
-      latestYear: record.latestYear,
-      latestValue: record.latestValue,
+      status: 'missing-to',
+      fromYear,
+      fromValue,
+      toYear,
+      toValue: null,
       absoluteChange: null,
       percentChange: null,
     }
   }
 
-  const absoluteChange = record.latestValue - baselineValue
-  const percentChange = (absoluteChange / baselineValue) * 100
+  const absoluteChange = toValue - fromValue
+  const percentChange = (absoluteChange / fromValue) * 100
 
   return {
-    status: baselineYear === record.latestYear ? 'same-year' : 'ready',
-    baselineYear,
-    baselineValue,
-    latestYear: record.latestYear,
-    latestValue: record.latestValue,
+    status: fromYear === toYear ? 'same-year' : 'ready',
+    fromYear,
+    fromValue,
+    toYear,
+    toValue,
     absoluteChange,
     percentChange,
   }
@@ -107,11 +101,17 @@ export function formatPercent(value: number | null): string {
 }
 
 export function describeComparison(comparison: Comparison): string {
-  if (comparison.status === 'missing-baseline') {
-    return comparison.baselineYear ? `No ${comparison.baselineYear} comparison` : 'No comparison'
+  if (comparison.status === 'missing-both') {
+    if (comparison.fromYear === comparison.toYear) {
+      return `No ${comparison.fromYear} data`
+    }
+    return `No ${comparison.fromYear} or ${comparison.toYear} data`
   }
-  if (comparison.status === 'missing-latest') {
-    return 'No latest data'
+  if (comparison.status === 'missing-from') {
+    return `No ${comparison.fromYear} data`
+  }
+  if (comparison.status === 'missing-to') {
+    return `No ${comparison.toYear} data`
   }
   if (comparison.status === 'same-year') {
     return 'Same year'

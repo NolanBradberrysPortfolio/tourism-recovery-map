@@ -8,7 +8,6 @@ import countriesTopo from 'world-atlas/countries-50m.json'
 import geoIndexJson from './data/geoIndex.json'
 import tourismDataJson from './data/tourismData.json'
 import {
-  baselineOptions,
   colorForComparison,
   compareCountry,
   describeComparison,
@@ -17,7 +16,6 @@ import {
   formatPercent,
 } from './dataUtils'
 import type {
-  BaselineKey,
   Comparison,
   CountryRecord,
   GeoIndexEntry,
@@ -68,6 +66,10 @@ const latestGlobalYear = Math.max(
     .map(Number)
     .filter(Number.isFinite),
 )
+const yearOptions = Object.keys(tourismData.coverage)
+  .map(Number)
+  .filter(Number.isFinite)
+  .sort((a, b) => a - b)
 const searchAliases: Record<string, string[]> = {
   ARE: ['uae', 'emirates'],
   CIV: ['cote d ivoire', 'cote divoire', 'ivory coast'],
@@ -80,6 +82,15 @@ const searchAliases: Record<string, string[]> = {
   STP: ['sao tome', 'sao tome and principe'],
   TUR: ['turkey'],
   USA: ['us', 'usa', 'america', 'united states'],
+}
+
+const supplementalCountryNotes: Record<string, { text: string; url: string; label: string }> = {
+  CHN: {
+    text:
+      'China reports newer official 2024 inbound-tourism counts, but those national counts use a broader definition than the UN/OWID overnight-arrivals series used for this map, so they are shown as context instead of merged into the color scale.',
+    url: 'https://english.www.gov.cn/archive/statistics/202505/19/content_WS682ae46ec6d0868f4e8f2aa6.html',
+    label: 'China official 2024 context',
+  },
 }
 
 function normalizeSearchText(value: string): string {
@@ -151,10 +162,11 @@ const unmappedDataRecords = tourismData.records.filter((record) => !mappedIso3Se
 
 function getComparisonForFeature(
   countryFeature: CountryFeature,
-  baseline: BaselineKey,
+  fromYear: number,
+  toYear: number,
 ): Comparison | null {
   const { record } = getFeatureSummary(countryFeature)
-  return record ? compareCountry(record, baseline) : null
+  return record ? compareCountry(record, fromYear, toYear) : null
 }
 
 function getSearchScore(country: SearchCountry, query: string): number {
@@ -209,14 +221,11 @@ function mapFillForComparison(comparison: Comparison | null): string {
   return colorForComparison(comparison)
 }
 
-function baselineValueLabel(comparison: Comparison): string {
-  if (comparison.baselineValue !== null && comparison.baselineYear) {
-    return `${formatCompact(comparison.baselineValue)} in ${comparison.baselineYear}`
+function yearValueLabel(value: number | null, year: number): string {
+  if (value !== null) {
+    return `${formatCompact(value)} in ${year}`
   }
-  if (comparison.baselineYear) {
-    return `No ${comparison.baselineYear} data`
-  }
-  return 'No prior year'
+  return `No ${year} data`
 }
 
 function sourceLabelForYear(record: CountryRecord, year: number | null): string {
@@ -284,24 +293,32 @@ function statusLabelForComparison(comparison: Comparison | null): string {
     return 'no tourism series'
   }
   if (comparison.status === 'same-year') {
-    return 'same latest and comparison year'
+    return 'same from and to year'
   }
-  if (comparison.status === 'missing-baseline') {
-    return comparison.baselineYear ? `no ${comparison.baselineYear} comparison` : 'no comparison'
+  if (comparison.status === 'missing-both') {
+    if (comparison.fromYear === comparison.toYear) {
+      return `no ${comparison.fromYear} data`
+    }
+    return `no ${comparison.fromYear} or ${comparison.toYear} data`
   }
-  if (comparison.status === 'missing-latest') {
-    return 'no latest data'
+  if (comparison.status === 'missing-from') {
+    return `no ${comparison.fromYear} data`
+  }
+  if (comparison.status === 'missing-to') {
+    return `no ${comparison.toYear} data`
   }
   return comparison.percentChange === null ? 'no comparison' : comparisonValueLabel(comparison)
 }
 
 function CountryMap({
-  baseline,
+  fromYear,
+  toYear,
   selected,
   onSelect,
   onClearSelection,
 }: {
-  baseline: BaselineKey
+  fromYear: number
+  toYear: number
   selected: SelectedCountry | null
   onSelect: (country: SelectedCountry) => void
   onClearSelection: () => void
@@ -669,9 +686,9 @@ function CountryMap({
         <g className="country-layer" transform={transform}>
           {countryFeatures.map((countryFeature, index) => {
             const summary = getFeatureSummary(countryFeature)
-            const comparison = getComparisonForFeature(countryFeature, baseline)
+            const comparison = getComparisonForFeature(countryFeature, fromYear, toYear)
             const isSelected = selected?.iso3 === summary.iso3
-            const isStale = Boolean(summary.record && summary.record.latestYear < latestGlobalYear)
+            const isStale = Boolean(summary.record && summary.record.latestYear < toYear)
             const path = pathGenerator(countryFeature)
             if (!path) {
               return null
@@ -788,11 +805,11 @@ function DetailPanel({
   const hasPercentChange = comparison.percentChange !== null
   const primaryValue = hasPercentChange
     ? comparisonValueLabel(comparison)
-    : formatCompact(comparison.latestValue)
+    : formatCompact(comparison.toValue)
   const primaryNote = hasPercentChange
-    ? describeComparison(comparison)
-    : `${comparison.latestYear} arrivals; ${describeComparison(comparison)}`
-  const baselineLabel = comparison.baselineYear ?? 'selected year'
+    ? `${describeComparison(comparison)} from ${comparison.fromYear} to ${comparison.toYear}`
+    : describeComparison(comparison)
+  const supplementalNote = supplementalCountryNotes[record.iso3]
 
   return (
     <aside className="detail-panel" aria-live="polite">
@@ -812,8 +829,10 @@ function DetailPanel({
       </div>
 
       <div className="detail-context" aria-label="Selected country map context">
-        <span>Color compares latest arrivals with {baselineLabel} where available.</span>
-        <span>No comparison means the selected year cannot be calculated.</span>
+        <span>
+          Color compares {comparison.fromYear} arrivals with {comparison.toYear} arrivals where both exist.
+        </span>
+        <span>No comparison means one or both selected years are missing.</span>
         {record.sourceBlend === 'owid-un-tourism-plus-compatible-wdi' && (
           <span>Some missing years are filled from compatible World Bank WDI values.</span>
         )}
@@ -825,18 +844,25 @@ function DetailPanel({
         )}
       </div>
 
+      {supplementalNote && (
+        <p className="supplemental-note">
+          {supplementalNote.text}{' '}
+          <a href={supplementalNote.url} target="_blank" rel="noreferrer">
+            {supplementalNote.label}
+          </a>
+        </p>
+      )}
+
       <div className="stat-grid">
         <div>
-          <span>Latest</span>
-          <strong>
-            {formatCompact(comparison.latestValue)} in {comparison.latestYear}
-          </strong>
-          <small>{sourceLabelForYear(record, comparison.latestYear)}</small>
+          <span>From</span>
+          <strong>{yearValueLabel(comparison.fromValue, comparison.fromYear)}</strong>
+          <small>{sourceLabelForYear(record, comparison.fromYear)}</small>
         </div>
         <div>
-          <span>Compare with</span>
-          <strong>{baselineValueLabel(comparison)}</strong>
-          <small>{sourceLabelForYear(record, comparison.baselineYear)}</small>
+          <span>To</span>
+          <strong>{yearValueLabel(comparison.toValue, comparison.toYear)}</strong>
+          <small>{sourceLabelForYear(record, comparison.toYear)}</small>
         </div>
         <div>
           <span>Change</span>
@@ -858,14 +884,12 @@ function DetailPanel({
   )
 }
 
-function Legend({ baseline }: { baseline: BaselineKey }) {
-  const baselineLabel = baseline === 'prior' ? 'prior year' : baseline
-
+function Legend({ fromYear, toYear }: { fromYear: number; toYear: number }) {
   return (
     <div className="legend" aria-label="Color legend">
       <div className="legend-heading">
         <strong>% change</strong>
-        <span>latest vs {baselineLabel}</span>
+        <span>{fromYear} to {toYear}</span>
       </div>
       <div className="legend-scale">
         <span>-100%</span>
@@ -876,7 +900,7 @@ function Legend({ baseline }: { baseline: BaselineKey }) {
       </div>
       <div className="legend-states">
         <span>
-          <i className="state-swatch no-comparison" aria-hidden="true" /> No baseline
+          <i className="state-swatch no-comparison" aria-hidden="true" /> Missing selected year
         </span>
         <span>
           <i className="state-swatch same-year" aria-hidden="true" /> Same year
@@ -885,12 +909,12 @@ function Legend({ baseline }: { baseline: BaselineKey }) {
           <i className="state-swatch no-series" aria-hidden="true" /> No series
         </span>
         <span>
-          <i className="state-swatch stale-year" aria-hidden="true" /> Older latest year
+          <i className="state-swatch stale-year" aria-hidden="true" /> Latest before to year
         </span>
       </div>
       <p className="legend-note">
         Values beyond +/-100% are clipped to the color endpoints.
-        {baseline === '2024' ? ' The 2024 view mostly shows coverage, not recovery.' : ''}
+        {fromYear === toYear ? ' Same-year views show coverage, not recovery.' : ''}
       </p>
     </div>
   )
@@ -948,8 +972,9 @@ function SourcePanel({ onClose }: { onClose: () => void }) {
         </button>
         <h2>Data Notes</h2>
         <p>
-          {tourismData.source.description} Each country uses its latest reported year;
-          {` ${tourismData.coverage['2024'] ?? 0}`} countries report 2024.
+          {tourismData.source.description} The map compares the selected From year with
+          the selected To year where both values exist; {tourismData.coverage['2024'] ?? 0}
+          {' '}countries report 2024 in the comparable series.
         </p>
         {tourismData.source.fallbackFilledYears !== undefined && (
           <p>
@@ -984,7 +1009,7 @@ function SourcePanel({ onClose }: { onClose: () => void }) {
           <li>Country methods differ, so exact comparability varies.</li>
           <li>Hatching means the selected comparison cannot be calculated.</li>
           <li>Dotted shapes are map geographies without a matching tourism series.</li>
-          <li>Dashed borders mean the country&apos;s latest reported year is before 2024.</li>
+          <li>Dashed borders mean the country&apos;s latest reported year is before the selected To year.</li>
           <li>World Bank fallback years are used only when overlapping values match the primary series within 2%.</li>
           <li>Some small countries and territories in the source are searchable even when not separately drawn on this map.</li>
           <li>
@@ -1011,17 +1036,17 @@ function SourcePanel({ onClose }: { onClose: () => void }) {
   )
 }
 
-function CountryDataList({ baseline }: { baseline: BaselineKey }) {
+function CountryDataList({ fromYear, toYear }: { fromYear: number; toYear: number }) {
   return (
     <section className="sr-only" aria-label="Country data list">
       <h2>Country Data List</h2>
       <ul>
         {tourismData.records.map((record) => {
-          const comparison = compareCountry(record, baseline)
+          const comparison = compareCountry(record, fromYear, toYear)
           return (
             <li key={record.iso3}>
-              {record.name}: latest {formatCompact(comparison.latestValue)} in {comparison.latestYear};
-              {` ${describeComparison(comparison)}`}; compare with {baselineValueLabel(comparison)}.
+              {record.name}: {yearValueLabel(comparison.fromValue, comparison.fromYear)} to{' '}
+              {yearValueLabel(comparison.toValue, comparison.toYear)}; {describeComparison(comparison)}.
             </li>
           )
         })}
@@ -1031,7 +1056,8 @@ function CountryDataList({ baseline }: { baseline: BaselineKey }) {
 }
 
 function App() {
-  const [baseline, setBaseline] = useState<BaselineKey>('2019')
+  const [fromYear, setFromYear] = useState(2019)
+  const [toYear, setToYear] = useState(latestGlobalYear)
   const [selected, setSelected] = useState<SelectedCountry | null>(null)
   const [query, setQuery] = useState('')
   const [activeSearchIndex, setActiveSearchIndex] = useState(0)
@@ -1040,7 +1066,7 @@ function App() {
   const infoButtonRef = useRef<HTMLButtonElement | null>(null)
 
   const selectedRecord = selected ? recordsByIso3.get(selected.iso3) ?? null : null
-  const selectedComparison = selectedRecord ? compareCountry(selectedRecord, baseline) : null
+  const selectedComparison = selectedRecord ? compareCountry(selectedRecord, fromYear, toYear) : null
 
   const trimmedQuery = query.trim()
   const searchResults = useMemo(() => {
@@ -1061,11 +1087,11 @@ function App() {
 
   const selectCountry = (country: SelectedCountry) => {
     const record = recordsByIso3.get(country.iso3)
-    const comparison = record ? compareCountry(record, baseline) : null
+    const comparison = record ? compareCountry(record, fromYear, toYear) : null
     setSelected(country)
     setSelectionStatus(
       record && comparison
-        ? `Selected ${record.name}. Latest arrivals ${formatCompact(comparison.latestValue)} in ${comparison.latestYear}. ${describeComparison(comparison)}.`
+        ? `Selected ${record.name}. ${comparison.fromYear} to ${comparison.toYear}. ${describeComparison(comparison)}.`
         : `Selected ${country.name}. No tourism series is published in this dataset.`,
     )
   }
@@ -1084,6 +1110,14 @@ function App() {
       }).length,
     [],
   )
+  const completeComparisonCount = useMemo(
+    () =>
+      tourismData.records.filter((record) => {
+        const comparison = compareCountry(record, fromYear, toYear)
+        return comparison.percentChange !== null
+      }).length,
+    [fromYear, toYear],
+  )
 
   return (
     <main className="app-shell">
@@ -1091,24 +1125,40 @@ function App() {
       <header className="topbar">
         <div className="brand-block">
           <h1>Tourism Recovery Map</h1>
-          <p>International arrivals, latest year vs selected comparison</p>
+          <p>International arrivals, selected year to selected year</p>
         </div>
 
         <div className="control-row" aria-label="Map controls">
-          <label className="select-control">
-            <span>Compare with</span>
-            <select
-              aria-label="Comparison year"
-              value={baseline}
-              onChange={(event) => setBaseline(event.target.value as BaselineKey)}
-            >
-              {baselineOptions.map((option) => (
-                <option value={option.key} key={option.key}>
-                  {option.label}
-                </option>
-              ))}
-            </select>
-          </label>
+          <div className="year-controls">
+            <label className="select-control">
+              <span>From</span>
+              <select
+                aria-label="From year"
+                value={fromYear}
+                onChange={(event) => setFromYear(Number(event.target.value))}
+              >
+                {yearOptions.map((year) => (
+                  <option value={year} key={year}>
+                    {year}
+                  </option>
+                ))}
+              </select>
+            </label>
+            <label className="select-control">
+              <span>To</span>
+              <select
+                aria-label="To year"
+                value={toYear}
+                onChange={(event) => setToYear(Number(event.target.value))}
+              >
+                {yearOptions.map((year) => (
+                  <option value={year} key={year}>
+                    {year}
+                  </option>
+                ))}
+              </select>
+            </label>
+          </div>
 
           <div className="search-control">
             <Search size={17} aria-hidden="true" />
@@ -1207,7 +1257,8 @@ function App() {
         aria-label="Country tourism change map"
       >
         <CountryMap
-          baseline={baseline}
+          fromYear={fromYear}
+          toYear={toYear}
           selected={selected}
           onSelect={selectCountry}
           onClearSelection={() => {
@@ -1217,13 +1268,14 @@ function App() {
         />
 
         <div className="map-overlay">
-          <Legend baseline={baseline} />
+          <Legend fromYear={fromYear} toYear={toYear} />
           <div className="coverage-strip">
             <span>{tourismData.records.length} data series</span>
             <span>{matchedFeatureCount} mapped country shapes</span>
             <span>{unmappedDataRecords.length} searchable not drawn</span>
-            <span>{tourismData.coverage[String(latestGlobalYear)]} with {latestGlobalYear} data</span>
-            <span>Others use latest reported year</span>
+            <span>{tourismData.coverage[String(fromYear)] ?? 0} with {fromYear}</span>
+            <span>{tourismData.coverage[String(toYear)] ?? 0} with {toYear}</span>
+            <span>{completeComparisonCount} with both</span>
           </div>
         </div>
 
@@ -1240,7 +1292,7 @@ function App() {
           />
         )}
       </section>
-      <CountryDataList baseline={baseline} />
+      <CountryDataList fromYear={fromYear} toYear={toYear} />
       </div>
 
       {infoOpen && (

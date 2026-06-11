@@ -2,11 +2,10 @@
 
 Interactive country choropleth for international tourist arrivals recovery.
 
-The app compares the latest reported arrivals year for every country or territory
-with a defensible tourism-arrivals series against 2019, 2022, 2024, or its prior
-reported year. Countries with missing comparable data are shown in gray rather
-than imputed, and source-gap countries remain searchable with a no-series
-explanation.
+The app compares any selected From year with any selected To year for every
+country or territory with a defensible tourism-arrivals series. Countries with
+missing comparable data are shown in gray rather than imputed, and source-gap
+countries remain searchable with a no-series explanation.
 
 ## Data
 
@@ -48,6 +47,8 @@ npm run test:e2e
 npm run review:loop
 ```
 
-`review:static` runs 60 adversarial static checks. `review:loop` runs 20 repeated
-iPhone-profile interaction passes through baseline switching, search, data notes,
-and map zoom controls.
+`review:static` runs 60 adversarial static checks across several year-pair data
+scenarios. `test:e2e` and `review:loop` rebuild production output before serving
+preview, so Playwright does not run against stale `dist`. `review:loop` runs 20
+repeated iPhone-profile interaction passes through From/To year switching,
+search, data notes, and map zoom controls.

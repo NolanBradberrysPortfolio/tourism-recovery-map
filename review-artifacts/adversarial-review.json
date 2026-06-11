@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-11T19:53:32.754Z",
+  "generatedAt": "2026-06-11T22:04:22.566Z",
   "iterations": 60,
   "personas": [
     "data skeptic",
@@ -20,12 +20,14 @@
     "mapFeatures": 241,
     "joinedFeatures": 208,
     "latestYear": 2024,
-    "coverage2024": 67
+    "coverage2024": 67,
+    "yearPairScenarios": 5
   },
   "iterationsDetail": [
     {
       "iteration": 1,
       "persona": "data skeptic",
+      "scenario": "Japan increase",
       "ok": true,
       "checks": [
         {
@@ -35,19 +37,19 @@
           "persona": "data skeptic"
         },
         {
-          "name": "2019 baseline coverage",
+          "name": "2019 selected-year coverage",
           "ok": true,
           "detail": "181 reported series",
           "persona": "data skeptic"
         },
         {
-          "name": "2022 baseline coverage",
+          "name": "2022 selected-year coverage",
           "ok": true,
           "detail": "138 reported series",
           "persona": "data skeptic"
         },
         {
-          "name": "2024 latest coverage",
+          "name": "2024 selected-year coverage",
           "ok": true,
           "detail": "67 reported series",
           "persona": "data skeptic"
@@ -109,7 +111,19 @@
         {
           "name": "core controls are labelled",
           "ok": true,
-          "detail": "Comparison selector and search input have accessible labels",
+          "detail": "From/to selectors and search input have accessible labels",
+          "persona": "data skeptic"
+        },
+        {
+          "name": "data notes describe selected years",
+          "ok": true,
+          "detail": "Data notes match explicit from/to comparison controls",
+          "persona": "data skeptic"
+        },
+        {
+          "name": "same-year missing copy is not duplicated",
+          "ok": true,
+          "detail": "Same-year missing data reads as one missing selected year",
           "persona": "data skeptic"
         },
         {
@@ -121,7 +135,19 @@
         {
           "name": "production bundle under review budget",
           "ok": true,
-          "detail": "1153 KB JavaScript before gzip",
+          "detail": "1154 KB JavaScript before gzip",
+          "persona": "data skeptic"
+        },
+        {
+          "name": "Japan increase record exists",
+          "ok": true,
+          "detail": "JPN is present",
+          "persona": "data skeptic"
+        },
+        {
+          "name": "Japan increase positive comparison",
+          "ok": true,
+          "detail": "Japan: 2019=31881000, 2024=36870000",
           "persona": "data skeptic"
         }
       ]
@@ -129,6 +155,7 @@
     {
       "iteration": 2,
       "persona": "country join auditor",
+      "scenario": "Japan reverse",
       "ok": true,
       "checks": [
         {
@@ -138,19 +165,19 @@
           "persona": "country join auditor"
         },
         {
-          "name": "2019 baseline coverage",
+          "name": "2019 selected-year coverage",
           "ok": true,
           "detail": "181 reported series",
           "persona": "country join auditor"
         },
         {
-          "name": "2022 baseline coverage",
+          "name": "2022 selected-year coverage",
           "ok": true,
           "detail": "138 reported series",
           "persona": "country join auditor"
         },
         {
-          "name": "2024 latest coverage",
+          "name": "2024 selected-year coverage",
           "ok": true,
           "detail": "67 reported series",
           "persona": "country join auditor"
@@ -212,7 +239,19 @@
         {
           "name": "core controls are labelled",
           "ok": true,
-          "detail": "Comparison selector and search input have accessible labels",
+          "detail": "From/to selectors and search input have accessible labels",
+          "persona": "country join auditor"
+        },
+        {
+          "name": "data notes describe selected years",
+          "ok": true,
+          "detail": "Data notes match explicit from/to comparison controls",
+          "persona": "country join auditor"
+        },
+        {
+          "name": "same-year missing copy is not duplicated",
+          "ok": true,
+          "detail": "Same-year missing data reads as one missing selected year",
           "persona": "country join auditor"
         },
         {
@@ -224,7 +263,19 @@
         {
           "name": "production bundle under review budget",
           "ok": true,
-          "detail": "1153 KB JavaScript before gzip",
+          "detail": "1154 KB JavaScript before gzip",
+          "persona": "country join auditor"
+        },
+        {
+          "name": "Japan reverse record exists",
+          "ok": true,
+          "detail": "JPN is present",
+          "persona": "country join auditor"
+        },
+        {
+          "name": "Japan reverse negative comparison",
+          "ok": true,
+          "detail": "Japan: 2024=36870000, 2019=31881000",
           "persona": "country join auditor"
         }
       ]
@@ -232,6 +283,7 @@
     {
       "iteration": 3,
       "persona": "mobile thumb tester",
+      "scenario": "Kazakhstan missing from",
       "ok": true,
       "checks": [
         {
@@ -241,19 +293,19 @@
           "persona": "mobile thumb tester"
         },
         {
-          "name": "2019 baseline coverage",
+          "name": "2019 selected-year coverage",
           "ok": true,
           "detail": "181 reported series",
           "persona": "mobile thumb tester"
         },
         {
-          "name": "2022 baseline coverage",
+          "name": "2022 selected-year coverage",
           "ok": true,
           "detail": "138 reported series",
           "persona": "mobile thumb tester"
         },
         {
-          "name": "2024 latest coverage",
+          "name": "2024 selected-year coverage",
           "ok": true,
           "detail": "67 reported series",
           "persona": "mobile thumb tester"
@@ -315,7 +367,19 @@
         {
           "name": "core controls are labelled",
           "ok": true,
-          "detail": "Comparison selector and search input have accessible labels",
+          "detail": "From/to selectors and search input have accessible labels",
+          "persona": "mobile thumb tester"
+        },
+        {
+          "name": "data notes describe selected years",
+          "ok": true,
+          "detail": "Data notes match explicit from/to comparison controls",
+          "persona": "mobile thumb tester"
+        },
+        {
+          "name": "same-year missing copy is not duplicated",
+          "ok": true,
+          "detail": "Same-year missing data reads as one missing selected year",
           "persona": "mobile thumb tester"
         },
         {
@@ -327,7 +391,19 @@
         {
           "name": "production bundle under review budget",
           "ok": true,
-          "detail": "1153 KB JavaScript before gzip",
+          "detail": "1154 KB JavaScript before gzip",
+          "persona": "mobile thumb tester"
+        },
+        {
+          "name": "Kazakhstan missing from record exists",
+          "ok": true,
+          "detail": "KAZ is present",
+          "persona": "mobile thumb tester"
+        },
+        {
+          "name": "Kazakhstan missing from is missing from-year only",
+          "ok": true,
+          "detail": "Kazakhstan: 2019=missing, 2024=10381566",
           "persona": "mobile thumb tester"
         }
       ]
@@ -335,6 +411,7 @@
     {
       "iteration": 4,
       "persona": "accessibility reviewer",
+      "scenario": "China missing to",
       "ok": true,
       "checks": [
         {
@@ -344,19 +421,19 @@
           "persona": "accessibility reviewer"
         },
         {
-          "name": "2019 baseline coverage",
+          "name": "2019 selected-year coverage",
           "ok": true,
           "detail": "181 reported series",
           "persona": "accessibility reviewer"
         },
         {
-          "name": "2022 baseline coverage",
+          "name": "2022 selected-year coverage",
           "ok": true,
           "detail": "138 reported series",
           "persona": "accessibility reviewer"
         },
         {
-          "name": "2024 latest coverage",
+          "name": "2024 selected-year coverage",
           "ok": true,
           "detail": "67 reported series",
           "persona": "accessibility reviewer"
@@ -418,7 +495,19 @@
         {
           "name": "core controls are labelled",
           "ok": true,
-          "detail": "Comparison selector and search input have accessible labels",
+          "detail": "From/to selectors and search input have accessible labels",
+          "persona": "accessibility reviewer"
+        },
+        {
+          "name": "data notes describe selected years",
+          "ok": true,
+          "detail": "Data notes match explicit from/to comparison controls",
+          "persona": "accessibility reviewer"
+        },
+        {
+          "name": "same-year missing copy is not duplicated",
+          "ok": true,
+          "detail": "Same-year missing data reads as one missing selected year",
           "persona": "accessibility reviewer"
         },
         {
@@ -430,7 +519,19 @@
         {
           "name": "production bundle under review budget",
           "ok": true,
-          "detail": "1153 KB JavaScript before gzip",
+          "detail": "1154 KB JavaScript before gzip",
+          "persona": "accessibility reviewer"
+        },
+        {
+          "name": "China missing to record exists",
+          "ok": true,
+          "detail": "CHN is present",
+          "persona": "accessibility reviewer"
+        },
+        {
+          "name": "China missing to is missing to-year only",
+          "ok": true,
+          "detail": "China: 2019=65725000, 2024=missing",
           "persona": "accessibility reviewer"
         }
       ]
@@ -438,6 +539,7 @@
     {
       "iteration": 5,
       "persona": "source transparency reviewer",
+      "scenario": "Australia same-year missing",
       "ok": true,
       "checks": [
         {
@@ -447,19 +549,19 @@
           "persona": "source transparency reviewer"
         },
         {
-          "name": "2019 baseline coverage",
+          "name": "2019 selected-year coverage",
           "ok": true,
           "detail": "181 reported series",
           "persona": "source transparency reviewer"
         },
         {
-          "name": "2022 baseline coverage",
+          "name": "2022 selected-year coverage",
           "ok": true,
           "detail": "138 reported series",
           "persona": "source transparency reviewer"
         },
         {
-          "name": "2024 latest coverage",
+          "name": "2024 selected-year coverage",
           "ok": true,
           "detail": "67 reported series",
           "persona": "source transparency reviewer"
@@ -521,7 +623,19 @@
         {
           "name": "core controls are labelled",
           "ok": true,
-          "detail": "Comparison selector and search input have accessible labels",
+          "detail": "From/to selectors and search input have accessible labels",
+          "persona": "source transparency reviewer"
+        },
+        {
+          "name": "data notes describe selected years",
+          "ok": true,
+          "detail": "Data notes match explicit from/to comparison controls",
+          "persona": "source transparency reviewer"
+        },
+        {
+          "name": "same-year missing copy is not duplicated",
+          "ok": true,
+          "detail": "Same-year missing data reads as one missing selected year",
           "persona": "source transparency reviewer"
         },
         {
@@ -533,7 +647,19 @@
         {
           "name": "production bundle under review budget",
           "ok": true,
-          "detail": "1153 KB JavaScript before gzip",
+          "detail": "1154 KB JavaScript before gzip",
+          "persona": "source transparency reviewer"
+        },
+        {
+          "name": "Australia same-year missing record exists",
+          "ok": true,
+          "detail": "AUS is present",
+          "persona": "source transparency reviewer"
+        },
+        {
+          "name": "Australia same-year missing avoids duplicate same-year data",
+          "ok": true,
+          "detail": "Australia: 2024=missing, 2024=missing",
           "persona": "source transparency reviewer"
         }
       ]
@@ -541,6 +667,7 @@
     {
       "iteration": 6,
       "persona": "performance reviewer",
+      "scenario": "Japan increase",
       "ok": true,
       "checks": [
         {
@@ -550,19 +677,19 @@
           "persona": "performance reviewer"
         },
         {
-          "name": "2019 baseline coverage",
+          "name": "2019 selected-year coverage",
           "ok": true,
           "detail": "181 reported series",
           "persona": "performance reviewer"
         },
         {
-          "name": "2022 baseline coverage",
+          "name": "2022 selected-year coverage",
           "ok": true,
           "detail": "138 reported series",
           "persona": "performance reviewer"
         },
         {
-          "name": "2024 latest coverage",
+          "name": "2024 selected-year coverage",
           "ok": true,
           "detail": "67 reported series",
           "persona": "performance reviewer"
@@ -624,7 +751,19 @@
         {
           "name": "core controls are labelled",
           "ok": true,
-          "detail": "Comparison selector and search input have accessible labels",
+          "detail": "From/to selectors and search input have accessible labels",
+          "persona": "performance reviewer"
+        },
+        {
+          "name": "data notes describe selected years",
+          "ok": true,
+          "detail": "Data notes match explicit from/to comparison controls",
+          "persona": "performance reviewer"
+        },
+        {
+          "name": "same-year missing copy is not duplicated",
+          "ok": true,
+          "detail": "Same-year missing data reads as one missing selected year",
           "persona": "performance reviewer"
         },
         {
@@ -636,7 +775,19 @@
         {
           "name": "production bundle under review budget",
           "ok": true,
-          "detail": "1153 KB JavaScript before gzip",
+          "detail": "1154 KB JavaScript before gzip",
+          "persona": "performance reviewer"
+        },
+        {
+          "name": "Japan increase record exists",
+          "ok": true,
+          "detail": "JPN is present",
+          "persona": "performance reviewer"
+        },
+        {
+          "name": "Japan increase positive comparison",
+          "ok": true,
+          "detail": "Japan: 2019=31881000, 2024=36870000",
           "persona": "performance reviewer"
         }
       ]
@@ -644,6 +795,7 @@
     {
       "iteration": 7,
       "persona": "visual encoding reviewer",
+      "scenario": "Japan reverse",
       "ok": true,
       "checks": [
         {
@@ -653,19 +805,19 @@
           "persona": "visual encoding reviewer"
         },
         {
-          "name": "2019 baseline coverage",
+          "name": "2019 selected-year coverage",
           "ok": true,
           "detail": "181 reported series",
           "persona": "visual encoding reviewer"
         },
         {
-          "name": "2022 baseline coverage",
+          "name": "2022 selected-year coverage",
           "ok": true,
           "detail": "138 reported series",
           "persona": "visual encoding reviewer"
         },
         {
-          "name": "2024 latest coverage",
+          "name": "2024 selected-year coverage",
           "ok": true,
           "detail": "67 reported series",
           "persona": "visual encoding reviewer"
@@ -727,7 +879,19 @@
         {
           "name": "core controls are labelled",
           "ok": true,
-          "detail": "Comparison selector and search input have accessible labels",
+          "detail": "From/to selectors and search input have accessible labels",
+          "persona": "visual encoding reviewer"
+        },
+        {
+          "name": "data notes describe selected years",
+          "ok": true,
+          "detail": "Data notes match explicit from/to comparison controls",
+          "persona": "visual encoding reviewer"
+        },
+        {
+          "name": "same-year missing copy is not duplicated",
+          "ok": true,
+          "detail": "Same-year missing data reads as one missing selected year",
           "persona": "visual encoding reviewer"
         },
         {
@@ -739,7 +903,19 @@
         {
           "name": "production bundle under review budget",
           "ok": true,
-          "detail": "1153 KB JavaScript before gzip",
+          "detail": "1154 KB JavaScript before gzip",
+          "persona": "visual encoding reviewer"
+        },
+        {
+          "name": "Japan reverse record exists",
+          "ok": true,
+          "detail": "JPN is present",
+          "persona": "visual encoding reviewer"
+        },
+        {
+          "name": "Japan reverse negative comparison",
+          "ok": true,
+          "detail": "Japan: 2024=36870000, 2019=31881000",
           "persona": "visual encoding reviewer"
         }
       ]
@@ -747,6 +923,7 @@
     {
       "iteration": 8,
       "persona": "missing data reviewer",
+      "scenario": "Kazakhstan missing from",
       "ok": true,
       "checks": [
         {
@@ -756,19 +933,19 @@
           "persona": "missing data reviewer"
         },
         {
-          "name": "2019 baseline coverage",
+          "name": "2019 selected-year coverage",
           "ok": true,
           "detail": "181 reported series",
           "persona": "missing data reviewer"
         },
         {
-          "name": "2022 baseline coverage",
+          "name": "2022 selected-year coverage",
           "ok": true,
           "detail": "138 reported series",
           "persona": "missing data reviewer"
         },
         {
-          "name": "2024 latest coverage",
+          "name": "2024 selected-year coverage",
           "ok": true,
           "detail": "67 reported series",
           "persona": "missing data reviewer"
@@ -830,7 +1007,19 @@
         {
           "name": "core controls are labelled",
           "ok": true,
-          "detail": "Comparison selector and search input have accessible labels",
+          "detail": "From/to selectors and search input have accessible labels",
+          "persona": "missing data reviewer"
+        },
+        {
+          "name": "data notes describe selected years",
+          "ok": true,
+          "detail": "Data notes match explicit from/to comparison controls",
+          "persona": "missing data reviewer"
+        },
+        {
+          "name": "same-year missing copy is not duplicated",
+          "ok": true,
+          "detail": "Same-year missing data reads as one missing selected year",
           "persona": "missing data reviewer"
         },
         {
@@ -842,7 +1031,19 @@
         {
           "name": "production bundle under review budget",
           "ok": true,
-          "detail": "1153 KB JavaScript before gzip",
+          "detail": "1154 KB JavaScript before gzip",
+          "persona": "missing data reviewer"
+        },
+        {
+          "name": "Kazakhstan missing from record exists",
+          "ok": true,
+          "detail": "KAZ is present",
+          "persona": "missing data reviewer"
+        },
+        {
+          "name": "Kazakhstan missing from is missing from-year only",
+          "ok": true,
+          "detail": "Kazakhstan: 2019=missing, 2024=10381566",
           "persona": "missing data reviewer"
         }
       ]
@@ -850,6 +1051,7 @@
     {
       "iteration": 9,
       "persona": "iPhone layout reviewer",
+      "scenario": "China missing to",
       "ok": true,
       "checks": [
         {
@@ -859,19 +1061,19 @@
           "persona": "iPhone layout reviewer"
         },
         {
-          "name": "2019 baseline coverage",
+          "name": "2019 selected-year coverage",
           "ok": true,
           "detail": "181 reported series",
           "persona": "iPhone layout reviewer"
         },
         {
-          "name": "2022 baseline coverage",
+          "name": "2022 selected-year coverage",
           "ok": true,
           "detail": "138 reported series",
           "persona": "iPhone layout reviewer"
         },
         {
-          "name": "2024 latest coverage",
+          "name": "2024 selected-year coverage",
           "ok": true,
           "detail": "67 reported series",
           "persona": "iPhone layout reviewer"
@@ -933,7 +1135,19 @@
         {
           "name": "core controls are labelled",
           "ok": true,
-          "detail": "Comparison selector and search input have accessible labels",
+          "detail": "From/to selectors and search input have accessible labels",
+          "persona": "iPhone layout reviewer"
+        },
+        {
+          "name": "data notes describe selected years",
+          "ok": true,
+          "detail": "Data notes match explicit from/to comparison controls",
+          "persona": "iPhone layout reviewer"
+        },
+        {
+          "name": "same-year missing copy is not duplicated",
+          "ok": true,
+          "detail": "Same-year missing data reads as one missing selected year",
           "persona": "iPhone layout reviewer"
         },
         {
@@ -945,7 +1159,19 @@
         {
           "name": "production bundle under review budget",
           "ok": true,
-          "detail": "1153 KB JavaScript before gzip",
+          "detail": "1154 KB JavaScript before gzip",
+          "persona": "iPhone layout reviewer"
+        },
+        {
+          "name": "China missing to record exists",
+          "ok": true,
+          "detail": "CHN is present",
+          "persona": "iPhone layout reviewer"
+        },
+        {
+          "name": "China missing to is missing to-year only",
+          "ok": true,
+          "detail": "China: 2019=65725000, 2024=missing",
           "persona": "iPhone layout reviewer"
         }
       ]
@@ -953,6 +1179,7 @@
     {
       "iteration": 10,
       "persona": "map interaction reviewer",
+      "scenario": "Australia same-year missing",
       "ok": true,
       "checks": [
         {
@@ -962,19 +1189,19 @@
           "persona": "map interaction reviewer"
         },
         {
-          "name": "2019 baseline coverage",
+          "name": "2019 selected-year coverage",
           "ok": true,
           "detail": "181 reported series",
           "persona": "map interaction reviewer"
         },
         {
-          "name": "2022 baseline coverage",
+          "name": "2022 selected-year coverage",
           "ok": true,
           "detail": "138 reported series",
           "persona": "map interaction reviewer"
         },
         {
-          "name": "2024 latest coverage",
+          "name": "2024 selected-year coverage",
           "ok": true,
           "detail": "67 reported series",
           "persona": "map interaction reviewer"
@@ -1036,7 +1263,19 @@
         {
           "name": "core controls are labelled",
           "ok": true,
-          "detail": "Comparison selector and search input have accessible labels",
+          "detail": "From/to selectors and search input have accessible labels",
+          "persona": "map interaction reviewer"
+        },
+        {
+          "name": "data notes describe selected years",
+          "ok": true,
+          "detail": "Data notes match explicit from/to comparison controls",
+          "persona": "map interaction reviewer"
+        },
+        {
+          "name": "same-year missing copy is not duplicated",
+          "ok": true,
+          "detail": "Same-year missing data reads as one missing selected year",
           "persona": "map interaction reviewer"
         },
         {
@@ -1048,7 +1287,19 @@
         {
           "name": "production bundle under review budget",
           "ok": true,
-          "detail": "1153 KB JavaScript before gzip",
+          "detail": "1154 KB JavaScript before gzip",
+          "persona": "map interaction reviewer"
+        },
+        {
+          "name": "Australia same-year missing record exists",
+          "ok": true,
+          "detail": "AUS is present",
+          "persona": "map interaction reviewer"
+        },
+        {
+          "name": "Australia same-year missing avoids duplicate same-year data",
+          "ok": true,
+          "detail": "Australia: 2024=missing, 2024=missing",
           "persona": "map interaction reviewer"
         }
       ]
@@ -1056,6 +1307,7 @@
     {
       "iteration": 11,
       "persona": "data skeptic",
+      "scenario": "Japan increase",
       "ok": true,
       "checks": [
         {
@@ -1065,19 +1317,19 @@
           "persona": "data skeptic"
         },
         {
-          "name": "2019 baseline coverage",
+          "name": "2019 selected-year coverage",
           "ok": true,
           "detail": "181 reported series",
           "persona": "data skeptic"
         },
         {
-          "name": "2022 baseline coverage",
+          "name": "2022 selected-year coverage",
           "ok": true,
           "detail": "138 reported series",
           "persona": "data skeptic"
         },
         {
-          "name": "2024 latest coverage",
+          "name": "2024 selected-year coverage",
           "ok": true,
           "detail": "67 reported series",
           "persona": "data skeptic"
@@ -1139,7 +1391,19 @@
         {
           "name": "core controls are labelled",
           "ok": true,
-          "detail": "Comparison selector and search input have accessible labels",
+          "detail": "From/to selectors and search input have accessible labels",
+          "persona": "data skeptic"
+        },
+        {
+          "name": "data notes describe selected years",
+          "ok": true,
+          "detail": "Data notes match explicit from/to comparison controls",
+          "persona": "data skeptic"
+        },
+        {
+          "name": "same-year missing copy is not duplicated",
+          "ok": true,
+          "detail": "Same-year missing data reads as one missing selected year",
           "persona": "data skeptic"
         },
         {
@@ -1151,7 +1415,19 @@
         {
           "name": "production bundle under review budget",
           "ok": true,
-          "detail": "1153 KB JavaScript before gzip",
+          "detail": "1154 KB JavaScript before gzip",
+          "persona": "data skeptic"
+        },
+        {
+          "name": "Japan increase record exists",
+          "ok": true,
+          "detail": "JPN is present",
+          "persona": "data skeptic"
+        },
+        {
+          "name": "Japan increase positive comparison",
+          "ok": true,
+          "detail": "Japan: 2019=31881000, 2024=36870000",
           "persona": "data skeptic"
         }
       ]
@@ -1159,6 +1435,7 @@
     {
       "iteration": 12,
       "persona": "country join auditor",
+      "scenario": "Japan reverse",
       "ok": true,
       "checks": [
         {
@@ -1168,19 +1445,19 @@
           "persona": "country join auditor"
         },
         {
-          "name": "2019 baseline coverage",
+          "name": "2019 selected-year coverage",
           "ok": true,
           "detail": "181 reported series",
           "persona": "country join auditor"
         },
         {
-          "name": "2022 baseline coverage",
+          "name": "2022 selected-year coverage",
           "ok": true,
           "detail": "138 reported series",
           "persona": "country join auditor"
         },
         {
-          "name": "2024 latest coverage",
+          "name": "2024 selected-year coverage",
           "ok": true,
           "detail": "67 reported series",
           "persona": "country join auditor"
@@ -1242,7 +1519,19 @@
         {
           "name": "core controls are labelled",
           "ok": true,
-          "detail": "Comparison selector and search input have accessible labels",
+          "detail": "From/to selectors and search input have accessible labels",
+          "persona": "country join auditor"
+        },
+        {
+          "name": "data notes describe selected years",
+          "ok": true,
+          "detail": "Data notes match explicit from/to comparison controls",
+          "persona": "country join auditor"
+        },
+        {
+          "name": "same-year missing copy is not duplicated",
+          "ok": true,
+          "detail": "Same-year missing data reads as one missing selected year",
           "persona": "country join auditor"
         },
         {
@@ -1254,7 +1543,19 @@
         {
           "name": "production bundle under review budget",
           "ok": true,
-          "detail": "1153 KB JavaScript before gzip",
+          "detail": "1154 KB JavaScript before gzip",
+          "persona": "country join auditor"
+        },
+        {
+          "name": "Japan reverse record exists",
+          "ok": true,
+          "detail": "JPN is present",
+          "persona": "country join auditor"
+        },
+        {
+          "name": "Japan reverse negative comparison",
+          "ok": true,
+          "detail": "Japan: 2024=36870000, 2019=31881000",
           "persona": "country join auditor"
         }
       ]
@@ -1262,6 +1563,7 @@
     {
       "iteration": 13,
       "persona": "mobile thumb tester",
+      "scenario": "Kazakhstan missing from",
       "ok": true,
       "checks": [
         {
@@ -1271,19 +1573,19 @@
           "persona": "mobile thumb tester"
         },
         {
-          "name": "2019 baseline coverage",
+          "name": "2019 selected-year coverage",
           "ok": true,
           "detail": "181 reported series",
           "persona": "mobile thumb tester"
         },
         {
-          "name": "2022 baseline coverage",
+          "name": "2022 selected-year coverage",
           "ok": true,
           "detail": "138 reported series",
           "persona": "mobile thumb tester"
         },
         {
-          "name": "2024 latest coverage",
+          "name": "2024 selected-year coverage",
           "ok": true,
           "detail": "67 reported series",
           "persona": "mobile thumb tester"
@@ -1345,7 +1647,19 @@
         {
           "name": "core controls are labelled",
           "ok": true,
-          "detail": "Comparison selector and search input have accessible labels",
+          "detail": "From/to selectors and search input have accessible labels",
+          "persona": "mobile thumb tester"
+        },
+        {
+          "name": "data notes describe selected years",
+          "ok": true,
+          "detail": "Data notes match explicit from/to comparison controls",
+          "persona": "mobile thumb tester"
+        },
+        {
+          "name": "same-year missing copy is not duplicated",
+          "ok": true,
+          "detail": "Same-year missing data reads as one missing selected year",
           "persona": "mobile thumb tester"
         },
         {
@@ -1357,7 +1671,19 @@
         {
           "name": "production bundle under review budget",
           "ok": true,
-          "detail": "1153 KB JavaScript before gzip",
+          "detail": "1154 KB JavaScript before gzip",
+          "persona": "mobile thumb tester"
+        },
+        {
+          "name": "Kazakhstan missing from record exists",
+          "ok": true,
+          "detail": "KAZ is present",
+          "persona": "mobile thumb tester"
+        },
+        {
+          "name": "Kazakhstan missing from is missing from-year only",
+          "ok": true,
+          "detail": "Kazakhstan: 2019=missing, 2024=10381566",
           "persona": "mobile thumb tester"
         }
       ]
@@ -1365,6 +1691,7 @@
     {
       "iteration": 14,
       "persona": "accessibility reviewer",
+      "scenario": "China missing to",
       "ok": true,
       "checks": [
         {
@@ -1374,19 +1701,19 @@
           "persona": "accessibility reviewer"
         },
         {
-          "name": "2019 baseline coverage",
+          "name": "2019 selected-year coverage",
           "ok": true,
           "detail": "181 reported series",
           "persona": "accessibility reviewer"
         },
         {
-          "name": "2022 baseline coverage",
+          "name": "2022 selected-year coverage",
           "ok": true,
           "detail": "138 reported series",
           "persona": "accessibility reviewer"
         },
         {
-          "name": "2024 latest coverage",
+          "name": "2024 selected-year coverage",
           "ok": true,
           "detail": "67 reported series",
           "persona": "accessibility reviewer"
@@ -1448,7 +1775,19 @@
         {
           "name": "core controls are labelled",
           "ok": true,
-          "detail": "Comparison selector and search input have accessible labels",
+          "detail": "From/to selectors and search input have accessible labels",
+          "persona": "accessibility reviewer"
+        },
+        {
+          "name": "data notes describe selected years",
+          "ok": true,
+          "detail": "Data notes match explicit from/to comparison controls",
+          "persona": "accessibility reviewer"
+        },
+        {
+          "name": "same-year missing copy is not duplicated",
+          "ok": true,
+          "detail": "Same-year missing data reads as one missing selected year",
           "persona": "accessibility reviewer"
         },
         {
@@ -1460,7 +1799,19 @@
         {
           "name": "production bundle under review budget",
           "ok": true,
-          "detail": "1153 KB JavaScript before gzip",
+          "detail": "1154 KB JavaScript before gzip",
+          "persona": "accessibility reviewer"
+        },
+        {
+          "name": "China missing to record exists",
+          "ok": true,
+          "detail": "CHN is present",
+          "persona": "accessibility reviewer"
+        },
+        {
+          "name": "China missing to is missing to-year only",
+          "ok": true,
+          "detail": "China: 2019=65725000, 2024=missing",
           "persona": "accessibility reviewer"
         }
       ]
@@ -1468,6 +1819,7 @@
     {
       "iteration": 15,
       "persona": "source transparency reviewer",
+      "scenario": "Australia same-year missing",
       "ok": true,
       "checks": [
         {
@@ -1477,19 +1829,19 @@
           "persona": "source transparency reviewer"
         },
         {
-          "name": "2019 baseline coverage",
+          "name": "2019 selected-year coverage",
           "ok": true,
           "detail": "181 reported series",
           "persona": "source transparency reviewer"
         },
         {
-          "name": "2022 baseline coverage",
+          "name": "2022 selected-year coverage",
           "ok": true,
           "detail": "138 reported series",
           "persona": "source transparency reviewer"
         },
         {
-          "name": "2024 latest coverage",
+          "name": "2024 selected-year coverage",
           "ok": true,
           "detail": "67 reported series",
           "persona": "source transparency reviewer"
@@ -1551,7 +1903,19 @@
         {
           "name": "core controls are labelled",
           "ok": true,
-          "detail": "Comparison selector and search input have accessible labels",
+          "detail": "From/to selectors and search input have accessible labels",
+          "persona": "source transparency reviewer"
+        },
+        {
+          "name": "data notes describe selected years",
+          "ok": true,
+          "detail": "Data notes match explicit from/to comparison controls",
+          "persona": "source transparency reviewer"
+        },
+        {
+          "name": "same-year missing copy is not duplicated",
+          "ok": true,
+          "detail": "Same-year missing data reads as one missing selected year",
           "persona": "source transparency reviewer"
         },
         {
@@ -1563,7 +1927,19 @@
         {
           "name": "production bundle under review budget",
           "ok": true,
-          "detail": "1153 KB JavaScript before gzip",
+          "detail": "1154 KB JavaScript before gzip",
+          "persona": "source transparency reviewer"
+        },
+        {
+          "name": "Australia same-year missing record exists",
+          "ok": true,
+          "detail": "AUS is present",
+          "persona": "source transparency reviewer"
+        },
+        {
+          "name": "Australia same-year missing avoids duplicate same-year data",
+          "ok": true,
+          "detail": "Australia: 2024=missing, 2024=missing",
           "persona": "source transparency reviewer"
         }
       ]
@@ -1571,6 +1947,7 @@
     {
       "iteration": 16,
       "persona": "performance reviewer",
+      "scenario": "Japan increase",
       "ok": true,
       "checks": [
         {
@@ -1580,19 +1957,19 @@
           "persona": "performance reviewer"
         },
         {
-          "name": "2019 baseline coverage",
+          "name": "2019 selected-year coverage",
           "ok": true,
           "detail": "181 reported series",
           "persona": "performance reviewer"
         },
         {
-          "name": "2022 baseline coverage",
+          "name": "2022 selected-year coverage",
           "ok": true,
           "detail": "138 reported series",
           "persona": "performance reviewer"
         },
         {
-          "name": "2024 latest coverage",
+          "name": "2024 selected-year coverage",
           "ok": true,
           "detail": "67 reported series",
           "persona": "performance reviewer"
@@ -1654,7 +2031,19 @@
         {
           "name": "core controls are labelled",
           "ok": true,
-          "detail": "Comparison selector and search input have accessible labels",
+          "detail": "From/to selectors and search input have accessible labels",
+          "persona": "performance reviewer"
+        },
+        {
+          "name": "data notes describe selected years",
+          "ok": true,
+          "detail": "Data notes match explicit from/to comparison controls",
+          "persona": "performance reviewer"
+        },
+        {
+          "name": "same-year missing copy is not duplicated",
+          "ok": true,
+          "detail": "Same-year missing data reads as one missing selected year",
           "persona": "performance reviewer"
         },
         {
@@ -1666,7 +2055,19 @@
         {
           "name": "production bundle under review budget",
           "ok": true,
-          "detail": "1153 KB JavaScript before gzip",
+          "detail": "1154 KB JavaScript before gzip",
+          "persona": "performance reviewer"
+        },
+        {
+          "name": "Japan increase record exists",
+          "ok": true,
+          "detail": "JPN is present",
+          "persona": "performance reviewer"
+        },
+        {
+          "name": "Japan increase positive comparison",
+          "ok": true,
+          "detail": "Japan: 2019=31881000, 2024=36870000",
           "persona": "performance reviewer"
         }
       ]
@@ -1674,6 +2075,7 @@
     {
       "iteration": 17,
       "persona": "visual encoding reviewer",
+      "scenario": "Japan reverse",
       "ok": true,
       "checks": [
         {
@@ -1683,19 +2085,19 @@
           "persona": "visual encoding reviewer"
         },
         {
-          "name": "2019 baseline coverage",
+          "name": "2019 selected-year coverage",
           "ok": true,
           "detail": "181 reported series",
           "persona": "visual encoding reviewer"
         },
         {
-          "name": "2022 baseline coverage",
+          "name": "2022 selected-year coverage",
           "ok": true,
           "detail": "138 reported series",
           "persona": "visual encoding reviewer"
         },
         {
-          "name": "2024 latest coverage",
+          "name": "2024 selected-year coverage",
           "ok": true,
           "detail": "67 reported series",
           "persona": "visual encoding reviewer"
@@ -1757,7 +2159,19 @@
         {
           "name": "core controls are labelled",
           "ok": true,
-          "detail": "Comparison selector and search input have accessible labels",
+          "detail": "From/to selectors and search input have accessible labels",
+          "persona": "visual encoding reviewer"
+        },
+        {
+          "name": "data notes describe selected years",
+          "ok": true,
+          "detail": "Data notes match explicit from/to comparison controls",
+          "persona": "visual encoding reviewer"
+        },
+        {
+          "name": "same-year missing copy is not duplicated",
+          "ok": true,
+          "detail": "Same-year missing data reads as one missing selected year",
           "persona": "visual encoding reviewer"
         },
         {
@@ -1769,7 +2183,19 @@
         {
           "name": "production bundle under review budget",
           "ok": true,
-          "detail": "1153 KB JavaScript before gzip",
+          "detail": "1154 KB JavaScript before gzip",
+          "persona": "visual encoding reviewer"
+        },
+        {
+          "name": "Japan reverse record exists",
+          "ok": true,
+          "detail": "JPN is present",
+          "persona": "visual encoding reviewer"
+        },
+        {
+          "name": "Japan reverse negative comparison",
+          "ok": true,
+          "detail": "Japan: 2024=36870000, 2019=31881000",
           "persona": "visual encoding reviewer"
         }
       ]
@@ -1777,6 +2203,7 @@
     {
       "iteration": 18,
       "persona": "missing data reviewer",
+      "scenario": "Kazakhstan missing from",
       "ok": true,
       "checks": [
         {
@@ -1786,19 +2213,19 @@
           "persona": "missing data reviewer"
         },
         {
-          "name": "2019 baseline coverage",
+          "name": "2019 selected-year coverage",
           "ok": true,
           "detail": "181 reported series",
           "persona": "missing data reviewer"
         },
         {
-          "name": "2022 baseline coverage",
+          "name": "2022 selected-year coverage",
           "ok": true,
           "detail": "138 reported series",
           "persona": "missing data reviewer"
         },
         {
-          "name": "2024 latest coverage",
+          "name": "2024 selected-year coverage",
           "ok": true,
           "detail": "67 reported series",
           "persona": "missing data reviewer"
@@ -1860,7 +2287,19 @@
         {
           "name": "core controls are labelled",
           "ok": true,
-          "detail": "Comparison selector and search input have accessible labels",
+          "detail": "From/to selectors and search input have accessible labels",
+          "persona": "missing data reviewer"
+        },
+        {
+          "name": "data notes describe selected years",
+          "ok": true,
+          "detail": "Data notes match explicit from/to comparison controls",
+          "persona": "missing data reviewer"
+        },
+        {
+          "name": "same-year missing copy is not duplicated",
+          "ok": true,
+          "detail": "Same-year missing data reads as one missing selected year",
           "persona": "missing data reviewer"
         },
         {
@@ -1872,7 +2311,19 @@
         {
           "name": "production bundle under review budget",
           "ok": true,
-          "detail": "1153 KB JavaScript before gzip",
+          "detail": "1154 KB JavaScript before gzip",
+          "persona": "missing data reviewer"
+        },
+        {
+          "name": "Kazakhstan missing from record exists",
+          "ok": true,
+          "detail": "KAZ is present",
+          "persona": "missing data reviewer"
+        },
+        {
+          "name": "Kazakhstan missing from is missing from-year only",
+          "ok": true,
+          "detail": "Kazakhstan: 2019=missing, 2024=10381566",
           "persona": "missing data reviewer"
         }
       ]
@@ -1880,6 +2331,7 @@
     {
       "iteration": 19,
       "persona": "iPhone layout reviewer",
+      "scenario": "China missing to",
       "ok": true,
       "checks": [
         {
@@ -1889,19 +2341,19 @@
           "persona": "iPhone layout reviewer"
         },
         {
-          "name": "2019 baseline coverage",
+          "name": "2019 selected-year coverage",
           "ok": true,
           "detail": "181 reported series",
           "persona": "iPhone layout reviewer"
         },
         {
-          "name": "2022 baseline coverage",
+          "name": "2022 selected-year coverage",
           "ok": true,
           "detail": "138 reported series",
           "persona": "iPhone layout reviewer"
         },
         {
-          "name": "2024 latest coverage",
+          "name": "2024 selected-year coverage",
           "ok": true,
           "detail": "67 reported series",
           "persona": "iPhone layout reviewer"
@@ -1963,7 +2415,19 @@
         {
           "name": "core controls are labelled",
           "ok": true,
-          "detail": "Comparison selector and search input have accessible labels",
+          "detail": "From/to selectors and search input have accessible labels",
+          "persona": "iPhone layout reviewer"
+        },
+        {
+          "name": "data notes describe selected years",
+          "ok": true,
+          "detail": "Data notes match explicit from/to comparison controls",
+          "persona": "iPhone layout reviewer"
+        },
+        {
+          "name": "same-year missing copy is not duplicated",
+          "ok": true,
+          "detail": "Same-year missing data reads as one missing selected year",
           "persona": "iPhone layout reviewer"
         },
         {
@@ -1975,7 +2439,19 @@
         {
           "name": "production bundle under review budget",
           "ok": true,
-          "detail": "1153 KB JavaScript before gzip",
+          "detail": "1154 KB JavaScript before gzip",
+          "persona": "iPhone layout reviewer"
+        },
+        {
+          "name": "China missing to record exists",
+          "ok": true,
+          "detail": "CHN is present",
+          "persona": "iPhone layout reviewer"
+        },
+        {
+          "name": "China missing to is missing to-year only",
+          "ok": true,
+          "detail": "China: 2019=65725000, 2024=missing",
           "persona": "iPhone layout reviewer"
         }
       ]
@@ -1983,6 +2459,7 @@
     {
       "iteration": 20,
       "persona": "map interaction reviewer",
+      "scenario": "Australia same-year missing",
       "ok": true,
       "checks": [
         {
@@ -1992,19 +2469,19 @@
           "persona": "map interaction reviewer"
         },
         {
-          "name": "2019 baseline coverage",
+          "name": "2019 selected-year coverage",
           "ok": true,
           "detail": "181 reported series",
           "persona": "map interaction reviewer"
         },
         {
-          "name": "2022 baseline coverage",
+          "name": "2022 selected-year coverage",
           "ok": true,
           "detail": "138 reported series",
           "persona": "map interaction reviewer"
         },
         {
-          "name": "2024 latest coverage",
+          "name": "2024 selected-year coverage",
           "ok": true,
           "detail": "67 reported series",
           "persona": "map interaction reviewer"
@@ -2066,7 +2543,19 @@
         {
           "name": "core controls are labelled",
           "ok": true,
-          "detail": "Comparison selector and search input have accessible labels",
+          "detail": "From/to selectors and search input have accessible labels",
+          "persona": "map interaction reviewer"
+        },
+        {
+          "name": "data notes describe selected years",
+          "ok": true,
+          "detail": "Data notes match explicit from/to comparison controls",
+          "persona": "map interaction reviewer"
+        },
+        {
+          "name": "same-year missing copy is not duplicated",
+          "ok": true,
+          "detail": "Same-year missing data reads as one missing selected year",
           "persona": "map interaction reviewer"
         },
         {
@@ -2078,7 +2567,19 @@
         {
           "name": "production bundle under review budget",
           "ok": true,
-          "detail": "1153 KB JavaScript before gzip",
+          "detail": "1154 KB JavaScript before gzip",
+          "persona": "map interaction reviewer"
+        },
+        {
+          "name": "Australia same-year missing record exists",
+          "ok": true,
+          "detail": "AUS is present",
+          "persona": "map interaction reviewer"
+        },
+        {
+          "name": "Australia same-year missing avoids duplicate same-year data",
+          "ok": true,
+          "detail": "Australia: 2024=missing, 2024=missing",
           "persona": "map interaction reviewer"
         }
       ]
@@ -2086,6 +2587,7 @@
     {
       "iteration": 21,
       "persona": "data skeptic",
+      "scenario": "Japan increase",
       "ok": true,
       "checks": [
         {
@@ -2095,19 +2597,19 @@
           "persona": "data skeptic"
         },
         {
-          "name": "2019 baseline coverage",
+          "name": "2019 selected-year coverage",
           "ok": true,
           "detail": "181 reported series",
           "persona": "data skeptic"
         },
         {
-          "name": "2022 baseline coverage",
+          "name": "2022 selected-year coverage",
           "ok": true,
           "detail": "138 reported series",
           "persona": "data skeptic"
         },
         {
-          "name": "2024 latest coverage",
+          "name": "2024 selected-year coverage",
           "ok": true,
           "detail": "67 reported series",
           "persona": "data skeptic"
@@ -2169,7 +2671,19 @@
         {
           "name": "core controls are labelled",
           "ok": true,
-          "detail": "Comparison selector and search input have accessible labels",
+          "detail": "From/to selectors and search input have accessible labels",
+          "persona": "data skeptic"
+        },
+        {
+          "name": "data notes describe selected years",
+          "ok": true,
+          "detail": "Data notes match explicit from/to comparison controls",
+          "persona": "data skeptic"
+        },
+        {
+          "name": "same-year missing copy is not duplicated",
+          "ok": true,
+          "detail": "Same-year missing data reads as one missing selected year",
           "persona": "data skeptic"
         },
         {
@@ -2181,7 +2695,19 @@
         {
           "name": "production bundle under review budget",
           "ok": true,
-          "detail": "1153 KB JavaScript before gzip",
+          "detail": "1154 KB JavaScript before gzip",
+          "persona": "data skeptic"
+        },
+        {
+          "name": "Japan increase record exists",
+          "ok": true,
+          "detail": "JPN is present",
+          "persona": "data skeptic"
+        },
+        {
+          "name": "Japan increase positive comparison",
+          "ok": true,
+          "detail": "Japan: 2019=31881000, 2024=36870000",
           "persona": "data skeptic"
         }
       ]
@@ -2189,6 +2715,7 @@
     {
       "iteration": 22,
       "persona": "country join auditor",
+      "scenario": "Japan reverse",
       "ok": true,
       "checks": [
         {
@@ -2198,19 +2725,19 @@
           "persona": "country join auditor"
         },
         {
-          "name": "2019 baseline coverage",
+          "name": "2019 selected-year coverage",
           "ok": true,
           "detail": "181 reported series",
           "persona": "country join auditor"
         },
         {
-          "name": "2022 baseline coverage",
+          "name": "2022 selected-year coverage",
           "ok": true,
           "detail": "138 reported series",
           "persona": "country join auditor"
         },
         {
-          "name": "2024 latest coverage",
+          "name": "2024 selected-year coverage",
           "ok": true,
           "detail": "67 reported series",
           "persona": "country join auditor"
@@ -2272,7 +2799,19 @@
         {
           "name": "core controls are labelled",
           "ok": true,
-          "detail": "Comparison selector and search input have accessible labels",
+          "detail": "From/to selectors and search input have accessible labels",
+          "persona": "country join auditor"
+        },
+        {
+          "name": "data notes describe selected years",
+          "ok": true,
+          "detail": "Data notes match explicit from/to comparison controls",
+          "persona": "country join auditor"
+        },
+        {
+          "name": "same-year missing copy is not duplicated",
+          "ok": true,
+          "detail": "Same-year missing data reads as one missing selected year",
           "persona": "country join auditor"
         },
         {
@@ -2284,7 +2823,19 @@
         {
           "name": "production bundle under review budget",
           "ok": true,
-          "detail": "1153 KB JavaScript before gzip",
+          "detail": "1154 KB JavaScript before gzip",
+          "persona": "country join auditor"
+        },
+        {
+          "name": "Japan reverse record exists",
+          "ok": true,
+          "detail": "JPN is present",
+          "persona": "country join auditor"
+        },
+        {
+          "name": "Japan reverse negative comparison",
+          "ok": true,
+          "detail": "Japan: 2024=36870000, 2019=31881000",
           "persona": "country join auditor"
         }
       ]
@@ -2292,6 +2843,7 @@
     {
       "iteration": 23,
       "persona": "mobile thumb tester",
+      "scenario": "Kazakhstan missing from",
       "ok": true,
       "checks": [
         {
@@ -2301,19 +2853,19 @@
           "persona": "mobile thumb tester"
         },
         {
-          "name": "2019 baseline coverage",
+          "name": "2019 selected-year coverage",
           "ok": true,
           "detail": "181 reported series",
           "persona": "mobile thumb tester"
         },
         {
-          "name": "2022 baseline coverage",
+          "name": "2022 selected-year coverage",
           "ok": true,
           "detail": "138 reported series",
           "persona": "mobile thumb tester"
         },
         {
-          "name": "2024 latest coverage",
+          "name": "2024 selected-year coverage",
           "ok": true,
           "detail": "67 reported series",
           "persona": "mobile thumb tester"
@@ -2375,7 +2927,19 @@
         {
           "name": "core controls are labelled",
           "ok": true,
-          "detail": "Comparison selector and search input have accessible labels",
+          "detail": "From/to selectors and search input have accessible labels",
+          "persona": "mobile thumb tester"
+        },
+        {
+          "name": "data notes describe selected years",
+          "ok": true,
+          "detail": "Data notes match explicit from/to comparison controls",
+          "persona": "mobile thumb tester"
+        },
+        {
+          "name": "same-year missing copy is not duplicated",
+          "ok": true,
+          "detail": "Same-year missing data reads as one missing selected year",
           "persona": "mobile thumb tester"
         },
         {
@@ -2387,7 +2951,19 @@
         {
           "name": "production bundle under review budget",
           "ok": true,
-          "detail": "1153 KB JavaScript before gzip",
+          "detail": "1154 KB JavaScript before gzip",
+          "persona": "mobile thumb tester"
+        },
+        {
+          "name": "Kazakhstan missing from record exists",
+          "ok": true,
+          "detail": "KAZ is present",
+          "persona": "mobile thumb tester"
+        },
+        {
+          "name": "Kazakhstan missing from is missing from-year only",
+          "ok": true,
+          "detail": "Kazakhstan: 2019=missing, 2024=10381566",
           "persona": "mobile thumb tester"
         }
       ]
@@ -2395,6 +2971,7 @@
     {
       "iteration": 24,
       "persona": "accessibility reviewer",
+      "scenario": "China missing to",
       "ok": true,
       "checks": [
         {
@@ -2404,19 +2981,19 @@
           "persona": "accessibility reviewer"
         },
         {
-          "name": "2019 baseline coverage",
+          "name": "2019 selected-year coverage",
           "ok": true,
           "detail": "181 reported series",
           "persona": "accessibility reviewer"
         },
         {
-          "name": "2022 baseline coverage",
+          "name": "2022 selected-year coverage",
           "ok": true,
           "detail": "138 reported series",
           "persona": "accessibility reviewer"
         },
         {
-          "name": "2024 latest coverage",
+          "name": "2024 selected-year coverage",
           "ok": true,
           "detail": "67 reported series",
           "persona": "accessibility reviewer"
@@ -2478,7 +3055,19 @@
         {
           "name": "core controls are labelled",
           "ok": true,
-          "detail": "Comparison selector and search input have accessible labels",
+          "detail": "From/to selectors and search input have accessible labels",
+          "persona": "accessibility reviewer"
+        },
+        {
+          "name": "data notes describe selected years",
+          "ok": true,
+          "detail": "Data notes match explicit from/to comparison controls",
+          "persona": "accessibility reviewer"
+        },
+        {
+          "name": "same-year missing copy is not duplicated",
+          "ok": true,
+          "detail": "Same-year missing data reads as one missing selected year",
           "persona": "accessibility reviewer"
         },
         {
@@ -2490,7 +3079,19 @@
         {
           "name": "production bundle under review budget",
           "ok": true,
-          "detail": "1153 KB JavaScript before gzip",
+          "detail": "1154 KB JavaScript before gzip",
+          "persona": "accessibility reviewer"
+        },
+        {
+          "name": "China missing to record exists",
+          "ok": true,
+          "detail": "CHN is present",
+          "persona": "accessibility reviewer"
+        },
+        {
+          "name": "China missing to is missing to-year only",
+          "ok": true,
+          "detail": "China: 2019=65725000, 2024=missing",
           "persona": "accessibility reviewer"
         }
       ]
@@ -2498,6 +3099,7 @@
     {
       "iteration": 25,
       "persona": "source transparency reviewer",
+      "scenario": "Australia same-year missing",
       "ok": true,
       "checks": [
         {
@@ -2507,19 +3109,19 @@
           "persona": "source transparency reviewer"
         },
         {
-          "name": "2019 baseline coverage",
+          "name": "2019 selected-year coverage",
           "ok": true,
           "detail": "181 reported series",
           "persona": "source transparency reviewer"
         },
         {
-          "name": "2022 baseline coverage",
+          "name": "2022 selected-year coverage",
           "ok": true,
           "detail": "138 reported series",
           "persona": "source transparency reviewer"
         },
         {
-          "name": "2024 latest coverage",
+          "name": "2024 selected-year coverage",
           "ok": true,
           "detail": "67 reported series",
           "persona": "source transparency reviewer"
@@ -2581,7 +3183,19 @@
         {
           "name": "core controls are labelled",
           "ok": true,
-          "detail": "Comparison selector and search input have accessible labels",
+          "detail": "From/to selectors and search input have accessible labels",
+          "persona": "source transparency reviewer"
+        },
+        {
+          "name": "data notes describe selected years",
+          "ok": true,
+          "detail": "Data notes match explicit from/to comparison controls",
+          "persona": "source transparency reviewer"
+        },
+        {
+          "name": "same-year missing copy is not duplicated",
+          "ok": true,
+          "detail": "Same-year missing data reads as one missing selected year",
           "persona": "source transparency reviewer"
         },
         {
@@ -2593,7 +3207,19 @@
         {
           "name": "production bundle under review budget",
           "ok": true,
-          "detail": "1153 KB JavaScript before gzip",
+          "detail": "1154 KB JavaScript before gzip",
+          "persona": "source transparency reviewer"
+        },
+        {
+          "name": "Australia same-year missing record exists",
+          "ok": true,
+          "detail": "AUS is present",
+          "persona": "source transparency reviewer"
+        },
+        {
+          "name": "Australia same-year missing avoids duplicate same-year data",
+          "ok": true,
+          "detail": "Australia: 2024=missing, 2024=missing",
           "persona": "source transparency reviewer"
         }
       ]
@@ -2601,6 +3227,7 @@
     {
       "iteration": 26,
       "persona": "performance reviewer",
+      "scenario": "Japan increase",
       "ok": true,
       "checks": [
         {
@@ -2610,19 +3237,19 @@
           "persona": "performance reviewer"
         },
         {
-          "name": "2019 baseline coverage",
+          "name": "2019 selected-year coverage",
           "ok": true,
           "detail": "181 reported series",
           "persona": "performance reviewer"
         },
         {
-          "name": "2022 baseline coverage",
+          "name": "2022 selected-year coverage",
           "ok": true,
           "detail": "138 reported series",
           "persona": "performance reviewer"
         },
         {
-          "name": "2024 latest coverage",
+          "name": "2024 selected-year coverage",
           "ok": true,
           "detail": "67 reported series",
           "persona": "performance reviewer"
@@ -2684,7 +3311,19 @@
         {
           "name": "core controls are labelled",
           "ok": true,
-          "detail": "Comparison selector and search input have accessible labels",
+          "detail": "From/to selectors and search input have accessible labels",
+          "persona": "performance reviewer"
+        },
+        {
+          "name": "data notes describe selected years",
+          "ok": true,
+          "detail": "Data notes match explicit from/to comparison controls",
+          "persona": "performance reviewer"
+        },
+        {
+          "name": "same-year missing copy is not duplicated",
+          "ok": true,
+          "detail": "Same-year missing data reads as one missing selected year",
           "persona": "performance reviewer"
         },
         {
@@ -2696,7 +3335,19 @@
         {
           "name": "production bundle under review budget",
           "ok": true,
-          "detail": "1153 KB JavaScript before gzip",
+          "detail": "1154 KB JavaScript before gzip",
+          "persona": "performance reviewer"
+        },
+        {
+          "name": "Japan increase record exists",
+          "ok": true,
+          "detail": "JPN is present",
+          "persona": "performance reviewer"
+        },
+        {
+          "name": "Japan increase positive comparison",
+          "ok": true,
+          "detail": "Japan: 2019=31881000, 2024=36870000",
           "persona": "performance reviewer"
         }
       ]
@@ -2704,6 +3355,7 @@
     {
       "iteration": 27,
       "persona": "visual encoding reviewer",
+      "scenario": "Japan reverse",
       "ok": true,
       "checks": [
         {
@@ -2713,19 +3365,19 @@
           "persona": "visual encoding reviewer"
         },
         {
-          "name": "2019 baseline coverage",
+          "name": "2019 selected-year coverage",
           "ok": true,
           "detail": "181 reported series",
           "persona": "visual encoding reviewer"
         },
         {
-          "name": "2022 baseline coverage",
+          "name": "2022 selected-year coverage",
           "ok": true,
           "detail": "138 reported series",
           "persona": "visual encoding reviewer"
         },
         {
-          "name": "2024 latest coverage",
+          "name": "2024 selected-year coverage",
           "ok": true,
           "detail": "67 reported series",
           "persona": "visual encoding reviewer"
@@ -2787,7 +3439,19 @@
         {
           "name": "core controls are labelled",
           "ok": true,
-          "detail": "Comparison selector and search input have accessible labels",
+          "detail": "From/to selectors and search input have accessible labels",
+          "persona": "visual encoding reviewer"
+        },
+        {
+          "name": "data notes describe selected years",
+          "ok": true,
+          "detail": "Data notes match explicit from/to comparison controls",
+          "persona": "visual encoding reviewer"
+        },
+        {
+          "name": "same-year missing copy is not duplicated",
+          "ok": true,
+          "detail": "Same-year missing data reads as one missing selected year",
           "persona": "visual encoding reviewer"
         },
         {
@@ -2799,7 +3463,19 @@
         {
           "name": "production bundle under review budget",
           "ok": true,
-          "detail": "1153 KB JavaScript before gzip",
+          "detail": "1154 KB JavaScript before gzip",
+          "persona": "visual encoding reviewer"
+        },
+        {
+          "name": "Japan reverse record exists",
+          "ok": true,
+          "detail": "JPN is present",
+          "persona": "visual encoding reviewer"
+        },
+        {
+          "name": "Japan reverse negative comparison",
+          "ok": true,
+          "detail": "Japan: 2024=36870000, 2019=31881000",
           "persona": "visual encoding reviewer"
         }
       ]
@@ -2807,6 +3483,7 @@
     {
       "iteration": 28,
       "persona": "missing data reviewer",
+      "scenario": "Kazakhstan missing from",
       "ok": true,
       "checks": [
         {
@@ -2816,19 +3493,19 @@
           "persona": "missing data reviewer"
         },
         {
-          "name": "2019 baseline coverage",
+          "name": "2019 selected-year coverage",
           "ok": true,
           "detail": "181 reported series",
           "persona": "missing data reviewer"
         },
         {
-          "name": "2022 baseline coverage",
+          "name": "2022 selected-year coverage",
           "ok": true,
           "detail": "138 reported series",
           "persona": "missing data reviewer"
         },
         {
-          "name": "2024 latest coverage",
+          "name": "2024 selected-year coverage",
           "ok": true,
           "detail": "67 reported series",
           "persona": "missing data reviewer"
@@ -2890,7 +3567,19 @@
         {
           "name": "core controls are labelled",
           "ok": true,
-          "detail": "Comparison selector and search input have accessible labels",
+          "detail": "From/to selectors and search input have accessible labels",
+          "persona": "missing data reviewer"
+        },
+        {
+          "name": "data notes describe selected years",
+          "ok": true,
+          "detail": "Data notes match explicit from/to comparison controls",
+          "persona": "missing data reviewer"
+        },
+        {
+          "name": "same-year missing copy is not duplicated",
+          "ok": true,
+          "detail": "Same-year missing data reads as one missing selected year",
           "persona": "missing data reviewer"
         },
         {
@@ -2902,7 +3591,19 @@
         {
           "name": "production bundle under review budget",
           "ok": true,
-          "detail": "1153 KB JavaScript before gzip",
+          "detail": "1154 KB JavaScript before gzip",
+          "persona": "missing data reviewer"
+        },
+        {
+          "name": "Kazakhstan missing from record exists",
+          "ok": true,
+          "detail": "KAZ is present",
+          "persona": "missing data reviewer"
+        },
+        {
+          "name": "Kazakhstan missing from is missing from-year only",
+          "ok": true,
+          "detail": "Kazakhstan: 2019=missing, 2024=10381566",
           "persona": "missing data reviewer"
         }
       ]
@@ -2910,6 +3611,7 @@
     {
       "iteration": 29,
       "persona": "iPhone layout reviewer",
+      "scenario": "China missing to",
       "ok": true,
       "checks": [
         {
@@ -2919,19 +3621,19 @@
           "persona": "iPhone layout reviewer"
         },
         {
-          "name": "2019 baseline coverage",
+          "name": "2019 selected-year coverage",
           "ok": true,
           "detail": "181 reported series",
           "persona": "iPhone layout reviewer"
         },
         {
-          "name": "2022 baseline coverage",
+          "name": "2022 selected-year coverage",
           "ok": true,
           "detail": "138 reported series",
           "persona": "iPhone layout reviewer"
         },
         {
-          "name": "2024 latest coverage",
+          "name": "2024 selected-year coverage",
           "ok": true,
           "detail": "67 reported series",
           "persona": "iPhone layout reviewer"
@@ -2993,7 +3695,19 @@
         {
           "name": "core controls are labelled",
           "ok": true,
-          "detail": "Comparison selector and search input have accessible labels",
+          "detail": "From/to selectors and search input have accessible labels",
+          "persona": "iPhone layout reviewer"
+        },
+        {
+          "name": "data notes describe selected years",
+          "ok": true,
+          "detail": "Data notes match explicit from/to comparison controls",
+          "persona": "iPhone layout reviewer"
+        },
+        {
+          "name": "same-year missing copy is not duplicated",
+          "ok": true,
+          "detail": "Same-year missing data reads as one missing selected year",
           "persona": "iPhone layout reviewer"
         },
         {
@@ -3005,7 +3719,19 @@
         {
           "name": "production bundle under review budget",
           "ok": true,
-          "detail": "1153 KB JavaScript before gzip",
+          "detail": "1154 KB JavaScript before gzip",
+          "persona": "iPhone layout reviewer"
+        },
+        {
+          "name": "China missing to record exists",
+          "ok": true,
+          "detail": "CHN is present",
+          "persona": "iPhone layout reviewer"
+        },
+        {
+          "name": "China missing to is missing to-year only",
+          "ok": true,
+          "detail": "China: 2019=65725000, 2024=missing",
           "persona": "iPhone layout reviewer"
         }
       ]
@@ -3013,6 +3739,7 @@
     {
       "iteration": 30,
       "persona": "map interaction reviewer",
+      "scenario": "Australia same-year missing",
       "ok": true,
       "checks": [
         {
@@ -3022,19 +3749,19 @@
           "persona": "map interaction reviewer"
         },
         {
-          "name": "2019 baseline coverage",
+          "name": "2019 selected-year coverage",
           "ok": true,
           "detail": "181 reported series",
           "persona": "map interaction reviewer"
         },
         {
-          "name": "2022 baseline coverage",
+          "name": "2022 selected-year coverage",
           "ok": true,
           "detail": "138 reported series",
           "persona": "map interaction reviewer"
         },
         {
-          "name": "2024 latest coverage",
+          "name": "2024 selected-year coverage",
           "ok": true,
           "detail": "67 reported series",
           "persona": "map interaction reviewer"
@@ -3096,7 +3823,19 @@
         {
           "name": "core controls are labelled",
           "ok": true,
-          "detail": "Comparison selector and search input have accessible labels",
+          "detail": "From/to selectors and search input have accessible labels",
+          "persona": "map interaction reviewer"
+        },
+        {
+          "name": "data notes describe selected years",
+          "ok": true,
+          "detail": "Data notes match explicit from/to comparison controls",
+          "persona": "map interaction reviewer"
+        },
+        {
+          "name": "same-year missing copy is not duplicated",
+          "ok": true,
+          "detail": "Same-year missing data reads as one missing selected year",
           "persona": "map interaction reviewer"
         },
         {
@@ -3108,7 +3847,19 @@
         {
           "name": "production bundle under review budget",
           "ok": true,
-          "detail": "1153 KB JavaScript before gzip",
+          "detail": "1154 KB JavaScript before gzip",
+          "persona": "map interaction reviewer"
+        },
+        {
+          "name": "Australia same-year missing record exists",
+          "ok": true,
+          "detail": "AUS is present",
+          "persona": "map interaction reviewer"
+        },
+        {
+          "name": "Australia same-year missing avoids duplicate same-year data",
+          "ok": true,
+          "detail": "Australia: 2024=missing, 2024=missing",
           "persona": "map interaction reviewer"
         }
       ]
@@ -3116,6 +3867,7 @@
     {
       "iteration": 31,
       "persona": "data skeptic",
+      "scenario": "Japan increase",
       "ok": true,
       "checks": [
         {
@@ -3125,19 +3877,19 @@
           "persona": "data skeptic"
         },
         {
-          "name": "2019 baseline coverage",
+          "name": "2019 selected-year coverage",
           "ok": true,
           "detail": "181 reported series",
           "persona": "data skeptic"
         },
         {
-          "name": "2022 baseline coverage",
+          "name": "2022 selected-year coverage",
           "ok": true,
           "detail": "138 reported series",
           "persona": "data skeptic"
         },
         {
-          "name": "2024 latest coverage",
+          "name": "2024 selected-year coverage",
           "ok": true,
           "detail": "67 reported series",
           "persona": "data skeptic"
@@ -3199,7 +3951,19 @@
         {
           "name": "core controls are labelled",
           "ok": true,
-          "detail": "Comparison selector and search input have accessible labels",
+          "detail": "From/to selectors and search input have accessible labels",
+          "persona": "data skeptic"
+        },
+        {
+          "name": "data notes describe selected years",
+          "ok": true,
+          "detail": "Data notes match explicit from/to comparison controls",
+          "persona": "data skeptic"
+        },
+        {
+          "name": "same-year missing copy is not duplicated",
+          "ok": true,
+          "detail": "Same-year missing data reads as one missing selected year",
           "persona": "data skeptic"
         },
         {
@@ -3211,7 +3975,19 @@
         {
           "name": "production bundle under review budget",
           "ok": true,
-          "detail": "1153 KB JavaScript before gzip",
+          "detail": "1154 KB JavaScript before gzip",
+          "persona": "data skeptic"
+        },
+        {
+          "name": "Japan increase record exists",
+          "ok": true,
+          "detail": "JPN is present",
+          "persona": "data skeptic"
+        },
+        {
+          "name": "Japan increase positive comparison",
+          "ok": true,
+          "detail": "Japan: 2019=31881000, 2024=36870000",
           "persona": "data skeptic"
         }
       ]
@@ -3219,6 +3995,7 @@
     {
       "iteration": 32,
       "persona": "country join auditor",
+      "scenario": "Japan reverse",
       "ok": true,
       "checks": [
         {
@@ -3228,19 +4005,19 @@
           "persona": "country join auditor"
         },
         {
-          "name": "2019 baseline coverage",
+          "name": "2019 selected-year coverage",
           "ok": true,
           "detail": "181 reported series",
           "persona": "country join auditor"
         },
         {
-          "name": "2022 baseline coverage",
+          "name": "2022 selected-year coverage",
           "ok": true,
           "detail": "138 reported series",
           "persona": "country join auditor"
         },
         {
-          "name": "2024 latest coverage",
+          "name": "2024 selected-year coverage",
           "ok": true,
           "detail": "67 reported series",
           "persona": "country join auditor"
@@ -3302,7 +4079,19 @@
         {
           "name": "core controls are labelled",
           "ok": true,
-          "detail": "Comparison selector and search input have accessible labels",
+          "detail": "From/to selectors and search input have accessible labels",
+          "persona": "country join auditor"
+        },
+        {
+          "name": "data notes describe selected years",
+          "ok": true,
+          "detail": "Data notes match explicit from/to comparison controls",
+          "persona": "country join auditor"
+        },
+        {
+          "name": "same-year missing copy is not duplicated",
+          "ok": true,
+          "detail": "Same-year missing data reads as one missing selected year",
           "persona": "country join auditor"
         },
         {
@@ -3314,7 +4103,19 @@
         {
           "name": "production bundle under review budget",
           "ok": true,
-          "detail": "1153 KB JavaScript before gzip",
+          "detail": "1154 KB JavaScript before gzip",
+          "persona": "country join auditor"
+        },
+        {
+          "name": "Japan reverse record exists",
+          "ok": true,
+          "detail": "JPN is present",
+          "persona": "country join auditor"
+        },
+        {
+          "name": "Japan reverse negative comparison",
+          "ok": true,
+          "detail": "Japan: 2024=36870000, 2019=31881000",
           "persona": "country join auditor"
         }
       ]
@@ -3322,6 +4123,7 @@
     {
       "iteration": 33,
       "persona": "mobile thumb tester",
+      "scenario": "Kazakhstan missing from",
       "ok": true,
       "checks": [
         {
@@ -3331,19 +4133,19 @@
           "persona": "mobile thumb tester"
         },
         {
-          "name": "2019 baseline coverage",
+          "name": "2019 selected-year coverage",
           "ok": true,
           "detail": "181 reported series",
           "persona": "mobile thumb tester"
         },
         {
-          "name": "2022 baseline coverage",
+          "name": "2022 selected-year coverage",
           "ok": true,
           "detail": "138 reported series",
           "persona": "mobile thumb tester"
         },
         {
-          "name": "2024 latest coverage",
+          "name": "2024 selected-year coverage",
           "ok": true,
           "detail": "67 reported series",
           "persona": "mobile thumb tester"
@@ -3405,7 +4207,19 @@
         {
           "name": "core controls are labelled",
           "ok": true,
-          "detail": "Comparison selector and search input have accessible labels",
+          "detail": "From/to selectors and search input have accessible labels",
+          "persona": "mobile thumb tester"
+        },
+        {
+          "name": "data notes describe selected years",
+          "ok": true,
+          "detail": "Data notes match explicit from/to comparison controls",
+          "persona": "mobile thumb tester"
+        },
+        {
+          "name": "same-year missing copy is not duplicated",
+          "ok": true,
+          "detail": "Same-year missing data reads as one missing selected year",
           "persona": "mobile thumb tester"
         },
         {
@@ -3417,7 +4231,19 @@
         {
           "name": "production bundle under review budget",
           "ok": true,
-          "detail": "1153 KB JavaScript before gzip",
+          "detail": "1154 KB JavaScript before gzip",
+          "persona": "mobile thumb tester"
+        },
+        {
+          "name": "Kazakhstan missing from record exists",
+          "ok": true,
+          "detail": "KAZ is present",
+          "persona": "mobile thumb tester"
+        },
+        {
+          "name": "Kazakhstan missing from is missing from-year only",
+          "ok": true,
+          "detail": "Kazakhstan: 2019=missing, 2024=10381566",
           "persona": "mobile thumb tester"
         }
       ]
@@ -3425,6 +4251,7 @@
     {
       "iteration": 34,
       "persona": "accessibility reviewer",
+      "scenario": "China missing to",
       "ok": true,
       "checks": [
         {
@@ -3434,19 +4261,19 @@
           "persona": "accessibility reviewer"
         },
         {
-          "name": "2019 baseline coverage",
+          "name": "2019 selected-year coverage",
           "ok": true,
           "detail": "181 reported series",
           "persona": "accessibility reviewer"
         },
         {
-          "name": "2022 baseline coverage",
+          "name": "2022 selected-year coverage",
           "ok": true,
           "detail": "138 reported series",
           "persona": "accessibility reviewer"
         },
         {
-          "name": "2024 latest coverage",
+          "name": "2024 selected-year coverage",
           "ok": true,
           "detail": "67 reported series",
           "persona": "accessibility reviewer"
@@ -3508,7 +4335,19 @@
         {
           "name": "core controls are labelled",
           "ok": true,
-          "detail": "Comparison selector and search input have accessible labels",
+          "detail": "From/to selectors and search input have accessible labels",
+          "persona": "accessibility reviewer"
+        },
+        {
+          "name": "data notes describe selected years",
+          "ok": true,
+          "detail": "Data notes match explicit from/to comparison controls",
+          "persona": "accessibility reviewer"
+        },
+        {
+          "name": "same-year missing copy is not duplicated",
+          "ok": true,
+          "detail": "Same-year missing data reads as one missing selected year",
           "persona": "accessibility reviewer"
         },
         {
@@ -3520,7 +4359,19 @@
         {
           "name": "production bundle under review budget",
           "ok": true,
-          "detail": "1153 KB JavaScript before gzip",
+          "detail": "1154 KB JavaScript before gzip",
+          "persona": "accessibility reviewer"
+        },
+        {
+          "name": "China missing to record exists",
+          "ok": true,
+          "detail": "CHN is present",
+          "persona": "accessibility reviewer"
+        },
+        {
+          "name": "China missing to is missing to-year only",
+          "ok": true,
+          "detail": "China: 2019=65725000, 2024=missing",
           "persona": "accessibility reviewer"
         }
       ]
@@ -3528,6 +4379,7 @@
     {
       "iteration": 35,
       "persona": "source transparency reviewer",
+      "scenario": "Australia same-year missing",
       "ok": true,
       "checks": [
         {
@@ -3537,19 +4389,19 @@
           "persona": "source transparency reviewer"
         },
         {
-          "name": "2019 baseline coverage",
+          "name": "2019 selected-year coverage",
           "ok": true,
           "detail": "181 reported series",
           "persona": "source transparency reviewer"
         },
         {
-          "name": "2022 baseline coverage",
+          "name": "2022 selected-year coverage",
           "ok": true,
           "detail": "138 reported series",
           "persona": "source transparency reviewer"
         },
         {
-          "name": "2024 latest coverage",
+          "name": "2024 selected-year coverage",
           "ok": true,
           "detail": "67 reported series",
           "persona": "source transparency reviewer"
@@ -3611,7 +4463,19 @@
         {
           "name": "core controls are labelled",
           "ok": true,
-          "detail": "Comparison selector and search input have accessible labels",
+          "detail": "From/to selectors and search input have accessible labels",
+          "persona": "source transparency reviewer"
+        },
+        {
+          "name": "data notes describe selected years",
+          "ok": true,
+          "detail": "Data notes match explicit from/to comparison controls",
+          "persona": "source transparency reviewer"
+        },
+        {
+          "name": "same-year missing copy is not duplicated",
+          "ok": true,
+          "detail": "Same-year missing data reads as one missing selected year",
           "persona": "source transparency reviewer"
         },
         {
@@ -3623,7 +4487,19 @@
         {
           "name": "production bundle under review budget",
           "ok": true,
-          "detail": "1153 KB JavaScript before gzip",
+          "detail": "1154 KB JavaScript before gzip",
+          "persona": "source transparency reviewer"
+        },
+        {
+          "name": "Australia same-year missing record exists",
+          "ok": true,
+          "detail": "AUS is present",
+          "persona": "source transparency reviewer"
+        },
+        {
+          "name": "Australia same-year missing avoids duplicate same-year data",
+          "ok": true,
+          "detail": "Australia: 2024=missing, 2024=missing",
           "persona": "source transparency reviewer"
         }
       ]
@@ -3631,6 +4507,7 @@
     {
       "iteration": 36,
       "persona": "performance reviewer",
+      "scenario": "Japan increase",
       "ok": true,
       "checks": [
         {
@@ -3640,19 +4517,19 @@
           "persona": "performance reviewer"
         },
         {
-          "name": "2019 baseline coverage",
+          "name": "2019 selected-year coverage",
           "ok": true,
           "detail": "181 reported series",
           "persona": "performance reviewer"
         },
         {
-          "name": "2022 baseline coverage",
+          "name": "2022 selected-year coverage",
           "ok": true,
           "detail": "138 reported series",
           "persona": "performance reviewer"
         },
         {
-          "name": "2024 latest coverage",
+          "name": "2024 selected-year coverage",
           "ok": true,
           "detail": "67 reported series",
           "persona": "performance reviewer"
@@ -3714,7 +4591,19 @@
         {
           "name": "core controls are labelled",
           "ok": true,
-          "detail": "Comparison selector and search input have accessible labels",
+          "detail": "From/to selectors and search input have accessible labels",
+          "persona": "performance reviewer"
+        },
+        {
+          "name": "data notes describe selected years",
+          "ok": true,
+          "detail": "Data notes match explicit from/to comparison controls",
+          "persona": "performance reviewer"
+        },
+        {
+          "name": "same-year missing copy is not duplicated",
+          "ok": true,
+          "detail": "Same-year missing data reads as one missing selected year",
           "persona": "performance reviewer"
         },
         {
@@ -3726,7 +4615,19 @@
         {
           "name": "production bundle under review budget",
           "ok": true,
-          "detail": "1153 KB JavaScript before gzip",
+          "detail": "1154 KB JavaScript before gzip",
+          "persona": "performance reviewer"
+        },
+        {
+          "name": "Japan increase record exists",
+          "ok": true,
+          "detail": "JPN is present",
+          "persona": "performance reviewer"
+        },
+        {
+          "name": "Japan increase positive comparison",
+          "ok": true,
+          "detail": "Japan: 2019=31881000, 2024=36870000",
           "persona": "performance reviewer"
         }
       ]
@@ -3734,6 +4635,7 @@
     {
       "iteration": 37,
       "persona": "visual encoding reviewer",
+      "scenario": "Japan reverse",
       "ok": true,
       "checks": [
         {
@@ -3743,19 +4645,19 @@
           "persona": "visual encoding reviewer"
         },
         {
-          "name": "2019 baseline coverage",
+          "name": "2019 selected-year coverage",
           "ok": true,
           "detail": "181 reported series",
           "persona": "visual encoding reviewer"
         },
         {
-          "name": "2022 baseline coverage",
+          "name": "2022 selected-year coverage",
           "ok": true,
           "detail": "138 reported series",
           "persona": "visual encoding reviewer"
         },
         {
-          "name": "2024 latest coverage",
+          "name": "2024 selected-year coverage",
           "ok": true,
           "detail": "67 reported series",
           "persona": "visual encoding reviewer"
@@ -3817,7 +4719,19 @@
         {
           "name": "core controls are labelled",
           "ok": true,
-          "detail": "Comparison selector and search input have accessible labels",
+          "detail": "From/to selectors and search input have accessible labels",
+          "persona": "visual encoding reviewer"
+        },
+        {
+          "name": "data notes describe selected years",
+          "ok": true,
+          "detail": "Data notes match explicit from/to comparison controls",
+          "persona": "visual encoding reviewer"
+        },
+        {
+          "name": "same-year missing copy is not duplicated",
+          "ok": true,
+          "detail": "Same-year missing data reads as one missing selected year",
           "persona": "visual encoding reviewer"
         },
         {
@@ -3829,7 +4743,19 @@
         {
           "name": "production bundle under review budget",
           "ok": true,
-          "detail": "1153 KB JavaScript before gzip",
+          "detail": "1154 KB JavaScript before gzip",
+          "persona": "visual encoding reviewer"
+        },
+        {
+          "name": "Japan reverse record exists",
+          "ok": true,
+          "detail": "JPN is present",
+          "persona": "visual encoding reviewer"
+        },
+        {
+          "name": "Japan reverse negative comparison",
+          "ok": true,
+          "detail": "Japan: 2024=36870000, 2019=31881000",
           "persona": "visual encoding reviewer"
         }
       ]
@@ -3837,6 +4763,7 @@
     {
       "iteration": 38,
       "persona": "missing data reviewer",
+      "scenario": "Kazakhstan missing from",
       "ok": true,
       "checks": [
         {
@@ -3846,19 +4773,19 @@
           "persona": "missing data reviewer"
         },
         {
-          "name": "2019 baseline coverage",
+          "name": "2019 selected-year coverage",
           "ok": true,
           "detail": "181 reported series",
           "persona": "missing data reviewer"
         },
         {
-          "name": "2022 baseline coverage",
+          "name": "2022 selected-year coverage",
           "ok": true,
           "detail": "138 reported series",
           "persona": "missing data reviewer"
         },
         {
-          "name": "2024 latest coverage",
+          "name": "2024 selected-year coverage",
           "ok": true,
           "detail": "67 reported series",
           "persona": "missing data reviewer"
@@ -3920,7 +4847,19 @@
         {
           "name": "core controls are labelled",
           "ok": true,
-          "detail": "Comparison selector and search input have accessible labels",
+          "detail": "From/to selectors and search input have accessible labels",
+          "persona": "missing data reviewer"
+        },
+        {
+          "name": "data notes describe selected years",
+          "ok": true,
+          "detail": "Data notes match explicit from/to comparison controls",
+          "persona": "missing data reviewer"
+        },
+        {
+          "name": "same-year missing copy is not duplicated",
+          "ok": true,
+          "detail": "Same-year missing data reads as one missing selected year",
           "persona": "missing data reviewer"
         },
         {
@@ -3932,7 +4871,19 @@
         {
           "name": "production bundle under review budget",
           "ok": true,
-          "detail": "1153 KB JavaScript before gzip",
+          "detail": "1154 KB JavaScript before gzip",
+          "persona": "missing data reviewer"
+        },
+        {
+          "name": "Kazakhstan missing from record exists",
+          "ok": true,
+          "detail": "KAZ is present",
+          "persona": "missing data reviewer"
+        },
+        {
+          "name": "Kazakhstan missing from is missing from-year only",
+          "ok": true,
+          "detail": "Kazakhstan: 2019=missing, 2024=10381566",
           "persona": "missing data reviewer"
         }
       ]
@@ -3940,6 +4891,7 @@
     {
       "iteration": 39,
       "persona": "iPhone layout reviewer",
+      "scenario": "China missing to",
       "ok": true,
       "checks": [
         {
@@ -3949,19 +4901,19 @@
           "persona": "iPhone layout reviewer"
         },
         {
-          "name": "2019 baseline coverage",
+          "name": "2019 selected-year coverage",
           "ok": true,
           "detail": "181 reported series",
           "persona": "iPhone layout reviewer"
         },
         {
-          "name": "2022 baseline coverage",
+          "name": "2022 selected-year coverage",
           "ok": true,
           "detail": "138 reported series",
           "persona": "iPhone layout reviewer"
         },
         {
-          "name": "2024 latest coverage",
+          "name": "2024 selected-year coverage",
           "ok": true,
           "detail": "67 reported series",
           "persona": "iPhone layout reviewer"
@@ -4023,7 +4975,19 @@
         {
           "name": "core controls are labelled",
           "ok": true,
-          "detail": "Comparison selector and search input have accessible labels",
+          "detail": "From/to selectors and search input have accessible labels",
+          "persona": "iPhone layout reviewer"
+        },
+        {
+          "name": "data notes describe selected years",
+          "ok": true,
+          "detail": "Data notes match explicit from/to comparison controls",
+          "persona": "iPhone layout reviewer"
+        },
+        {
+          "name": "same-year missing copy is not duplicated",
+          "ok": true,
+          "detail": "Same-year missing data reads as one missing selected year",
           "persona": "iPhone layout reviewer"
         },
         {
@@ -4035,7 +4999,19 @@
         {
           "name": "production bundle under review budget",
           "ok": true,
-          "detail": "1153 KB JavaScript before gzip",
+          "detail": "1154 KB JavaScript before gzip",
+          "persona": "iPhone layout reviewer"
+        },
+        {
+          "name": "China missing to record exists",
+          "ok": true,
+          "detail": "CHN is present",
+          "persona": "iPhone layout reviewer"
+        },
+        {
+          "name": "China missing to is missing to-year only",
+          "ok": true,
+          "detail": "China: 2019=65725000, 2024=missing",
           "persona": "iPhone layout reviewer"
         }
       ]
@@ -4043,6 +5019,7 @@
     {
       "iteration": 40,
       "persona": "map interaction reviewer",
+      "scenario": "Australia same-year missing",
       "ok": true,
       "checks": [
         {
@@ -4052,19 +5029,19 @@
           "persona": "map interaction reviewer"
         },
         {
-          "name": "2019 baseline coverage",
+          "name": "2019 selected-year coverage",
           "ok": true,
           "detail": "181 reported series",
           "persona": "map interaction reviewer"
         },
         {
-          "name": "2022 baseline coverage",
+          "name": "2022 selected-year coverage",
           "ok": true,
           "detail": "138 reported series",
           "persona": "map interaction reviewer"
         },
         {
-          "name": "2024 latest coverage",
+          "name": "2024 selected-year coverage",
           "ok": true,
           "detail": "67 reported series",
           "persona": "map interaction reviewer"
@@ -4126,7 +5103,19 @@
         {
           "name": "core controls are labelled",
           "ok": true,
-          "detail": "Comparison selector and search input have accessible labels",
+          "detail": "From/to selectors and search input have accessible labels",
+          "persona": "map interaction reviewer"
+        },
+        {
+          "name": "data notes describe selected years",
+          "ok": true,
+          "detail": "Data notes match explicit from/to comparison controls",
+          "persona": "map interaction reviewer"
+        },
+        {
+          "name": "same-year missing copy is not duplicated",
+          "ok": true,
+          "detail": "Same-year missing data reads as one missing selected year",
           "persona": "map interaction reviewer"
         },
         {
@@ -4138,7 +5127,19 @@
         {
           "name": "production bundle under review budget",
           "ok": true,
-          "detail": "1153 KB JavaScript before gzip",
+          "detail": "1154 KB JavaScript before gzip",
+          "persona": "map interaction reviewer"
+        },
+        {
+          "name": "Australia same-year missing record exists",
+          "ok": true,
+          "detail": "AUS is present",
+          "persona": "map interaction reviewer"
+        },
+        {
+          "name": "Australia same-year missing avoids duplicate same-year data",
+          "ok": true,
+          "detail": "Australia: 2024=missing, 2024=missing",
           "persona": "map interaction reviewer"
         }
       ]
@@ -4146,6 +5147,7 @@
     {
       "iteration": 41,
       "persona": "data skeptic",
+      "scenario": "Japan increase",
       "ok": true,
       "checks": [
         {
@@ -4155,19 +5157,19 @@
           "persona": "data skeptic"
         },
         {
-          "name": "2019 baseline coverage",
+          "name": "2019 selected-year coverage",
           "ok": true,
           "detail": "181 reported series",
           "persona": "data skeptic"
         },
         {
-          "name": "2022 baseline coverage",
+          "name": "2022 selected-year coverage",
           "ok": true,
           "detail": "138 reported series",
           "persona": "data skeptic"
         },
         {
-          "name": "2024 latest coverage",
+          "name": "2024 selected-year coverage",
           "ok": true,
           "detail": "67 reported series",
           "persona": "data skeptic"
@@ -4229,7 +5231,19 @@
         {
           "name": "core controls are labelled",
           "ok": true,
-          "detail": "Comparison selector and search input have accessible labels",
+          "detail": "From/to selectors and search input have accessible labels",
+          "persona": "data skeptic"
+        },
+        {
+          "name": "data notes describe selected years",
+          "ok": true,
+          "detail": "Data notes match explicit from/to comparison controls",
+          "persona": "data skeptic"
+        },
+        {
+          "name": "same-year missing copy is not duplicated",
+          "ok": true,
+          "detail": "Same-year missing data reads as one missing selected year",
           "persona": "data skeptic"
         },
         {
@@ -4241,7 +5255,19 @@
         {
           "name": "production bundle under review budget",
           "ok": true,
-          "detail": "1153 KB JavaScript before gzip",
+          "detail": "1154 KB JavaScript before gzip",
+          "persona": "data skeptic"
+        },
+        {
+          "name": "Japan increase record exists",
+          "ok": true,
+          "detail": "JPN is present",
+          "persona": "data skeptic"
+        },
+        {
+          "name": "Japan increase positive comparison",
+          "ok": true,
+          "detail": "Japan: 2019=31881000, 2024=36870000",
           "persona": "data skeptic"
         }
       ]
@@ -4249,6 +5275,7 @@
     {
       "iteration": 42,
       "persona": "country join auditor",
+      "scenario": "Japan reverse",
       "ok": true,
       "checks": [
         {
@@ -4258,19 +5285,19 @@
           "persona": "country join auditor"
         },
         {
-          "name": "2019 baseline coverage",
+          "name": "2019 selected-year coverage",
           "ok": true,
           "detail": "181 reported series",
           "persona": "country join auditor"
         },
         {
-          "name": "2022 baseline coverage",
+          "name": "2022 selected-year coverage",
           "ok": true,
           "detail": "138 reported series",
           "persona": "country join auditor"
         },
         {
-          "name": "2024 latest coverage",
+          "name": "2024 selected-year coverage",
           "ok": true,
           "detail": "67 reported series",
           "persona": "country join auditor"
@@ -4332,7 +5359,19 @@
         {
           "name": "core controls are labelled",
           "ok": true,
-          "detail": "Comparison selector and search input have accessible labels",
+          "detail": "From/to selectors and search input have accessible labels",
+          "persona": "country join auditor"
+        },
+        {
+          "name": "data notes describe selected years",
+          "ok": true,
+          "detail": "Data notes match explicit from/to comparison controls",
+          "persona": "country join auditor"
+        },
+        {
+          "name": "same-year missing copy is not duplicated",
+          "ok": true,
+          "detail": "Same-year missing data reads as one missing selected year",
           "persona": "country join auditor"
         },
         {
@@ -4344,7 +5383,19 @@
         {
           "name": "production bundle under review budget",
           "ok": true,
-          "detail": "1153 KB JavaScript before gzip",
+          "detail": "1154 KB JavaScript before gzip",
+          "persona": "country join auditor"
+        },
+        {
+          "name": "Japan reverse record exists",
+          "ok": true,
+          "detail": "JPN is present",
+          "persona": "country join auditor"
+        },
+        {
+          "name": "Japan reverse negative comparison",
+          "ok": true,
+          "detail": "Japan: 2024=36870000, 2019=31881000",
           "persona": "country join auditor"
         }
       ]
@@ -4352,6 +5403,7 @@
     {
       "iteration": 43,
       "persona": "mobile thumb tester",
+      "scenario": "Kazakhstan missing from",
       "ok": true,
       "checks": [
         {
@@ -4361,19 +5413,19 @@
           "persona": "mobile thumb tester"
         },
         {
-          "name": "2019 baseline coverage",
+          "name": "2019 selected-year coverage",
           "ok": true,
           "detail": "181 reported series",
           "persona": "mobile thumb tester"
         },
         {
-          "name": "2022 baseline coverage",
+          "name": "2022 selected-year coverage",
           "ok": true,
           "detail": "138 reported series",
           "persona": "mobile thumb tester"
         },
         {
-          "name": "2024 latest coverage",
+          "name": "2024 selected-year coverage",
           "ok": true,
           "detail": "67 reported series",
           "persona": "mobile thumb tester"
@@ -4435,7 +5487,19 @@
         {
           "name": "core controls are labelled",
           "ok": true,
-          "detail": "Comparison selector and search input have accessible labels",
+          "detail": "From/to selectors and search input have accessible labels",
+          "persona": "mobile thumb tester"
+        },
+        {
+          "name": "data notes describe selected years",
+          "ok": true,
+          "detail": "Data notes match explicit from/to comparison controls",
+          "persona": "mobile thumb tester"
+        },
+        {
+          "name": "same-year missing copy is not duplicated",
+          "ok": true,
+          "detail": "Same-year missing data reads as one missing selected year",
           "persona": "mobile thumb tester"
         },
         {
@@ -4447,7 +5511,19 @@
         {
           "name": "production bundle under review budget",
           "ok": true,
-          "detail": "1153 KB JavaScript before gzip",
+          "detail": "1154 KB JavaScript before gzip",
+          "persona": "mobile thumb tester"
+        },
+        {
+          "name": "Kazakhstan missing from record exists",
+          "ok": true,
+          "detail": "KAZ is present",
+          "persona": "mobile thumb tester"
+        },
+        {
+          "name": "Kazakhstan missing from is missing from-year only",
+          "ok": true,
+          "detail": "Kazakhstan: 2019=missing, 2024=10381566",
           "persona": "mobile thumb tester"
         }
       ]
@@ -4455,6 +5531,7 @@
     {
       "iteration": 44,
       "persona": "accessibility reviewer",
+      "scenario": "China missing to",
       "ok": true,
       "checks": [
         {
@@ -4464,19 +5541,19 @@
           "persona": "accessibility reviewer"
         },
         {
-          "name": "2019 baseline coverage",
+          "name": "2019 selected-year coverage",
           "ok": true,
           "detail": "181 reported series",
           "persona": "accessibility reviewer"
         },
         {
-          "name": "2022 baseline coverage",
+          "name": "2022 selected-year coverage",
           "ok": true,
           "detail": "138 reported series",
           "persona": "accessibility reviewer"
         },
         {
-          "name": "2024 latest coverage",
+          "name": "2024 selected-year coverage",
           "ok": true,
           "detail": "67 reported series",
           "persona": "accessibility reviewer"
@@ -4538,7 +5615,19 @@
         {
           "name": "core controls are labelled",
           "ok": true,
-          "detail": "Comparison selector and search input have accessible labels",
+          "detail": "From/to selectors and search input have accessible labels",
+          "persona": "accessibility reviewer"
+        },
+        {
+          "name": "data notes describe selected years",
+          "ok": true,
+          "detail": "Data notes match explicit from/to comparison controls",
+          "persona": "accessibility reviewer"
+        },
+        {
+          "name": "same-year missing copy is not duplicated",
+          "ok": true,
+          "detail": "Same-year missing data reads as one missing selected year",
           "persona": "accessibility reviewer"
         },
         {
@@ -4550,7 +5639,19 @@
         {
           "name": "production bundle under review budget",
           "ok": true,
-          "detail": "1153 KB JavaScript before gzip",
+          "detail": "1154 KB JavaScript before gzip",
+          "persona": "accessibility reviewer"
+        },
+        {
+          "name": "China missing to record exists",
+          "ok": true,
+          "detail": "CHN is present",
+          "persona": "accessibility reviewer"
+        },
+        {
+          "name": "China missing to is missing to-year only",
+          "ok": true,
+          "detail": "China: 2019=65725000, 2024=missing",
           "persona": "accessibility reviewer"
         }
       ]
@@ -4558,6 +5659,7 @@
     {
       "iteration": 45,
       "persona": "source transparency reviewer",
+      "scenario": "Australia same-year missing",
       "ok": true,
       "checks": [
         {
@@ -4567,19 +5669,19 @@
           "persona": "source transparency reviewer"
         },
         {
-          "name": "2019 baseline coverage",
+          "name": "2019 selected-year coverage",
           "ok": true,
           "detail": "181 reported series",
           "persona": "source transparency reviewer"
         },
         {
-          "name": "2022 baseline coverage",
+          "name": "2022 selected-year coverage",
           "ok": true,
           "detail": "138 reported series",
           "persona": "source transparency reviewer"
         },
         {
-          "name": "2024 latest coverage",
+          "name": "2024 selected-year coverage",
           "ok": true,
           "detail": "67 reported series",
           "persona": "source transparency reviewer"
@@ -4641,7 +5743,19 @@
         {
           "name": "core controls are labelled",
           "ok": true,
-          "detail": "Comparison selector and search input have accessible labels",
+          "detail": "From/to selectors and search input have accessible labels",
+          "persona": "source transparency reviewer"
+        },
+        {
+          "name": "data notes describe selected years",
+          "ok": true,
+          "detail": "Data notes match explicit from/to comparison controls",
+          "persona": "source transparency reviewer"
+        },
+        {
+          "name": "same-year missing copy is not duplicated",
+          "ok": true,
+          "detail": "Same-year missing data reads as one missing selected year",
           "persona": "source transparency reviewer"
         },
         {
@@ -4653,7 +5767,19 @@
         {
           "name": "production bundle under review budget",
           "ok": true,
-          "detail": "1153 KB JavaScript before gzip",
+          "detail": "1154 KB JavaScript before gzip",
+          "persona": "source transparency reviewer"
+        },
+        {
+          "name": "Australia same-year missing record exists",
+          "ok": true,
+          "detail": "AUS is present",
+          "persona": "source transparency reviewer"
+        },
+        {
+          "name": "Australia same-year missing avoids duplicate same-year data",
+          "ok": true,
+          "detail": "Australia: 2024=missing, 2024=missing",
           "persona": "source transparency reviewer"
         }
       ]
@@ -4661,6 +5787,7 @@
     {
       "iteration": 46,
       "persona": "performance reviewer",
+      "scenario": "Japan increase",
       "ok": true,
       "checks": [
         {
@@ -4670,19 +5797,19 @@
           "persona": "performance reviewer"
         },
         {
-          "name": "2019 baseline coverage",
+          "name": "2019 selected-year coverage",
           "ok": true,
           "detail": "181 reported series",
           "persona": "performance reviewer"
         },
         {
-          "name": "2022 baseline coverage",
+          "name": "2022 selected-year coverage",
           "ok": true,
           "detail": "138 reported series",
           "persona": "performance reviewer"
         },
         {
-          "name": "2024 latest coverage",
+          "name": "2024 selected-year coverage",
           "ok": true,
           "detail": "67 reported series",
           "persona": "performance reviewer"
@@ -4744,7 +5871,19 @@
         {
           "name": "core controls are labelled",
           "ok": true,
-          "detail": "Comparison selector and search input have accessible labels",
+          "detail": "From/to selectors and search input have accessible labels",
+          "persona": "performance reviewer"
+        },
+        {
+          "name": "data notes describe selected years",
+          "ok": true,
+          "detail": "Data notes match explicit from/to comparison controls",
+          "persona": "performance reviewer"
+        },
+        {
+          "name": "same-year missing copy is not duplicated",
+          "ok": true,
+          "detail": "Same-year missing data reads as one missing selected year",
           "persona": "performance reviewer"
         },
         {
@@ -4756,7 +5895,19 @@
         {
           "name": "production bundle under review budget",
           "ok": true,
-          "detail": "1153 KB JavaScript before gzip",
+          "detail": "1154 KB JavaScript before gzip",
+          "persona": "performance reviewer"
+        },
+        {
+          "name": "Japan increase record exists",
+          "ok": true,
+          "detail": "JPN is present",
+          "persona": "performance reviewer"
+        },
+        {
+          "name": "Japan increase positive comparison",
+          "ok": true,
+          "detail": "Japan: 2019=31881000, 2024=36870000",
           "persona": "performance reviewer"
         }
       ]
@@ -4764,6 +5915,7 @@
     {
       "iteration": 47,
       "persona": "visual encoding reviewer",
+      "scenario": "Japan reverse",
       "ok": true,
       "checks": [
         {
@@ -4773,19 +5925,19 @@
           "persona": "visual encoding reviewer"
         },
         {
-          "name": "2019 baseline coverage",
+          "name": "2019 selected-year coverage",
           "ok": true,
           "detail": "181 reported series",
           "persona": "visual encoding reviewer"
         },
         {
-          "name": "2022 baseline coverage",
+          "name": "2022 selected-year coverage",
           "ok": true,
           "detail": "138 reported series",
           "persona": "visual encoding reviewer"
         },
         {
-          "name": "2024 latest coverage",
+          "name": "2024 selected-year coverage",
           "ok": true,
           "detail": "67 reported series",
           "persona": "visual encoding reviewer"
@@ -4847,7 +5999,19 @@
         {
           "name": "core controls are labelled",
           "ok": true,
-          "detail": "Comparison selector and search input have accessible labels",
+          "detail": "From/to selectors and search input have accessible labels",
+          "persona": "visual encoding reviewer"
+        },
+        {
+          "name": "data notes describe selected years",
+          "ok": true,
+          "detail": "Data notes match explicit from/to comparison controls",
+          "persona": "visual encoding reviewer"
+        },
+        {
+          "name": "same-year missing copy is not duplicated",
+          "ok": true,
+          "detail": "Same-year missing data reads as one missing selected year",
           "persona": "visual encoding reviewer"
         },
         {
@@ -4859,7 +6023,19 @@
         {
           "name": "production bundle under review budget",
           "ok": true,
-          "detail": "1153 KB JavaScript before gzip",
+          "detail": "1154 KB JavaScript before gzip",
+          "persona": "visual encoding reviewer"
+        },
+        {
+          "name": "Japan reverse record exists",
+          "ok": true,
+          "detail": "JPN is present",
+          "persona": "visual encoding reviewer"
+        },
+        {
+          "name": "Japan reverse negative comparison",
+          "ok": true,
+          "detail": "Japan: 2024=36870000, 2019=31881000",
           "persona": "visual encoding reviewer"
         }
       ]
@@ -4867,6 +6043,7 @@
     {
       "iteration": 48,
       "persona": "missing data reviewer",
+      "scenario": "Kazakhstan missing from",
       "ok": true,
       "checks": [
         {
@@ -4876,19 +6053,19 @@
           "persona": "missing data reviewer"
         },
         {
-          "name": "2019 baseline coverage",
+          "name": "2019 selected-year coverage",
           "ok": true,
           "detail": "181 reported series",
           "persona": "missing data reviewer"
         },
         {
-          "name": "2022 baseline coverage",
+          "name": "2022 selected-year coverage",
           "ok": true,
           "detail": "138 reported series",
           "persona": "missing data reviewer"
         },
         {
-          "name": "2024 latest coverage",
+          "name": "2024 selected-year coverage",
           "ok": true,
           "detail": "67 reported series",
           "persona": "missing data reviewer"
@@ -4950,7 +6127,19 @@
         {
           "name": "core controls are labelled",
           "ok": true,
-          "detail": "Comparison selector and search input have accessible labels",
+          "detail": "From/to selectors and search input have accessible labels",
+          "persona": "missing data reviewer"
+        },
+        {
+          "name": "data notes describe selected years",
+          "ok": true,
+          "detail": "Data notes match explicit from/to comparison controls",
+          "persona": "missing data reviewer"
+        },
+        {
+          "name": "same-year missing copy is not duplicated",
+          "ok": true,
+          "detail": "Same-year missing data reads as one missing selected year",
           "persona": "missing data reviewer"
         },
         {
@@ -4962,7 +6151,19 @@
         {
           "name": "production bundle under review budget",
           "ok": true,
-          "detail": "1153 KB JavaScript before gzip",
+          "detail": "1154 KB JavaScript before gzip",
+          "persona": "missing data reviewer"
+        },
+        {
+          "name": "Kazakhstan missing from record exists",
+          "ok": true,
+          "detail": "KAZ is present",
+          "persona": "missing data reviewer"
+        },
+        {
+          "name": "Kazakhstan missing from is missing from-year only",
+          "ok": true,
+          "detail": "Kazakhstan: 2019=missing, 2024=10381566",
           "persona": "missing data reviewer"
         }
       ]
@@ -4970,6 +6171,7 @@
     {
       "iteration": 49,
       "persona": "iPhone layout reviewer",
+      "scenario": "China missing to",
       "ok": true,
       "checks": [
         {
@@ -4979,19 +6181,19 @@
           "persona": "iPhone layout reviewer"
         },
         {
-          "name": "2019 baseline coverage",
+          "name": "2019 selected-year coverage",
           "ok": true,
           "detail": "181 reported series",
           "persona": "iPhone layout reviewer"
         },
         {
-          "name": "2022 baseline coverage",
+          "name": "2022 selected-year coverage",
           "ok": true,
           "detail": "138 reported series",
           "persona": "iPhone layout reviewer"
         },
         {
-          "name": "2024 latest coverage",
+          "name": "2024 selected-year coverage",
           "ok": true,
           "detail": "67 reported series",
           "persona": "iPhone layout reviewer"
@@ -5053,7 +6255,19 @@
         {
           "name": "core controls are labelled",
           "ok": true,
-          "detail": "Comparison selector and search input have accessible labels",
+          "detail": "From/to selectors and search input have accessible labels",
+          "persona": "iPhone layout reviewer"
+        },
+        {
+          "name": "data notes describe selected years",
+          "ok": true,
+          "detail": "Data notes match explicit from/to comparison controls",
+          "persona": "iPhone layout reviewer"
+        },
+        {
+          "name": "same-year missing copy is not duplicated",
+          "ok": true,
+          "detail": "Same-year missing data reads as one missing selected year",
           "persona": "iPhone layout reviewer"
         },
         {
@@ -5065,7 +6279,19 @@
         {
           "name": "production bundle under review budget",
           "ok": true,
-          "detail": "1153 KB JavaScript before gzip",
+          "detail": "1154 KB JavaScript before gzip",
+          "persona": "iPhone layout reviewer"
+        },
+        {
+          "name": "China missing to record exists",
+          "ok": true,
+          "detail": "CHN is present",
+          "persona": "iPhone layout reviewer"
+        },
+        {
+          "name": "China missing to is missing to-year only",
+          "ok": true,
+          "detail": "China: 2019=65725000, 2024=missing",
           "persona": "iPhone layout reviewer"
         }
       ]
@@ -5073,6 +6299,7 @@
     {
       "iteration": 50,
       "persona": "map interaction reviewer",
+      "scenario": "Australia same-year missing",
       "ok": true,
       "checks": [
         {
@@ -5082,19 +6309,19 @@
           "persona": "map interaction reviewer"
         },
         {
-          "name": "2019 baseline coverage",
+          "name": "2019 selected-year coverage",
           "ok": true,
           "detail": "181 reported series",
           "persona": "map interaction reviewer"
         },
         {
-          "name": "2022 baseline coverage",
+          "name": "2022 selected-year coverage",
           "ok": true,
           "detail": "138 reported series",
           "persona": "map interaction reviewer"
         },
         {
-          "name": "2024 latest coverage",
+          "name": "2024 selected-year coverage",
           "ok": true,
           "detail": "67 reported series",
           "persona": "map interaction reviewer"
@@ -5156,7 +6383,19 @@
         {
           "name": "core controls are labelled",
           "ok": true,
-          "detail": "Comparison selector and search input have accessible labels",
+          "detail": "From/to selectors and search input have accessible labels",
+          "persona": "map interaction reviewer"
+        },
+        {
+          "name": "data notes describe selected years",
+          "ok": true,
+          "detail": "Data notes match explicit from/to comparison controls",
+          "persona": "map interaction reviewer"
+        },
+        {
+          "name": "same-year missing copy is not duplicated",
+          "ok": true,
+          "detail": "Same-year missing data reads as one missing selected year",
           "persona": "map interaction reviewer"
         },
         {
@@ -5168,7 +6407,19 @@
         {
           "name": "production bundle under review budget",
           "ok": true,
-          "detail": "1153 KB JavaScript before gzip",
+          "detail": "1154 KB JavaScript before gzip",
+          "persona": "map interaction reviewer"
+        },
+        {
+          "name": "Australia same-year missing record exists",
+          "ok": true,
+          "detail": "AUS is present",
+          "persona": "map interaction reviewer"
+        },
+        {
+          "name": "Australia same-year missing avoids duplicate same-year data",
+          "ok": true,
+          "detail": "Australia: 2024=missing, 2024=missing",
           "persona": "map interaction reviewer"
         }
       ]
@@ -5176,6 +6427,7 @@
     {
       "iteration": 51,
       "persona": "data skeptic",
+      "scenario": "Japan increase",
       "ok": true,
       "checks": [
         {
@@ -5185,19 +6437,19 @@
           "persona": "data skeptic"
         },
         {
-          "name": "2019 baseline coverage",
+          "name": "2019 selected-year coverage",
           "ok": true,
           "detail": "181 reported series",
           "persona": "data skeptic"
         },
         {
-          "name": "2022 baseline coverage",
+          "name": "2022 selected-year coverage",
           "ok": true,
           "detail": "138 reported series",
           "persona": "data skeptic"
         },
         {
-          "name": "2024 latest coverage",
+          "name": "2024 selected-year coverage",
           "ok": true,
           "detail": "67 reported series",
           "persona": "data skeptic"
@@ -5259,7 +6511,19 @@
         {
           "name": "core controls are labelled",
           "ok": true,
-          "detail": "Comparison selector and search input have accessible labels",
+          "detail": "From/to selectors and search input have accessible labels",
+          "persona": "data skeptic"
+        },
+        {
+          "name": "data notes describe selected years",
+          "ok": true,
+          "detail": "Data notes match explicit from/to comparison controls",
+          "persona": "data skeptic"
+        },
+        {
+          "name": "same-year missing copy is not duplicated",
+          "ok": true,
+          "detail": "Same-year missing data reads as one missing selected year",
           "persona": "data skeptic"
         },
         {
@@ -5271,7 +6535,19 @@
         {
           "name": "production bundle under review budget",
           "ok": true,
-          "detail": "1153 KB JavaScript before gzip",
+          "detail": "1154 KB JavaScript before gzip",
+          "persona": "data skeptic"
+        },
+        {
+          "name": "Japan increase record exists",
+          "ok": true,
+          "detail": "JPN is present",
+          "persona": "data skeptic"
+        },
+        {
+          "name": "Japan increase positive comparison",
+          "ok": true,
+          "detail": "Japan: 2019=31881000, 2024=36870000",
           "persona": "data skeptic"
         }
       ]
@@ -5279,6 +6555,7 @@
     {
       "iteration": 52,
       "persona": "country join auditor",
+      "scenario": "Japan reverse",
       "ok": true,
       "checks": [
         {
@@ -5288,19 +6565,19 @@
           "persona": "country join auditor"
         },
         {
-          "name": "2019 baseline coverage",
+          "name": "2019 selected-year coverage",
           "ok": true,
           "detail": "181 reported series",
           "persona": "country join auditor"
         },
         {
-          "name": "2022 baseline coverage",
+          "name": "2022 selected-year coverage",
           "ok": true,
           "detail": "138 reported series",
           "persona": "country join auditor"
         },
         {
-          "name": "2024 latest coverage",
+          "name": "2024 selected-year coverage",
           "ok": true,
           "detail": "67 reported series",
           "persona": "country join auditor"
@@ -5362,7 +6639,19 @@
         {
           "name": "core controls are labelled",
           "ok": true,
-          "detail": "Comparison selector and search input have accessible labels",
+          "detail": "From/to selectors and search input have accessible labels",
+          "persona": "country join auditor"
+        },
+        {
+          "name": "data notes describe selected years",
+          "ok": true,
+          "detail": "Data notes match explicit from/to comparison controls",
+          "persona": "country join auditor"
+        },
+        {
+          "name": "same-year missing copy is not duplicated",
+          "ok": true,
+          "detail": "Same-year missing data reads as one missing selected year",
           "persona": "country join auditor"
         },
         {
@@ -5374,7 +6663,19 @@
         {
           "name": "production bundle under review budget",
           "ok": true,
-          "detail": "1153 KB JavaScript before gzip",
+          "detail": "1154 KB JavaScript before gzip",
+          "persona": "country join auditor"
+        },
+        {
+          "name": "Japan reverse record exists",
+          "ok": true,
+          "detail": "JPN is present",
+          "persona": "country join auditor"
+        },
+        {
+          "name": "Japan reverse negative comparison",
+          "ok": true,
+          "detail": "Japan: 2024=36870000, 2019=31881000",
           "persona": "country join auditor"
         }
       ]
@@ -5382,6 +6683,7 @@
     {
       "iteration": 53,
       "persona": "mobile thumb tester",
+      "scenario": "Kazakhstan missing from",
       "ok": true,
       "checks": [
         {
@@ -5391,19 +6693,19 @@
           "persona": "mobile thumb tester"
         },
         {
-          "name": "2019 baseline coverage",
+          "name": "2019 selected-year coverage",
           "ok": true,
           "detail": "181 reported series",
           "persona": "mobile thumb tester"
         },
         {
-          "name": "2022 baseline coverage",
+          "name": "2022 selected-year coverage",
           "ok": true,
           "detail": "138 reported series",
           "persona": "mobile thumb tester"
         },
         {
-          "name": "2024 latest coverage",
+          "name": "2024 selected-year coverage",
           "ok": true,
           "detail": "67 reported series",
           "persona": "mobile thumb tester"
@@ -5465,7 +6767,19 @@
         {
           "name": "core controls are labelled",
           "ok": true,
-          "detail": "Comparison selector and search input have accessible labels",
+          "detail": "From/to selectors and search input have accessible labels",
+          "persona": "mobile thumb tester"
+        },
+        {
+          "name": "data notes describe selected years",
+          "ok": true,
+          "detail": "Data notes match explicit from/to comparison controls",
+          "persona": "mobile thumb tester"
+        },
+        {
+          "name": "same-year missing copy is not duplicated",
+          "ok": true,
+          "detail": "Same-year missing data reads as one missing selected year",
           "persona": "mobile thumb tester"
         },
         {
@@ -5477,7 +6791,19 @@
         {
           "name": "production bundle under review budget",
           "ok": true,
-          "detail": "1153 KB JavaScript before gzip",
+          "detail": "1154 KB JavaScript before gzip",
+          "persona": "mobile thumb tester"
+        },
+        {
+          "name": "Kazakhstan missing from record exists",
+          "ok": true,
+          "detail": "KAZ is present",
+          "persona": "mobile thumb tester"
+        },
+        {
+          "name": "Kazakhstan missing from is missing from-year only",
+          "ok": true,
+          "detail": "Kazakhstan: 2019=missing, 2024=10381566",
           "persona": "mobile thumb tester"
         }
       ]
@@ -5485,6 +6811,7 @@
     {
       "iteration": 54,
       "persona": "accessibility reviewer",
+      "scenario": "China missing to",
       "ok": true,
       "checks": [
         {
@@ -5494,19 +6821,19 @@
           "persona": "accessibility reviewer"
         },
         {
-          "name": "2019 baseline coverage",
+          "name": "2019 selected-year coverage",
           "ok": true,
           "detail": "181 reported series",
           "persona": "accessibility reviewer"
         },
         {
-          "name": "2022 baseline coverage",
+          "name": "2022 selected-year coverage",
           "ok": true,
           "detail": "138 reported series",
           "persona": "accessibility reviewer"
         },
         {
-          "name": "2024 latest coverage",
+          "name": "2024 selected-year coverage",
           "ok": true,
           "detail": "67 reported series",
           "persona": "accessibility reviewer"
@@ -5568,7 +6895,19 @@
         {
           "name": "core controls are labelled",
           "ok": true,
-          "detail": "Comparison selector and search input have accessible labels",
+          "detail": "From/to selectors and search input have accessible labels",
+          "persona": "accessibility reviewer"
+        },
+        {
+          "name": "data notes describe selected years",
+          "ok": true,
+          "detail": "Data notes match explicit from/to comparison controls",
+          "persona": "accessibility reviewer"
+        },
+        {
+          "name": "same-year missing copy is not duplicated",
+          "ok": true,
+          "detail": "Same-year missing data reads as one missing selected year",
           "persona": "accessibility reviewer"
         },
         {
@@ -5580,7 +6919,19 @@
         {
           "name": "production bundle under review budget",
           "ok": true,
-          "detail": "1153 KB JavaScript before gzip",
+          "detail": "1154 KB JavaScript before gzip",
+          "persona": "accessibility reviewer"
+        },
+        {
+          "name": "China missing to record exists",
+          "ok": true,
+          "detail": "CHN is present",
+          "persona": "accessibility reviewer"
+        },
+        {
+          "name": "China missing to is missing to-year only",
+          "ok": true,
+          "detail": "China: 2019=65725000, 2024=missing",
           "persona": "accessibility reviewer"
         }
       ]
@@ -5588,6 +6939,7 @@
     {
       "iteration": 55,
       "persona": "source transparency reviewer",
+      "scenario": "Australia same-year missing",
       "ok": true,
       "checks": [
         {
@@ -5597,19 +6949,19 @@
           "persona": "source transparency reviewer"
         },
         {
-          "name": "2019 baseline coverage",
+          "name": "2019 selected-year coverage",
           "ok": true,
           "detail": "181 reported series",
           "persona": "source transparency reviewer"
         },
         {
-          "name": "2022 baseline coverage",
+          "name": "2022 selected-year coverage",
           "ok": true,
           "detail": "138 reported series",
           "persona": "source transparency reviewer"
         },
         {
-          "name": "2024 latest coverage",
+          "name": "2024 selected-year coverage",
           "ok": true,
           "detail": "67 reported series",
           "persona": "source transparency reviewer"
@@ -5671,7 +7023,19 @@
         {
           "name": "core controls are labelled",
           "ok": true,
-          "detail": "Comparison selector and search input have accessible labels",
+          "detail": "From/to selectors and search input have accessible labels",
+          "persona": "source transparency reviewer"
+        },
+        {
+          "name": "data notes describe selected years",
+          "ok": true,
+          "detail": "Data notes match explicit from/to comparison controls",
+          "persona": "source transparency reviewer"
+        },
+        {
+          "name": "same-year missing copy is not duplicated",
+          "ok": true,
+          "detail": "Same-year missing data reads as one missing selected year",
           "persona": "source transparency reviewer"
         },
         {
@@ -5683,7 +7047,19 @@
         {
           "name": "production bundle under review budget",
           "ok": true,
-          "detail": "1153 KB JavaScript before gzip",
+          "detail": "1154 KB JavaScript before gzip",
+          "persona": "source transparency reviewer"
+        },
+        {
+          "name": "Australia same-year missing record exists",
+          "ok": true,
+          "detail": "AUS is present",
+          "persona": "source transparency reviewer"
+        },
+        {
+          "name": "Australia same-year missing avoids duplicate same-year data",
+          "ok": true,
+          "detail": "Australia: 2024=missing, 2024=missing",
           "persona": "source transparency reviewer"
         }
       ]
@@ -5691,6 +7067,7 @@
     {
       "iteration": 56,
       "persona": "performance reviewer",
+      "scenario": "Japan increase",
       "ok": true,
       "checks": [
         {
@@ -5700,19 +7077,19 @@
           "persona": "performance reviewer"
         },
         {
-          "name": "2019 baseline coverage",
+          "name": "2019 selected-year coverage",
           "ok": true,
           "detail": "181 reported series",
           "persona": "performance reviewer"
         },
         {
-          "name": "2022 baseline coverage",
+          "name": "2022 selected-year coverage",
           "ok": true,
           "detail": "138 reported series",
           "persona": "performance reviewer"
         },
         {
-          "name": "2024 latest coverage",
+          "name": "2024 selected-year coverage",
           "ok": true,
           "detail": "67 reported series",
           "persona": "performance reviewer"
@@ -5774,7 +7151,19 @@
         {
           "name": "core controls are labelled",
           "ok": true,
-          "detail": "Comparison selector and search input have accessible labels",
+          "detail": "From/to selectors and search input have accessible labels",
+          "persona": "performance reviewer"
+        },
+        {
+          "name": "data notes describe selected years",
+          "ok": true,
+          "detail": "Data notes match explicit from/to comparison controls",
+          "persona": "performance reviewer"
+        },
+        {
+          "name": "same-year missing copy is not duplicated",
+          "ok": true,
+          "detail": "Same-year missing data reads as one missing selected year",
           "persona": "performance reviewer"
         },
         {
@@ -5786,7 +7175,19 @@
         {
           "name": "production bundle under review budget",
           "ok": true,
-          "detail": "1153 KB JavaScript before gzip",
+          "detail": "1154 KB JavaScript before gzip",
+          "persona": "performance reviewer"
+        },
+        {
+          "name": "Japan increase record exists",
+          "ok": true,
+          "detail": "JPN is present",
+          "persona": "performance reviewer"
+        },
+        {
+          "name": "Japan increase positive comparison",
+          "ok": true,
+          "detail": "Japan: 2019=31881000, 2024=36870000",
           "persona": "performance reviewer"
         }
       ]
@@ -5794,6 +7195,7 @@
     {
       "iteration": 57,
       "persona": "visual encoding reviewer",
+      "scenario": "Japan reverse",
       "ok": true,
       "checks": [
         {
@@ -5803,19 +7205,19 @@
           "persona": "visual encoding reviewer"
         },
         {
-          "name": "2019 baseline coverage",
+          "name": "2019 selected-year coverage",
           "ok": true,
           "detail": "181 reported series",
           "persona": "visual encoding reviewer"
         },
         {
-          "name": "2022 baseline coverage",
+          "name": "2022 selected-year coverage",
           "ok": true,
           "detail": "138 reported series",
           "persona": "visual encoding reviewer"
         },
         {
-          "name": "2024 latest coverage",
+          "name": "2024 selected-year coverage",
           "ok": true,
           "detail": "67 reported series",
           "persona": "visual encoding reviewer"
@@ -5877,7 +7279,19 @@
         {
           "name": "core controls are labelled",
           "ok": true,
-          "detail": "Comparison selector and search input have accessible labels",
+          "detail": "From/to selectors and search input have accessible labels",
+          "persona": "visual encoding reviewer"
+        },
+        {
+          "name": "data notes describe selected years",
+          "ok": true,
+          "detail": "Data notes match explicit from/to comparison controls",
+          "persona": "visual encoding reviewer"
+        },
+        {
+          "name": "same-year missing copy is not duplicated",
+          "ok": true,
+          "detail": "Same-year missing data reads as one missing selected year",
           "persona": "visual encoding reviewer"
         },
         {
@@ -5889,7 +7303,19 @@
         {
           "name": "production bundle under review budget",
           "ok": true,
-          "detail": "1153 KB JavaScript before gzip",
+          "detail": "1154 KB JavaScript before gzip",
+          "persona": "visual encoding reviewer"
+        },
+        {
+          "name": "Japan reverse record exists",
+          "ok": true,
+          "detail": "JPN is present",
+          "persona": "visual encoding reviewer"
+        },
+        {
+          "name": "Japan reverse negative comparison",
+          "ok": true,
+          "detail": "Japan: 2024=36870000, 2019=31881000",
           "persona": "visual encoding reviewer"
         }
       ]
@@ -5897,6 +7323,7 @@
     {
       "iteration": 58,
       "persona": "missing data reviewer",
+      "scenario": "Kazakhstan missing from",
       "ok": true,
       "checks": [
         {
@@ -5906,19 +7333,19 @@
           "persona": "missing data reviewer"
         },
         {
-          "name": "2019 baseline coverage",
+          "name": "2019 selected-year coverage",
           "ok": true,
           "detail": "181 reported series",
           "persona": "missing data reviewer"
         },
         {
-          "name": "2022 baseline coverage",
+          "name": "2022 selected-year coverage",
           "ok": true,
           "detail": "138 reported series",
           "persona": "missing data reviewer"
         },
         {
-          "name": "2024 latest coverage",
+          "name": "2024 selected-year coverage",
           "ok": true,
           "detail": "67 reported series",
           "persona": "missing data reviewer"
@@ -5980,7 +7407,19 @@
         {
           "name": "core controls are labelled",
           "ok": true,
-          "detail": "Comparison selector and search input have accessible labels",
+          "detail": "From/to selectors and search input have accessible labels",
+          "persona": "missing data reviewer"
+        },
+        {
+          "name": "data notes describe selected years",
+          "ok": true,
+          "detail": "Data notes match explicit from/to comparison controls",
+          "persona": "missing data reviewer"
+        },
+        {
+          "name": "same-year missing copy is not duplicated",
+          "ok": true,
+          "detail": "Same-year missing data reads as one missing selected year",
           "persona": "missing data reviewer"
         },
         {
@@ -5992,7 +7431,19 @@
         {
           "name": "production bundle under review budget",
           "ok": true,
-          "detail": "1153 KB JavaScript before gzip",
+          "detail": "1154 KB JavaScript before gzip",
+          "persona": "missing data reviewer"
+        },
+        {
+          "name": "Kazakhstan missing from record exists",
+          "ok": true,
+          "detail": "KAZ is present",
+          "persona": "missing data reviewer"
+        },
+        {
+          "name": "Kazakhstan missing from is missing from-year only",
+          "ok": true,
+          "detail": "Kazakhstan: 2019=missing, 2024=10381566",
           "persona": "missing data reviewer"
         }
       ]
@@ -6000,6 +7451,7 @@
     {
       "iteration": 59,
       "persona": "iPhone layout reviewer",
+      "scenario": "China missing to",
       "ok": true,
       "checks": [
         {
@@ -6009,19 +7461,19 @@
           "persona": "iPhone layout reviewer"
         },
         {
-          "name": "2019 baseline coverage",
+          "name": "2019 selected-year coverage",
           "ok": true,
           "detail": "181 reported series",
           "persona": "iPhone layout reviewer"
         },
         {
-          "name": "2022 baseline coverage",
+          "name": "2022 selected-year coverage",
           "ok": true,
           "detail": "138 reported series",
           "persona": "iPhone layout reviewer"
         },
         {
-          "name": "2024 latest coverage",
+          "name": "2024 selected-year coverage",
           "ok": true,
           "detail": "67 reported series",
           "persona": "iPhone layout reviewer"
@@ -6083,7 +7535,19 @@
         {
           "name": "core controls are labelled",
           "ok": true,
-          "detail": "Comparison selector and search input have accessible labels",
+          "detail": "From/to selectors and search input have accessible labels",
+          "persona": "iPhone layout reviewer"
+        },
+        {
+          "name": "data notes describe selected years",
+          "ok": true,
+          "detail": "Data notes match explicit from/to comparison controls",
+          "persona": "iPhone layout reviewer"
+        },
+        {
+          "name": "same-year missing copy is not duplicated",
+          "ok": true,
+          "detail": "Same-year missing data reads as one missing selected year",
           "persona": "iPhone layout reviewer"
         },
         {
@@ -6095,7 +7559,19 @@
         {
           "name": "production bundle under review budget",
           "ok": true,
-          "detail": "1153 KB JavaScript before gzip",
+          "detail": "1154 KB JavaScript before gzip",
+          "persona": "iPhone layout reviewer"
+        },
+        {
+          "name": "China missing to record exists",
+          "ok": true,
+          "detail": "CHN is present",
+          "persona": "iPhone layout reviewer"
+        },
+        {
+          "name": "China missing to is missing to-year only",
+          "ok": true,
+          "detail": "China: 2019=65725000, 2024=missing",
           "persona": "iPhone layout reviewer"
         }
       ]
@@ -6103,6 +7579,7 @@
     {
       "iteration": 60,
       "persona": "map interaction reviewer",
+      "scenario": "Australia same-year missing",
       "ok": true,
       "checks": [
         {
@@ -6112,19 +7589,19 @@
           "persona": "map interaction reviewer"
         },
         {
-          "name": "2019 baseline coverage",
+          "name": "2019 selected-year coverage",
           "ok": true,
           "detail": "181 reported series",
           "persona": "map interaction reviewer"
         },
         {
-          "name": "2022 baseline coverage",
+          "name": "2022 selected-year coverage",
           "ok": true,
           "detail": "138 reported series",
           "persona": "map interaction reviewer"
         },
         {
-          "name": "2024 latest coverage",
+          "name": "2024 selected-year coverage",
           "ok": true,
           "detail": "67 reported series",
           "persona": "map interaction reviewer"
@@ -6186,7 +7663,19 @@
         {
           "name": "core controls are labelled",
           "ok": true,
-          "detail": "Comparison selector and search input have accessible labels",
+          "detail": "From/to selectors and search input have accessible labels",
+          "persona": "map interaction reviewer"
+        },
+        {
+          "name": "data notes describe selected years",
+          "ok": true,
+          "detail": "Data notes match explicit from/to comparison controls",
+          "persona": "map interaction reviewer"
+        },
+        {
+          "name": "same-year missing copy is not duplicated",
+          "ok": true,
+          "detail": "Same-year missing data reads as one missing selected year",
           "persona": "map interaction reviewer"
         },
         {
@@ -6198,7 +7687,19 @@
         {
           "name": "production bundle under review budget",
           "ok": true,
-          "detail": "1153 KB JavaScript before gzip",
+          "detail": "1154 KB JavaScript before gzip",
+          "persona": "map interaction reviewer"
+        },
+        {
+          "name": "Australia same-year missing record exists",
+          "ok": true,
+          "detail": "AUS is present",
+          "persona": "map interaction reviewer"
+        },
+        {
+          "name": "Australia same-year missing avoids duplicate same-year data",
+          "ok": true,
+          "detail": "Australia: 2024=missing, 2024=missing",
           "persona": "map interaction reviewer"
         }
       ]

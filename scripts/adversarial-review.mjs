@@ -50,6 +50,59 @@ const joinedFeatures = features.filter((countryFeature) => {
 })
 const allArrivalValues = tourismData.records.flatMap((record) => Object.values(record.years))
 const latestYear = Math.max(...Object.keys(tourismData.coverage).map(Number))
+const yearPairScenarios = [
+  { label: 'Japan increase', iso3: 'JPN', fromYear: 2019, toYear: 2024, expected: 'ready-positive' },
+  { label: 'Japan reverse', iso3: 'JPN', fromYear: 2024, toYear: 2019, expected: 'ready-negative' },
+  { label: 'Kazakhstan missing from', iso3: 'KAZ', fromYear: 2019, toYear: 2024, expected: 'missing-from' },
+  { label: 'China missing to', iso3: 'CHN', fromYear: 2019, toYear: 2024, expected: 'missing-to' },
+  { label: 'Australia same-year missing', iso3: 'AUS', fromYear: 2024, toYear: 2024, expected: 'missing-same-year' },
+]
+
+function hasComparableYear(record, year) {
+  const value = record?.years?.[String(year)]
+  return Number.isFinite(value) && value > 0
+}
+
+function yearPairChecks(scenario) {
+  const record = recordsByIso3.get(scenario.iso3)
+  const checks = [
+    assertCheck(Boolean(record), `${scenario.label} record exists`, `${scenario.iso3} is present`),
+  ]
+  if (!record) {
+    return checks
+  }
+
+  const fromValue = record.years[String(scenario.fromYear)]
+  const toValue = record.years[String(scenario.toYear)]
+  const hasFrom = hasComparableYear(record, scenario.fromYear)
+  const hasTo = Number.isFinite(toValue)
+  const percentChange = hasFrom && hasTo ? ((toValue - fromValue) / fromValue) * 100 : null
+  const detail = `${record.name}: ${scenario.fromYear}=${fromValue ?? 'missing'}, ${scenario.toYear}=${toValue ?? 'missing'}`
+
+  if (scenario.expected === 'ready-positive') {
+    checks.push(assertCheck(hasFrom && hasTo && percentChange > 0, `${scenario.label} positive comparison`, detail))
+  }
+  if (scenario.expected === 'ready-negative') {
+    checks.push(assertCheck(hasFrom && hasTo && percentChange < 0, `${scenario.label} negative comparison`, detail))
+  }
+  if (scenario.expected === 'missing-from') {
+    checks.push(assertCheck(!hasFrom && hasTo, `${scenario.label} is missing from-year only`, detail))
+  }
+  if (scenario.expected === 'missing-to') {
+    checks.push(assertCheck(hasFrom && !hasTo, `${scenario.label} is missing to-year only`, detail))
+  }
+  if (scenario.expected === 'missing-same-year') {
+    checks.push(
+      assertCheck(
+        scenario.fromYear === scenario.toYear && !hasFrom && !hasTo,
+        `${scenario.label} avoids duplicate same-year data`,
+        detail,
+      ),
+    )
+  }
+
+  return checks
+}
 
 async function getBundleCheck() {
   try {
@@ -78,17 +131,17 @@ const sharedChecks = [
   ),
   assertCheck(
     (tourismData.coverage['2019'] ?? 0) >= 180,
-    '2019 baseline coverage',
+    '2019 selected-year coverage',
     `${tourismData.coverage['2019'] ?? 0} reported series`,
   ),
   assertCheck(
     (tourismData.coverage['2022'] ?? 0) >= 120,
-    '2022 baseline coverage',
+    '2022 selected-year coverage',
     `${tourismData.coverage['2022'] ?? 0} reported series`,
   ),
   assertCheck(
     (tourismData.coverage['2024'] ?? 0) >= 60,
-    '2024 latest coverage',
+    '2024 selected-year coverage',
     `${tourismData.coverage['2024'] ?? 0} reported series`,
   ),
   assertCheck(
@@ -138,10 +191,22 @@ const sharedChecks = [
     'CSS scanned',
   ),
   assertCheck(
-    appTsx.includes('aria-label="Comparison year"') &&
+    appTsx.includes('aria-label="From year"') &&
+      appTsx.includes('aria-label="To year"') &&
       appTsx.includes('aria-label="Search countries"'),
     'core controls are labelled',
-    'Comparison selector and search input have accessible labels',
+    'From/to selectors and search input have accessible labels',
+  ),
+  assertCheck(
+    appTsx.includes('selected From year') && appTsx.includes('selected To year'),
+    'data notes describe selected years',
+    'Data notes match explicit from/to comparison controls',
+  ),
+  assertCheck(
+    appTsx.includes('comparison.fromYear === comparison.toYear') &&
+      appTsx.includes('no ${comparison.fromYear} data'),
+    'same-year missing copy is not duplicated',
+    'Same-year missing data reads as one missing selected year',
   ),
   assertCheck(
     latestYear === 2024,
@@ -153,13 +218,15 @@ const sharedChecks = [
 
 const iterations = Array.from({ length: 60 }, (_, index) => {
   const persona = personas[index % personas.length]
-  const checks = sharedChecks.map((check) => ({
+  const scenario = yearPairScenarios[index % yearPairScenarios.length]
+  const checks = [...sharedChecks, ...yearPairChecks(scenario)].map((check) => ({
     ...check,
     persona,
   }))
   return {
     iteration: index + 1,
     persona,
+    scenario: scenario.label,
     ok: checks.every((check) => check.ok),
     checks,
   }
@@ -188,6 +255,7 @@ const report = {
     joinedFeatures: joinedFeatures.length,
     latestYear,
     coverage2024: tourismData.coverage['2024'],
+    yearPairScenarios: yearPairScenarios.length,
   },
   iterationsDetail: iterations,
 }

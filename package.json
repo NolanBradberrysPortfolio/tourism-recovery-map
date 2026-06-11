@@ -7,8 +7,8 @@
     "dev": "vite",
     "data:refresh": "node scripts/generate-tourism-data.mjs",
     "review:static": "node scripts/adversarial-review.mjs",
-    "test:e2e": "playwright test",
-    "review:loop": "playwright test tests/adversarial-loop.spec.ts --project=iphone-14 --repeat-each=20",
+    "test:e2e": "npm run build && playwright test",
+    "review:loop": "npm run build && playwright test tests/adversarial-loop.spec.ts --project=iphone-14 --repeat-each=20",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview"

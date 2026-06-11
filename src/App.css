@@ -542,6 +542,34 @@
   line-height: 1.2;
 }
 
+.panel-actions {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.panel-action {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 0;
+  min-height: 44px;
+  gap: 7px;
+  border: 1px solid #b9c1cd;
+  border-radius: 6px;
+  background: #ffffff;
+  color: #17212f;
+  font: 14px/1.2 var(--font-sans);
+  font-weight: 720;
+  cursor: pointer;
+  padding: 0 12px;
+}
+
+.panel-action:hover,
+.panel-action:focus-visible {
+  border-color: #365c67;
+  outline: 0;
+}
+
 .modal-backdrop {
   position: fixed;
   inset: 0;

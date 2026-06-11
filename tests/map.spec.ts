@@ -85,3 +85,59 @@ test('search supports keyboard navigation and no-results feedback', async ({ pag
   await search.fill('zzzzzz')
   await expect(page.getByText('No matching country')).toBeVisible()
 })
+
+test('mobile touch gestures pan and pinch the map and details are easy to close', async ({ page }, testInfo) => {
+  test.skip(testInfo.project.name === 'desktop', 'touch gesture regression is mobile-focused')
+
+  const session = await page.context().newCDPSession(page)
+  const touch = async (
+    type: 'touchStart' | 'touchMove' | 'touchEnd',
+    points: Array<{ x: number; y: number; id: number }> = [],
+  ) => {
+    await session.send('Input.dispatchTouchEvent', {
+      type,
+      touchPoints: points.map((point) => ({
+        x: point.x,
+        y: point.y,
+        id: point.id,
+        radiusX: 2,
+        radiusY: 2,
+      })),
+    })
+  }
+  const mapTransform = () => page.locator('.country-layer').getAttribute('transform')
+  const mapScale = async () => {
+    const transform = await mapTransform()
+    return Number(transform?.match(/scale\(([^)]+)\)/)?.[1] ?? 1)
+  }
+
+  const initialScale = await mapScale()
+  await touch('touchStart', [
+    { x: 165, y: 292, id: 1 },
+    { x: 225, y: 292, id: 2 },
+  ])
+  await touch('touchMove', [
+    { x: 132, y: 292, id: 1 },
+    { x: 258, y: 292, id: 2 },
+  ])
+  await touch('touchEnd')
+  await expect.poll(mapScale).toBeGreaterThan(initialScale + 0.2)
+
+  const beforePan = await mapTransform()
+  await touch('touchStart', [{ x: 206, y: 306, id: 3 }])
+  await touch('touchMove', [{ x: 260, y: 342, id: 3 }])
+  await touch('touchEnd')
+  await expect.poll(mapTransform).not.toBe(beforePan)
+
+  await page.getByLabel('Search countries').fill('Japan')
+  await page.getByLabel('Japan country search option').click()
+  await expect(page.locator('.detail-panel')).toContainText('Japan')
+  await page.getByLabel('Close selected country details').click()
+  await expect(page.locator('.detail-panel')).toHaveCount(0)
+
+  await page.getByLabel('Search countries').fill('Japan')
+  await page.getByLabel('Japan country search option').click()
+  await expect(page.locator('.detail-panel')).toContainText('Japan')
+  await page.getByLabel('Close map details').click()
+  await expect(page.locator('.detail-panel')).toHaveCount(0)
+})

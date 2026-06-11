@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-11T17:57:20.589Z",
+  "generatedAt": "2026-06-11T19:29:33.966Z",
   "iterations": 60,
   "personas": [
     "data skeptic",
@@ -121,7 +121,7 @@
         {
           "name": "production bundle under review budget",
           "ok": true,
-          "detail": "1149 KB JavaScript before gzip",
+          "detail": "1152 KB JavaScript before gzip",
           "persona": "data skeptic"
         }
       ]
@@ -224,7 +224,7 @@
         {
           "name": "production bundle under review budget",
           "ok": true,
-          "detail": "1149 KB JavaScript before gzip",
+          "detail": "1152 KB JavaScript before gzip",
           "persona": "country join auditor"
         }
       ]
@@ -327,7 +327,7 @@
         {
           "name": "production bundle under review budget",
           "ok": true,
-          "detail": "1149 KB JavaScript before gzip",
+          "detail": "1152 KB JavaScript before gzip",
           "persona": "mobile thumb tester"
         }
       ]
@@ -430,7 +430,7 @@
         {
           "name": "production bundle under review budget",
           "ok": true,
-          "detail": "1149 KB JavaScript before gzip",
+          "detail": "1152 KB JavaScript before gzip",
           "persona": "accessibility reviewer"
         }
       ]
@@ -533,7 +533,7 @@
         {
           "name": "production bundle under review budget",
           "ok": true,
-          "detail": "1149 KB JavaScript before gzip",
+          "detail": "1152 KB JavaScript before gzip",
           "persona": "source transparency reviewer"
         }
       ]
@@ -636,7 +636,7 @@
         {
           "name": "production bundle under review budget",
           "ok": true,
-          "detail": "1149 KB JavaScript before gzip",
+          "detail": "1152 KB JavaScript before gzip",
           "persona": "performance reviewer"
         }
       ]
@@ -739,7 +739,7 @@
         {
           "name": "production bundle under review budget",
           "ok": true,
-          "detail": "1149 KB JavaScript before gzip",
+          "detail": "1152 KB JavaScript before gzip",
           "persona": "visual encoding reviewer"
         }
       ]
@@ -842,7 +842,7 @@
         {
           "name": "production bundle under review budget",
           "ok": true,
-          "detail": "1149 KB JavaScript before gzip",
+          "detail": "1152 KB JavaScript before gzip",
           "persona": "missing data reviewer"
         }
       ]
@@ -945,7 +945,7 @@
         {
           "name": "production bundle under review budget",
           "ok": true,
-          "detail": "1149 KB JavaScript before gzip",
+          "detail": "1152 KB JavaScript before gzip",
           "persona": "iPhone layout reviewer"
         }
       ]
@@ -1048,7 +1048,7 @@
         {
           "name": "production bundle under review budget",
           "ok": true,
-          "detail": "1149 KB JavaScript before gzip",
+          "detail": "1152 KB JavaScript before gzip",
           "persona": "map interaction reviewer"
         }
       ]
@@ -1151,7 +1151,7 @@
         {
           "name": "production bundle under review budget",
           "ok": true,
-          "detail": "1149 KB JavaScript before gzip",
+          "detail": "1152 KB JavaScript before gzip",
           "persona": "data skeptic"
         }
       ]
@@ -1254,7 +1254,7 @@
         {
           "name": "production bundle under review budget",
           "ok": true,
-          "detail": "1149 KB JavaScript before gzip",
+          "detail": "1152 KB JavaScript before gzip",
           "persona": "country join auditor"
         }
       ]
@@ -1357,7 +1357,7 @@
         {
           "name": "production bundle under review budget",
           "ok": true,
-          "detail": "1149 KB JavaScript before gzip",
+          "detail": "1152 KB JavaScript before gzip",
           "persona": "mobile thumb tester"
         }
       ]
@@ -1460,7 +1460,7 @@
         {
           "name": "production bundle under review budget",
           "ok": true,
-          "detail": "1149 KB JavaScript before gzip",
+          "detail": "1152 KB JavaScript before gzip",
           "persona": "accessibility reviewer"
         }
       ]
@@ -1563,7 +1563,7 @@
         {
           "name": "production bundle under review budget",
           "ok": true,
-          "detail": "1149 KB JavaScript before gzip",
+          "detail": "1152 KB JavaScript before gzip",
           "persona": "source transparency reviewer"
         }
       ]
@@ -1666,7 +1666,7 @@
         {
           "name": "production bundle under review budget",
           "ok": true,
-          "detail": "1149 KB JavaScript before gzip",
+          "detail": "1152 KB JavaScript before gzip",
           "persona": "performance reviewer"
         }
       ]
@@ -1769,7 +1769,7 @@
         {
           "name": "production bundle under review budget",
           "ok": true,
-          "detail": "1149 KB JavaScript before gzip",
+          "detail": "1152 KB JavaScript before gzip",
           "persona": "visual encoding reviewer"
         }
       ]
@@ -1872,7 +1872,7 @@
         {
           "name": "production bundle under review budget",
           "ok": true,
-          "detail": "1149 KB JavaScript before gzip",
+          "detail": "1152 KB JavaScript before gzip",
           "persona": "missing data reviewer"
         }
       ]
@@ -1975,7 +1975,7 @@
         {
           "name": "production bundle under review budget",
           "ok": true,
-          "detail": "1149 KB JavaScript before gzip",
+          "detail": "1152 KB JavaScript before gzip",
           "persona": "iPhone layout reviewer"
         }
       ]
@@ -2078,7 +2078,7 @@
         {
           "name": "production bundle under review budget",
           "ok": true,
-          "detail": "1149 KB JavaScript before gzip",
+          "detail": "1152 KB JavaScript before gzip",
           "persona": "map interaction reviewer"
         }
       ]
@@ -2181,7 +2181,7 @@
         {
           "name": "production bundle under review budget",
           "ok": true,
-          "detail": "1149 KB JavaScript before gzip",
+          "detail": "1152 KB JavaScript before gzip",
           "persona": "data skeptic"
         }
       ]
@@ -2284,7 +2284,7 @@
         {
           "name": "production bundle under review budget",
           "ok": true,
-          "detail": "1149 KB JavaScript before gzip",
+          "detail": "1152 KB JavaScript before gzip",
           "persona": "country join auditor"
         }
       ]
@@ -2387,7 +2387,7 @@
         {
           "name": "production bundle under review budget",
           "ok": true,
-          "detail": "1149 KB JavaScript before gzip",
+          "detail": "1152 KB JavaScript before gzip",
           "persona": "mobile thumb tester"
         }
       ]
@@ -2490,7 +2490,7 @@
         {
           "name": "production bundle under review budget",
           "ok": true,
-          "detail": "1149 KB JavaScript before gzip",
+          "detail": "1152 KB JavaScript before gzip",
           "persona": "accessibility reviewer"
         }
       ]
@@ -2593,7 +2593,7 @@
         {
           "name": "production bundle under review budget",
           "ok": true,
-          "detail": "1149 KB JavaScript before gzip",
+          "detail": "1152 KB JavaScript before gzip",
           "persona": "source transparency reviewer"
         }
       ]
@@ -2696,7 +2696,7 @@
         {
           "name": "production bundle under review budget",
           "ok": true,
-          "detail": "1149 KB JavaScript before gzip",
+          "detail": "1152 KB JavaScript before gzip",
           "persona": "performance reviewer"
         }
       ]
@@ -2799,7 +2799,7 @@
         {
           "name": "production bundle under review budget",
           "ok": true,
-          "detail": "1149 KB JavaScript before gzip",
+          "detail": "1152 KB JavaScript before gzip",
           "persona": "visual encoding reviewer"
         }
       ]
@@ -2902,7 +2902,7 @@
         {
           "name": "production bundle under review budget",
           "ok": true,
-          "detail": "1149 KB JavaScript before gzip",
+          "detail": "1152 KB JavaScript before gzip",
           "persona": "missing data reviewer"
         }
       ]
@@ -3005,7 +3005,7 @@
         {
           "name": "production bundle under review budget",
           "ok": true,
-          "detail": "1149 KB JavaScript before gzip",
+          "detail": "1152 KB JavaScript before gzip",
           "persona": "iPhone layout reviewer"
         }
       ]
@@ -3108,7 +3108,7 @@
         {
           "name": "production bundle under review budget",
           "ok": true,
-          "detail": "1149 KB JavaScript before gzip",
+          "detail": "1152 KB JavaScript before gzip",
           "persona": "map interaction reviewer"
         }
       ]
@@ -3211,7 +3211,7 @@
         {
           "name": "production bundle under review budget",
           "ok": true,
-          "detail": "1149 KB JavaScript before gzip",
+          "detail": "1152 KB JavaScript before gzip",
           "persona": "data skeptic"
         }
       ]
@@ -3314,7 +3314,7 @@
         {
           "name": "production bundle under review budget",
           "ok": true,
-          "detail": "1149 KB JavaScript before gzip",
+          "detail": "1152 KB JavaScript before gzip",
           "persona": "country join auditor"
         }
       ]
@@ -3417,7 +3417,7 @@
         {
           "name": "production bundle under review budget",
           "ok": true,
-          "detail": "1149 KB JavaScript before gzip",
+          "detail": "1152 KB JavaScript before gzip",
           "persona": "mobile thumb tester"
         }
       ]
@@ -3520,7 +3520,7 @@
         {
           "name": "production bundle under review budget",
           "ok": true,
-          "detail": "1149 KB JavaScript before gzip",
+          "detail": "1152 KB JavaScript before gzip",
           "persona": "accessibility reviewer"
         }
       ]
@@ -3623,7 +3623,7 @@
         {
           "name": "production bundle under review budget",
           "ok": true,
-          "detail": "1149 KB JavaScript before gzip",
+          "detail": "1152 KB JavaScript before gzip",
           "persona": "source transparency reviewer"
         }
       ]
@@ -3726,7 +3726,7 @@
         {
           "name": "production bundle under review budget",
           "ok": true,
-          "detail": "1149 KB JavaScript before gzip",
+          "detail": "1152 KB JavaScript before gzip",
           "persona": "performance reviewer"
         }
       ]
@@ -3829,7 +3829,7 @@
         {
           "name": "production bundle under review budget",
           "ok": true,
-          "detail": "1149 KB JavaScript before gzip",
+          "detail": "1152 KB JavaScript before gzip",
           "persona": "visual encoding reviewer"
         }
       ]
@@ -3932,7 +3932,7 @@
         {
           "name": "production bundle under review budget",
           "ok": true,
-          "detail": "1149 KB JavaScript before gzip",
+          "detail": "1152 KB JavaScript before gzip",
           "persona": "missing data reviewer"
         }
       ]
@@ -4035,7 +4035,7 @@
         {
           "name": "production bundle under review budget",
           "ok": true,
-          "detail": "1149 KB JavaScript before gzip",
+          "detail": "1152 KB JavaScript before gzip",
           "persona": "iPhone layout reviewer"
         }
       ]
@@ -4138,7 +4138,7 @@
         {
           "name": "production bundle under review budget",
           "ok": true,
-          "detail": "1149 KB JavaScript before gzip",
+          "detail": "1152 KB JavaScript before gzip",
           "persona": "map interaction reviewer"
         }
       ]
@@ -4241,7 +4241,7 @@
         {
           "name": "production bundle under review budget",
           "ok": true,
-          "detail": "1149 KB JavaScript before gzip",
+          "detail": "1152 KB JavaScript before gzip",
           "persona": "data skeptic"
         }
       ]
@@ -4344,7 +4344,7 @@
         {
           "name": "production bundle under review budget",
           "ok": true,
-          "detail": "1149 KB JavaScript before gzip",
+          "detail": "1152 KB JavaScript before gzip",
           "persona": "country join auditor"
         }
       ]
@@ -4447,7 +4447,7 @@
         {
           "name": "production bundle under review budget",
           "ok": true,
-          "detail": "1149 KB JavaScript before gzip",
+          "detail": "1152 KB JavaScript before gzip",
           "persona": "mobile thumb tester"
         }
       ]
@@ -4550,7 +4550,7 @@
         {
           "name": "production bundle under review budget",
           "ok": true,
-          "detail": "1149 KB JavaScript before gzip",
+          "detail": "1152 KB JavaScript before gzip",
           "persona": "accessibility reviewer"
         }
       ]
@@ -4653,7 +4653,7 @@
         {
           "name": "production bundle under review budget",
           "ok": true,
-          "detail": "1149 KB JavaScript before gzip",
+          "detail": "1152 KB JavaScript before gzip",
           "persona": "source transparency reviewer"
         }
       ]
@@ -4756,7 +4756,7 @@
         {
           "name": "production bundle under review budget",
           "ok": true,
-          "detail": "1149 KB JavaScript before gzip",
+          "detail": "1152 KB JavaScript before gzip",
           "persona": "performance reviewer"
         }
       ]
@@ -4859,7 +4859,7 @@
         {
           "name": "production bundle under review budget",
           "ok": true,
-          "detail": "1149 KB JavaScript before gzip",
+          "detail": "1152 KB JavaScript before gzip",
           "persona": "visual encoding reviewer"
         }
       ]
@@ -4962,7 +4962,7 @@
         {
           "name": "production bundle under review budget",
           "ok": true,
-          "detail": "1149 KB JavaScript before gzip",
+          "detail": "1152 KB JavaScript before gzip",
           "persona": "missing data reviewer"
         }
       ]
@@ -5065,7 +5065,7 @@
         {
           "name": "production bundle under review budget",
           "ok": true,
-          "detail": "1149 KB JavaScript before gzip",
+          "detail": "1152 KB JavaScript before gzip",
           "persona": "iPhone layout reviewer"
         }
       ]
@@ -5168,7 +5168,7 @@
         {
           "name": "production bundle under review budget",
           "ok": true,
-          "detail": "1149 KB JavaScript before gzip",
+          "detail": "1152 KB JavaScript before gzip",
           "persona": "map interaction reviewer"
         }
       ]
@@ -5271,7 +5271,7 @@
         {
           "name": "production bundle under review budget",
           "ok": true,
-          "detail": "1149 KB JavaScript before gzip",
+          "detail": "1152 KB JavaScript before gzip",
           "persona": "data skeptic"
         }
       ]
@@ -5374,7 +5374,7 @@
         {
           "name": "production bundle under review budget",
           "ok": true,
-          "detail": "1149 KB JavaScript before gzip",
+          "detail": "1152 KB JavaScript before gzip",
           "persona": "country join auditor"
         }
       ]
@@ -5477,7 +5477,7 @@
         {
           "name": "production bundle under review budget",
           "ok": true,
-          "detail": "1149 KB JavaScript before gzip",
+          "detail": "1152 KB JavaScript before gzip",
           "persona": "mobile thumb tester"
         }
       ]
@@ -5580,7 +5580,7 @@
         {
           "name": "production bundle under review budget",
           "ok": true,
-          "detail": "1149 KB JavaScript before gzip",
+          "detail": "1152 KB JavaScript before gzip",
           "persona": "accessibility reviewer"
         }
       ]
@@ -5683,7 +5683,7 @@
         {
           "name": "production bundle under review budget",
           "ok": true,
-          "detail": "1149 KB JavaScript before gzip",
+          "detail": "1152 KB JavaScript before gzip",
           "persona": "source transparency reviewer"
         }
       ]
@@ -5786,7 +5786,7 @@
         {
           "name": "production bundle under review budget",
           "ok": true,
-          "detail": "1149 KB JavaScript before gzip",
+          "detail": "1152 KB JavaScript before gzip",
           "persona": "performance reviewer"
         }
       ]
@@ -5889,7 +5889,7 @@
         {
           "name": "production bundle under review budget",
           "ok": true,
-          "detail": "1149 KB JavaScript before gzip",
+          "detail": "1152 KB JavaScript before gzip",
           "persona": "visual encoding reviewer"
         }
       ]
@@ -5992,7 +5992,7 @@
         {
           "name": "production bundle under review budget",
           "ok": true,
-          "detail": "1149 KB JavaScript before gzip",
+          "detail": "1152 KB JavaScript before gzip",
           "persona": "missing data reviewer"
         }
       ]
@@ -6095,7 +6095,7 @@
         {
           "name": "production bundle under review budget",
           "ok": true,
-          "detail": "1149 KB JavaScript before gzip",
+          "detail": "1152 KB JavaScript before gzip",
           "persona": "iPhone layout reviewer"
         }
       ]
@@ -6198,7 +6198,7 @@
         {
           "name": "production bundle under review budget",
           "ok": true,
-          "detail": "1149 KB JavaScript before gzip",
+          "detail": "1152 KB JavaScript before gzip",
           "persona": "map interaction reviewer"
         }
       ]

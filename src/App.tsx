@@ -299,21 +299,44 @@ function CountryMap({
   baseline,
   selected,
   onSelect,
+  onClearSelection,
 }: {
   baseline: BaselineKey
   selected: SelectedCountry | null
   onSelect: (country: SelectedCountry) => void
+  onClearSelection: () => void
 }) {
   const [zoom, setZoom] = useState(1)
   const [pan, setPan] = useState({ x: 0, y: 0 })
   const svgRef = useRef<SVGSVGElement | null>(null)
-  const dragRef = useRef<{
-    pointerId: number
-    startX: number
-    startY: number
-    panX: number
-    panY: number
-  } | null>(null)
+  const panRef = useRef(pan)
+  const activePointersRef = useRef(new Map<number, { x: number; y: number }>())
+  const gestureRef = useRef<
+    | {
+        type: 'pan'
+        pointerId: number
+        startX: number
+        startY: number
+        startPan: { x: number; y: number }
+      }
+    | {
+        type: 'pinch'
+        startDistance: number
+        startZoom: number
+        startWorld: { x: number; y: number }
+      }
+    | null
+  >(null)
+  const tapTargetRef = useRef<
+    | { type: 'country'; iso3: string; name: string }
+    | { type: 'ocean' }
+    | null
+  >(null)
+  const zoomRef = useRef(1)
+  const focusRef = useRef<{ x: number; y: number } | null>({
+    x: MAP_WIDTH / 2,
+    y: MAP_HEIGHT / 2,
+  })
   const draggedRef = useRef(false)
   const selectedFeature = selected
     ? countryFeatures.find((countryFeature) => getFeatureSummary(countryFeature).iso3 === selected.iso3)
@@ -323,6 +346,14 @@ function CountryMap({
   const focusY = selectedCentroid?.[1] ?? MAP_HEIGHT / 2
   const effectiveZoom = selectedFeature ? Math.max(zoom, 1.45) : zoom
   const transform = `translate(${MAP_WIDTH / 2 + pan.x} ${MAP_HEIGHT / 2 + pan.y}) scale(${effectiveZoom}) translate(${-focusX} ${-focusY})`
+  useEffect(() => {
+    panRef.current = pan
+  }, [pan])
+  useEffect(() => {
+    zoomRef.current = effectiveZoom
+    focusRef.current = { x: focusX, y: focusY }
+  }, [effectiveZoom, focusX, focusY])
+  const clampZoom = (value: number) => Math.max(1, Math.min(2.8, value))
   const getSvgDelta = (deltaX: number, deltaY: number) => {
     const bounds = svgRef.current?.getBoundingClientRect()
     if (!bounds) {
@@ -333,40 +364,169 @@ function CountryMap({
       y: (deltaY * MAP_HEIGHT) / bounds.height,
     }
   }
-  const onPointerDown = (event: PointerEvent<SVGSVGElement>) => {
-    if (event.button !== 0) {
+  const getSvgPoint = (clientX: number, clientY: number) => {
+    const bounds = svgRef.current?.getBoundingClientRect()
+    if (!bounds) {
+      return { x: clientX, y: clientY }
+    }
+    return {
+      x: ((clientX - bounds.left) * MAP_WIDTH) / bounds.width,
+      y: ((clientY - bounds.top) * MAP_HEIGHT) / bounds.height,
+    }
+  }
+  const getGesturePointers = () => [...activePointersRef.current.values()].slice(0, 2)
+  const getDistance = (points: Array<{ x: number; y: number }>) =>
+    Math.hypot(points[0].x - points[1].x, points[0].y - points[1].y)
+  const getCenter = (points: Array<{ x: number; y: number }>) => ({
+    x: (points[0].x + points[1].x) / 2,
+    y: (points[0].y + points[1].y) / 2,
+  })
+  const getWorldPoint = (svgPoint: { x: number; y: number }, gestureZoom: number) => {
+    const focus = focusRef.current ?? { x: focusX, y: focusY }
+    const currentPan = panRef.current
+    return {
+      x: (svgPoint.x - MAP_WIDTH / 2 - currentPan.x) / gestureZoom + focus.x,
+      y: (svgPoint.y - MAP_HEIGHT / 2 - currentPan.y) / gestureZoom + focus.y,
+    }
+  }
+  const setPanValue = (nextPan: { x: number; y: number }) => {
+    panRef.current = nextPan
+    setPan(nextPan)
+  }
+  const startPanGesture = (pointerId: number, point: { x: number; y: number }) => {
+    gestureRef.current = {
+      type: 'pan',
+      pointerId,
+      startX: point.x,
+      startY: point.y,
+      startPan: panRef.current,
+    }
+  }
+  const startPinchGesture = () => {
+    const points = getGesturePointers()
+    if (points.length < 2) {
       return
     }
-    event.currentTarget.setPointerCapture(event.pointerId)
-    dragRef.current = {
-      pointerId: event.pointerId,
-      startX: event.clientX,
-      startY: event.clientY,
-      panX: pan.x,
-      panY: pan.y,
+    const center = getCenter(points)
+    const centerSvg = getSvgPoint(center.x, center.y)
+    const startZoom = zoomRef.current
+    gestureRef.current = {
+      type: 'pinch',
+      startDistance: Math.max(getDistance(points), 1),
+      startZoom,
+      startWorld: getWorldPoint(centerSvg, startZoom),
     }
+    draggedRef.current = true
+    tapTargetRef.current = null
+  }
+  const getTapTarget = (target: EventTarget | null) => {
+    if (!(target instanceof Element)) {
+      return null
+    }
+    if (target.classList.contains('country-path')) {
+      const iso3 = target.getAttribute('data-iso3')
+      const name = target.getAttribute('data-country-name')
+      return iso3 && name ? { type: 'country' as const, iso3, name } : null
+    }
+    if (target.classList.contains('ocean')) {
+      return { type: 'ocean' as const }
+    }
+    return null
+  }
+  const applyTapTarget = (
+    tapTarget: { type: 'country'; iso3: string; name: string } | { type: 'ocean' } | null,
+  ) => {
+    if (!tapTarget) {
+      return
+    }
+    if (tapTarget.type === 'ocean') {
+      if (selected) {
+        onClearSelection()
+      }
+      return
+    }
+    if (selected?.iso3 === tapTarget.iso3) {
+      onClearSelection()
+      return
+    }
+    onSelect({ iso3: tapTarget.iso3, name: tapTarget.name })
+  }
+  const onPointerDown = (event: PointerEvent<SVGSVGElement>) => {
+    if (event.pointerType === 'mouse' && event.button !== 0) {
+      return
+    }
+    event.preventDefault()
+    event.currentTarget.setPointerCapture(event.pointerId)
+    activePointersRef.current.set(event.pointerId, { x: event.clientX, y: event.clientY })
     draggedRef.current = false
+    tapTargetRef.current = activePointersRef.current.size === 1 ? getTapTarget(event.target) : null
+    if (activePointersRef.current.size >= 2) {
+      startPinchGesture()
+      return
+    }
+    startPanGesture(event.pointerId, { x: event.clientX, y: event.clientY })
   }
   const onPointerMove = (event: PointerEvent<SVGSVGElement>) => {
-    const drag = dragRef.current
-    if (!drag || drag.pointerId !== event.pointerId) {
+    if (!activePointersRef.current.has(event.pointerId)) {
       return
     }
-    const deltaX = event.clientX - drag.startX
-    const deltaY = event.clientY - drag.startY
-    if (Math.abs(deltaX) + Math.abs(deltaY) > 5) {
-      draggedRef.current = true
+    event.preventDefault()
+    activePointersRef.current.set(event.pointerId, { x: event.clientX, y: event.clientY })
+    const gesture = gestureRef.current
+    if (!gesture) {
+      return
     }
-    const delta = getSvgDelta(deltaX, deltaY)
-    setPan({ x: drag.panX + delta.x, y: drag.panY + delta.y })
+
+    if (activePointersRef.current.size >= 2 && gesture.type === 'pinch') {
+      const points = getGesturePointers()
+      const center = getCenter(points)
+      const centerSvg = getSvgPoint(center.x, center.y)
+      const focus = focusRef.current ?? { x: focusX, y: focusY }
+      const nextZoom = clampZoom(gesture.startZoom * (getDistance(points) / gesture.startDistance))
+      const nextPan = {
+        x: centerSvg.x - MAP_WIDTH / 2 - nextZoom * (gesture.startWorld.x - focus.x),
+        y: centerSvg.y - MAP_HEIGHT / 2 - nextZoom * (gesture.startWorld.y - focus.y),
+      }
+      draggedRef.current = true
+      zoomRef.current = nextZoom
+      setZoom(nextZoom)
+      setPanValue(nextPan)
+      return
+    }
+
+    if (gesture.type === 'pan' && gesture.pointerId === event.pointerId) {
+      const deltaX = event.clientX - gesture.startX
+      const deltaY = event.clientY - gesture.startY
+      if (Math.abs(deltaX) + Math.abs(deltaY) > 5) {
+        draggedRef.current = true
+      }
+      const delta = getSvgDelta(deltaX, deltaY)
+      setPanValue({ x: gesture.startPan.x + delta.x, y: gesture.startPan.y + delta.y })
+    }
   }
   const onPointerUp = (event: PointerEvent<SVGSVGElement>) => {
-    if (dragRef.current?.pointerId === event.pointerId) {
-      dragRef.current = null
+    if (activePointersRef.current.has(event.pointerId)) {
+      const shouldApplyTap =
+        !draggedRef.current &&
+        activePointersRef.current.size === 1 &&
+        gestureRef.current?.type === 'pan'
+      const tapTarget = shouldApplyTap ? tapTargetRef.current : null
+      activePointersRef.current.delete(event.pointerId)
       event.currentTarget.releasePointerCapture(event.pointerId)
-      window.setTimeout(() => {
-        draggedRef.current = false
-      }, 0)
+      const remainingPointers = [...activePointersRef.current.entries()]
+      if (remainingPointers.length === 1) {
+        const [pointerId, point] = remainingPointers[0]
+        startPanGesture(pointerId, point)
+      } else if (remainingPointers.length === 0) {
+        gestureRef.current = null
+        tapTargetRef.current = null
+        applyTapTarget(tapTarget)
+        window.setTimeout(() => {
+          draggedRef.current = false
+        }, 0)
+      } else {
+        startPinchGesture()
+      }
     }
   }
 
@@ -408,15 +568,6 @@ function CountryMap({
               return null
             }
 
-            const selectCountry = () => {
-              if (draggedRef.current) {
-                return
-              }
-              if (summary.iso3) {
-                onSelect({ iso3: summary.iso3, name: summary.name })
-              }
-            }
-
             return (
               <path
                 aria-hidden="true"
@@ -431,9 +582,10 @@ function CountryMap({
                   .filter(Boolean)
                   .join(' ')}
                 d={path}
+                data-country-name={summary.name}
+                data-iso3={summary.iso3}
                 fill={mapFillForComparison(comparison)}
                 key={`${summary.numericId}-${index}`}
-                onClick={selectCountry}
               >
                 <title>
                   {`${summary.name}: ${statusLabelForComparison(comparison)}${
@@ -447,11 +599,21 @@ function CountryMap({
       </svg>
 
       <div className="map-tools" aria-label="Map zoom controls">
+        {selected && (
+          <button
+            type="button"
+            className="icon-button"
+            aria-label="Close map details"
+            onClick={onClearSelection}
+          >
+            <X size={17} />
+          </button>
+        )}
         <button
           type="button"
           className="icon-button"
           aria-label="Zoom in"
-          onClick={() => setZoom((value) => Math.min(2.2, Number((value + 0.25).toFixed(2))))}
+          onClick={() => setZoom((value) => clampZoom(Number((value + 0.25).toFixed(2))))}
         >
           <Plus size={18} />
         </button>
@@ -459,7 +621,7 @@ function CountryMap({
           type="button"
           className="icon-button"
           aria-label="Zoom out"
-          onClick={() => setZoom((value) => Math.max(1, Number((value - 0.25).toFixed(2))))}
+          onClick={() => setZoom((value) => clampZoom(Number((value - 0.25).toFixed(2))))}
         >
           <Minus size={18} />
         </button>
@@ -505,6 +667,12 @@ function DetailPanel({
         <p className="empty-copy">
           No matching arrivals series is published in the OWID/UN Tourism or World Bank WDI source data.
         </p>
+        <div className="panel-actions">
+          <button className="panel-action" type="button" onClick={onClose} aria-label="Close selected country details">
+            <X size={16} />
+            <span>Close details</span>
+          </button>
+        </div>
       </aside>
     )
   }
@@ -569,6 +737,13 @@ function DetailPanel({
           <span>Latest year</span>
           <strong>{record.latestYear}</strong>
         </div>
+      </div>
+
+      <div className="panel-actions">
+        <button className="panel-action" type="button" onClick={onClose} aria-label="Close selected country details">
+          <X size={16} />
+          <span>Close details</span>
+        </button>
       </div>
     </aside>
   )
@@ -922,7 +1097,15 @@ function App() {
         className={`map-stage ${selected ? 'has-selection' : ''}`}
         aria-label="Country tourism change map"
       >
-        <CountryMap baseline={baseline} selected={selected} onSelect={selectCountry} />
+        <CountryMap
+          baseline={baseline}
+          selected={selected}
+          onSelect={selectCountry}
+          onClearSelection={() => {
+            setSelected(null)
+            setSelectionStatus('Country details closed.')
+          }}
+        />
 
         <div className="map-overlay">
           <Legend baseline={baseline} />
